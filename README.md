@@ -8,4 +8,4 @@ IPRangeFromSubnet.py > output.log
 24
 
 And review your output. The output is flushed per use so no need to clean your log file.
-
+ 
