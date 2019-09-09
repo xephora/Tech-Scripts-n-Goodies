@@ -4,3 +4,15 @@ Requirements:
 Python 3+
 Urllib
 
+
+IPRangeFromSubnet
+Requires Python 2.7
+
+Outputs all ip address within a range of subnet.
+
+Example
+
+IPRangeFromSubnet.py > output.log
+192.168.1.1
+24
+
