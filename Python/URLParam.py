@@ -13,3 +13,6 @@ print('\n')
 
 print('Response Peek')
 print(resp.peek())
+
+data = resp.read()
+print(type(data))
