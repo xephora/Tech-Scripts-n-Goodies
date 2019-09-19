@@ -1,10 +1,11 @@
 Errors referring to permissions on /Library please try the following. 
 Tested on MAC OSX Majove 10.14
 
+Firstly, you need to retrieve the following information.
 id -u pulls ID#
 id -g pulls Group#
 
-Then run the following:
+Then you can run the following command on the specified user ID and Group.
 
 sudo CHown -R ID# ~/Library
 sudo CHgrp -R Group# ~/Library
