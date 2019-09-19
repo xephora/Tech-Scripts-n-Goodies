@@ -1,8 +1,7 @@
 Errors referring to /Library please try the following. 
 
 id -u pulls ID#
-id 
--g pulls Group#
+id -g pulls Group#
 
 Then run the following:
 
