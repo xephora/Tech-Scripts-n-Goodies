@@ -1,15 +1,10 @@
 Errors referring to /Library please try the following. 
 
-
 id -u pulls ID#
 id 
 -g pulls Group#
 
-
 Then run the following:
 
-
-
 sudo CHown -R ID# ~/Library
-
 sudo CHgrp -R Group# ~/Library
