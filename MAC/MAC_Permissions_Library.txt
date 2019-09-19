@@ -1,4 +1,5 @@
-Errors referring to /Library please try the following. 
+Errors referring to permissions on /Library please try the following. 
+Tested on MAC OSX Majove 10.14
 
 id -u pulls ID#
 id -g pulls Group#
