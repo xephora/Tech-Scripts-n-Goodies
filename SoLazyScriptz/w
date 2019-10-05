@@ -1,4 +1,4 @@
 #!/bin/bash
 read -p 'Insert URL Example https://ExampleURL.com: ' website
 read -p '0 Fingerprint, 1 Attack, 2 Audit, 3 Bruteforce, 4 Disclosure, 5 Fullscan (You can include args with 5): ' mode
-python2 /root/wascan.py --url $website --scan $mode
+python2 /root/WAScan/wascan.py --url $website --scan $mode
