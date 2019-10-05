@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p 'Gif me website http://www.exampleurl.com/ or IP: ' website
+read -p 'port to scan?: ' port
+nikto -h $website -p $port
