@@ -3,7 +3,7 @@ $ git clone https://github.com/m4ll0k/WAScan.git
 $ cd wascan 
 $ pip install BeautifulSoup
 $ python wascan.py
-If you want the w script to work you'll need to make sure your lib and plugin folder is in the same directory as your w script. You can get it from the repo above or you can get it from git Tech-Sprits-n-Goodies github directory.
+If you want the w script to work you'll need to make sure your lib and plugin folder is in the same directory as your w script. You can get it from the repo above or you can get it from https://github.com/xephora/Tech-Scripts-n-Goodies
 
 Photon
 Python LIBS:
