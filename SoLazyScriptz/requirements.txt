@@ -1,0 +1,16 @@
+WAScan
+$ git clone https://github.com/m4ll0k/WAScan.git
+$ cd wascan 
+$ pip install BeautifulSoup
+$ python wascan.py
+
+Photon
+Python LIBS:
+requests
+requests[socks]
+urllib3
+tld
+
+git clone https://github.com/s0md3v/Photon/
+
+nikto is built into kali
