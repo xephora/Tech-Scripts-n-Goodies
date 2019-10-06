@@ -1,0 +1,4 @@
+echo "Run python -c 'import pty;pty.spawn("/bin/bash")' after reverse tcp connection establishes"
+echo "----------------------------------------------------------------"
+read -p 'Enter a port: ' port
+nc -l -v -p $port

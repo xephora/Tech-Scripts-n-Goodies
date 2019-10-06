@@ -1,2 +1,0 @@
-read -p 'Enter a port ' port
-nc -l -v -p $port
