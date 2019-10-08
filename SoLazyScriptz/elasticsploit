@@ -1,0 +1,9 @@
+read -p 'Enter IP Address only: ' site
+read -p 'Output filename: ' filename
+
+elasticdump \
+  --input=http://$site:9200/quotes \
+  --output=$filename.json \
+  --type=data
+echo "-------------------------------------"
+echo $filename".json jhas been dumped into the currently directory"
