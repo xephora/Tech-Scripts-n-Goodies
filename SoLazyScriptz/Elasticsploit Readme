@@ -1,0 +1,4 @@
+Elasticsploit extracts data out of ElasticSearch 6.4.2 vulnerable server.
+
+Requirements:
+npm install elasticdump -g
