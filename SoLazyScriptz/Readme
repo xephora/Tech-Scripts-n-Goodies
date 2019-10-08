@@ -1,1 +1,9 @@
 Literally a repo filled with lazy scripts... If you plan to use these you wiill need to follow the requirements
+
+Elasticsploit extracts data out of ElasticSearch 6.4.2 vulnerable server.
+
+Requirements:
+npm install elasticdump -g
+
+after running Elasticsploit, you can clean your results.
+
