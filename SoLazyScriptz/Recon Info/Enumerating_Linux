@@ -1,0 +1,22 @@
+
+Enumerating linux OS
+cat /etc/os-release
+
+Who else logged in? 
+who w last
+
+Enumerating Kernel 
+uname -a, env, whoami, history, pwd
+
+Are you in sudoers file? 
+sudo -l, cat /etc/sudoers
+
+Other super users? grep -v -E "^#" /etc/passwd | awk -F: '$3 == 0 { print $1}'
+
+Able to run the following binaries with current user permissions:
+find / -perm -u=s 2>/dev/null
+
+Processes:
+top
+
+https://github.com/1N3/PrivEsc/tree/master/linux/scripts
