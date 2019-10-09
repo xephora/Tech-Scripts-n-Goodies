@@ -1,2 +1,5 @@
 This section contains privilege escalation checking tools for linux.
 
+https://github.com/diego-treitos/linux-smart-enumeration
+chmod +x ./lse.sh
+./lse.sh -l2 >> linenum.log
