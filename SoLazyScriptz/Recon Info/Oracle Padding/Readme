@@ -1,7 +1,5 @@
 Padbuster tool to decrypt ciphertext
 
-Scanning your ciphertext
-
 Usage: padbuster.pl server/?query=ciphertext ciphertext bytesize
 
 Example: padbuster.pl http[:]//url/92c909846b/?post=VtiEW3WuZyRjvNCjiLwo7tDYQZMpl72UAMC3VxvfoSh3KmIBI1yrvsTBA1s6EPnNWfciG+0OTO3ZkhKbvr7EAoAqP1sJ0fV8fM9v/GAH4SpGGYjfVK8r8zcds+H75CSkACMEstPDDPWMWUDffnepBxIGVIbkoIfdMdcNnSYI7etYPCGEPYLuwg3251zV6c/ups1jXdHnGdCYizNJCQ8KXA== VtiEW3WuZyRjvNCjiLwo7tDYQZMpl72UAMC3VxvfoSh3KmIBI1yrvsTBA1s6EPnNWfciG+0OTO3ZkhKbvr7EAoAqP1sJ0fV8fM9v/GAH4SpGGYjfVK8r8zcds+H75CSkACMEstPDDPWMWUDffnepBxIGVIbkoIfdMdcNnSYI7etYPCGEPYLuwg3251zV6c/ups1jXdHnGdCYizNJCQ8KXA== 16
