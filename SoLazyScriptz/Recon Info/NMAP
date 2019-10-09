@@ -1,0 +1,12 @@
+NMAP
+Enumerate general ports and services from a host. *Quick scan
+nmap -sC -sV -o outfile IP
+
+Enumerate all ports and services from a host
+nmap -sC -sV -p- -o outfile IP
+
+Enum HTTP
+nmap --script=http-enum -p80 -n IP
+
+Best Scripts to use for NMAP for enumeration
+https://hackertarget.com/7-nmap-nse-scripts-recon/
