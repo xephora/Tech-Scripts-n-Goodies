@@ -1,0 +1,9 @@
+https://www.darkreading.com/cloud/google-dorking-exposing-the-hidden-threat/a/d-id/1325842
+https://securitytrails.com/blog/google-hacking-techniques
+
+Google Dorking allows you to enumerate data from web servers that failed to exclude via robots.txt Exposing possible sensitive data when queried.
+
+Google dorking asp.net web applications
+inurl:domain filetype:aspx
+inurl:domain filetype:asmx
+inurl:domain filetype:ashx
