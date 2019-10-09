@@ -1,0 +1,7 @@
+enumerating documents from a website
+curl -o pageinfo.log http://url
+
+same command applies when you need to download a file on a remote system.
+curl -o filename.ext http://fileserver/filename.ext
+
+wget -O filename.ext http://fileserver/filename.ext
