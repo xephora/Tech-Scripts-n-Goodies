@@ -1,0 +1,4 @@
+read -p 'Type IP Address: ' ip_addr
+read -p 'Type PORT: ' port
+
+nmap --script=http-enum -p$port -n $ip_addr
