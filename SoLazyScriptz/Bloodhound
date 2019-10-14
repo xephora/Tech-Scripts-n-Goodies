@@ -1,0 +1,5 @@
+install neo4j
+run 'neo4j console' to start the server.
+start bloodhound './BloodHound --no-sandbox'
+run sharphound.exe from remote server to enumerate AD, GPO etc to JSON files
+import the JSON files to BloodHound and run queries to see the mapped graph.
