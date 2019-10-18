@@ -1,0 +1,3 @@
+read -p 'Start | Stop | Restart | Status of Apache Service: ' option
+
+/etc/init.d/apache2 $option
