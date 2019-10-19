@@ -24,3 +24,9 @@ top
 
 https://raw.githubusercontent.com/carlospolop/linux-privilege-escalation-awsome-script/master/linpeas.sh
 https://github.com/1N3/PrivEsc/tree/master/linux/scripts
+
+Enumeration of plaintext password
+grep -rnw '/' -ie 'pass' --color=always
+grep -rnw '/' -ie 'DB_PASS' --color=always
+grep -rnw '/' -ie 'DB_PASSWORD' --color=always
+grep -rnw '/' -ie 'DB_USER' --color=always
