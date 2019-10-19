@@ -8,6 +8,7 @@ windows-privesc-check2.exe --audit -a -o wpc-report
 More information Regarding Windows-Privesc-Check please refer to: https://github.com/pentestmonkey/windows-privesc-check/blob/master/docs/QuickStartUsage.md
 
 https://github.com/AonCyberLabs/Windows-Exploit-Suggester
+https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc
 
 Check current priv
 whoami /priv
