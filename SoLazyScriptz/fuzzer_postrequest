@@ -1,0 +1,6 @@
+#Requires seclists
+#https://github.com/danielmiessler/SecLists
+
+read -p 'Insert page https://url/page.php: ' url
+read -p 'Insert Fuzzed Data username=FUZZ&password=FUZZ: ' data
+wfuzz -z file,INSERTWORDLIST -d "$data"  --hc 403,404,302 $url
