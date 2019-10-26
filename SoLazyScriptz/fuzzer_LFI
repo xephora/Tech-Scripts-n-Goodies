@@ -1,0 +1,2 @@
+read -p 'Enter URL, Good Example http://url or http://url/path, Bad Example http://url/ or http://url/path/: ' url
+wfuzz -w /root/SecLists/Fuzzing/LFI/LFI-Jhaddix.txt --hc 403,404,302 -u $url/FUZZ
