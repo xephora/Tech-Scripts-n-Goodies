@@ -1,0 +1,11 @@
+#Customize your WFUZZ script
+#Recommend to get Seclists
+#https://github.com/danielmiessler/SecLists
+#
+#Ensure you enter the wordlist correctly example: /root/Seclists/wordlist.txt
+#Cookie needs to be written correct or session won't be established. Example:_cld_session_key=00000000000000000
+
+read -p 'Enter /path/wordlistfile: ' wordlist
+read -p 'Enter CookieName=CookieValue: ' cookie
+read -p 'Enter URL, Good Example http://url or http://url/path, Bad Example http://url/ or http://url/path/: ' url
+wfuzz -w $wordlist -b $cookie --hc 403,404,302 -u $url/FUZZ
