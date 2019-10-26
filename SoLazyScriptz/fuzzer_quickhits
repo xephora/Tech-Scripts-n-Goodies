@@ -1,0 +1,6 @@
+#Requires Seclists
+#https://github.com/danielmiessler/SecLists
+
+read -p 'Enter URL without trailing slash: ' url
+
+wfuzz -w /root/SecLists/Discovery/Web-Content/quickhits.txt --hc 403,404,302 -u $url/FUZZ
