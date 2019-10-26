@@ -1,0 +1,5 @@
+#Requires Seclists
+#https://github.com/danielmiessler/SecLists
+
+read -p 'Enter URL without trailing slash: ' url
+wfuzz -w /root/SecLists/Discovery/Web-Content/PHP.fuzz.txt
