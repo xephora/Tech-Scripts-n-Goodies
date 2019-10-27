@@ -1,0 +1,10 @@
+read -p 'Type filename of office file (word, excel etc). Example file.xlsx: ' filename
+
+echo Extracting Hash
+/usr/share/john/office2john.py $filename > office_hash
+
+echo Cracking $filename..
+echo --------------------------------------------------
+sleep 5
+
+john office_hash
