@@ -1,0 +1,18 @@
+#Installation
+#git clone https://github.com/stricture/hashstack-server-plugin-jtr
+#cd into hashstack-server-plugin-jtr/pst2john
+#make
+#
+#PST_Cracker is not bound to this directory, you can move it wherever.
+
+read -p 'Type filename. Example filename.pst: ' filename
+
+echo extracting hash..
+/root/hashstack-server-plugin-jtr/pst2john/pst2john $filename > pst_hash
+
+echo Cracking $filename..
+echo -----------------------------------------------------------
+sleep 10
+
+john pst_hash
+
