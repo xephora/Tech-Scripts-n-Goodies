@@ -19,6 +19,7 @@ do
 	echo 'Fuzz LFI {6}'
 	echo 'Fuzz using cookie custom wordlist {7}'
 	echo 'Fuzz Post Request {8}'
+	echo 'exit {0}'
 	read sel
 
 	case "$sel" in
@@ -69,6 +70,10 @@ do
 		echo 'Fuzzxor Post Request'
 		/root/pwn/fuzzer_postrequest
 		x=1
+		;;
+		0)
+		echo 'exiting'
+		exit
 		;;
 	esac
 done
