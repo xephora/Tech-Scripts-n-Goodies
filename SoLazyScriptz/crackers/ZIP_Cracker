@@ -1,0 +1,13 @@
+#rar crack
+read -p 'Type the filename. Example file.zip: ' filename
+
+echo 'Extracting Hash'
+zip2john $filename > zip_hashdump
+
+echo Cracking $filename...
+sleep 10
+
+echo Results--------------------------------------------------
+john zip_hashdump
+
+
