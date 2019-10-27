@@ -1,0 +1,10 @@
+#RAR Cracker
+read -p 'Type rar filename. Example file.rar: ' filename
+
+rar2john $filename > rar_hashdump
+
+sleep 5
+
+john rar_hashdump
+
+
