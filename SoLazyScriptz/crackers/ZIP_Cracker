@@ -1,4 +1,4 @@
-#rar crack
+#Zip Cracker
 read -p 'Type the filename. Example file.zip: ' filename
 
 echo 'Extracting Hash'
