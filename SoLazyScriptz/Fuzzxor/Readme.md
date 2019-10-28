@@ -17,11 +17,7 @@ The script needs to look for its fuzzer scripts.
 cd root
 mkdir pwn
 cd pwn
-copy all fuzzer scripts to that directory.
-```
-The next step is optional.
-```
-cp /root/Tech-Scripts-n-Goodies/SoLazyScriptz/Fuzzer* ~/pwn
+copy all fuzzer scripts to pwn including the fuzzxor.rb and Gemfile.
 ```
 
 3.
