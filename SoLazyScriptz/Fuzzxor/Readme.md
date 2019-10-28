@@ -12,7 +12,7 @@ The script requires Seclists wordlists for this to work. More information: (http
 git clone https://github.com/danielmiessler/SecLists
 ```
 2.
-The script needs to look for its fuzzer scripts.
+The script needs to look for its fuzzer scripts. Fuzzer scripts are located: (https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/SoLazyScriptz)
 ```
 cd root
 mkdir pwn
