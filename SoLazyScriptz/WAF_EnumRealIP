@@ -1,6 +1,5 @@
 #This script will try different techniques to Bypass WAF
-#More information about Cloudflair: https://github.com/christophetd/CloudFlair
-RED='\033[0;31m'
+#More information about Cloudflair: (https://github.com/christophetd/CloudFlair)
 
 read -p 'Enter Domain. Example: domain.com: ' domain
 
