@@ -4,7 +4,5 @@
 read -p 'Enter Domain. Example: domain.com: ' domain
 
 python3 /root/cloudflair/cloudflair.py $domain
-echo -----------------------------------------------
 
-curl -d cfS=$domain  www.crimeflare.org:82/cgi-bin/cfsearch.cgi |grep -C 4 "Previous" |tr -d '<>,'
-
+curl -# -d cfS=$domain  www.crimeflare.org:82/cgi-bin/cfsearch.cgi |grep -C 4 "Previous" |tr -d '<>,'
