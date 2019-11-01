@@ -1,0 +1,5 @@
+#General Cracking
+
+read -p 'Enter Hash: ' filename
+
+john --wordlist=/usr/share/wordlists/rockyou.txt $filename
