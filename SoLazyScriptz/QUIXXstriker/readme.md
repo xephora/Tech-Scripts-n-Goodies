@@ -17,4 +17,4 @@ If you already have bundler proceed with installing the lib.
 bundle install
 ```
 
-Crawl domains or Scan and Fuzz endpoints. seclogs.txt is also dumped to the same directory as the script.
+Crawl domains or Scan and Fuzz endpoints or url/path or even POST Data. seclogs.txt is also dumped to the same directory as the script. 
