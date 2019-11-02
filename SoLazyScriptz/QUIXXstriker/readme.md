@@ -1,7 +1,7 @@
 # QUIXSStriker
 ![GitHub Logo](introupdate.PNG)
 
-The following script will quickly use XSStriker. It's only a shortcut to the greatest XSS tool.
+I've created a one clicker for XSStriker. It's only a shortcut to the greatest XSS tool.
 
 ## Prerequisites
 
