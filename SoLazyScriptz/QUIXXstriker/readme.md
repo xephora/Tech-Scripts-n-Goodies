@@ -1,5 +1,5 @@
 # QUIXSStriker
-!(https://imgur.com/4Dk29iZ)
+![ALT TEXT](https://imgur.com/4Dk29iZ)
 
 The following script will quickly use XSStriker. It's only a shortcut to the greatest XSS tool.
 
