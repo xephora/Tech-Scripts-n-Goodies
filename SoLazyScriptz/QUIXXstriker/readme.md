@@ -1,4 +1,5 @@
 # QUIXSStriker
+![}(/intro.PNG)
 
 The following script will quickly use XSStriker. It's only a shortcut to the greatest XSS tool.
 
