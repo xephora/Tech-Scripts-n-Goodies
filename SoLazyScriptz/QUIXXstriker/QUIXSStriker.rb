@@ -8,7 +8,7 @@
 #
 #git clone https://github.com/s0md3v/XSStrike
 #xss scripts are stored in the same folder as QUIXSStriker
-#Move your XSS scripts in /root/pwn directory and your QUIXSStriker will work.
+#Move your XSS scripts in /root/pwn/xsstriker directory and your QUIXSStriker will work.
 
 puts <<-'EOF'
  ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄       ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄    ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
