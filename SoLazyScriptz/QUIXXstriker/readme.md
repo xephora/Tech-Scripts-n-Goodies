@@ -6,7 +6,9 @@ I've created a one clicker for XSStriker. It's only a shortcut to the greatest X
 ## Prerequisites
 
 OS: Debian
+
 Written in Ruby
+
 Requires XSStriker (https://github.com/xephora/XSStrike)
 
 ##Installing gem
