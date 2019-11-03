@@ -8,7 +8,7 @@
 #
 #git clone https://github.com/s0md3v/XSStrike
 #xss scripts are stored in the same folder as QUIXSStriker
-#Move your XSS scripts in /root/pwn/xsstriker directory and your QUIXSStriker will work.
+#Move your XSS scripts in /root/pwn/QUIXSStriker directory and your QUIXSStriker.rb will work.
 
 puts <<-'EOF'
  ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄       ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄    ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
@@ -31,42 +31,42 @@ require "highline/import"
 def option_1
 	system("clear")
 	puts("Loading XSS QuickScan")
-	system("/root/pwn/xsstriker/xssQuick")
+	system("/root/pwn/QUIXSStriker/xssQuick")
 	exit
 end
 
 def option_2
 	system("clear")
 	puts("Loading XSS FullScan")
-	system("/root/pwn/xsstriker/xssFull")
+	system("/root/pwn/QUIXSStriker/xssFull")
 	exit
 end
 
 def option_3
 	system("clear")
 	puts("Loading XSS Crawl")
-	system("/root/pwn/xsstriker/xssCrawl")
+	system("/root/pwn/QUIXSStriker/xssCrawl")
 	exit
 end
 
 def option_4
 	system("clear")
 	puts("Loading XSS Fuzzer")
-	system("/root/pwn/xsstriker/xssFuzzer")
+	system("/root/pwn/QUIXSStriker/xssFuzzer")
 	exit
 end
 
 def option_5
 	system("clear")
 	puts("Loading XSS PATHScan")
-	system("/root/pwn/fuzzer_LDAP")
+	system("/root/pwn/QUIXSStriker/xssPATH")
 	exit
 end
 
 def option_6
 	system("clear")
-	puts("Loading POST Data")
-	system("echo helooooooooooo")
+	puts("Loading XSS POST Data")
+	system("/root/pwn/QUIXSStriker/xssDATA")
 	exit
 end
 
