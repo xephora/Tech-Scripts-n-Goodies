@@ -1,1 +1,1 @@
-#Creating SQLMAP scripts
+Creating SQLMAP scripts
