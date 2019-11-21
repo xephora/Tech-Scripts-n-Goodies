@@ -1,0 +1,7 @@
+#Hash-Buster
+#installation
+#git clone https://github.com/s0md3v/Hash-Buster
+
+read -p 'Insert HASH: ' hash
+
+buster -s $hash -t 10
