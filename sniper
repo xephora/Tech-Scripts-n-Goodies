@@ -1,0 +1,6 @@
+#Sniper is a PENTest Framework tool
+#Installation
+#git clone https://github.com/1N3/Sn1per
+#sudo bash install_debian_ubuntu.sh
+read -p 'Enter URL: ' url
+sniper -t $url
