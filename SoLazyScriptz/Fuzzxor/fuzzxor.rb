@@ -59,7 +59,7 @@ end
 def option_6
 	system("clear")
 	puts("Loading LFI scan")
-	system("echo helooooooooooo")
+	system("/root/pwn/fuzzer_LFI")
 	exit
 end
 
