@@ -1,0 +1,7 @@
+#Gobuster is required for this script
+#Installation
+#git clone https://github.com/OJ/gobuster
+
+read -p 'Enter URL: ' url
+
+gobuster dir -w /root/SecLists/Discovery/Web-Content/raft-large-words.txt -s 200,301,307 -t 103 -u $url
