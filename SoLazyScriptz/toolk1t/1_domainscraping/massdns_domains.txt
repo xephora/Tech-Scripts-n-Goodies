@@ -1,2 +1,1 @@
-opt-osfns.org
-psal.org
+INSERT DOMAINS HERE
