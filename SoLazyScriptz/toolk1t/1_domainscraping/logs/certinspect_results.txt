@@ -1,7 +1,1 @@
-sso.opt-osfns.org
-www.sso.opt-osfns.org
-www.opt-osfns.org
-gis10.opt-osfns.org
-gis.opt-osfns.org
-busvendor.opt-osfns.org
-SSO.OPT-OSFNS.ORG
+
