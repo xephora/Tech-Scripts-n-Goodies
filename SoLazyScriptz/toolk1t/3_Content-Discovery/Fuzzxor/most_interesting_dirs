@@ -1,0 +1,1 @@
+wfuzz -w /root/wordlist/Fuzzing/curated.txt --hc 403,404,302 -u https://pathofdiablo.com/phpmyadmin/FUZZ
