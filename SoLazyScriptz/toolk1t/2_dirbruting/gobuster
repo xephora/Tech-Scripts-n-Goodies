@@ -1,6 +1,8 @@
 #Gobuster is required for this script
 #Installation
 #git clone https://github.com/OJ/gobuster
+#Seclists wordlists needed for this
+#git clone https://github.com/danielmiessler/SecLists
 
 read -p 'Enter URL: ' url
 
