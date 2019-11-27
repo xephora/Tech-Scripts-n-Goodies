@@ -1,0 +1,12 @@
+First gather your scraped domains into a domainlistfile.txt. To remove any entries of duplicates use the following.
+
+Firstly extract your domains from any cluttered mess if you need to.
+https://gchq.github.io/CyberChef/#recipe=Extract_domains(true)
+
+Secondly clear any duplicates from your list of domains.
+https://gchq.github.io/CyberChef/#recipe=Unique('Line%20feed')
+
+Next iplookup the domains by running the py script.
+
+Then, remove any duplicate ip addresses by running
+https://gchq.github.io/CyberChef/#recipe=Unique('Line%20feed')
