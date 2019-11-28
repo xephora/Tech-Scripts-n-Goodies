@@ -1,0 +1,3 @@
+read -p 'Enter IP: ' ip_addr
+grep 'portid' $ip_addr | cut -d '=' -f 3 
+grep 'portid' $ip_addr | cut -d '=' -f 6

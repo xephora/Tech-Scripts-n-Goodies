@@ -1,0 +1,3 @@
+read -p 'enter ip: ' ip_addr
+grep -ir $ip_addr output_masscan.txt > $ip_addr
+
