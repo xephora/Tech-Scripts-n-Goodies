@@ -1,0 +1,2 @@
+read -p 'Enter URL: ' url
+commix --url=$url --shellshock --crawl=2 -v 1
