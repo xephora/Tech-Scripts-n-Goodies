@@ -1,0 +1,2 @@
+read -p 'Enter URL: ' url
+ffuf -c -w /root/SecLists/Discovery/Web-Content/SVNDigger/all.txt -u $url/FUZZ -fc 403,404,302
