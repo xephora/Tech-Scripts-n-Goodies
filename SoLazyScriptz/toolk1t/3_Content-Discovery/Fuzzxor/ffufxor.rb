@@ -34,7 +34,7 @@ end
 def option_3
 	system("clear")
 	puts("Loading Most Interesting Scan MmMMmMmM")
-	system("ffuf_most_interesting")
+	system("/root/pwn/toolk1t/3_Content-Discovery/Fuzzxor/ffuf_scripts/ffuf_most_interesting")
 	exit
 end
 
