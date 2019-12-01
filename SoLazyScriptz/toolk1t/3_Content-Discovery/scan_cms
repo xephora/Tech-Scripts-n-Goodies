@@ -1,0 +1,7 @@
+#installation of cmsmap is required
+#git clone https://github.com/Dionach/CMSmap
+#To install ./setup.py install
+
+read -p 'Enter URL: ' url
+
+cmsmap $url -F
