@@ -1,0 +1,3 @@
+read -p 'Enter URL: ' url
+
+wpscan --url $url --enumerate u,ap,tt,t
