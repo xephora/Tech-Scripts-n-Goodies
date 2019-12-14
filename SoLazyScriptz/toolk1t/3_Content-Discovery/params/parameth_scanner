@@ -1,9 +1,0 @@
-#Parameth Scanner
-#installation
-#git clone https://github.com/maK-/parameth
-#
-#Install fuzzywuzzy pylib
-#pip2 install -r requirements.txt 
-read -p 'Enter URL.com/path/doc.php: ' url
-
-/root/pwn/toolk1t/3_Content-Discovery/params/parameth/parameth.py -u $url
