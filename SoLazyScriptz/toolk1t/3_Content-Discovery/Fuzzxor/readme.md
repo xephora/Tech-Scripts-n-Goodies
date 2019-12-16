@@ -21,9 +21,3 @@ fuzz_path.py
 
 Scanning for 43,000 items within wordlist all.txt
 ffuff scans https://examplewebsite/path/paths/FUZZ
-
-Scanning for 43,000 items within wordlist all.txt
-ffuff scans https://examplewebsite/path/to/FUZZ
-
-Scanning for 43,000 items within wordlist all.txt
-ffuff scans https://examplewebsite/path/fuzz/FUZZ
