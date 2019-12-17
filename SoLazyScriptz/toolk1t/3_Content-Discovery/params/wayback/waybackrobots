@@ -1,0 +1,3 @@
+read -p 'Enter URL: ' url
+
+python3 wbscripts/waybackrobots.py $url
