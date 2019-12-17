@@ -1,0 +1,11 @@
+What is an IDOR vulnerability?
+There can be many variables in the application such as “id”, “pid”, “uid”. Although these values are often seen as HTTP parameters, they can be found in headers and cookies. The attacker can access, edit or delete any of other users’ objects by changing the values. This vulnerability is called IDOR.
+
+First, it needs to understand the application flow developed by the software developers. All the modules functions and their sub-modules functions need to be understood when the logged-in user into the web/mobile application. It is also important to remember that this vulnerability is as severe as XSS, CSRF in security testing and as a type of vulnerability that is not easily discovered (automatized testing or manual testing).
+
+The IDOR vulnerability is illustrated in the following image between user and server.
+
+More Information
+https://www.bugcrowd.com/blog/how-to-find-idor-insecure-direct-object-reference-vulnerabilities-for-large-bounty-rewards/
+
+modify your body and cookie data to see if you get different output.
