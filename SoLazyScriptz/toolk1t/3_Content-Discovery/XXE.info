@@ -61,5 +61,5 @@ Internal DID Entity Example:
 External DTD Entity Syntax:
 <!ENTITY entity-name SYSTEM "URI/URL">
 External DTD Entity Example:
-<!ENTITY author system "http://malicious.com/entities.dtd">
+<!ENTITY author system "http://example.com/entities.dtd">
 <author>&author;</author>
