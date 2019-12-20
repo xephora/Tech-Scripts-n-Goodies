@@ -1,0 +1,3 @@
+Captcha Bypass
+
+intercept the POST Request with a page that is using captcha. Add to repeater and loop the post request using the old captcha data and confirm the post is successful. confirming the request is bypassing captcha.
