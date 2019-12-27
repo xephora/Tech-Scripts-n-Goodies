@@ -1,0 +1,4 @@
+#installation
+#git clone https://github.com/doyensec/graph-ql
+read -p 'Enter URL: ' url
+python2 /root/graph-ql/Introspection/GraphQL_Introspection.py -t $url
