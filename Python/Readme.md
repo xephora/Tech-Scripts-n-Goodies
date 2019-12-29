@@ -20,3 +20,7 @@ IPRangeFromSubnet.py > output.log
 -----------------------
 tfunveil.py allows you to read tfrecord binaries
 
+-----------------------
+
+urlenc_wordlist.py URL Encodes a list of payloads. filename must be named wordlist.txt
+
