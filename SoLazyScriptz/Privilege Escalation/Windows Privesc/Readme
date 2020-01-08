@@ -36,3 +36,8 @@ Manual Powershell Priv esc powerup.ps1
 powershell -nop -exec bypass
 Import-Module .\powerup.ps1
 Invoke-AllChecks
+
+[PowerView.ps1 Usage for Active Directory Data]
+powershell -nop -exec bypass
+Import-Module .\PowerView.ps1
+Get-AdObject
