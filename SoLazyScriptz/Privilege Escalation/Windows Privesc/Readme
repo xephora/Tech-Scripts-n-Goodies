@@ -37,7 +37,8 @@ powershell -nop -exec bypass
 Import-Module .\powerup.ps1
 Invoke-AllChecks
 
-[PowerView.ps1 Usage for Active Directory Data]
+[PowerView.ps1 Usage for Active Directory Objects]
 powershell -nop -exec bypass
 Import-Module .\PowerView.ps1
 Get-AdObject
+If you receive any errors it's possible AMSI is preventing execution. Look into AMSIbypass. EvilwinRM i use Bypass 4MSI
