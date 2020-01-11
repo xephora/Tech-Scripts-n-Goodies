@@ -18,6 +18,8 @@
 # [ ] Implement IPC to the main process so the connectionData is on a single place
 # [ ] Hence.. implement locking
 # estamos en la B
+#example command
+#smbserver.py smbname /root/smb/server/location/ -smb2support
 
 
 import calendar
