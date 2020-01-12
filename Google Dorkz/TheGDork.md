@@ -16,3 +16,5 @@ key | keyFile | secret | password | pw | passw | pswd | DB_password | connection
 
 secret strings
 (username=* | username:* |) | ( ((password=* | password:*) | (passwd=* | passwd:*) | (credentials=* | credentials:*)) | ((hash=* | hash:*) | (md5:* | md5=*)) | (inurl:auth | inurl:passwd | inurl:pass) )
+
+username=* | username:* password=* | password: | credentials= | credentials: | hash= | hash: | md5: | md5=*
