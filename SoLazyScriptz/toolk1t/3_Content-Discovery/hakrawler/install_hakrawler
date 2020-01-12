@@ -1,0 +1,4 @@
+echo 'Installing hakrawler in go/bin/'
+go get github.com/hakluke/hakrawler
+clear
+test -f ~/go/bin/hakrawler && echo "hakrawler has successfully installed"
