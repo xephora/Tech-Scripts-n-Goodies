@@ -1,0 +1,7 @@
+1. Load up burp
+2. Intercept your request.
+3. Save your request from burp.
+4. Check if site is protected by WAF. If so consider using tamper modules to bypass filters.
+5. run 'sqlmap -r requestfile.txt' check to see if sqlmap recognizes the database.
+6. If sqlmap identifies the database and indicates a vulnerable param then process to dump the data.
+7. sqlmap -r requestfile.txt --dump --dbms=sqldbEngine (if needed --tamper=TamperScriptName --level 5 --risk 3)
