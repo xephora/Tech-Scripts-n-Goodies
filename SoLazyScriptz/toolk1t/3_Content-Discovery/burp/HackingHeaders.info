@@ -1,3 +1,5 @@
+https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
+
 X-Forwarded-For: IP
 X-Frame-Options: 
 DENY, SAMEORIGIN, ALLOW-FROM Example.com
