@@ -1,0 +1,3 @@
+read -p 'Enter Domain: ' dom
+
+~/go/bin/hakrawler -domain $dom -js
