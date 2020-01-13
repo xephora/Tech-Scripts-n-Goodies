@@ -6,8 +6,6 @@ import jwt
 
 uid = input('Enter username: ')
 exp = input('Enter Expiration Time: ')
-passwd = input('Enter Password: ')
-alg = input('Enter Algorith: ')
 
 jwt_tk = jwt.encode( {'username':uid, 'iat':exp}, key=None, algorith=None )
 jwt_tk = jwt_token.decode('UTF-8')
