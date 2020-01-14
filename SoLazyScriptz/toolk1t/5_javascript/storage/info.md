@@ -1,1 +1,1 @@
-This location is where you store your valuable javascript or html files
+This location Javascripts and Html pages gets moved to when finished.
