@@ -1,2 +1,2 @@
 read -p 'Enter URL: ' url
-~/XSStrike/xsstrike.py -u $url -f ~/wordlist/xssbody.txt
+~/XSStrike/xsstrike.py -u $url -f wordlist.txt
