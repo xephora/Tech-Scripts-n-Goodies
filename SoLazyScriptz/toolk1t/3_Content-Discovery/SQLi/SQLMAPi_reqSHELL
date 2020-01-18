@@ -3,4 +3,4 @@
 read -p 'Enter Request File: ' req
 read -p 'Enter Param : ' par
 
-sqlmap -r $req -p $par --dump --passwords --dbms=mysql --sql-shell
+sqlmap -r $req -p $par --dump --sql-shell
