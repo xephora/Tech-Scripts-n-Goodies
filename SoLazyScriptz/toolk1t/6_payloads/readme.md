@@ -1,4 +1,5 @@
 https://github.com/nccgroup/Winpayloads
+
 cd /root/Winpayloads
 ./Winpayloads.py
 
