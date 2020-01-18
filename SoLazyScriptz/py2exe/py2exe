@@ -1,0 +1,8 @@
+#Requires pyinstaller
+#https://www.pyinstaller.org/
+#Installation
+#Refer to pyinstall_setup
+
+read -p 'Enter Script Name, example: Script.py: ' pyscript
+
+pyinstaller $pyscript
