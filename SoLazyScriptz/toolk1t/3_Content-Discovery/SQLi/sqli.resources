@@ -1,6 +1,7 @@
 mysql Injections ---------------------------
 http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
 https://community.rsa.com/community/products/netwitness/blog/2017/04/10/from-sql-injection-to-webshell
+https://www.hackingarticles.in/shell-uploading-in-web-server-using-sqlmap/
 
 Version 	SELECT @@version
 
