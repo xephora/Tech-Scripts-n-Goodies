@@ -1,0 +1,107 @@
+IP Cameras https://ipvm.com/reports/ip-cameras-default-passwords-directory
+
+    ACTi: admin/123456 or Admin/123456
+    Amcrest: admin/admin
+    American Dynamics: admin/admin or admin/9999 
+    Arecont Vision: none
+    AvertX: admin/1234
+    Avigilon: Previously admin/admin, changed to Administrator/<blank> in later firmware versions
+    Axis: Traditionally root/pass, new Axis cameras require password creation during first login (note that root/pass may be used for ONVIF access, but logging into the camera requires root password creation)
+    Basler: admin/admin
+    Bosch: None required, but new firmwares (6.0+) prompt users to create passwords on first login
+    Brickcom: admin/admin
+    Canon: root/camera
+    Cisco: No default password, requires creation during first login
+    Dahua: Requires password creation on first login. Previously this process was recommended but could be canceled; older models default to admin/admin
+    Digital Watchdog: admin/admin
+    DRS: admin/1234
+    DVTel: Admin/1234
+    DynaColor: Admin/1234
+    FLIR: admin/fliradmin
+    FLIR (Dahua OEM): admin/admin
+    FLIR (Quasar/Ariel): admin/admin
+    Foscam: admin/<blank>
+    GeoVision: admin/admin
+    Grandstream: admin/admin
+    Hanwha: admin/no default password, must be created during initial setup
+    Hikvision: Firmware 5.3.0 and up requires unique password creation; previously admin/12345
+    Honeywell: admin/1234
+    IndigoVision (Ultra): none
+    IndigoVision (BX/GX): Admin/1234
+    Intellio: admin/admin
+    Interlogix admin/1234
+    IQinVision: root/system
+    IPX-DDK: root/admin or root/Admin
+    JVC: admin/jvc
+    Longse: admin/12345
+    Lorex: admin/admin
+    LTS: Requires unique password creation; previously admin/12345
+    March Networks: admin/<blank>
+    Mobotix: admin/meinsm
+    Northern: Firmware 5.3.0 and up requires unique password creation; previously admin/12345
+    Oncam: admin/admin
+    Panasonic: Firmware 2.40 and up requires username/password creation; previously admin/12345
+    Pelco: New firmwares require unique password creation; previously admin/admin
+    Pixord: admin/admin
+    Q-See: admin/admin or admin/123456
+    Reolink: admin/<blank>
+    Samsung Electronics: root/root or admin/4321
+    Samsung Techwin (old): admin/1111111
+    Samsung (new): Previously admin/4321, but new firmwares require unique password creation
+    Sanyo: admin/admin
+    Scallop: admin/password
+    Sentry360 (mini): admin/1234
+    Sentry360 (pro): none  
+    Sony: admin/admin
+    Speco: admin/1234
+    Stardot: admin/admin
+    Starvedia: admin/<blank>
+    Sunell: admin/admin
+    SV3C: admin/123456
+    Swann: admin/12345 
+    Trendnet: admin/admin
+    Toshiba: root/ikwd
+    VideoIQ: supervisor/supervisor
+    Vivotek: root/<blank>
+    Ubiquiti: ubnt/ubnt
+    Uniview: admin/123456
+    W-Box (Hikvision OEM, old): admin/wbox123
+    W-Box (Sunell OEM, new): admin/admin
+    Wodsee: admin/<blank>
+
+Default Router Passwords 
+https://www.softwaretestinghelp.com/default-router-username-and-password-list/
+https://github.com/games647/Default-Router-Passwords
+
+	Router Brand	Default IP Address	Default Username	Default Password
+1	3Com	http://192.168.1.1	admin	Admin
+2	Belkin	http://192.168.2.1	admin	admin
+3	BenQ	http://192.168.1.1	admin	Admin
+4	D-Link	http://192.168.0.1	admin	Admin
+5	Digicom	http://192.168.1.254	admin	Michelangelo
+6	Linksys	http://192.168.1.1	admin	Admin
+7	Netgear	http://192.168.0.1	admin	password
+8	Sitecom	http://192.168.0.1	sitecom	Admin
+9	Asus	http://192.168.1.1	admin	admin
+10	Synology	http://192.168.1.1	admin	Admin
+11	Arris	http://192.168.0.1	admin	password
+12	Apple iphoneIOS4.X	http://10.0.1.1	root	alpine
+13	DELL	http://192.168.1.1	admin	password
+14	Huawei ADSL2+	http://192.168.0.1	admin	admin
+15	Netcomm	http://192.168.1.1	admin	password
+16	Netstar	http://192.168.0.1	admin	password
+17	SAMSUNG	http://192.168.0.1	admin	password
+18	Sigma	http://192.168.0.1	admin	admin
+19	SUN	http://192.168.0.1	admin	admin
+20	Telco systems	http://192.168.0.1	telco	telco
+21	TENDA	http://192.168.0.1	admin	admin
+22	ZCOM	http://192.168.0.1	root	admin
+23	ZTE	http://192.168.0.1	admin	admin
+
+https://github.com/danielmiessler/SecLists/tree/master/Passwords/Default-Credentials
+
+common passwords
+https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/common-passwords-win.txt
+
+Best Four Digit Combination
+https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/four-digit-pin-codes-sorted-by-frequency-withcount.csv
