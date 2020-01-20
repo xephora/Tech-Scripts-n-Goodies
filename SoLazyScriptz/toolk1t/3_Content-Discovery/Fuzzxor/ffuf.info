@@ -1,0 +1,5 @@
+Full Scan with Filtered Status Codes
+ffuf -c -w /root/SecLists/Discovery/Web-Content/SVNDigger/all.txt -u URL/FUZZ -fc 403,404,302
+
+Full Scan with Filtered Status Codes + Filtered Response Size
+ffuf -c -w /root/SecLists/Discovery/Web-Content/SVNDigger/all.txt -u URL/FUZZ -fc 403,404,302 -fs 100,200,300
