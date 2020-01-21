@@ -2,6 +2,7 @@ Hacking OAuth2
 
 source: https://habr.com/en/post/449182/
 
+Original State:
 state=4/ShttLZGi8w7b0MF5iRsdKBkaBB-6.Qrl8jChpba4TYKs_1NgQtmW51KPvhgI
 Append your script
 state=4/ShttLZGi8w7b0MF5iRsdKBkaBB-6.Qrl8jChpba4TYKs_1NgQtmW51KPvhgI<script>alert('xss')</script>
