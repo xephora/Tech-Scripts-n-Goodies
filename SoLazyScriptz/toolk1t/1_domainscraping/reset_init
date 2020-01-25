@@ -1,0 +1,12 @@
+md5sum massdns_domains.txt
+md5sum logs/certinspect_results.txt
+md5sum logs/massdns_results.txt
+echo "===================================="
+echo "Resetting Session"
+echo "" > massdns_domains.txt
+echo "" > logs/certinspect_results.txt
+echo "" > logs/massdns_results.txt
+md5sum massdns_domains.txt
+md5sum logs/certinspect_results.txt
+md5sum logs/massdns_results.txt
+
