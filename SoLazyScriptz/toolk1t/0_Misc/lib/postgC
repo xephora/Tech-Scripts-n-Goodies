@@ -1,0 +1,2 @@
+read -p 'start | stop | restart | status of postgresql Service: ' action
+service postgresql $action
