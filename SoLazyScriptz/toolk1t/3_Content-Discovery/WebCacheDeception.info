@@ -1,0 +1,8 @@
+Web Cache Deception Attack
+https://github.com/xephora/PayloadsAllTheThings/tree/master/Web%20Cache%20Deception
+
+Normal browsing, visit home : https://www.example.com/myaccount/home/
+Open the malicious link : https://www.example.com/myaccount/home/malicious.css
+The page is displayed as /home and the cache is saving the page
+Open a private tab with the previous URL : https://www.paypal.com/myaccount/home/malicous.css
+The content of the cache is displayed
