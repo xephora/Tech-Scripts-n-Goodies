@@ -1,1 +1,1 @@
-A helpful tool to help you find threats on Windows. Generates logs on your profile %userprofile%\logs.
+A helpful tool to help you find threats. Generates logs on the root of your profile C:\users\<profile name>\file.log.
