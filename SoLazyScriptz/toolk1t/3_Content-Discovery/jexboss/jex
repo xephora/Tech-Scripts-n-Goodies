@@ -1,0 +1,2 @@
+read -p 'Enter https://url: ' url
+python jexboss.py -u $url
