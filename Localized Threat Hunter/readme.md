@@ -1,6 +1,6 @@
 # Spot-Checking tool to help identify threats
 
-## Keep these tools in a thrumb-drive or from a network share.
+## Keep these tools in a thrumb-drive or in a network share for easy access.
 
 ```
 Windows Spot-Checker saves log on the root of the current profile or whoever you run the tool as. Ex: C:\Users\MyProfile\<--
