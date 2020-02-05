@@ -1,0 +1,18 @@
+grep api_key *.log >> loot
+grep apikey *.log >> loot
+grep APIKEY *.log >> loot
+grep secret *.log >> loot
+grep account *.log > loot_account
+grep password *.log >> loot
+grep firebase *.log >> loot_firebase
+grep firebase.google.com *.log >> loot_firebase
+grep https:// *.log > loot_links
+grep ip_addr *.log > loot_ipaddr
+grep google.com *.log >> loot_google
+grep /project/ *.log >> loot_google
+grep staging *.log > loot_staging
+grep dev. *.log > loot_dev
+
+
+
+
