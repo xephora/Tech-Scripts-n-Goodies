@@ -12,7 +12,3 @@ grep google.com *.log >> loot_google
 grep /project/ *.log >> loot_google
 grep staging *.log > loot_staging
 grep dev. *.log > loot_dev
-
-
-
-
