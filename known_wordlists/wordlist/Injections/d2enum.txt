@@ -1,0 +1,5 @@
+select versionnumber, version_timestamp from sysibm.sysversions;
+select user from sysibm.sysdummy1;
+select session_user from sysibm.sysdummy1;
+select system_user from sysibm.sysdummy1;
+SELECT schemaname FROM syscat.schemata;

