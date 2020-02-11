@@ -1,3 +1,15 @@
+##rockyou.txt located within kali image
+/usr/share/wordlists/rockyou.txt
+
+##unpacking rockyou.txt.gz
+gzip -d rockyou.txt.gz
+
+##10 million passwords
+https://github.com/danielmiessler/SecLists/blob/master/Passwords/xato-net-10-million-passwords.txt
+##10 million usernames
+https://github.com/danielmiessler/SecLists/blob/master/Usernames/xato-net-10-million-usernames.txt
+
+
 Collection of some common wordlists such as RDP password, user name list, ssh password wordlist for brute force.
 
 ##IP Cameras Default Passwords Directory
