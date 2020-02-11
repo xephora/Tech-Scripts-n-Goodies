@@ -13,7 +13,7 @@ https://github.com/danielmiessler/SecLists/blob/master/Usernames/xato-net-10-mil
 
 Collection of some common wordlists such as RDP password, user name list, ssh password wordlist for brute force.
 
-## IP Cameras Default Passwords Directory
+## IP Cameras Default Passwords
 
 The following is an alphabetical list of IP camera manufacturers and their default usernames and passwords. The goal is to help users quickly get started with cameras. At the bottom of the post, we examine the use and security concerns of using default passwords.
 
