@@ -1,0 +1,66 @@
+Basic kali VPS Setup with custom toolk1t
+
+#configuring source.list
+cat <<EOF | sudo tee /etc/apt/sources.list
+deb http://http.kali.org/kali kali-rolling main non-free contrib
+EOF
+
+## resetting ssh keys
+original article https://forums.kali.org/showthread.php?5723-Change-your-Kali-default-ssh-keys
+cd /etc/ssh/
+mkdir default_kali_keys
+mv ssh_host_* default_kali_keys/
+#generate new keys
+dpkg-reconfigure openssh-server
+#Comparing old keys with new keys
+md5sum ssh_host_*
+md5sum default_kali_keys/*
+
+#installing all updates
+sudo apt update && sudo apt -y full-upgrade
+
+#confirming version
+grep VERSION /etc/os-release
+
+#installation of pip
+sudo apt install python-pip
+
+mkdir ~/pwn
+cd ~/
+git clone https://github.com/xephora/Tech-Scripts-n-Goodies
+cd Tech-Scripts-n-Goodies/SoLazyScriptz
+mv toolk1t ~/pwn
+
+#installation of go
+https://golang.org/dl/
+#unpacking go from tar
+tar -C /usr/local -xzf go*.tar
+#configuring PATH
+export PATH=$PATH:/usr/local/go/bin
+
+my setup
+#subdomain takeover install
+cd ~/
+git clone https://github.com/antichown/subdomain-takeover
+cd subdomain-takeover
+pip install -r requirements
+
+#massdns install
+cd ~/
+git clone https://github.com/blechschmidt/massdns
+cd massdns
+make
+
+#wordlist install
+
+#ruby prerequisites
+go to my ruby scripts
+gem install bundler
+bundle install
+
+#install ffuf
+go get github.com/ffuf/ffuf
+
+#install wordlist
+cd ~/
+git clone https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/known_wordlists/wordlist
