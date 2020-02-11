@@ -1,5 +1,8 @@
 Basic kali VPS Setup with custom toolk1t
 
+change username & password of course
+change default ssh port from 22 to whatever else
+
 #configuring source.list
 cat <<EOF | sudo tee /etc/apt/sources.list
 deb http://http.kali.org/kali kali-rolling main non-free contrib
@@ -51,11 +54,11 @@ git clone https://github.com/blechschmidt/massdns
 cd massdns
 make
 
-#wordlist install
-
 #ruby prerequisites
-go to my ruby scripts
+go to the directory of one of my ruby scripts
+#install bundler
 gem install bundler
+#install gems
 bundle install
 
 #install ffuf
