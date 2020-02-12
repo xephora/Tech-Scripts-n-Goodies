@@ -67,3 +67,7 @@ go get github.com/ffuf/ffuf
 #install wordlist
 cd ~/
 git clone https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/known_wordlists/wordlist
+
+#Install hakrawler
+go get github.com/hakluke/hakrawler
+cp ~/go/bin/hakrawler /usr/local/go/bin
