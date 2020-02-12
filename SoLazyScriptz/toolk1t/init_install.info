@@ -28,6 +28,9 @@ grep VERSION /etc/os-release
 #installation of pip
 sudo apt install python-pip
 
+#installation of pip3
+apt-get install python3-pip
+
 mkdir ~/pwn
 cd ~/
 git clone https://github.com/xephora/Tech-Scripts-n-Goodies
