@@ -1,0 +1,3 @@
+#After replacing username and hostname/ip you can do quick transfers from and to box's.
+read -p 'Enter /path/filename: ' file
+scp $file <enter username>@<enter hostname/ipaddr>:/tmp
