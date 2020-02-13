@@ -78,3 +78,7 @@ cp ~/go/bin/hakrawler /usr/local/go/bin
 #Javascript Scraping
 apt install npm
 npm -g install js-beautify
+
+#Wayback
+go get github.com/tomnomnom/waybackurls
+cp ~/go/bin/waybackurls /usr/local/go/bin
