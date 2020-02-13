@@ -1,0 +1,3 @@
+read -p 'Enter URL: ' dom
+
+amass enum -v -src -ip -brute -min-for-recursive 2 -d $dom
