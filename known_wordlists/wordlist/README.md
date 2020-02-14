@@ -10,6 +10,8 @@ https://github.com/danielmiessler/SecLists/blob/master/Passwords/xato-net-10-mil
 ## 10 million usernames
 https://github.com/danielmiessler/SecLists/blob/master/Usernames/xato-net-10-million-usernames.txt
 
+##nyxgeek top100 emails
+https://github.com/nyxgeek/username-lists/blob/master/usernames-top100/usernames_yahoo.com.txt
 
 Collection of some common wordlists such as RDP password, user name list, ssh password wordlist for brute force.
 
