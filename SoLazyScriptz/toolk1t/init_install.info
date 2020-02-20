@@ -82,3 +82,8 @@ npm -g install js-beautify
 #Wayback
 go get github.com/tomnomnom/waybackurls
 cp ~/go/bin/waybackurls /usr/local/go/bin
+
+#gospider
+go get -u github.com/jaeles-project/gospider
+cp ~/go/bin/gospider /usr/local/go/bin
+configure your PATH
