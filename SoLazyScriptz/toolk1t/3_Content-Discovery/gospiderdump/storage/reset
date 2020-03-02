@@ -1,0 +1,6 @@
+md5sum loot
+md5sum js/loot
+echo "" > loot
+echo "" > js/loot
+md5sum loot
+md5sum js/loot
