@@ -1,0 +1,5 @@
+#This will allow you to remove the Service of a target file. Please verify the plist and filename.
+read -p 'Enter Path of plist: ' plist
+read -p 'Enter filename: ' file
+
+sudo launchctl unload $plist $file
