@@ -1,6 +1,6 @@
 # Section for Debugging APK's
 
-### Unpacking Unzipfiles and decompiling jar files
+### Unpacking Unzipfiles
 ```
 unzip file.jar
 ```
