@@ -1,5 +1,3 @@
 #General Cracking
-
-read -p 'Enter Hash: ' filename
-
-john --wordlist=/usr/share/wordlists/rockyou.txt $filename
+echo "./john filename.ext"
+john --wordlist=/usr/share/wordlists/rockyou.txt $1
