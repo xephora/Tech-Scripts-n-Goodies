@@ -1,0 +1,3 @@
+#!/bin/bash
+
+7z l -slt $1
