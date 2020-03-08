@@ -2,13 +2,17 @@
 
 
 ## GREAT Privesc Resources
-https://book.hacktricks.xyz/windows/windows-local-privilege-escalation
-https://github.com/frizb/Windows-Privilege-Escalation
 
 Gread Windows Privilege Escalation Walk-through:
+
 https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_windows.html
 
 https://github.com/AonCyberLabs/Windows-Exploit-Suggester
+
+https://book.hacktricks.xyz/windows/windows-local-privilege-escalation
+
+https://github.com/frizb/Windows-Privilege-Escalation
+
 https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc
 
 ### [Windows-Privesc-Check]
