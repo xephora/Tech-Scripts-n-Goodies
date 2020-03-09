@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Ensure your chrome history file is in the same directory as this script
+read -p 'Enter Document Name: ' doc
+strings History | grep -C 1 $doc
