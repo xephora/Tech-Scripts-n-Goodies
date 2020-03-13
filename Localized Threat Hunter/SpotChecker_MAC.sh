@@ -3,7 +3,7 @@ read -p 'Enter Username: ' user
 
 echo "System Files Inspected" >> InspectionLog.txt
 ls -lt /var/root >> InspectionLog.txt
-ls -lt /Library/Application Support >> InspectionLog.txt
+ls -lt "/Library/Application Support" >> InspectionLog.txt
 ls -lt /Library/LaunchDaemons >> InspectionLog.txt
 ls -lt /Library/LaunchAgents >> InspectionLog.txt
 echo "User based Files Inspected" >> InspectionLog.txt
