@@ -33,6 +33,12 @@ whoami /priv
 wmic qfe get Caption,Description,HotFixID,InstalledOn
 ```
 
+### [Check Services]
+```
+get-acl HKLM:\System\CurrentControlSet\services\*
+get-acl HKLM:\System\CurrentControlSet\services\* | Format-List *| findstr /i "<username> Users Path"
+```
+
 ### [Process Dumping Procdump.exe]
 https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
 
