@@ -1,6 +1,6 @@
-#Checks the common locations of malware, spyware and saves logs to the current location
 read -p 'Enter Username: ' user
 
+#Checks the common locations of malware, spyware and saves logs to the current location
 echo "System Files Inspected" >> InspectionLog.txt
 ls -lt /var/root >> InspectionLog.txt
 ls -lt "/Library/Application Support" >> InspectionLog.txt
