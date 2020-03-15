@@ -145,3 +145,10 @@ netstat -tulpn | grep LISTEN
 ssh -L 8000:127.0.0.1:8000 username@IP
 ssh -L 8000:127.0.0.1:8000 -i id_rsa username@IP
 ```
+
+### [Escaping Vi, Vim and Nano]
+https://gtfobins.github.io/gtfobins/vi/
+
+https://gtfobins.github.io/gtfobins/vim/
+
+https://gtfobins.github.io/gtfobins/nano/
