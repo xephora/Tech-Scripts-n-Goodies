@@ -39,6 +39,12 @@ get-acl HKLM:\System\CurrentControlSet\services\*
 get-acl HKLM:\System\CurrentControlSet\services\* | Format-List *| findstr /i "<username> Users Path"
 ```
 
+### Collect Service Name (May Require Escalated Privileges)
+```
+Get-Service
+Get-WmiObject win32_service | ?{$_.Name -like '*<ServiceName>*'} | select Name, DisplayName, State, PathName
+```
+
 ### [Process Dumping Procdump.exe]
 https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
 
