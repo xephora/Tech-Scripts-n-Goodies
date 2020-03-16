@@ -39,7 +39,7 @@ get-acl HKLM:\System\CurrentControlSet\services\*
 get-acl HKLM:\System\CurrentControlSet\services\* | Format-List *| findstr /i "<username> Users Path"
 ```
 
-### [Get Service Name and Path (May Require Escalated Privileges]
+### [Get Service Name and Path (May Require Escalated Privileges)]
 ```
 Get-Service
 Get-WmiObject win32_service | ?{$_.Name -like '*<ServiceName>*'} | select Name, DisplayName, State, PathName
