@@ -1,6 +1,7 @@
 This section contains privilege escalation checking tools for linux.
 
 https://raw.githubusercontent.com/carlospolop/linux-privilege-escalation-awsome-script/master/linpeas.sh
+
 https://github.com/diego-treitos/linux-smart-enumeration
 
 chmod +x linpeas.sh
