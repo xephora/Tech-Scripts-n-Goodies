@@ -1,0 +1,35 @@
+### [SMB Enumeration]
+SMBClient
+```
+Smbclient //ipaddress/share
+```
+Null Session
+```
+smbclient -N //IP/Sub
+```
+SMBv2 Mode
+```
+smbclient -m SMB2 '//ipaddress/c$/path/to/share' -W <WORKSTATION> -U <username>
+```
+
+smbmap commands
+```
+Smbmap -H <ipaddress>
+```
+```
+Smbmap -H <ipaddress> -u <username>
+```
+```
+Smbmap -H <ipaddress> -u <username> -R
+```
+```
+Smbmap -u <username> -d <domain> -p 'password' -H <ipaddress>
+```
+```
+smbmap -u <username> -p <hash> -H <ipaddress>
+```
+
+Enum4linux
+```
+enum4linux -a IP
+```
