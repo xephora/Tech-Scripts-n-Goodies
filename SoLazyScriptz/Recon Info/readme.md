@@ -33,3 +33,8 @@ Enum4linux
 ```
 enum4linux -a IP
 ```
+
+smbcacls
+```
+smbcacls -N '//IP/Sub' /Users
+```
