@@ -80,6 +80,13 @@ Get-AdObject
 If you receive any errors it's possible AMSI is preventing execution. Look into AMSIbypass. EvilwinRM i use Bypass 4MSI
 ```
 
+### [Active Directory Enumeration]
+```
+powershell -nop -exec bypass
+Import-Module .\SharpHound.ps1
+Invoke-BloodHound
+```
+
 ### [Download file]
 
 [Cert Util]
