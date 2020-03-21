@@ -85,6 +85,26 @@ If you receive any errors it's possible AMSI is preventing execution. Look into 
 powershell -nop -exec bypass
 Import-Module .\SharpHound.ps1
 Invoke-BloodHound
+JSON + BloudHound zip package is then created xfer back to host and clean
+```
+To Import BloodHound:
+
+Setup NEO4J
+
+https://debian.neo4j.org/?_ga=2.180534247.153130316.1570995946-1723945139.1570995946
+
+Setup Bloodhound Client 
+
+https://github.com/BloodHoundAD/BloodHound/releases
+
+### Starting up Neo4j
+```
+neo4j console
+bolt://localhost:7687
+```
+### Starting up Bloodhound Client
+```
+./BloodHound --no-sandbox
 ```
 
 ### [Download file]
