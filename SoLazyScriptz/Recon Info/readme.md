@@ -42,4 +42,5 @@ smbcacls -N '//IP/Sub' /Users
 ### [Kerberos Enumeration p88]
 ```
 GetNPUsers.py WORKSTATION/ -dc-ip IP -usersfile /path/to/userslist
+GetNPUsers.py NAME.LOCAL/ -dc-ip IP -usersfile /path/to/userslist
 ```
