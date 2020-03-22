@@ -95,9 +95,9 @@ Import-Module .\SharpHound.ps1
 Invoke-BloodHound
 JSON + BloudHound zip package is then created xfer back to host and clean
 ```
-To Import BloodHound:
+To Import ingested data into BloodHound you must have neo4j and bloodhoundclient:
 
-Setup NEO4J
+Setup NEO4J installation
 
 https://debian.neo4j.org/?_ga=2.180534247.153130316.1570995946-1723945139.1570995946
 
