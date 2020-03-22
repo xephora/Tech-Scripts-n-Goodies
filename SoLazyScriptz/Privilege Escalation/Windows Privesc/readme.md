@@ -116,7 +116,7 @@ Starting up Bloodhound Client
 ```
 Dumpling Credentials from the Domain Controller
 ```
-python3 secretsdump.py -just-dc-ntlm <WORKSTATION>/<username>@IP 
+python3 secretsdump.py -just-dc-ntlm <WORKSTATION>/<username>@<IP> 
 ```
 
 ### [Download file]
