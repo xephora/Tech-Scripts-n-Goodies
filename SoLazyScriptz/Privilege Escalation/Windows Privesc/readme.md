@@ -81,6 +81,9 @@ If you receive any errors it's possible AMSI is preventing execution. Look into 
 ```
 
 ### [Active Directory Enumeration]
+BloodHound Ingestors
+
+https://github.com/BloodHoundAD/BloodHound/tree/master/Ingestors
 ```
 powershell -nop -exec bypass
 Import-Module .\SharpHound.ps1
