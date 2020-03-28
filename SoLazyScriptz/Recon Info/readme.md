@@ -56,3 +56,18 @@ Download / Upload
 upload local_filename
 download remote_filename
 ```
+
+### Mounting MFS
+Display NFS
+```
+showmount -e IP
+```
+mount NFS
+```
+mkdir /tmp/yoursubdirectory
+mount -t nfs 0.0.0.0:/subdirectory /tmp/yoursubdirectory
+```
+unmount NFS
+```
+umount -f /tmp/subdirectory
+```
