@@ -8,10 +8,10 @@ https://github.com/lucyoa/kernel-exploits
 ### [Running your scripts]
 ```
 chmod +x linpeas.sh
-./linpeas > dump.log
+./linpeas > enumData.log
 
 chmod +x ./lse.sh
-./lse.sh -l2 >> linenum.log
+./lse.sh -l2 >> enumData.log
 ```
 
 ### [Manual enumeration]
@@ -35,6 +35,8 @@ find / -perm -u=s 2>/dev/null
 
 Find files with SUID set
 find . -perm /4000 
+
+sudo -l
 ```
 
 Processes:
