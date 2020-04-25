@@ -2,7 +2,7 @@
 
 ## Library of Goodness
 
-### I've built a hacker toolk1t, please refer to
+### I've built a hacking toolk1t, please refer to the following link for more information:
 https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/SoLazyScriptz/toolk1t
 
 What does the toolk1t contain?
