@@ -43,3 +43,9 @@ grep -rnw '/' -ie 'pass' --color=always
 grep -rnw '/' -ie 'DB_PASS' --color=always
 grep -rnw '/' -ie 'DB_PASSWORD' --color=always
 grep -rnw '/' -ie 'DB_USER' --color=always
+
+[Generating Public Keys and Xfering to your target]
+ssh-keygen to create your paired keys (private + public)
+cat your key.pub and copy and paste the public key data over to the host's authorized keys in /home/username/.ssh/authorized_keys
+after, ssh into the box using your private key ssh -i privatekey username@IP
+and you're done
