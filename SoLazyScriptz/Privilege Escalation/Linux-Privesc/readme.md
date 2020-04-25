@@ -1,17 +1,21 @@
-This section contains privilege escalation checking tools for linux.
-
+### [Resources for Linux Privesc]
 https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS
 
 https://github.com/diego-treitos/linux-smart-enumeration
 
+https://github.com/lucyoa/kernel-exploits
+
+### [Running your scripts]
+```
 chmod +x linpeas.sh
 ./linpeas > dump.log
 
 chmod +x ./lse.sh
 ./lse.sh -l2 >> linenum.log
+```
 
-https://github.com/lucyoa/kernel-exploits
-
+### [Manual enumeration]
+```
 Enumerating linux OS
 cat /etc/os-release
 
@@ -31,6 +35,7 @@ find / -perm -u=s 2>/dev/null
 
 Find files with SUID set
 find . -perm /4000 
+```
 
 Processes:
 top
@@ -45,7 +50,8 @@ grep -rnw '/' -ie 'DB_PASSWORD' --color=always
 grep -rnw '/' -ie 'DB_USER' --color=always
 
 [Generating Public Keys and Xfering to your target]
-ssh-keygen to create your paired keys (private + public)
-cat your key.pub and copy and paste the public key data over to the host's authorized keys in /home/username/.ssh/authorized_keys
-after, ssh into the box using your private key ssh -i privatekey username@IP
-and you're done
+```
+1. ssh-keygen to create your paired keys (private + public)
+2. cat your key.pub and copy and paste the public key data over to the host's authorized keys in /home/username/.ssh/authorized_keys
+3. ssh into the box using your private key ssh -i privatekey username@IP
+```
