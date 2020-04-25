@@ -19,12 +19,15 @@ What does the toolk1t contain?
 ```
 
 ### Privilege Escalation for Windows and Linux
+
 https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/SoLazyScriptz/Privilege%20Escalation
 
 
 ### WebShells
+
 https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/SoLazyScriptz/WebShells
 
-Reverse TCPs
+### Reverse TCPs
+
 https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/SoLazyScriptz/Privilege%20Escalation/Linux-Privesc
 
