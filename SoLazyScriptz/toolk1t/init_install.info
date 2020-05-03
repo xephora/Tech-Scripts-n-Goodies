@@ -27,6 +27,7 @@ grep VERSION /etc/os-release
 
 #installation of pip
 sudo apt install python-pip
+if this fails proceed with get-pip.py script in https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/SoLazyScriptz/toolk1t
 
 #installation of pip3
 apt-get install python3-pip
