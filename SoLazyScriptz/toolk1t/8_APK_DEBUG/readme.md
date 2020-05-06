@@ -12,3 +12,9 @@ jad -d . -s java -r file.class
 -d output destination
 -s source type
 -r restore package directory structure
+
+### jadx to decompile apk
+```
+jadx -d /absolute/path/to/outdir /absolute/path/to/file.apk
+```
+
