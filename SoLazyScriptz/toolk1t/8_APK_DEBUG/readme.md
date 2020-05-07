@@ -19,3 +19,17 @@ jad -d . -s java -r file.class
 jadx -d /absolute/path/to/outdir /absolute/path/to/file.apk
 ```
 
+### Hunting for interesting items
+```
+Review the android manifest
+resources/AndroidManifest.xml
+
+From the root directory
+find . | grep FileName
+find . | grep .java | more
+find . | grep .xml 
+find . | grep main
+find . | grep Main
+find . | grep activity
+find . | grep Activity
+```
