@@ -33,3 +33,9 @@ find . | grep Main
 find . | grep activity
 find . | grep Activity
 ```
+
+### Getting App Name and Pulling App using adb
+```
+adb shell pm path <app.name>
+adb  pull <full.path.of.app.name>
+```
