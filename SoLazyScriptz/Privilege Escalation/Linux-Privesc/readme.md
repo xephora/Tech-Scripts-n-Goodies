@@ -137,7 +137,16 @@ scp -r foldername username@IP:/local/directory
 (Specify Port)
 scp -P 2222 file username@IP:/local/directory
 ```
+### Extracting Creds from mysql using mysqldump util
+```
+Local
+mysqldump -u mysql_username -ppassword Database_Name
+mysqldump -u mysql_username -ppassword Database table_name
 
+Remotely
+mysqldump -h IP -P PORT -u mysql_username -ppassword Database_Name
+mysqldump -h IP -P PORT -u mysql_username -ppassword Database_Name Table_Name
+```
 
 Source:
 http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
