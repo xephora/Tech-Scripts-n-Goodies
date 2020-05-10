@@ -152,6 +152,8 @@ mysqldump -h IP -P PORT -u mysql_username -ppassword Database_Name Table_Name
 ```
 export PATH=/location/to/redirection/execution:$PATH
 ```
+More information regarding abusing PATH
+https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
 
 Source:
 http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
