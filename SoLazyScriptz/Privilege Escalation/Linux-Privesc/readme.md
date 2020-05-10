@@ -150,7 +150,7 @@ mysqldump -h IP -P PORT -u mysql_username -ppassword Database_Name Table_Name
 
 ### [Abusing PATH]
 ```
-export PATH=$PATH:/location/to/redirect/execution
+export PATH=/location/to/redirection/execution:$PATH
 ```
 
 Source:
