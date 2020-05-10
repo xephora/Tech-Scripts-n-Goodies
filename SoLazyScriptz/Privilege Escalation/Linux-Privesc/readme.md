@@ -148,5 +148,10 @@ mysqldump -h IP -P PORT -u mysql_username -ppassword Database_Name
 mysqldump -h IP -P PORT -u mysql_username -ppassword Database_Name Table_Name
 ```
 
+### Abusing PATH
+```
+export PATH=$PATH:/location/to/redirect/execution
+```
+
 Source:
 http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
