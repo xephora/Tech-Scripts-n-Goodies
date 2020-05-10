@@ -153,7 +153,13 @@ mysqldump -h IP -P PORT -u mysql_username -ppassword Database_Name Table_Name
 
 ### [Abusing PATH]
 ```
-export PATH=/location/to/redirection/execution:$PATH
+/usr/local/sbin/FILE
+export PATH=/My/location/of/my/fake/FILE:$PATH
+
+What's inside of FILE? FILE is actually a bash script that executes a payload
+cat FILE
+whoami
+> root
 ```
 More information regarding abusing PATH
 https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
