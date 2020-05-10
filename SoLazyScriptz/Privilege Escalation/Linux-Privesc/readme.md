@@ -159,7 +159,7 @@ export PATH=/My/location/of/my/fake/FILE:$PATH
 What's inside of FILE? FILE is actually a bash script that executes a payload
 cat FILE
 whoami
-> root
+root@me: root
 ```
 More information regarding abusing PATH
 https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
