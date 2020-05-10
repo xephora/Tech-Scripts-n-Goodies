@@ -163,7 +163,7 @@ cat FILE
 whoami
 
 What you should see when the exploit works:
-root
+<escalated username> (root *hopefully)
 ```
 More information regarding abusing PATH
 https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
