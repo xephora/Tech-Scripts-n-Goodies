@@ -47,6 +47,7 @@ Test write access
 
 If Google bucket test if bucket is accessible
 Test privilege access on bucket by using the link below
+https://www.googleapis.com/storage/v1/b/<bucket_name>
 https://www.googleapis.com/storage/v1/b/<bucket name>/iam/testPermissions
 ```
 Source information regarding bug hunting buckets: https://is.muni.cz/th/de05t/master_thesis_final.pdf
