@@ -36,7 +36,20 @@ find . | grep Activity
 Thank you to mr dee-see for these commands! Amazing and clean output!
 grep -r --include=*.java keyword .
 find . -name '*java*' | xargs grep keyword
+
+Another great query provided by dee-see
+grep -roaP '[a-zA-Z0-9_.-]+\.amazonaws\.com(/[a-zA-Z0-9_.-]+)?'
+grep -roaP '[a-zA-Z0-9_.-]+\.storage\.googleapis\.com(/[a-zA-Z0-9_.-]+)?'
+
+Discovery of buckets
+Test if bucket can be registered
+Test write access
+
+If Google bucket test if bucket is accessible
+Test privilege access on bucket by using the link below
+https://www.googleapis.com/storage/v1/b/<bucket name>/iam/testPermissions
 ```
+Source information regarding bug hunting buckets: https://is.muni.cz/th/de05t/master_thesis_final.pdf
 
 ### Getting App Name and Pulling App using adb
 ```
