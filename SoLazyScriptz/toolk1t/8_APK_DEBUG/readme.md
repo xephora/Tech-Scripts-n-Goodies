@@ -45,8 +45,8 @@ Discovery of buckets
 Test if bucket can be registered
 Test write access
 
-If Google bucket test if bucket is accessible
-Test privilege access on bucket by using the link below
+If Google bucket is accessible
+Test privilege access on bucket:
 https://www.googleapis.com/storage/v1/b/<bucket_name>
 https://www.googleapis.com/storage/v1/b/<bucket name>/iam/testPermissions
 ```
