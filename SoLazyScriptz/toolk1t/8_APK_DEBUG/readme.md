@@ -32,6 +32,10 @@ find . | grep main
 find . | grep Main
 find . | grep activity
 find . | grep Activity
+
+Thank you to mr dee-see for these commands! Amazing and clean output!
+grep -r --include=*.java keyword .
+find . -name '*java*' | xargs grep keyword
 ```
 
 ### Getting App Name and Pulling App using adb
