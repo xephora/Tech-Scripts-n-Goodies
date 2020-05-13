@@ -57,3 +57,13 @@ Source information regarding bug hunting buckets: https://is.muni.cz/th/de05t/ma
 adb shell pm path <app.name>
 adb  pull <full.path.of.app.name>
 ```
+
+### APK Hunting scripts
+After you decompile the apk, you can use the following scripts. Ensure the scripts are located in the same directory as your decompiled apk.
+```
+scrape_apk_data
+scrape_urls
+
+./scrape_apk_data
+./scrape_urls
+```
