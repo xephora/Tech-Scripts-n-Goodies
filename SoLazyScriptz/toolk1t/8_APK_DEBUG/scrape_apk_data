@@ -1,6 +1,6 @@
 echo -e "\e[92mHunting for storage buckets\e[0m"
-grep -roaP '[a-zA-Z0-9_.-]+\.storage\.googleapis\.com(/[a-zA-Z0-9_.-]+)?' | xargs echo -e "\e[41mThe following Google Bucket was Discovered: \n"
-grep -roaP '[a-zA-Z0-9_.-]+\.amazonaws\.com(/[a-zA-Z0-9_.-]+)?' | xargs echo -e "\e[41mThe following Amazon Bucket was Discovered: \n"
+grep -roaP '[a-zA-Z0-9_.-]+\.storage\.googleapis\.com(/[a-zA-Z0-9_.-]+)?' | uniq | xargs echo -e "\e[41mThe following Google Bucket was Discovered: \n"
+grep -roaP '[a-zA-Z0-9_.-]+\.amazonaws\.com(/[a-zA-Z0-9_.-]+)?' | uniq | xargs echo -e "\e[41mThe following Amazon Bucket was Discovered: \n"
 echo -e "\e[92mHunting for API Data\e[0m"
 grep -r --include=\*.{java,dex} api_key .
 grep -r --include=\*.{java,dex} api-key .
