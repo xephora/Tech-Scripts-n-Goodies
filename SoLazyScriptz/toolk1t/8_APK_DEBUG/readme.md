@@ -16,7 +16,11 @@ jad -d . -s java -r file.class
 
 ### jadx to decompile apk
 ```
+Linux
 jadx -d /absolute/path/to/outdir /absolute/path/to/file.apk
+
+Windows
+jadx -d C:\path\to\file\outdir C:\path\to\file.apk
 ```
 
 ### Hunting for interesting items
