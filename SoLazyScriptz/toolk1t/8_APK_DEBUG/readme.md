@@ -72,5 +72,6 @@ scrape_urls
 ./scrape_urls
 ```
 
-MobSF was recommended by @xaliom
+MobSF was recommended by @xaliom - https://www.hackthebox.eu/home/users/profile/12416
+
 https://github.com/MobSF/Mobile-Security-Framework-MobSF
