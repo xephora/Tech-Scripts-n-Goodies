@@ -72,9 +72,6 @@ scrape_urls
 ./scrape_urls
 ```
 
-MobSF was recommended by @xaliom
-https://github.com/MobSF/Mobile-Security-Framework-MobSF
-
 ### Great resources on Android Bug Hunting :
 Advanced Android Bug Bounty skills - Ben Actis, Bugcrowd's LevelUp 2017
 
