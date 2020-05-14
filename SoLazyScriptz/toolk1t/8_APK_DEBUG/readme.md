@@ -74,3 +74,8 @@ scrape_urls
 
 MobSF was recommended by @xaliom
 https://github.com/MobSF/Mobile-Security-Framework-MobSF
+
+### Great Android Debugging resources:
+Advanced Android Bug Bounty skills - Ben Actis, Bugcrowd's LevelUp 2017
+
+https://www.youtube.com/watch?v=OLgmPxTHLuY
