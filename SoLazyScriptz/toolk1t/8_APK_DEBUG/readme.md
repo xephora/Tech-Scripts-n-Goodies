@@ -71,3 +71,6 @@ scrape_urls
 ./scrape_apk_data
 ./scrape_urls
 ```
+
+MobSF was recommended by @xaliom
+https://github.com/MobSF/Mobile-Security-Framework-MobSF
