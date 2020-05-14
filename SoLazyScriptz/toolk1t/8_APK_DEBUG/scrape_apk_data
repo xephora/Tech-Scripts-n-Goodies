@@ -1,0 +1,34 @@
+echo -e "\e[92mHunting for storage buckets\e[0m"
+grep -roaP '[a-zA-Z0-9_.-]+\.storage\.googleapis\.com(/[a-zA-Z0-9_.-]+)?' | uniq | xargs echo -e "\e[41mThe following Google Bucket was Discovered: \n"
+grep -roaP '[a-zA-Z0-9_.-]+\.amazonaws\.com(/[a-zA-Z0-9_.-]+)?' | uniq | xargs echo -e "\e[41mThe following Amazon Bucket was Discovered: \n"
+echo -e "\e[92mHunting for API Data\e[0m"
+grep -ra --include=\*.{java,dex,xml,json} api_key .
+grep -ra --include=\*.{java,dex,xml,json} api-key .
+grep -ra --include=\*.{java,dex,xml,json} apikey .
+grep -ra --include=\*.{java,dex,xml,json} token .
+grep -ra --include=\*.{java,dex,xml,json} members .
+echo -e "\e[92mHunting for hardcoded sensitive data\e[0m"
+echo -e "\e[92m--------password--------------\e[0m"
+grep -ra --include=\*.{java,dex,xml,json} password .
+echo -e "\e[92m--------session---------------\e[0m"
+grep -ra --include=\*.{java,dex,xml,json} session .
+echo -e "\e[92m--------JSESSION--------------\e[0m"
+grep -ra --include=\*.{java,dex,xml,json} JSESSIONID .
+echo -e "\e[92m--------internal------------\e[0m"
+grep -ra --include=\*.{java,dex,xml,json} information_schema .
+grep -ra --include=\*.{java,dex,xml,json} otp .
+echo -e "\e[92m--------weak encryption------------\e[0m"
+grep -ra --include=\*.{java,dex} AES .
+grep -ra --include=\*.{java,dex} Blowfish .
+grep -ra --include=\*.{java,dex} NoPadding .
+grep -ra --include=\*.{java,dex} 3DES_EDE_CBC .
+echo -e "\e[92m--------Vulnerable Java Code------------\e[0m"
+grep -ra --include=\*.{java,dex} system .
+grep -ra --include=\*.{java,dex} jdbc:db:// .
+grep -ra --include=\*.{java,dex} executeQuery .
+grep -ra --include=\*.{java,dex} getenv .
+echo -e "\e[92m--------Vulnerable Java Library Files------------\e[0m"
+grep -ra --include=\*.{java,dex} jackson.core .
+grep -ra --include=\*.{java,dex} spring-integration-xml .
+grep -ra --include=\*.{java,dex} spring-ws-core .
+grep -ra --include=\*.{java,dex} jetty-util .
