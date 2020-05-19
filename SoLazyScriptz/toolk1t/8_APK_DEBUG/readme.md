@@ -54,6 +54,8 @@ Test privilege access on bucket:
 https://www.googleapis.com/storage/v1/b/<bucket_name>
 https://www.googleapis.com/storage/v1/b/<bucket name>/iam/testPermissions
 ```
+https://cloud.google.com/storage/docs/json_api/v1
+
 Source information regarding bug hunting buckets: https://is.muni.cz/th/de05t/master_thesis_final.pdf
 
 ### Getting App Name and Pulling App using adb
