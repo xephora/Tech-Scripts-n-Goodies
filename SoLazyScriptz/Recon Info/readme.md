@@ -57,7 +57,7 @@ upload local_filename
 download remote_filename
 ```
 
-### Mounting MFS
+### Mounting NFS
 Display NFS
 ```
 showmount -e IP
