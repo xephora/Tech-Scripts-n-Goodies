@@ -1,12 +1,15 @@
 ### [DNS Recon]
 ```
-enumerating DNS Records
+Enumerating DNS Records
 dnsrecon -d domain
 
-zone transfers
+Zone Transfers
 host -t ns domain
 host -l domain ns.newdomain.xyz
 ```
+
+### Sub Domain Takover
+https://www.hackerone.com/blog/Guide-Subdomain-Takeovers
 
 ### [SMB Enumeration p445]
 SMBClient
