@@ -1,3 +1,13 @@
+### [DNS Recon]
+```
+enumerating DNS Records
+dnsrecon -d domain
+
+zone transfers
+host -t ns domain
+host -l domain ns.newdomain.xyz
+```
+
 ### [SMB Enumeration p445]
 SMBClient
 ```
