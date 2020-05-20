@@ -6,6 +6,13 @@ dnsrecon -d domain
 Zone Transfers
 host -t ns domain
 host -l domain ns.newdomain.xyz
+
+Tools created:
+cname_lookup
+Usage: ./cname_lookup subdomain.domain.com
+
+zone_xfer
+Usage: ./zone_xfer example.com 
 ```
 
 ### Sub Domain Takover
