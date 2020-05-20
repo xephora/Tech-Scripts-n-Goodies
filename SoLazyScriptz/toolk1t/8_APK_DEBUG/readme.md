@@ -90,7 +90,7 @@ Main Activity
 Services
 <service android:name="abcd">
 
-Receivings intents "BroadcasterReceiver".
+Receivings intents "BroadcasterReceiver"
 <receiver android:name="abcd"
 ```
 More information regarding AndroidManifest
