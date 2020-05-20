@@ -1,0 +1,6 @@
+echo "zone xfer tool, type in a domain name"
+echo "Proper usage: ./zone_xfer example.com"
+echo "====================================="
+host -t ns $1
+read -p 'zone xfer? If so type in a domain name you want to transfer to: ' transfer
+host -l $1 $transfer
