@@ -96,5 +96,4 @@ Receivings intents "BroadcasterReceiver"
 More information regarding AndroidManifest
 https://www.androidauthority.com/androidmanifest-xml-992934/
 
-
-
+Recommendations from Deesee for understanding Android
