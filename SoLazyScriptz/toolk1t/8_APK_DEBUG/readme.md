@@ -79,3 +79,22 @@ scrape_urls
 Advanced Android Bug Bounty skills - Ben Actis, Bugcrowd's LevelUp 2017
 
 https://www.youtube.com/watch?v=OLgmPxTHLuY
+
+### [Understanding the AndroidManifest]
+```
+Main Activity
+<activity android:name="com.abcdMainActivity"
+
+<activity android:name="com.abcd">
+
+Services
+<service android:name="abcd">
+
+Receivings intents "BroadcasterReceiver".
+<receiver android:name="abcd"
+```
+More information regarding AndroidManifest
+https://www.androidauthority.com/androidmanifest-xml-992934/
+
+
+
