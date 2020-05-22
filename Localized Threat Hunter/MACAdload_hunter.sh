@@ -38,6 +38,14 @@ echo "Checking Processes for $py"
 ps aux | grep $py
 echo "Checking Port Activity for $py"
 lsof | grep $py
+echo -e "\n"
+echo -e "==================================================================================="
+read -p 'Press Enter to view log' opt1
+cat /tmp/MACAdload_hunt.log
+echo -e "==================================================================================="
+read -p 'Press Enter to clean log' opt2
+rm /tmp/MACAdload_hunt.log
+echo "Log Removed"
 
 #Additional but optional
 #Hunting tmp directory. Enable or Disable feature by removing or adding the #
