@@ -16,8 +16,10 @@ ls -lt /System/Library/StartupItems >> InspectionLog.txt
 ls -lt /System/Library/LaunchDaemons >> InspectionLog.txt
 ls -lt /Library/LaunchAgents >> InspectionLog.txt
 ls -lt /Applications >> InspectionLog.txt
+ls -lt /var/at/tabs
 
 #check processes, Listening Ports and Services saves logs to current location
 ps aux > Active_Processes.log 
-lsof > Listening_Ports.log 
+lsof > Listening_Ports.log
+netstat > Network_Activity.log
 launchctl list > Service_list.log
