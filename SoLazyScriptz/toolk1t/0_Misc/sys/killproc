@@ -1,0 +1,3 @@
+ps aux | more
+read -p 'Enter a PID to kill: ' pid
+kill -s 9 $pid
