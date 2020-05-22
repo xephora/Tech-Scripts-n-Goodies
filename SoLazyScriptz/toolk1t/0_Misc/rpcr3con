@@ -4,3 +4,5 @@ rpcinfo -p $1
 rusers -l $1
 ypcat -d domain -h $1
 showmount -e $1
+
+#You need ypcat and rusers 'apt-get install rusers' and 'apt-get install nis'
