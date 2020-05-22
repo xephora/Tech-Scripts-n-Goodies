@@ -2,6 +2,6 @@ echo "Usage: ./cname_lookup subdomain.domain.com"
 echo "=========================================="
 host $1
 read -p 'Enter IP of whois lookup: ' ip_addr
-whois $ip_addr | Grep 'OrgName'
+whois $ip_addr | grep 'OrgName'
 read -p 'Another IP?: ' ip_addr2
-whois $ip_addr2 | Grep 'OrgName'
+whois $ip_addr2 | grep 'OrgName'
