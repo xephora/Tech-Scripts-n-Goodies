@@ -9,7 +9,7 @@ ls -lt /Library/LaunchAgents >> InspectionLog.txt
 echo -e "\e[92mUser based Files Inspected\e[0m" >> InspectionLog.txt
 ls -lt /Users/$user/Library/LaunchAgents >> InspectionLog.txt
 ls -lt "/Users/$user/Library/Application Support" >> InspectionLog.txt
-ls -lt /Users/<username>/Library >> InspectionLog.txt
+ls -lt /Users/$user/Library >> InspectionLog.txt
 echo -e "\e[92mStartup Locations and Applications\e[0m" >> InspectionLog.txt
 ls -lt /Library/startupItems >> InspectionLog.txt
 ls -lt /System/Library/StartupItems >> InspectionLog.txt
