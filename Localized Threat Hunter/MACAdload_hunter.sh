@@ -18,14 +18,21 @@ read -p 'Enter a username you want to inspect: ' user
 echo -e "\n"
 echo -e "==================================================================================="
 echo -e "Hunting for MACAdload: \n"
+echo "Checking for MACAdload Proxy"
 find /var/root/*proxy* >> /tmp/MACAdload_hunt.log
+echo "Checking for MAC Adload data stored in root"
 find /var/root/*Search* >> /tmp/MACAdload_hunt.log
+echo "Checking for MAC Adload data stored in Application Support"
 find "/Library/Application Support/*Search*" >> /tmp/MACAdload_hunt.log
+echo "Checking for MAC Adload data stored in LaunchDaemons"
 find /Library/LaunchDaemons/*Search* >> /tmp/MACAdload_hunt.log
+echo "Checking for MAC Adload data stored in LaunchAgents"
 find /Library/LaunchAgents/*Search* >> /tmp/MACAdload_hunt.log
+echo "Checking for MAC Adload data store in users Profile"
 find /Users/$user/Library/LaunchAgents/*Search* >> /tmp/MACAdload_hunt.log
 find "/Users/$user/Library/Application Support/*Search*" >> /tmp/MACAdload_hunt.log
 find /Users/$user/Library/*Search* >> /tmp/MACAdload_hunt.log
+echo "Checking for Cron Job"
 find /var/at/tabs/$user >> /tmp/MACAdload_hunt.log
 echo -e "\n"
 echo -e "==================================================================================="
