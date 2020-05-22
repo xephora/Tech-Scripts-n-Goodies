@@ -1,0 +1,1 @@
+[ -f /var/run/reboot-required ] && sudo reboot -f
