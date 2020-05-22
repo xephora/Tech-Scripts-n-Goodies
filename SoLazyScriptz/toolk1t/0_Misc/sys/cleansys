@@ -1,0 +1,3 @@
+sudo du -sh /var/cache/apt
+sudo apt-get clean
+sudo du -sh /var/cache/apt
