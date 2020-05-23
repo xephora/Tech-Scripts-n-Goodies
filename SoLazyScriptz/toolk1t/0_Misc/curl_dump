@@ -1,0 +1,2 @@
+echo "Usage: ./curl_dump http://127.0.0.1:9999/public/files/maindir maindir"
+curl $1 -o $2
