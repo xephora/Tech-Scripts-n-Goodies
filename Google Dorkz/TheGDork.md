@@ -6,7 +6,7 @@ secret filesystem
 ini | log | exe | sh | ini | pst | reg | eml | dat
 
 secret documents
-doc | docx | pdf | xls | xlsx | txt | ps | rtf | odt | sxw | psw | ppt | pps | cvs
+doc | docx | pdf | xls | xlsx | txt | ps | rtf | odt | sxw | psw | ppt | pps | csv
 
 database
 mdb | sql | db | ACCDB | MDF | SQLITE
