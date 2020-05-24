@@ -38,7 +38,7 @@ echo -e "\e[92mDocuments\n\e[0m"
 echo -e "\e[43mThe following docx File was discovered: \e[0m"
 grep -raP '[a-zA-Z0-9]*\.docx' | uniq
 echo -e "\e[43mThe following doc File was discovered: \e[0m"
-grep -raP '[a-zA-Z0-9]*\.doc' | uniq
+grep -raP '[a-zA-Z0-9]*\.doc$' | uniq
 echo -e "\e[43mThe following pdf File was discovered: \e[0m"
 grep -raP '[a-zA-Z0-9]*\.pdf' | uniq
 echo -e "\e[43mThe following xlsx File was discovered: \e[0m"
