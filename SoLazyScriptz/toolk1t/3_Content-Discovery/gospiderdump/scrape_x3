@@ -1,0 +1,84 @@
+echo -e "\e[92mWeb Configuration Files\n\e[0m"
+echo -e "\e[41mThe following json File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.json' | uniq
+echo -e "\e[41mThe following xml File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.xml' | uniq
+echo -e "\e[41mThe following yaml File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.yaml' | uniq
+echo -e "\e[41mThe following config File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.config' | uniq
+echo -e "\e[41mThe following wsdl File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.wsdl' | uniq
+echo -e "\e[41mThe following asmx File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.asmx' | uniq
+echo -e "\e[41mThe following amx File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.amx' | uniq
+echo -e "\e[41mThe following cfg File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.cfg' | uniq
+echo -e "\e[41mThe following env File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.env' | uniq
+echo -e "\e[41mThe following ica File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.ica' | uniq
+echo -e "\e[41mThe following xsd File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.xsd' | uniq
+
+echo -e "\e[92mSQL Files\n\e[0m"
+echo -e "\e[42mThe following SQL File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.sql' | uniq
+echo -e "\e[42mThe following db File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.db' | uniq
+echo -e "\e[42mThe following accdb File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.accdb' | uniq
+echo -e "\e[42mThe following mdf File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.mdf' | uniq
+echo -e "\e[42mThe following sqlite File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.sqlite' | uniq
+
+echo -e "\e[92mDocuments\n\e[0m"
+echo -e "\e[43mThe following docx File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.docx' | uniq
+echo -e "\e[43mThe following doc File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.doc' | uniq
+echo -e "\e[43mThe following pdf File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.pdf' | uniq
+echo -e "\e[43mThe following xlsx File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.xlsx' | uniq
+echo -e "\e[43mThe following xls File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.xls' | uniq
+echo -e "\e[43mThe following eml File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.eml' | uniq 
+echo -e "\e[43mThe following csv File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.csv' | uniq
+echo -e "\e[43mThe following txt File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.txt' | uniq
+
+echo -e "\e[92mCompressed Files\n\e[0m"
+echo -e "\e[44mThe following zip File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.zip' | uniq
+echo -e "\e[44mThe following 7z File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.7z' | uniq
+
+echo -e "\e[92mPrivate keys\n\e[0m"
+echo -e "\e[45mThe following key File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.key' | uniq
+echo -e "\e[45mThe following pem File was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.pem' | uniq
+
+echo "additional options"
+<< masscomment
+echo -e "\e[92mString Guesses\e[0m"
+echo -e "\e[46mThe following php Files was discovered: \e[0m"
+grep -raP '[a-zA-Z0-9]*\.php' | uniq
+echo -e "\e[46mSearching for anything with admin: \e[0m"
+grep -raP '(.*admin*\.php)?' | uniq
+echo -e "\e[46mSearching for anything with test: \e[0m"
+grep -raP '(.*test*\.php)?' | uniq
+echo -e "\e[46mSearching for anything with staging: \e[0m"
+grep -raP '(.*staging*\.php)?' | uniq
+echo -e "\e[46mSearching for anything with stage: \e[0m"
+grep -raP '(.*stage*\.php)?' | uniq
+echo -e "\e[46mSearching for anything with devtest: \e[0m"
+grep -raP '(.*devtest*\.php)?' | uniq
+echo -e "\e[46mSearching for anything with qc: \e[0m"
+grep -raP '(.*qc*\.php)?' | uniq
+masscomment
