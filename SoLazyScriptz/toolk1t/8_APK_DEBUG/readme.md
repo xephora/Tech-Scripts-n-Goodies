@@ -59,6 +59,9 @@ https://cloud.google.com/storage/docs/json_api/v1
 
 Source information regarding bug hunting buckets: https://is.muni.cz/th/de05t/master_thesis_final.pdf
 
+More Resources
+https://www.mohamedharon.com/2018/04/amazon-bucket-s3-aws_7.html
+
 ### Getting App Name and Pulling App using adb
 ```
 adb shell pm path <app.name>
