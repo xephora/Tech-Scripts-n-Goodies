@@ -64,6 +64,11 @@ grep -raP '[a-zA-Z0-9]*\.key' | uniq
 echo -e "\e[45mThe following pem File was discovered: \e[0m"
 grep -raP '[a-zA-Z0-9]*\.pem' | uniq
 
+echo -e "\e[92mSession\e[0m"
+echo -e "\e[45mThe following sessions was discovered: \e[0m"
+grep -raP 'sessid' | uniq
+grep -raP 'sessionid' | uniq
+
 echo "additional options"
 << masscomment
 echo -e "\e[92mString Guesses\e[0m"
