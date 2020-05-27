@@ -10,5 +10,6 @@ Scrape URLs from logs
 ./scrape_urls
 
 Mass Scrape data from logs (Color Coded)
-./Scrape_x3
+./scrape_x3
+./scrape_logs
 ```
