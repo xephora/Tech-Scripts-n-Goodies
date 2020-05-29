@@ -18,3 +18,15 @@ secret strings
 (username=* | username:* |) | ( ((password=* | password:*) | (passwd=* | passwd:*) | (credentials=* | credentials:*)) | ((hash=* | hash:*) | (md5:* | md5=*)) | (inurl:auth | inurl:passwd | inurl:pass) )
 
 username=* | username:* password=* | password: | credentials= | credentials: | hash= | hash: | md5: | md5=*
+
+files hosted on directory listing
+index.of filename
+
+hunt for specific file extension on a webserver
+filetype:txt secrets
+
+hunt for specific web page title
+intitle:restricted
+
+content specifically from the url
+inurl:filename filetype:mdb
