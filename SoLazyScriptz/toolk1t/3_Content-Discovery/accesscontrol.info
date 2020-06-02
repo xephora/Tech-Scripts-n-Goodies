@@ -1,0 +1,10 @@
+Some notes on access control:
+
+Using the following header.
+X-Original-URL: /admin/delete?username=carlos
+
+Modifying roleid
+roleid: 1
+
+Modifying privileges through request
+Admin=false to Admin=true
