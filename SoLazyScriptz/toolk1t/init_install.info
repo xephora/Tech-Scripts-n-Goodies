@@ -88,3 +88,9 @@ cp ~/go/bin/waybackurls /usr/local/go/bin
 go get -u github.com/jaeles-project/gospider
 cp ~/go/bin/gospider /usr/local/go/bin
 configure your PATH
+
+https://github.com/nahamsec/lazys3
+ruby lazys3.rb <company>
+
+https://github.com/tomdev/teh_s3_bucketeers
+./bucketeer.sh <bucket_name>
