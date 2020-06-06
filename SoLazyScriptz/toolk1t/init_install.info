@@ -94,3 +94,8 @@ ruby lazys3.rb <company>
 
 https://github.com/tomdev/teh_s3_bucketeers
 ./bucketeer.sh <bucket_name>
+
+#FindSecrets js enum
+https://github.com/ghostnil/FindSecrets
+
+
