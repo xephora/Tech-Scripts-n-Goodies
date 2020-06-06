@@ -3,3 +3,6 @@ https://owasp.org/www-community/xss-filter-evasion-cheatsheet
 
 xss payload
 https://github.com/pgaijin66/XSS-Payloads/blob/master/payload.txt
+
+html escape tool
+https://tools.w3cub.com/html-escape-unescape
