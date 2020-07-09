@@ -98,4 +98,7 @@ https://github.com/tomdev/teh_s3_bucketeers
 #FindSecrets js enum
 https://github.com/ghostnil/FindSecrets
 
+#Powershell Install
+sudo apt install -y powershell
+
 
