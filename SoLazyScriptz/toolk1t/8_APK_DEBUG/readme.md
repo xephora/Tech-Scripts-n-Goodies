@@ -82,7 +82,7 @@ scrape_urls
 ./scrape_urls
 ```
 
-### [Great resources on Android Bug Hunting] :
+### [Great resources on Android Bug Hunting]
 Advanced Android Bug Bounty skills - Ben Actis, Bugcrowd's LevelUp 2017
 
 https://www.youtube.com/watch?v=OLgmPxTHLuY
