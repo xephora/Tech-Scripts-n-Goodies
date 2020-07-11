@@ -101,4 +101,6 @@ https://github.com/ghostnil/FindSecrets
 #Powershell Install
 sudo apt install -y powershell
 
+#furl
+go get -u github.com/tomnomnom/unfurl
 
