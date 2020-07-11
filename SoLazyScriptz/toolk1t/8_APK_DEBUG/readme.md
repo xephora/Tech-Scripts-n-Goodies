@@ -1,11 +1,11 @@
 # Section for Debugging APK's
 
-### Unzipping jar files
+### [Unzipping jar files]
 ```
 unzip file.jar
 ```
 
-### decompiling class files
+### [decompiling class files]
 ```
 jad -d . -s java -r file.class
 
@@ -14,7 +14,7 @@ jad -d . -s java -r file.class
 -r restore package directory structure
 ```
 
-### jadx to decompile apk
+### [jadx to decompile apk]
 ```
 Linux
 jadx -d /absolute/path/to/outdir /absolute/path/to/file.apk
@@ -23,7 +23,7 @@ Windows
 jadx -d C:\path\to\file\outdir C:\path\to\file.apk
 ```
 
-### Hunting for interesting items
+### [Hunting for interesting items]
 ```
 Review the android manifest
 resources/AndroidManifest.xml
@@ -55,20 +55,24 @@ https://www.googleapis.com/storage/v1/b/<bucket_name>
 https://www.googleapis.com/storage/v1/b/<bucket name>/iam/testPermissions
 ```
 Information Regarding Google API
+
 https://cloud.google.com/storage/docs/json_api/v1
 
-Source information regarding bug hunting buckets: https://is.muni.cz/th/de05t/master_thesis_final.pdf
+Source information regarding bug hunting buckets: 
+
+https://is.muni.cz/th/de05t/master_thesis_final.pdf
 
 More Resources
+
 https://www.mohamedharon.com/2018/04/amazon-bucket-s3-aws_7.html
 
-### Getting App Name and Pulling App using adb
+### [Getting App Name and Pulling App using adb]
 ```
 adb shell pm path <app.name>
 adb  pull <full.path.of.app.name>
 ```
 
-### APK Hunting scripts
+### [APK Hunting scripts]
 After you decompile the apk, you can use the following scripts. Ensure the scripts are located in the same directory as your decompiled apk.
 ```
 scrape_apk_data
@@ -78,7 +82,7 @@ scrape_urls
 ./scrape_urls
 ```
 
-### Great resources on Android Bug Hunting :
+### [Great resources on Android Bug Hunting] :
 Advanced Android Bug Bounty skills - Ben Actis, Bugcrowd's LevelUp 2017
 
 https://www.youtube.com/watch?v=OLgmPxTHLuY
@@ -99,7 +103,9 @@ Receivings intents "BroadcasterReceiver"
 More information regarding AndroidManifest
 https://www.androidauthority.com/androidmanifest-xml-992934/
 
-Recommendations from dee-see: Android Hacking https://www.youtube.com/watch?v=mr64si_-YwI&feature=youtu.be
+Recommendations from dee-see: Android Hacking 
 
-### Download an APK without the app store
+https://www.youtube.com/watch?v=mr64si_-YwI&feature=youtu.be
+
+### [Download an APK without the app store]
 https://apps.evozi.com/apk-downloader/
