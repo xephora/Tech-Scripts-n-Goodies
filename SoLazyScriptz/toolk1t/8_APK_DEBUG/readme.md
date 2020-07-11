@@ -100,3 +100,6 @@ More information regarding AndroidManifest
 https://www.androidauthority.com/androidmanifest-xml-992934/
 
 Recommendations from dee-see: Android Hacking https://www.youtube.com/watch?v=mr64si_-YwI&feature=youtu.be
+
+### Download an APK without the app store
+https://apps.evozi.com/apk-downloader/
