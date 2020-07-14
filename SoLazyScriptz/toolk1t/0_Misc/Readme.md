@@ -1,7 +1,7 @@
-Misc Tools
+# Misc Tools
 
-Network Monitoring
+### [Network Monitoring]
 sudo apt install iftop
 
-Process Monitoring
+### [Process Monitoring]
 sudo apt-get install atop
