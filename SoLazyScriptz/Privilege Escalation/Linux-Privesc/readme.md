@@ -167,3 +167,6 @@ What you should see when the exploit works:
 ```
 More information regarding abusing PATH
 https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
+
+### [Transferring files using netcat]
+https://nakkaya.com/2009/04/15/using-netcat-for-file-transfers/
