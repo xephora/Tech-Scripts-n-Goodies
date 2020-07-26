@@ -134,6 +134,7 @@ scp file.txt username@IP:/remote/directory
 scp -i private_key file.txt username@IP:/remote/directory
 (Specify Port)
 scp -P 2222 file username@IP:/remote/directory
+scp -P port -r folder username@IP:/remote/directory
 
 
 remote to local
@@ -143,6 +144,7 @@ scp -i private_key file.txt username@IP:/local/directory
 scp -r foldername username@IP:/local/directory
 (Specify Port)
 scp -P 2222 file username@IP:/local/directory
+scp -P port -r folder username@IP:/local/directory
 ```
 
 ### [Extracting Creds from mysql using mysqldump util]
