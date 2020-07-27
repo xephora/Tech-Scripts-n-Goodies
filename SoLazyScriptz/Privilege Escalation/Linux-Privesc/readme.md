@@ -138,13 +138,11 @@ scp -P port -r folder username@IP:/remote/directory
 
 
 remote to local
-scp file.txt file.txt username@IP:/local/directory
-scp -i private_key file.txt username@IP:/local/directory
-(Moving a folder)
-scp -r foldername username@IP:/local/directory
-(Specify Port)
-scp -P 2222 file username@IP:/local/directory
-scp -P port -r folder username@IP:/local/directory
+scp remote_username@10.10.0.2:/remote/file.txt /local/directory
+scp -r remote_username@10.10.0.2:/remote/folder /local/directory
+scp -P port -r remote_username@10.10.0.2:/remote/file.txt /local/directory
+scp -P port -r remote_username@10.10.0.2:/remote /local/directory
+scp -i privatekey -r remote_username@10.10.0.2:/remote/folder /local/directory
 ```
 
 ### [Extracting Creds from mysql using mysqldump util]
