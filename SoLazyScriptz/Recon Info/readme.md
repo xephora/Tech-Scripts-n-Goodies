@@ -77,7 +77,7 @@ upload local_filename
 download remote_filename
 ```
 
-### Mounting NFS
+### [Mounting NFS]
 Display NFS
 ```
 showmount -e IP
@@ -90,4 +90,9 @@ mount -t nfs 0.0.0.0:/subdirectory /tmp/yoursubdirectory
 unmount NFS
 ```
 umount -f /tmp/subdirectory
+```
+
+### [firewall evasion]
+```
+nmap -sC -sV -F -D RND:1 host
 ```
