@@ -104,3 +104,18 @@ sudo apt install -y powershell
 #furl
 go get -u github.com/tomnomnom/unfurl
 
+#App list
+git clone https://github.com/deepzec/Bad-Pdf
+git clone https://github.com/s0md3v/Arjun
+git clone https://github.com/Dionach/CMSmap
+git clone https://github.com/byt3bl33d3r/CrackMapExec
+git clone https://github.com/Hackplayers/evil-winrm
+git clone https://github.com/samratashok/nishang
+git clone https://github.com/s0md3v/Striker
+git clone https://github.com/antichown/subdomain-takeover
+git clone https://github.com/epinna/tplmap
+git clone https://github.com/dxa4481/truffleHog
+git clone https://github.com/nccgroup/Winpayloads
+git clone https://github.com/s0md3v/XSStrike
+git clone https://github.com/danielmiessler/SecLists
+
