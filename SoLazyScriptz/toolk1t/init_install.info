@@ -43,7 +43,9 @@ https://golang.org/dl/
 #unpacking go from tar
 tar -C /usr/local -xzf go*.tar
 #configuring PATH
+Add /usr/local/go/bin to the PATH environment variable. You can do this by adding this line to your /etc/profile (for a system-wide installation) or $HOME/.profile:
 export PATH=$PATH:/usr/local/go/bin
+
 
 my setup
 #subdomain takeover install
