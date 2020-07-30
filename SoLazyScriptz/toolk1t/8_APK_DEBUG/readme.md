@@ -109,3 +109,18 @@ https://www.youtube.com/watch?v=mr64si_-YwI&feature=youtu.be
 
 ### [Download an APK without the app store]
 https://apps.evozi.com/apk-downloader/
+
+### [useful adb commands]
+```
+list devices:
+adb devices
+
+connect to device
+adb -s IP:PORT shell
+
+Execute commands
+adb -s IP:PORT shell whoami
+
+xfer file from pc to device
+adb -s IP:PORT push C:\path\to\file.txt /tmp/file.txt
+```
