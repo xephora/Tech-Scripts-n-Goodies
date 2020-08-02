@@ -1,6 +1,6 @@
 ## Graphql introspection Example
 
-Used an example from one of the boxes called Help from hackthebox.
+hackthebox has a box called help. The box has a great example of a graphql enumeration.
 
 The Introspection
 ```
