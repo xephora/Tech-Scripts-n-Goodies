@@ -18,10 +18,10 @@ require "rubygems"
 require "highline/import"
 
 def option_1
-	system("clear")
-	puts("Loading Quickscan")
-	system("/root/pwn/toolk1t/3_Content-Discovery/Fuzzxor/ffuf_scripts/ffuf_quick")
-	exit
+        system("clear")
+        puts("Loading scanner")
+        system("ffuf_scripts/ffuf_main")
+        exit
 end
 
 def option_2
@@ -32,18 +32,18 @@ def option_2
 end
 
 def option_3
-	system("clear")
-	puts("Loading Most Interesting Scan MmMMmMmM")
-	system("/root/pwn/toolk1t/3_Content-Discovery/Fuzzxor/ffuf_scripts/ffuf_most_interesting")
-	exit
+        system("clear")
+        puts("Loading Websters")
+        system("ffuf_scripts/ffuf_websters")
+        exit
 end
 
 loop do
 	choose do |menu|
 	menu.prompt = "ffuf Scan options: "
-	menu.choice("1 ffuf quickscan") { option_1() }
+	menu.choice("1 ffuf main") { option_1() }
 	menu.choice("2 ffuf fullscan") { option_2() }
-	menu.choice("3 ffuf most interesting") { option_3() }
+	menu.choice("3 ffuf websters") { option_3() }
 	menu.choice("0 Exit") { exit }
 	end
 end
