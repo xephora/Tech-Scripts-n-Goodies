@@ -31,3 +31,6 @@ https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/SoLazyScriptz/WebS
 
 https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/SoLazyScriptz/Privilege%20Escalation/Linux-Privesc
 
+### Hacking Methodology jhaddix
+
+https://github.com/jhaddix/tbhm
