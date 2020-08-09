@@ -8,3 +8,12 @@ OSx Spot-Checker saves logs in the same directory of its script. Ex: MAC_Spotche
 
 Both scripts will inspect services, processes and any other locations where malware commonly propagate. This is a tool to help you identify a threat in a timely fashion.
 ```
+
+### Helpful resources regarding threat analysis
+Testing Malicious domains / files
+
+https://app.any.run/
+
+Scanning Malicious Macros from documents
+
+https://github.com/decalage2/oletools/wiki/olevba
