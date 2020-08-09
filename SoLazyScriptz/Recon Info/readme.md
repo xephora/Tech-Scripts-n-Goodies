@@ -96,3 +96,7 @@ umount -f /tmp/subdirectory
 ```
 nmap -sC -sV -F -D RND:1 host
 ```
+
+### Useful Resources and Tools
+
+https://gchq.github.io/CyberChef
