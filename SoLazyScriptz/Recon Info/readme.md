@@ -100,3 +100,9 @@ nmap -sC -sV -F -D RND:1 host
 ### Useful Resources and Tools
 
 https://gchq.github.io/CyberChef
+https://crackstation.net/
+
+Adding your domains to your scope within burp (https://forum.portswigger.net/thread/how-do-i-add-al-subdomains-to-scope-77e3e61a)
+```
+.*\.test\.com$
+```
