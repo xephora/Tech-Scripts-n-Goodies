@@ -106,3 +106,9 @@ Adding your domains to your scope within burp (https://forum.portswigger.net/thr
 ```
 .*\.test\.com$
 ```
+
+### [Enumerate SMTP]
+```
+sudo apt-get install smtp-user-enum
+apt-get install ismtp
+```
