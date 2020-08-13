@@ -1,13 +1,10 @@
-#Zip Cracker
-read -p 'Type the filename. Example file.zip: ' filename
-
 echo 'Extracting Hash'
-zip2john $filename > zip_hashdump
+zip2john $1 > zip_hashdump
 
 echo Cracking $filename...
 sleep 10
 
 echo Results--------------------------------------------------
-john zip_hashdump
+john --wordlist=/usr/share/wordlists/rockyou.txt zip_hashdump
 
 
