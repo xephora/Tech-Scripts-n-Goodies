@@ -252,4 +252,8 @@ https://gist.github.com/pete911/6111816
 
 https://www.hackingarticles.in/multiple-ways-to-exploit-tomcat-manager/
 
-
+### [Group Policy groups.xml]
+```
+password string within groups.xml can be exploited by running gpp-decrypt
+gpp-decrypt <gp_password_string>
+```
