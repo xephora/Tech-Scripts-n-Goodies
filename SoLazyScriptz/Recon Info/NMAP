@@ -10,3 +10,5 @@ nmap --script=http-enum -p80 -n IP
 
 Best Scripts to use for NMAP for enumeration
 https://hackertarget.com/7-nmap-nse-scripts-recon/
+
+nmap -sC -sV -v -p- IP --min-rate=10000
