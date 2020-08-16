@@ -5,6 +5,8 @@
 
 Gread Windows Privilege Escalation Walk-through:
 
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
+
 https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_windows.html
 
 https://github.com/AonCyberLabs/Windows-Exploit-Suggester
@@ -308,7 +310,6 @@ BOOL WINAPI DllMain (HANDLE hDll, DWORD dwReason, LPVOID lpReserved) {
     return TRUE;
 }
 ```
-https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
 
 ### [Creating service in registry]
 ```
