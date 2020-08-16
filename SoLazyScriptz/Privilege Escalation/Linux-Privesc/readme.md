@@ -228,5 +228,5 @@ elasticdump \
   --output=$filename.json \
   --type=data
 echo "-------------------------------------"
-echo $filename".json jhas been dumped into the currently directory"
+echo $filename".json has been dumped into the currently directory"
 ```
