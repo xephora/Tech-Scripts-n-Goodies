@@ -22,6 +22,12 @@ https://www.hackerone.com/blog/Guide-Subdomain-Takeovers
 SMBClient
 ```
 Smbclient //ipaddress/share
+
+Retrieving data from share
+smbclient //10.10.10.100/share
+RECURSE ON
+PROMPT OFF
+mget *
 ```
 Null Session
 ```
