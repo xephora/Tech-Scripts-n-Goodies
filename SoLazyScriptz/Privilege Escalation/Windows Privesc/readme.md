@@ -45,6 +45,16 @@ Get-Service
 Get-WmiObject win32_service | ?{$_.Name -like '*<ServiceName>*'} | select Name, DisplayName, State, PathName
 ```
 
+### [Check scheduled Tasks]
+```
+Get-ScheduledTask | where {$_.TaskPath -notlike "\Microsoft*"} | ft TaskName,TaskPath,State
+```
+
+### [List installed software]
+```
+Get-ChildItem -path Registry::HKEY_LOCAL_MACHINE\SOFTWARE | ft Name
+```
+
 ### [Process Dumping Procdump.exe]
 https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
 
