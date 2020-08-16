@@ -224,7 +224,7 @@ read -p 'Enter IP Address only: ' site
 read -p 'Enter filename: ' filename
 
 elasticdump \
-  --input=http://$site:9200/quotes \
+  --input=http://$site:9200/endpoint \
   --output=$filename.json \
   --type=data
 echo "-------------------------------------"
