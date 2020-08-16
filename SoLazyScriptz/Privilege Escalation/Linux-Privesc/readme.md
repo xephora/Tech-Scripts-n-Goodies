@@ -206,8 +206,11 @@ Resources on lxd
 
 https://www.hackingarticles.in/lxd-privilege-escalation/
 
-ssh through port 80
+### [ssh through port 80]
 ```
 sshpass -p tunneler ssh tunneler@10.10.10.10 -p 2222 -L 1234:10.174.12.14:80
 curl http://127.0.0.1:1234
 ```
+
+### [Hacking docker registry]
+https://www.notsosecure.com/anatomy-of-a-hack-docker-registry/
