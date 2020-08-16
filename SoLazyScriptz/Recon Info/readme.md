@@ -24,7 +24,7 @@ SMBClient
 Smbclient //ipaddress/share
 
 Retrieving data from share
-smbclient //10.10.10.100/share
+smbclient //10.1.1.1/share
 RECURSE ON
 PROMPT OFF
 mget *
