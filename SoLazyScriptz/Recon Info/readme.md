@@ -117,4 +117,6 @@ Adding your domains to your scope within burp (https://forum.portswigger.net/thr
 ```
 sudo apt-get install smtp-user-enum
 apt-get install ismtp
+
+smtp-user-enum -M VRFY -U users.txt -t <ipaddr>
 ```
