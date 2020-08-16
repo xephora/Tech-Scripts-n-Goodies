@@ -120,3 +120,12 @@ apt-get install ismtp
 
 smtp-user-enum -M VRFY -U users.txt -t <ipaddr>
 ```
+
+### [ldap]
+```
+ldapsearch -x -b "dc=domain,dc=com" -H ldap://ipaddr
+ldapsearch -x -b "dc=domain,dc=com" -H <ipaddr>
+```
+https://devconnected.com/how-to-search-ldap-using-ldapsearch-examples/
+
+
