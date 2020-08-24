@@ -322,6 +322,7 @@ sc start regsvc
 https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets
 
 ## [SNMP]
+https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets#snmp
 
 ### Windows User Accounts
 snmpwalk -c public -v1 $TARGET 1.3.6.1.4.1.77.1.2.25
@@ -348,7 +349,63 @@ snmpwalk -c public -v1 $TARGET 1.3.6.1.2.1.25.6.3.1.2
 onesixtyone -i snmp-ips.txt -c community.txt
 
 ## [SMTP]
+https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets#smtp
 
 snmp-check $TARGET
 
 smtp-user-enum -U /usr/share/wordlists/names.txt -t $TARGET -m 150
+
+## [Active Directory] 
+https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets#active-directory
+
+# current domain info
+[System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()
+
+# domain trusts
+([System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()).GetAllTrustRelationships()
+
+# current forest info
+[System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest()
+
+# get forest trust relationships
+([System.DirectoryServices.ActiveDirectory.Forest]::GetForest((New-Object System.DirectoryServices.ActiveDirectory.DirectoryContext('Forest', 'forest-of-interest.local')))).GetAllTrustRelationships()
+
+# get DCs of a domain
+nltest /dclist:offense.local
+net group "domain controllers" /domain
+
+# get DC for currently authenticated session
+nltest /dsgetdc:offense.local
+
+# get domain trusts from cmd shell
+nltest /domain_trusts
+
+# get user info
+nltest /user:"spotless"
+
+# get DC for currently authenticated session
+set l
+
+# get domain name and DC the user authenticated to
+klist
+
+# get all logon sessions. Includes NTLM authenticated sessions
+klist sessions
+
+# kerberos tickets for the session
+klist
+
+# cached krbtgt
+klist tgt
+
+# whoami on older Windows systems
+set u
+
+# find DFS shares with ADModule
+Get-ADObject -filter * -SearchBase "CN=Dfs-Configuration,CN=System,DC=offense,DC=local" | select name
+
+# find DFS shares with ADSI
+$s=[adsisearcher]'(name=*)'; $s.SearchRoot = [adsi]"LDAP://CN=Dfs-Configuration,CN=System,DC=offense,DC=local"; $s.FindAll() | % {$_.properties.name}
+
+# check if spooler service is running on a host
+powershell ls "\\dc01\pipe\spoolss"
