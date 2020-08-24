@@ -448,4 +448,5 @@ $a | % {
 }
 ```
 
-
+### [Launch evil.exe every 10 minutes]
+schtasks /create /sc minute /mo 10 /tn "TaskName" /tr C:\Windows\system32\evil.exe
