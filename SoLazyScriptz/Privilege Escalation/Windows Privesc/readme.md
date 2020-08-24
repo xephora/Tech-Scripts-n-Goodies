@@ -358,59 +358,61 @@ smtp-user-enum -U /usr/share/wordlists/names.txt -t $TARGET -m 150
 ## [Active Directory] 
 https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets#active-directory
 
-### current domain info
+### [current domain info]
 [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()
 
-### domain trusts
+### [domain trusts]
 ([System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()).GetAllTrustRelationships()
 
-### current forest info
+### [current forest info]
 [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest()
 
-### get forest trust relationships
+### [get forest trust relationships]
 ([System.DirectoryServices.ActiveDirectory.Forest]::GetForest((New-Object System.DirectoryServices.ActiveDirectory.DirectoryContext('Forest', 'forest-of-interest.local')))).GetAllTrustRelationships()
 
-### get DCs of a domain
+### [get DCs of a domain]
+```
 nltest /dclist:offense.local
 net group "domain controllers" /domain
+```
 
-### get DC for currently authenticated session
+### [get DC for currently authenticated session]
 nltest /dsgetdc:offense.local
 
-### get domain trusts from cmd shell
+### [get domain trusts from cmd shell]
 nltest /domain_trusts
 
-### get user info
+### [get user info]
 nltest /user:"spotless"
 
-### get DC for currently authenticated session
+### [get DC for currently authenticated session]
 set l
 
-### get domain name and DC the user authenticated to
+### [get domain name and DC the user authenticated to]
 klist
 
-### get all logon sessions. Includes NTLM authenticated sessions
+### [get all logon sessions. Includes NTLM authenticated sessions]
 klist sessions
 
-### kerberos tickets for the session
+### [kerberos tickets for the session]
 klist
 
-### cached krbtgt
+### [cached krbtgt]
 klist tgt
 
-### whoami on older Windows systems
+### [whoami on older Windows systems]
 set u
 
-### find DFS shares with ADModule
+### [find DFS shares with ADModule]
 Get-ADObject -filter * -SearchBase "CN=Dfs-Configuration,CN=System,DC=offense,DC=local" | select name
 
-### find DFS shares with ADSI
+### [find DFS shares with ADSI]
 $s=[adsisearcher]'(name=*)'; $s.SearchRoot = [adsi]"LDAP://CN=Dfs-Configuration,CN=System,DC=offense,DC=local"; $s.FindAll() | % {$_.properties.name}
 
-### check if spooler service is running on a host
+### [check if spooler service is running on a host]
 powershell ls "\\dc01\pipe\spoolss"
 
-### Applocker: Writable Windows Directories
+### [Applocker: Writable Windows Directories]
 ```
 C:\Windows\Tasks
 C:\Windows\Temp
@@ -429,3 +431,21 @@ C:\Windows\SysWOW64\com\dmp
 C:\Windows\SysWOW64\Tasks\Microsoft\Windows\SyncCenter
 C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System
 ```
+
+### [Find writable files/folders]
+```
+$a = Get-ChildItem "c:\windows\" -recurse -ErrorAction SilentlyContinue
+$a | % {
+    $fileName = $_.fullname
+    $acls = get-acl $fileName  -ErrorAction SilentlyContinue | select -exp access | ? {$_.filesystemrights -match "full|modify|write" -and $_.identityreference -match "authenticated users|everyone|$env:username"}
+    if($acls -ne $null)
+    {
+        [pscustomobject]@{
+            filename = $fileName
+            user = $acls | select -exp identityreference
+        }
+    }
+}
+```
+
+
