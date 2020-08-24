@@ -347,4 +347,8 @@ snmpwalk -c public -v1 $TARGET 1.3.6.1.2.1.25.6.3.1.2
 ### brute-force community strings
 onesixtyone -i snmp-ips.txt -c community.txt
 
+### [SMTP]
+
 snmp-check $TARGET
+
+smtp-user-enum -U /usr/share/wordlists/names.txt -t $TARGET -m 150
