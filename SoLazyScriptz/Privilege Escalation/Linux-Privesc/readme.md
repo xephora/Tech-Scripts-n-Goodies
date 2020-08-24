@@ -230,3 +230,6 @@ elasticdump \
 echo "-------------------------------------"
 echo $filename".json has been dumped into the current directory"
 ```
+
+### [OSCP Cheatsheet]
+https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets
