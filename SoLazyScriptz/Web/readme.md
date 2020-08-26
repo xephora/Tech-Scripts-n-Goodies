@@ -1,6 +1,6 @@
-# Javascript Breakdown and JQuery Requests (Thanks to @Legacyy for assisting me)
+# Javascript Breakdown and JQuery Requests
 
-Javascript
+## Javascript (Thanks to @Legacyy for assisting me)
 ```
 document.getElementById
 document.getElementByClassName
