@@ -1,6 +1,6 @@
 # Javascript Breakdown Requests
 
-## Javascrip
+## Javascript
 ```
 document.getElementById
 document.getElementByClassName
