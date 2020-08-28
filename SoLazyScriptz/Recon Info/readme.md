@@ -128,4 +128,5 @@ ldapsearch -x -b "dc=domain,dc=com" -H <ipaddr>
 ```
 https://devconnected.com/how-to-search-ldap-using-ldapsearch-examples/
 
-
+### [Resources]
+https://www.youtube.com/watch?v=p4JgIu1mceI
