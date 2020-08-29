@@ -1,3 +1,0 @@
-#!/bin/bash
-read -p 'insert url http://www.exampleurl.com/' website
-python3 ./photon.py -u $website -v --dns --keys
