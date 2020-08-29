@@ -1,3 +1,0 @@
-read -p 'Name of IP LIST example iplist.txt:' ip_list
-
-/root/CVE-2019-0708/rdpscan/rdpscan --file $ip_list
