@@ -1,8 +1,0 @@
-#XXEScan uses xxetimes
-#installation
-#git clone https://github.com/ropnop/xxetimes
-
-
-read -p 'type request_filename: ' file
-read -p 'type target ip: ' ip
-python2 /root/xxetimes/xxetimes.py  -f $file -i $ip
