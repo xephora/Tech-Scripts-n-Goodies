@@ -1,7 +1,0 @@
-#Git Install:
-#git clone https://github.com/antichown/subdomain-takeover
-#Installation:
-#pip install -r requirements.txt
-read -p 'Enter Domain. Example DOMAIN.COM. Do not enter https:// or www: ' domain
-
-python /root/subdomain-takeover/takeover.py -d $domain -w /root/subdomain-takeover/subdomains-10000.txt -t 20
