@@ -1,9 +1,0 @@
-install neo4j
-https://debian.neo4j.org/?_ga=2.180534247.153130316.1570995946-1723945139.1570995946
-run 'neo4j console' to start the server.
-
-start bloodhound './BloodHound --no-sandbox'
-https://github.com/BloodHoundAD/BloodHound/releases
-
-run sharphound.exe from remote server to enumerate AD, GPO etc to JSON files
-import the JSON files to BloodHound and run queries to see the mapped graph.
