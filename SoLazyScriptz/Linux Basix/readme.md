@@ -98,5 +98,4 @@ awk '{print $1}'
 
 print specific columns
 awk '{print $1,$4}'
-
 ```
