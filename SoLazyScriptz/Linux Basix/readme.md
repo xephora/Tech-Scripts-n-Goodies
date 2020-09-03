@@ -81,3 +81,13 @@ find . | grep python
 update filesystem index:
 updatedb
 ```
+
+### sed
+
+```
+Remove a dot at the end of a line
+cat file.txt | sed -r 's/\.$//'
+
+Remove a character from a string
+sed 's/a//' example.txt
+```
