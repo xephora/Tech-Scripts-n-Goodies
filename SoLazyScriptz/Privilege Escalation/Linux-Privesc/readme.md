@@ -5,6 +5,8 @@ https://github.com/diego-treitos/linux-smart-enumeration
 
 https://github.com/lucyoa/kernel-exploits
 
+https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
+
 ### [Running your scripts]
 ```
 chmod +x linpeas.sh
