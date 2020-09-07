@@ -99,3 +99,33 @@ awk '{print $1}'
 print specific columns
 awk '{print $1,$4}'
 ```
+
+### gunzip
+
+```
+gunzip -d filename.tar.gz
+```
+
+### tar
+
+```
+tar -xvf file.tar
+```
+
+### 7z
+
+```
+7z x file.7z
+```
+
+### zip
+
+```
+unzip file.zip
+```
+
+### rar
+
+```
+unzip file.rar
+```
