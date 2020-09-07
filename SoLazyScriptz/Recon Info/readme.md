@@ -135,6 +135,13 @@ https://github.com/mchoji/winrm-brute
 winrm-brute.rb -U users.txt -P passwords.txt x.x.x.x
 ```
 
+### [shortname scanning]
+https://github.com/irsdl/IIS-ShortName-Scanner
+```
+java -jar /path/to/IIS-ShortName-Scanner/iis_shortname_scanner.jar 2 20 http://x.x.x.x
+/path/to/IIS-ShortName-Scanner/config.xml
+```
 ### [Resources]
-https://www.youtube.com/watch?v=p4JgIu1mceI
-https://github.com/Tib3rius/AutoRecon
+https://www.youtube.com/watch?v=p4JgIu1mceI  
+https://github.com/Tib3rius/AutoRecon  
+
