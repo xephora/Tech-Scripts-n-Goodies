@@ -137,3 +137,4 @@ winrm-brute.rb -U users.txt -P passwords.txt x.x.x.x
 
 ### [Resources]
 https://www.youtube.com/watch?v=p4JgIu1mceI
+https://github.com/Tib3rius/AutoRecon
