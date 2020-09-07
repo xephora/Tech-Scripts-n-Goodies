@@ -453,3 +453,10 @@ schtasks /create /sc minute /mo 10 /tn "TaskName" /tr C:\Windows\system32\evil.e
 
 ### [Kernel exploit]
 https://github.com/SecWiki/windows-kernel-exploits
+
+### [Reverse TCP without metasploit]
+
+```
+sudo apt-get install mingw-w64
+```
+https://raw.githubusercontent.com/Koekje/Simple-C-reverse-tcp-shell/master/victim.c
