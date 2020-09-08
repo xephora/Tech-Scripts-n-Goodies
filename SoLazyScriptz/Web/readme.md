@@ -99,3 +99,10 @@ arjun.py -u $url -t 10 --get --post
 
 ### Domain History
 https://github.com/tomnomnom/waybackurls
+
+### findings new domains using amass
+https://danielmiessler.com/study/amass/
+
+```
+amass intel -ip -cidr $1
+```
