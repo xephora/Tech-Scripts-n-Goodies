@@ -39,6 +39,9 @@ Find files with SUID set
 find . -perm /4000 
 
 sudo -l
+
+Check for available shells
+cat /etc/shells
 ```
 
 Processes:
