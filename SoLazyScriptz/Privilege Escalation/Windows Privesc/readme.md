@@ -69,6 +69,11 @@ Mini Dump
 & 'C:\users\accountname\procdump64.exe' -accepteula -ma PIDorPROCESS dumpname.dmp
 ```
 
+Identify Missing Patches
+```
+cmd /c systeminfo
+```
+
 ### [Enumerate Windows System Creds without tools]
 ```
 reg.exe save hklm\sam c:\sam_backup
