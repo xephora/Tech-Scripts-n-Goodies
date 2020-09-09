@@ -32,10 +32,8 @@ sudo -l, cat /etc/sudoers
 
 Other super users? grep -v -E "^#" /etc/passwd | awk -F: '$3 == 0 { print $1}'
 
-Able to run the following binaries with current user permissions:
+Finding SUID binaries
 find / -perm -u=s 2>/dev/null
-
-Find files with SUID set
 find . -perm /4000 
 
 sudo -l
