@@ -60,7 +60,7 @@ schtasks /query /fo LIST /v
 Get-ChildItem -path Registry::HKEY_LOCAL_MACHINE\SOFTWARE | ft Name
 ```
 
-### [Check Drives]
+### [Check Drivers]
 ```
 DRIVERQUERY
 ```
