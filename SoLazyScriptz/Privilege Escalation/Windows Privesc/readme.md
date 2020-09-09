@@ -52,11 +52,17 @@ Get-WmiObject win32_service | ?{$_.Name -like '*<ServiceName>*'} | select Name, 
 ### [Check scheduled Tasks]
 ```
 Get-ScheduledTask | where {$_.TaskPath -notlike "\Microsoft*"} | ft TaskName,TaskPath,State
+schtasks /query /fo LIST /v
 ```
 
 ### [List installed software]
 ```
 Get-ChildItem -path Registry::HKEY_LOCAL_MACHINE\SOFTWARE | ft Name
+```
+
+### [Check Drives]
+```
+DRIVERQUERY
 ```
 
 ### [Process Dumping Procdump.exe]
