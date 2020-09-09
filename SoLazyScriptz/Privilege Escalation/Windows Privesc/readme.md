@@ -69,7 +69,7 @@ Mini Dump
 & 'C:\users\accountname\procdump64.exe' -accepteula -ma PIDorPROCESS dumpname.dmp
 ```
 
-Identify Missing Patches
+### [Identify Missing Patches]
 ```
 cmd /c systeminfo
 ```
