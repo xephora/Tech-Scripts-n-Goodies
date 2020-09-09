@@ -69,7 +69,7 @@ Get-ChildItem -path Registry::HKEY_LOCAL_MACHINE\SOFTWARE | ft Name
 DRIVERQUERY
 ```
 
-Check privileges for a service
+### [Check privileges for a service]
 ```
 accesschk.exe -ucqv Spooler
 ```
