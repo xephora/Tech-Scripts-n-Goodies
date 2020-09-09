@@ -69,6 +69,11 @@ Get-ChildItem -path Registry::HKEY_LOCAL_MACHINE\SOFTWARE | ft Name
 DRIVERQUERY
 ```
 
+Check privileges for a service
+```
+accesschk.exe -ucqv Spooler
+```
+
 ### [Process Dumping Procdump.exe]
 https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
 
