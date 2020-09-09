@@ -17,6 +17,8 @@ https://github.com/frizb/Windows-Privilege-Escalation
 
 https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc
 
+https://oscp.securable.nl/privilege-escalation
+
 ### [Windows-Privesc-Check]
 
 ```
