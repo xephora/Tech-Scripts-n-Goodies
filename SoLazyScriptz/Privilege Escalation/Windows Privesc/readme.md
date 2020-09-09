@@ -1,5 +1,5 @@
-# Windows Privilege Escalation tools to help me get system access. Majority of these privilege escalation tactics come from the list of great resources below. I do not take credit for any of these.
-
+# Windows Privilege Escalation tools to help me get system access.
+The list below all come from the list of great resources below. I do not take credit for any of these.
 
 ## GREAT Privesc Resources
 
