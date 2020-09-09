@@ -19,6 +19,8 @@ https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc
 
 https://oscp.securable.nl/privilege-escalation
 
+http://www.fuzzysecurity.com/tutorials/16.html
+
 ### [Windows-Privesc-Check]
 
 ```
@@ -35,6 +37,7 @@ whoami /priv
 ### [Check hotfixes]
 ```
 wmic qfe get Caption,Description,HotFixID,InstalledOn
+wmic qfe get Caption,Description,HotFixID,InstalledOn | findstr /C:"KB.." /C:"KB.."
 ```
 
 ### [Check Services]
