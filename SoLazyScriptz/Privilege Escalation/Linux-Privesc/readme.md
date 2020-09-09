@@ -42,6 +42,9 @@ sudo -l
 
 Check for available shells
 cat /etc/shells
+
+Check crons
+cat /etc/crontab
 ```
 
 Processes:
