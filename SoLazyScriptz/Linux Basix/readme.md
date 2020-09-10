@@ -129,3 +129,8 @@ unzip file.zip
 ```
 unzip file.rar
 ```
+
+### Creating a new salted password hash using openssl
+```
+openssl passwd -1 -salt [salt] [password]
+```
