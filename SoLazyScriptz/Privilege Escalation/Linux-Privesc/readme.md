@@ -67,10 +67,10 @@ grep -rnw '/' -ie 'DB_USER' --color=always
 ### [tty shell]
 ```
 python -c 'import pty; pty.spawn("/bin/sh")'
-python2 -c 'import pty; pty.spawn("/bin/sh")'
-python3 -c 'import pty; pty.spawn("/bin/sh")'
 python -c 'import pty; pty.spawn("/bin/bash")'
+python2 -c 'import pty; pty.spawn("/bin/sh")'
 python2 -c 'import pty; pty.spawn("/bin/bash")'
+python3 -c 'import pty; pty.spawn("/bin/sh")'
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 echo os.system('/bin/bash')
 /bin/sh -i
