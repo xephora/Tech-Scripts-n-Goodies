@@ -303,3 +303,6 @@ searchsploit <Service and/or version>
 Creates a copy and sends it to your current directory
 searchsploit -m script
 ```
+
+### [exploiting bins]
+https://gtfobins.github.io/gtfobins/vi/
