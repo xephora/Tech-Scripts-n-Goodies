@@ -489,3 +489,13 @@ sudo apt-get install mingw-w64
 
 i686-w64-mingw32-g++ re.cpp -o re.exe -lws2_32 -lwininet -s -ffunction-sections -fdata-sections -Wno-write-strings -fno-exceptions -fmerge-all-constants -static-libstdc++ -static-libgcc
 ```
+
+### [Auto run reverse TCP]
+```
+1. Creating your reverse TCP payload
+
+2. Transfer your payload over to your windows host
+
+3. Log off and log in to execute your reverse TCP.
+C:\Users\<CurrentProfile>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+```
