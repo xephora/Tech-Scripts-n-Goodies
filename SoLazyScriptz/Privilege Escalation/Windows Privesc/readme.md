@@ -603,7 +603,7 @@ void ControlHandler(DWORD request)
 } 
 ```
 
-### [evil service]
+### [Exploiting an vulnerable directory using by a service]
 ```
 accesschk64.exe -wvu "c:\path\of\service\directory"
 “Everyone” user group has “FILE_ALL_ACCESS”
