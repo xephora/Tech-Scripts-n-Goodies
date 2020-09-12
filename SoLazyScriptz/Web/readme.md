@@ -106,3 +106,11 @@ https://danielmiessler.com/study/amass/
 ```
 amass intel -ip -cidr $1
 ```
+
+### capturing basic auth
+```
+1. sudo msfdb run
+2. use auxiliary/server/capture/http_basic
+3. set URIPATH abc
+4. run
+```
