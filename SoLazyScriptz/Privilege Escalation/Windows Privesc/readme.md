@@ -88,6 +88,7 @@ Mini Dump
 
 ### [Identify Missing Patches]
 ```
+systeminfo
 cmd /c systeminfo
 ```
 
