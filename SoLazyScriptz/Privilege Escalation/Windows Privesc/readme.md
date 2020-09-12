@@ -613,7 +613,7 @@ copy /y c:\path\to\privesc.exe "c:\path\of\service\directory\servicebinaryname.e
 
 ### [Dll Hijacking of service]  
   
-1. Add your payload into your dll.c code within your system() function (see below code or you can access  
+1. Add your payload into your dll.c code within your system() function (see below code or you can access sagishahar's code as well)   
 https://github.com/sagishahar/scripts/blob/master/windows_dll.c  
 2. Compile your codeinto a dll  
 x86_64-w64-mingw32-gcc dll.c -shared -o payload.dll  
