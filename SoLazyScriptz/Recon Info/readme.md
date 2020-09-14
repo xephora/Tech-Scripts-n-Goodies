@@ -92,6 +92,8 @@ mount NFS
 ```
 mkdir /tmp/yoursubdirectory
 mount -t nfs 0.0.0.0:/subdirectory /tmp/yoursubdirectory
+sudo mount -t cifs -o 'user=<USER>,password=<PASSWORD' //<IP>/share /mnt/sharename
+
 ```
 unmount NFS
 ```
