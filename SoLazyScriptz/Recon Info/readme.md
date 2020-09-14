@@ -143,6 +143,12 @@ https://github.com/irsdl/IIS-ShortName-Scanner
 java -jar /path/to/IIS-ShortName-Scanner/iis_shortname_scanner.jar 2 20 http://x.x.x.x
 /path/to/IIS-ShortName-Scanner/config.xml
 ```
+
+### [Connecting to mysql]
+https://docs.rackspace.com/support/how-to/mysql-connect-to-your-database-remotely/
+```
+mysql -u username -p -h <IP>
+```
 ### [Resources]
 https://www.youtube.com/watch?v=p4JgIu1mceI  
 https://github.com/Tib3rius/AutoRecon  
