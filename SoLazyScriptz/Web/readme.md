@@ -114,3 +114,26 @@ amass intel -ip -cidr $1
 3. set URIPATH abc
 4. run
 ```
+
+### Python secured webserver
+```
+https://support.microfocus.com/kb/doc.php?id=7013103
+
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
+```
+
+```python
+import BaseHTTPServer, SimpleHTTPServer
+import ssl
+
+
+httpd = BaseHTTPServer.HTTPServer(('0.0.0.0', 443),
+        SimpleHTTPServer.SimpleHTTPRequestHandler)
+
+httpd.socket = ssl.wrap_socket (httpd.socket,
+        keyfile="/path/to/key.pem",
+        certfile='/path/to/cert.pem', server_side=True)
+
+httpd.serve_forever()
+```
