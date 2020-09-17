@@ -21,6 +21,8 @@ https://oscp.securable.nl/privilege-escalation
 
 http://www.fuzzysecurity.com/tutorials/16.html
 
+https://0xbam.blogspot.com/2019/04/oscp-methodology.html
+
 
 ### [Windows-Privesc-Check]
 
