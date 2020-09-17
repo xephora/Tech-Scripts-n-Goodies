@@ -6,6 +6,9 @@ I've designed a script that will automatically check CLSIDs that are OS specific
 JuicyPotato  
 https://github.com/ohpe/juicy-potato  
 https://github.com/ohpe/juicy-potato/releases  
+  
+Helpful resources that helped me create this script  
+https://hunter2.gitbook.io/darthsidious/privilege-escalation/juicy-potato
 
 ### Usage
 
