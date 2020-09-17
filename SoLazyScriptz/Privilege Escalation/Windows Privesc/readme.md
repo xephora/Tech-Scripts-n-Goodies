@@ -4,25 +4,16 @@ The list below all come from the list of great resources below. I do not take cr
 ## GREAT Privesc Resources
 
 Gread Windows Privilege Escalation Walk-through:
-
-https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
-
-https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_windows.html
-
-https://github.com/AonCyberLabs/Windows-Exploit-Suggester
-
-https://book.hacktricks.xyz/windows/windows-local-privilege-escalation
-
-https://github.com/frizb/Windows-Privilege-Escalation
-
-https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc
-
-https://oscp.securable.nl/privilege-escalation
-
-http://www.fuzzysecurity.com/tutorials/16.html
-
-https://0xbam.blogspot.com/2019/04/oscp-methodology.html
-
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md  
+https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_windows.html  
+https://github.com/AonCyberLabs/Windows-Exploit-Suggester  
+https://book.hacktricks.xyz/windows/windows-local-privilege-escalation  
+https://github.com/frizb/Windows-Privilege-Escalation  
+https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc  
+https://oscp.securable.nl/privilege-escalation  
+http://www.fuzzysecurity.com/tutorials/16.html  
+https://0xbam.blogspot.com/2019/04/oscp-methodology.html  
+  
 
 ### [Windows-Privesc-Check]
 
