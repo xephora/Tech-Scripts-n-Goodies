@@ -137,3 +137,7 @@ httpd.socket = ssl.wrap_socket (httpd.socket,
 
 httpd.serve_forever()
 ```
+
+### lfi
+https://github.com/p0cl4bs/kadimus
+https://github.com/mzfr/liffy
