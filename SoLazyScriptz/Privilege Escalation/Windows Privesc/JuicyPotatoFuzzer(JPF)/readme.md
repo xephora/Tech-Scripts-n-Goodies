@@ -1,6 +1,6 @@
 # Juicy Potato Fuzzer
 
-I've designed a script that will automatically check CLSIDs that are OS specific. Whichever CLSIDs are successful just utilize those.  
+I createda script that will check every NT Authority CLSID for a specified Operating System.
   
 ### Requires:  
 JuicyPotato  
@@ -17,10 +17,4 @@ https://hunter2.gitbook.io/darthsidious/privilege-escalation/juicy-potato
 2. Choose your OS
 3. Whichever Succeeds are successful hits
 4. You can then execute whatever using those CLSIDs.
-```
-
-```
-Side Note:
-
-I only chose NT Authority\System CLSIDs, if there's a need to add other accounts feel free to add an issue.
 ```
