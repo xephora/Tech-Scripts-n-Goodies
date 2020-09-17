@@ -1,4 +1,4 @@
-# JPF Fuzzer
+# Juicy Potato Fuzzer
 
 I've designed a script that will automatically check CLSIDs that are OS specific. Whichever CLSIDs are successful just utilize those.  
   
