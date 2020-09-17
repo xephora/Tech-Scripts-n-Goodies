@@ -18,3 +18,7 @@ https://hunter2.gitbook.io/darthsidious/privilege-escalation/juicy-potato
 3. Whichever Succeeds are successful hits
 4. You can then execute whatever using those CLSIDs.
 ```
+##
+![GitHub Logo](images/1.PNG) 
+## 
+![GitHub Logo](images/2.PNG)
