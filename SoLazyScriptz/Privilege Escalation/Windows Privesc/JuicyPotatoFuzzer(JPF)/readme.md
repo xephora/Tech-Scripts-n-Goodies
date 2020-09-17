@@ -1,6 +1,6 @@
 # Juicy Potato Fuzzer
 
-I createda script that will check every NT Authority CLSID for a specified Operating System.
+I created a script that will check every NT Authority CLSID for a specified Operating System. This script is for JuicyPotato. For more information regarding this priv esc tool, please visit the links below.
   
 ### Requires:  
 JuicyPotato  
