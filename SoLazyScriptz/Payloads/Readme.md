@@ -1,32 +1,8 @@
 ### [Payload Resources]
-https://github.com/nccgroup/Winpayloads
-
-Winpayloads.py
-
-stager
-r
-ps payload
-execute payload on target
-#handler gets hit
-\
-clients
-clientid#
-\
-back (to main menu)
-2 to reverse tcp
-y to upload
-clientid#
-\
-#msfloads
-sessions -i sesid#
-shell
-background (leave process in background)
-sessions -k sesid#
-\
-clients
-exit (kills client session)
-
-https://github.com/xephora/PayloadsAllTheThings
+https://netsec.ws/?p=331  
+https://redteamtutorials.com/2018/10/24/msfvenom-cheatsheet/  
+https://github.com/nccgroup/Winpayloads  
+https://github.com/xephora/PayloadsAllTheThings  
 
 [Generating Payloads on Windows using Metasploit]
 
