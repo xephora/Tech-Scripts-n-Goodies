@@ -137,3 +137,8 @@ unzip file.rar
 ```
 openssl passwd -1 -salt [salt] [password]
 ```
+
+### sort and remove duplicates
+```
+sort -u | uniq
+```
