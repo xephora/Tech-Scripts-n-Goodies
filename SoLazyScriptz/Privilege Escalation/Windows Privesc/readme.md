@@ -13,6 +13,7 @@ https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc
 https://oscp.securable.nl/privilege-escalation  
 http://www.fuzzysecurity.com/tutorials/16.html  
 https://0xbam.blogspot.com/2019/04/oscp-methodology.html  
+https://www.offensive-security.com/metasploit-unleashed/windows-post-gather-modules/  
   
 
 ### [Windows-Privesc-Check]
