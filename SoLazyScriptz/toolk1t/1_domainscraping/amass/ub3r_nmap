@@ -1,0 +1,2 @@
+echo "Usage: ./ub3r_nmap domain_list.txt google"
+nmap -sC -sV -iL $1 -oG $2.gnmap --min-rate=10000
