@@ -34,7 +34,10 @@ Other super users? grep -v -E "^#" /etc/passwd | awk -F: '$3 == 0 { print $1}'
 
 Finding SUID binaries
 find / -perm -u=s 2>/dev/null
-find . -perm /4000 
+find . -perm /4000
+
+find links
+find / -type l -ls 
 
 sudo -l
 
