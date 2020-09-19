@@ -1,5 +1,7 @@
 ### [DNS Recon]
 ```
+dig axfr @<IP> <DOMAINNAME>
+
 Enumerating DNS Records
 dnsrecon -d domain
 
