@@ -155,3 +155,6 @@ chmod a-w+x filename
 
 ### cli copy paste
 https://ostechnix.com/how-to-use-pbcopy-and-pbpaste-commands-on-linux/
+```
+cat file.txt | pbcopy
+```
