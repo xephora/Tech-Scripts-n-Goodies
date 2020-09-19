@@ -153,3 +153,9 @@ mysql -u username -p -h <IP>
 https://www.youtube.com/watch?v=p4JgIu1mceI  
 https://github.com/Tib3rius/AutoRecon  
 
+### nmap vulners
+https://github.com/vulnersCom/nmap-vulners
+```
+nmap -sV --script vulners [--script-args mincvss=5.0] <target>
+nmap --script http-vulners-regex.nse [--script-args paths={"/"}] <target> 
+```
