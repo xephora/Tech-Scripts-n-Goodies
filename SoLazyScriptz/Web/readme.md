@@ -193,3 +193,6 @@ admin") or "1"="1"--
 admin") or "1"="1"#
 admin") or "1"="1"/*
 ```
+
+### Bruteforcing login forms
+https://github.com/frizb/Hydra-Cheatsheet  
