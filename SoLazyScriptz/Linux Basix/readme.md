@@ -142,3 +142,9 @@ openssl passwd -1 -salt [salt] [password]
 ```
 sort -u | uniq
 ```
+
+### permissions
+```
+adding read and write for all users
+chmod a+w+x filename
+```
