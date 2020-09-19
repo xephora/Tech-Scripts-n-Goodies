@@ -147,4 +147,7 @@ sort -u | uniq
 ```
 adding read and write for all users
 chmod a+w+x filename
+
+removing permissions for all
+chmod a-w+x filename
 ```
