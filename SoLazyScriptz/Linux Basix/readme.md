@@ -144,6 +144,7 @@ sort -u | uniq
 ```
 
 ### permissions
+https://kb.iu.edu/d/abdb#:~:text=To%20change%20file%20and%20directory,%2C%20write%2C%20and%20execute%20permissions.
 ```
 adding read and write for all users
 chmod a+w+x filename
