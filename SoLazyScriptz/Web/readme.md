@@ -211,3 +211,9 @@ hydra -l none -P rockyou.txt <IP> http-post-form "/path/to/login.php:username=ad
 ```
 query?param=/legit/path/to/file.php/../../../../etc/passwd
 ```
+
+### curl fiddling
+```
+curl -v -A "Mozilla Chrome Safari" -H 'host: $vhost' -k -X GET $host
+curl -v -A "Mozilla Chrome Safari" -H 'host: $vhost' -k -X GET $host
+```
