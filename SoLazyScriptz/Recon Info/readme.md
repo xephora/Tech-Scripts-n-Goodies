@@ -163,3 +163,16 @@ nmap --script http-vulners-regex.nse --script-args paths={"/"} <target>
 
 root@kali:~# nmap -sC -sV -v -p- --script vulners --script-args mincvss=5.0 <target> --min-rate=6000
 ```
+
+### telnet POP email
+```
+telnet <IP> 110
+USER <username>
+PASS <password>
+
+List emails
+LIST
+
+Display an email by number
+RETR # 
+```
