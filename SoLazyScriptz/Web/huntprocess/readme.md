@@ -4,13 +4,13 @@ Enumerate ports and check for service names and versions using nmap and Netcat
 ### Content Checking
 Check what's running on the page for any exploitable frameworks, cms and web content wappalyzer
 
-### Page Parsing
-html, php, asp, aspx, php3, att, jsp, jspx, svc, 
+### Page Parsing to enum metadata and force custom errors
+html, htm, php, asp, aspx, php3, att, jsp, jspx, svc, xml, asmx, asml, 
 
 ### Content Fuzzing
-Checking for txt, logs, zip, xml, json, yaml, yml
-Checking for directories tmp, temp, admin, dev, devtest, backup, database, secret, ftp
-Checking for hidden directories .FUZZ
+Checking for txt, logs, zip, xml, json, yaml, yml  
+Checking for directories tmp, temp, admin, dev, devtest, backup, database, secret, ftp  
+Checking for hidden directories .FUZZ  
 
 ### Method Checking (PUT, UPDATE, DELETE, XPOST, TRACE, PATCH)
 curl tampering
