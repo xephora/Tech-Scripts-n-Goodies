@@ -68,6 +68,8 @@ grep -rnw '/' -ie 'DB_USER' --color=always
 ```
 
 ### [tty shell]
+https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/
+
 ```
 python -c 'import pty; pty.spawn("/bin/sh")'
 python -c 'import pty; pty.spawn("/bin/bash")'
