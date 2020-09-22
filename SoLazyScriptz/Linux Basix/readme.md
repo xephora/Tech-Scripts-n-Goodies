@@ -158,3 +158,13 @@ https://ostechnix.com/how-to-use-pbcopy-and-pbpaste-commands-on-linux/
 ```
 cat file.txt | pbcopy
 ```
+
+### echo multiple lines to a file
+```
+echo """
+line1
+line2
+line3
+line4
+""" > dump.log
+```
