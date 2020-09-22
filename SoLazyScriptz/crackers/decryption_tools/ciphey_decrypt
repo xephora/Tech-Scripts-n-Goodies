@@ -1,0 +1,2 @@
+echo "Usage: ./ciphey_decrypt encrypted_data"
+ciphey -v -t "$1"
