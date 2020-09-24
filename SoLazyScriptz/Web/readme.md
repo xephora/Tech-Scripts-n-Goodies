@@ -230,3 +230,6 @@ query?param=/legit/path/to/file.php/../../../../etc/passwd
 curl -v -A "Mozilla Chrome Safari" -H 'host: $vhost' -k -X GET $host
 curl -v -A "Mozilla Chrome Safari" -H 'host: $vhost' -k -X GET $host
 ```
+
+### hashcat example hashes
+https://hashcat.net/wiki/doku.php?id=example_hashes
