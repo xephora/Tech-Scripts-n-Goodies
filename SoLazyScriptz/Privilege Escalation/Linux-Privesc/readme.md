@@ -46,6 +46,8 @@ cat /etc/shells
 
 Check crons
 cat /etc/crontab
+
+./shell -p
 ```
 
 Processes:
