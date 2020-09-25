@@ -63,6 +63,8 @@ ffuf -c -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u $URL/
 
 To filter by size
 ffuf -c -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u $URL/FUZZ -fc 403,404,302 -fs 1000
+
+ffuf -u http://example.com/FUZZ -e asp,html,jpg -w wordlist.txt
 ```
 ### Fuzzing Resources
 https://github.com/chrislockard/api_wordlist/blob/master/common_paths.txt
