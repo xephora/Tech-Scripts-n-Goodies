@@ -241,3 +241,6 @@ hashcat -m <mode> -a 0 hashlist.txt /root/wordlist/rockyou.txt
 
 ### resources
 https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/exploiting-password-recovery-functionalities/  
+
+### Pen Testing Password Resets
+https://0xayub.gitbook.io/blog/
