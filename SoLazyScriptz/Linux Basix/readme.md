@@ -4,6 +4,16 @@ ps aux
 ps aux | grep <processname>
 ```
 
+### Process managing
+```
+CTL+Z to suspend processes
+bg to background process
+
+jobs to view suspended processes
+
+fg %<JOB#> returns a job
+```
+
 ### get ports
 ```
 lsof
