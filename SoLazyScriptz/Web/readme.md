@@ -14,6 +14,17 @@ document.getElementsByTagNameNS
 
 var variablename document.getElementByIdTagName("tagName").innerHTML = "-confirm(1)-"
 var variablename document.getElementsByIdTagName("tagName")[0].innerHTML = "-confirm(1)-"
+
+document.getElementById('thm-title').innerHTML = "Insert Code"
+document.querySelector('#thm-title').innerHTML = "Insert Code"
+document.querySelectorAll('#thm-title')
+document.querySelectorAll('#thm-title').length
+document.querySelectorAll('#thm-title')[0]
+document.querySelectorAll('#thm-title')[0].baseURI
+document.querySelectorAll('#thm-title')[0].innerHTML
+document.querySelectorAll('#thm-title')[0].innerHTML = "Insert Code"
+document.querySelectorAll('#thm-title')[0].innerText
+document.querySelectorAll('#thm-title')[0].innerText = "Insert Code"
 ```
 
 ### jQuery 2.1.1
