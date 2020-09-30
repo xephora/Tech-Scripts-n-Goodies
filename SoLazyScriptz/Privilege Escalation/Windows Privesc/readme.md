@@ -15,6 +15,11 @@ http://www.fuzzysecurity.com/tutorials/16.html
 https://0xbam.blogspot.com/2019/04/oscp-methodology.html  
 https://www.offensive-security.com/metasploit-unleashed/windows-post-gather-modules/  
   
+### [Check user]
+```
+$env:UserName
+whoami
+```
 
 ### [Windows-Privesc-Check]
 
