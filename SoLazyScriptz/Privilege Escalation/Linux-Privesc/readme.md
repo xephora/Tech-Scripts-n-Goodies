@@ -48,6 +48,8 @@ Check crons
 cat /etc/crontab
 
 ./shell -p
+
+sudo strings /dev/sdb
 ```
 
 Processes:
