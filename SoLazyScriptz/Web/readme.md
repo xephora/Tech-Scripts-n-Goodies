@@ -2,8 +2,9 @@
 
 ## Resources
 
-https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration
-https://pentester.land/cheatsheets/2018/11/14/subdomains-enumeration-cheatsheet.html
+https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration  
+https://pentester.land/cheatsheets/2018/11/14/subdomains-enumeration-cheatsheet.html  
+https://github.com/EdOverflow/can-i-take-over-xyz#all-entries  
 
 ### Javascript
 ```
