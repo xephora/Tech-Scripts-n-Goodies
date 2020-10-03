@@ -696,3 +696,8 @@ C:\\Windows\\System32\\spool\\drivers\\color\\
 $credential = Import-CliXml -Path <xml dat with encrypted password>
 $credential.GetNetworkCredential().Password
 ```
+
+### [PSEXEC]
+```
+python psexec.py <username>:'<password>'@<IP>
+```
