@@ -111,6 +111,7 @@ awk '{print $1,$4}'
 
 Remove a character and print column of characters
 awk -F \] '{print $1}'
+awk -F\@ '{print $1}'
 ```
 
 ### gunzip
