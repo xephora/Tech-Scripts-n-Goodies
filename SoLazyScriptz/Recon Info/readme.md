@@ -27,6 +27,8 @@ rpcclient <IP>
 rpcclient -U "" <IP>
 
 enumdomusers
+
+queryusergroups <RID>
 ```
 
 ### [SMB Enumeration p445]
@@ -94,6 +96,8 @@ crackmapexec smb <IP> --shares -u 'null' -p ''
 crackmapexec winrm <IP> -u USERNAME -p password
 
 crackmapexec winrm <IP> -u USERNAME -H hash
+
+crackmapexec smb <IP> --pass-pol -u '' -p ''
 ```
 
 ### [Kerberos Enumeration p88]
@@ -172,6 +176,11 @@ smtp-user-enum -M VRFY -U users.txt -t <ipaddr>
 ```
 ldapsearch -x -b "dc=domain,dc=com" -H ldap://ipaddr
 ldapsearch -x -b "dc=domain,dc=com" -H <ipaddr>
+
+ldapsearch -h <IP> -x -b "DC=<DC>,DC=local"
+ldapsearch -h <IP> -x -b "DC=<DC>,DC=local" '(objectClass=Person)'
+ldapsearch -h <IP> -x -b "DC=<DC>,DC=local" '(objectClass=Person)' sAMAccountName
+ldapsearch -h <IP> -x -b "DC=<DC>,DC=local" '(objectClass=Person)' sAMAccountName | grep sAMAccountName
 ```
 https://devconnected.com/how-to-search-ldap-using-ldapsearch-examples/
 
