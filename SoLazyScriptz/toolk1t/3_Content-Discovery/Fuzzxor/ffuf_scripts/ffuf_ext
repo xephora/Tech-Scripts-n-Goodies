@@ -1,0 +1,2 @@
+ffuf -c -w directory-list-damsmall.txt -u $1/FUZZ -p .3 -e .txt,.xml,.json,.zip,.sql -fc 403,404,302
+#-recursion -recursion-depth 2 -fc 403,404,302
