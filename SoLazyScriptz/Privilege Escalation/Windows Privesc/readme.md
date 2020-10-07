@@ -706,3 +706,10 @@ $credential.GetNetworkCredential().Password
 ```
 python psexec.py <username>:'<password>'@<IP>
 ```
+
+### [Create network share using powershell]
+```
+$pass = convertto-securestring '<RemotePASSWORD>' -AsPlainText -Force
+$cred = New-Object System.Management.Automation.PSCredential('<RemoteUsername>', $pass)
+New-PSDrive -Name drivename -PSProvider FileSystem -Credential $cred -Root \\<RemoteIP>\<RemoteShare>
+```
