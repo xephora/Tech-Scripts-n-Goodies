@@ -34,6 +34,11 @@ crontab -l
 cat /etc/crontab
 ```
 
+### view active connections (associated processes)
+```
+ss -anp 
+```
+
 ### Kill a process
 ```
 kill -9 <pid>
