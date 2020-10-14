@@ -63,6 +63,7 @@ schtasks /query /fo LIST /v
 ### [List installed software]
 ```
 Get-ChildItem -path Registry::HKEY_LOCAL_MACHINE\SOFTWARE | ft Name
+wmic product get name, version, vendor
 ```
 
 ### [Check Drivers]
