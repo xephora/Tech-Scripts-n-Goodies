@@ -6,6 +6,7 @@ https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security
 https://pentester.land/cheatsheets/2018/11/14/subdomains-enumeration-cheatsheet.html  
 https://github.com/EdOverflow/can-i-take-over-xyz#all-entries  
 https://highon.coffee/blog/lfi-cheat-sheet/  
+https://saadahmedx.medium.com/weaponizing-xss-for-fun-profit-a1414f3fcee9  
 
 ### Javascript
 ```
