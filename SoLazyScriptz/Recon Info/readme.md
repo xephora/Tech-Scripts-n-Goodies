@@ -100,6 +100,14 @@ crackmapexec winrm <IP> -u USERNAME -H hash
 crackmapexec smb <IP> --pass-pol -u '' -p ''
 ```
 
+### [smbclient]
+```
+smbclient.py <IP> -port 445
+login <account>
+shares
+use <share name>
+```
+
 ### [Kerberos Enumeration p88]
 ```
 GetNPUsers.py WORKSTATION/ -dc-ip IP -usersfile /path/to/userslist
