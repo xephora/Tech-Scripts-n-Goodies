@@ -5,8 +5,8 @@
 ### Recon for the team
 ```
 1. Gather IP's and Root passwords and provide to teamchat.  
-2. Enumerate the webservers by fuzzing all servers and running nmap and provide ports and services of all boxes to teamchat.  
-3. Enumerate the system and assist with foothold and privesc.
+2. Fuzz all servers and run nmap and provide ports, services, and discovered paths to teamchat.  
+3. Enumerate your own systems and assist with foothold and privesc.
 ```
 
 ### Simple but Basic tools
