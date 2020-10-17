@@ -108,6 +108,11 @@ shares
 use <share name>
 ```
 
+### SMB VULN Check
+```
+nmap -p445 --script smb-vuln-ms17-010 <IP>
+```
+
 ### [Kerberos Enumeration p88]
 ```
 GetNPUsers.py WORKSTATION/ -dc-ip IP -usersfile /path/to/userslist
@@ -242,5 +247,3 @@ https://github.com/fox-it/BloodHound.py
 ```
 python3 bloodhound.py -u <USERNAME> -p '<PASSWORD>' -ns <IP> -d domain.local -c all
 ```
-
-
