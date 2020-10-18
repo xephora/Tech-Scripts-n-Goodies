@@ -15,6 +15,7 @@ http://www.fuzzysecurity.com/tutorials/16.html
 https://0xbam.blogspot.com/2019/04/oscp-methodology.html  
 https://www.offensive-security.com/metasploit-unleashed/windows-post-gather-modules/  
 https://www.hackingarticles.in/impacket-guide-smb-msrpc/  
+https://www.secureauth.com/labs/open-source-tools/impacket  
   
 ### [Check user]
 ```
