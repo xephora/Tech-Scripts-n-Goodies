@@ -270,3 +270,6 @@ https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/exploiting-passw
 
 ### Pen Testing Password Resets
 https://0xayub.gitbook.io/blog/
+
+### file upload bypass
+https://book.hacktricks.xyz/pentesting-web/file-upload
