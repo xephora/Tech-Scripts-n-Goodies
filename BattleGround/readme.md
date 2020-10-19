@@ -28,6 +28,9 @@ ps aux | grep ssh
 ps aux | grep python
 ps aux | grep sh
 
+Get process id for 
+ps -ft pts/1
+
 Kill based off pts session
 pkill -t pts/#
 ```
