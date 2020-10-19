@@ -16,6 +16,7 @@ grep -rao config
 
 Restricting shell
 chsh -s /bin/rbash <username>
+chsh -s /bin/false <username>
 
 Active Connections & who is signed into the device
 netstat
@@ -26,6 +27,9 @@ ps aux | grep ''
 ps aux | grep ssh
 ps aux | grep python
 ps aux | grep sh
+
+Kill based off pts session
+pkill -t pts/#
 ```
 
 ### Tips to Patching the vulnerable and Foothold and Privesc defense
