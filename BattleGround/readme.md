@@ -50,6 +50,7 @@ https://www.youtube.com/watch?v=o42dgCOBkRk&feature=emb_title
 Some useful commands used by ippsec
 
 ss -anp | grep <pid>
+ss -lnpt
 ps -eaf --forest 
 
 apache2 logs
