@@ -43,3 +43,17 @@ pkill -t pts/#
 4. If the opposing team has user access and is trying to privesc, you may want to change permissions to the privilege escalation technique. If you discover a file that can be abused, you may want to strip the permissions of the user away to prevent privilage escalation.
 5. pspy to review to audit activity.
 ```
+
+### Useful resources
+https://www.youtube.com/watch?v=o42dgCOBkRk&feature=emb_title
+```
+Some useful commands used by ippsec
+
+ss -anp | grep <pid>
+ps -eaf --forest 
+
+apache2 logs
+
+cat /var/log/apache2/access.log | grep 10.10.14
+cd /proc/3609 | grep cwd
+```
