@@ -103,6 +103,7 @@ crackmapexec smb <IP> --pass-pol -u '' -p ''
 ### [smbclient]
 ```
 smbclient.py <IP> -port 445
+smbclient.py WORKGROUP/anonymous@IP
 login <account>
 shares
 use <share name>
