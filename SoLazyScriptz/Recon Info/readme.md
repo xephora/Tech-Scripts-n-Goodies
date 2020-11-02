@@ -111,10 +111,13 @@ shares
 use <share name>
 ```
 
-### SMB VULN Check
+### [SMB VULN Check]
 ```
 nmap -p445 --script smb-vuln-ms17-010 <IP>
 ```
+
+### [SMB Relay attack]
+https://www.youtube.com/watch?v=ctLVMi1_zBc&feature=emb_title
 
 ### [Kerberos Enumeration p88]
 ```
