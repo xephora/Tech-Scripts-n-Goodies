@@ -30,6 +30,8 @@ enumdomusers
 
 queryusergroups <RID>
 ```
+### [rpc enumeration]
+https://bitvijays.github.io/LFF-IPS-P3-Exploitation.html
 
 ### [SMB Enumeration p445]
 SMBClient
