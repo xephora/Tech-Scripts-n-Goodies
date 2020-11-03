@@ -184,3 +184,10 @@ line3
 line4
 """ > dump.log
 ```
+
+### Updating MSFConsole on kali
+```
+1. Update metasploit framework by typing 'apt update; apt install metasploit-framework'
+2. cd to '/usr/share/metasploit-frame'
+3. update your gems by running 'bundle install'
+```
