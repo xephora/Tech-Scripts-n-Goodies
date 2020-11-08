@@ -35,3 +35,9 @@ Check page source for any interesting paths, keys, credentials and comments
 ### Param Testing
 Testing different values for a specified param. Executing payloads such as XSS payloads.
 
+### Testing for IDORs
+Requires Burp using Authorize BApp.
+
+```
+Under construction
+```
