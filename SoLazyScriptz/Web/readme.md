@@ -280,3 +280,6 @@ https://book.hacktricks.xyz/pentesting-web/file-upload
 ```
 system($_REQUEST['key']);
 ```
+### LateX injection
+https://0day.work/hacking-with-latex/  
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injection  
