@@ -738,3 +738,10 @@ OutDir
 Execution of malicious DLL
 cmd /c "echo C:\Windows\Microsoft.NET\Framework\v4.0.30319\regsvcs.exe C:\Temp\revshell.dll
 ```
+
+### [Recursively search items using powershell]
+```
+gci -r -fi NameOfFile.exe
+gci -r -fi NameOf*
+gci -r -fi *.exe
+```
