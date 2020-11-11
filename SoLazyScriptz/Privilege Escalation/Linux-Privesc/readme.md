@@ -325,3 +325,9 @@ db.tasks.insert({"cmd":"/bin/cp /bin/bash /tmp/tom; /bin/chown <USERAME>:admin /
 ```
 ### [Memcached]
 https://www.hackingarticles.in/penetration-testing-on-memcached-server/
+
+### [vim override]
+```
+vim file
+:wq!
+```
