@@ -158,6 +158,12 @@ mkdir /tmp/yoursubdirectory
 mount -t nfs 0.0.0.0:/subdirectory /tmp/yoursubdirectory
 sudo mount -t cifs -o 'user=<USER>,password=<PASSWORD' //<IP>/share /mnt/sharename
 
+Permission Denied Error?
+Create the user by typing:
+adduser <username>
+
+Set ID to mounted users ID
+nano /etc/passwd
 ```
 unmount NFS
 ```
