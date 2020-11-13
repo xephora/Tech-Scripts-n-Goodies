@@ -283,3 +283,6 @@ system($_REQUEST['key']);
 ### LateX injection
 https://0day.work/hacking-with-latex/  
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injection  
+
+### Server Sided Template Injection
+https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf
