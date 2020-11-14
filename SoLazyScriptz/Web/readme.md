@@ -289,3 +289,18 @@ https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-
 
 ### Python Pickling
 https://medium.com/@shibinbshaji007/using-pythons-pickling-to-explain-insecure-deserialization-5837d2328466
+
+```
+import pickle
+
+variable = { "test" : "Test2" , "Test3" : "Test4" }
+
+pickle.dumps(variable)
+"(dp0\nS'test'\np1\nS'Test2'\np2\nsS'Test3'\np3\nS'Test4'\np4\ns."
+
+pickle.loads("(dp0\nS'test'\np1\nS'Test2'\np2\nsS'Test3'\np3\nS'Test4'\np4\ns.")
+{'test': 'Test2', 'Test3': 'Test4'}
+```
+
+### java deserialization
+https://portswigger.net/web-security/deserialization
