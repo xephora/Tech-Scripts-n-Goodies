@@ -286,3 +286,6 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injectio
 
 ### Server Sided Template Injection
 https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf
+
+### Python Pickling
+https://medium.com/@shibinbshaji007/using-pythons-pickling-to-explain-insecure-deserialization-5837d2328466
