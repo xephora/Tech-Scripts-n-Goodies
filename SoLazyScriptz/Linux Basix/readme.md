@@ -191,3 +191,8 @@ line4
 2. cd to '/usr/share/metasploit-frame'
 3. update your gems by running 'bundle install'
 ```
+
+### Creating a symlink
+```
+ln -s source destination
+```
