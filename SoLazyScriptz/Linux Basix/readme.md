@@ -61,7 +61,8 @@ crontab -e
 ```
 ln -s /path/to/original /path/to/link
 ```
-https://www.howtogeek.com/287014/how-to-create-and-use-symbolic-links-aka-symlinks-on-linux/
+https://www.howtogeek.com/287014/how-to-create-and-use-symbolic-links-aka-symlinks-on-linux/  
+https://www.youtube.com/watch?v=tkuYrwzQ7N4  
 
 ### Creating Services
 https://linuxconfig.org/how-to-create-systemd-service-unit-in-linux
@@ -190,9 +191,4 @@ line4
 1. Update metasploit framework by typing 'apt update; apt install metasploit-framework'
 2. cd to '/usr/share/metasploit-frame'
 3. update your gems by running 'bundle install'
-```
-
-### Creating a symlink
-```
-ln -s source destination
 ```
