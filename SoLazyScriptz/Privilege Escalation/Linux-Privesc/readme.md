@@ -333,5 +333,6 @@ vim file
 ```
 
 ### [escaping restricted shell (Thanks to Legacyy and bugbyt3)]
+When you are in a restricted shell, try the following..  
 press `CTL+V` then press `CTL+J`  
 type `bash` and then press enter.  
