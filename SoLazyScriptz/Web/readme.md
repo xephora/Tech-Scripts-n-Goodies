@@ -293,6 +293,7 @@ https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-
 ### Python Pickling
 https://medium.com/@shibinbshaji007/using-pythons-pickling-to-explain-insecure-deserialization-5837d2328466  
 https://www.youtube.com/watch?v=HsZWFMKsM08  
+https://root4loot.com/post/exploiting_cpickle/  
 ```
 import pickle
 
