@@ -331,3 +331,7 @@ https://www.hackingarticles.in/penetration-testing-on-memcached-server/
 vim file
 :wq!
 ```
+
+### [escaping restricted shell (Thanks to Legacyy and bugbyt3]
+press `CTL+V` then press `CTL+J`  
+type `bash` and then press enter.  
