@@ -227,6 +227,10 @@ java -jar /path/to/IIS-ShortName-Scanner/iis_shortname_scanner.jar 2 20 http://x
 https://docs.rackspace.com/support/how-to/mysql-connect-to-your-database-remotely/
 ```
 mysql -u username -p -h <IP>
+
+mysql -h ip -u root
+mysql -h ip -u root -p
+mysql -h ip -u root -p database_name
 ```
 ### [Resources]
 https://www.youtube.com/watch?v=p4JgIu1mceI  
