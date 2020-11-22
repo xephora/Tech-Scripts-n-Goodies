@@ -50,4 +50,9 @@ set INFILENAME x.pdf
 set FILENAME x.pdf
 exploit
 ```
+### [xls Macros]
+https://www.manitonetworks.com/security/2016/8/15/macro-payloads-in-excel-with-metasploit  
+
+### [xls XXE]
+https://www.youtube.com/watch?v=LZUlw8hHp44  
 
