@@ -336,3 +336,6 @@ https://medium.com/@lucideus/xss-via-file-upload-lucideus-research-eee5526ec5e2
 
 ### Jenkins
 https://blog.pentesteracademy.com/abusing-jenkins-groovy-script-console-to-get-shell-98b951fa64a6  
+
+### Node JS Exploit
+https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/  
