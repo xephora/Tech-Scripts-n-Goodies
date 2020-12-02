@@ -1,4 +1,4 @@
 # Useful resources
 
 crt.sh to lookup subdomains
-> https://crt.sh/?q=schools.nyc.gov
+> https://crt.sh/?q=<domainhere>
