@@ -54,8 +54,11 @@ cat /etc/crontab
 sudo strings /dev/sdb
 ```
 
+Check apache logs
+`/var/log/apache2/backup`  
+
 Processes:
-top
+top  
 
 https://raw.githubusercontent.com/carlospolop/linux-privilege-escalation-awsome-script/master/linpeas.sh
 https://github.com/1N3/PrivEsc/tree/master/linux/scripts
