@@ -55,7 +55,7 @@ sudo strings /dev/sdb
 ```
 
 Check apache logs
-`/var/log/apache2/backup`  
+`/var/log/apache2/*.log`  
 
 Processes:
 top  
