@@ -118,6 +118,9 @@ awk '{print $1,$4}'
 Remove a character and print column of characters
 awk -F \] '{print $1}'
 awk -F\@ '{print $1}'
+
+Remove lines with that have a specific character
+awk -F 'C' 'NF!=2' file
 ```
 
 ### gunzip
