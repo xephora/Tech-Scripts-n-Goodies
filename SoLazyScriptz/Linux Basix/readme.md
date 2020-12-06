@@ -105,6 +105,9 @@ cat file.txt | sed -r 's/\.$//'
 
 Remove a character from a string
 sed 's/a//' example.txt
+
+Remove a line with a specific character thanks to @dee-see
+sed '/\*/d' file
 ```
 
 ### awk
