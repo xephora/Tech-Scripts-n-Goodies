@@ -108,6 +108,9 @@ sed 's/a//' example.txt
 
 Remove a line with a specific character thanks to @dee-see
 sed '/\*/d' file
+
+Remove lines that have less than a number of characters (Great for huge logs)
+sed -r '/^.{,5}$/d' file
 ```
 
 ### awk
