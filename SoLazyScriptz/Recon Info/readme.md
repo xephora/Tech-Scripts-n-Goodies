@@ -263,3 +263,15 @@ https://github.com/fox-it/BloodHound.py
 ```
 python3 bloodhound.py -u <USERNAME> -p '<PASSWORD>' -ns <IP> -d domain.local -c all
 ```
+
+### [postgres]
+```
+Enumerating Postgres Version:
+auxiliary/scanner/postgres/postgres_version
+
+Bruteforce Login:
+auxiliary/scanner/postgres/postgres_login
+
+Accessing postress:
+psql -h <IPADDRESS> -U postgres
+```
