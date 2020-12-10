@@ -275,3 +275,4 @@ auxiliary/scanner/postgres/postgres_login
 Accessing postress:
 psql -h <IPADDRESS> -U postgres
 ```
+Aritcle: https://medium.com/@cryptocracker99/a-penetration-testers-guide-to-postgresql-d78954921ee9
