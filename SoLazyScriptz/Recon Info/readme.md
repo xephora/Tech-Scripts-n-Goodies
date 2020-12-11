@@ -276,3 +276,15 @@ Accessing postress:
 psql -h <IPADDRESS> -U postgres
 ```
 Aritcle: https://medium.com/@cryptocracker99/a-penetration-testers-guide-to-postgresql-d78954921ee9
+
+### [Wordpress]
+xmlrpc  
+https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/  
+
+Wordpress Scanning  
+`wpscan --url <URL> --enumerate u,vp,vt,cb,dbe --random-user-agent`  
+
+https://blog.wpscan.com/wpscan/cheatsheet/poster/2019/11/05/wpscan-cli-cheat-sheet-poster.html  
+
+### [Pentesting amqp]
+https://book.hacktricks.xyz/pentesting/5671-5672-pentesting-amqp
