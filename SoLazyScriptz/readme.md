@@ -31,6 +31,6 @@ Basic Linux Commands that helps me..
 Useful scripts to crack passwords
 ```
 
-> Useful resources 
+> Useful resources   
 > https://book.hacktricks.xyz/  
 > https://www.youtube.com/watch?v=uKWu6yhnhbQ  
