@@ -316,6 +316,9 @@ Create your handler
 nc -nvlp <PORT>
 
 ```
+### [Exploiting host-manager]
+https://www.certilience.fr/2019/03/tomcat-exploit-variant-host-manager/
+
 Resources for exploiting tomcat manager:
 
 https://gist.github.com/pete911/6111816
