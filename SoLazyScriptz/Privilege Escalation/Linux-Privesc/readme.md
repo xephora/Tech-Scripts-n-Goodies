@@ -342,7 +342,7 @@ When you are in a restricted shell, try the following..
 press `CTL+V` then press `CTL+J`  
 type `bash` and then press enter.  
 
-### [privesc /bin/systemctl] (To learn more about this privesc you can try the lab in tryhackme https://tryhackme.com/room/vulnversity, this way a great experience)
+### [privesc /bin/systemctl] (To learn more about this privesc you can try the lab in tryhackme https://tryhackme.com/room/vulnversity, this was a great experience)
 ```
 1. Create a service unit file within a directory such as /dev/shm
 
