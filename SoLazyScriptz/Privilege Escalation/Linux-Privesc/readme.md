@@ -36,7 +36,7 @@ Other super users? grep -v -E "^#" /etc/passwd | awk -F: '$3 == 0 { print $1}'
 
 Finding SUID binaries
 find / -perm -u=s 2>/dev/null
-find / -user root -perm -4000 -exec ls -ldb {} \; (From tryhackme)
+find / -user root -perm -4000 -exec ls -ldb {} \; (From tryhackme labs)
 find . -perm /4000
 
 find links
