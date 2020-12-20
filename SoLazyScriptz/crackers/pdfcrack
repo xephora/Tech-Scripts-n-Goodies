@@ -1,0 +1,1 @@
+pdfcrack -w /path/to/wordlist.txt -f protected.pdf
