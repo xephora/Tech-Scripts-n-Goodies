@@ -1,0 +1,1 @@
+fcrackzip -v -u -D -p /path/to/wordlist.txt /path/to/protected.zip
