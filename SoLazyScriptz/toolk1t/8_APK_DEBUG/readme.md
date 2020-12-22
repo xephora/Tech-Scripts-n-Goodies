@@ -124,3 +124,8 @@ adb -s IP:PORT shell whoami
 xfer file from pc to device
 adb -s IP:PORT push C:\path\to\file.txt /tmp/file.txt
 ```
+
+### [Decompress Android Backup File]
+```
+( printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" ; tail -c +25 FILE.ab ) |  tar xfvz -
+```
