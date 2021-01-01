@@ -364,3 +364,8 @@ https://book.hacktricks.xyz/pentesting-web/ldap-injection#special-blind-ldap-inj
 ### jetdirect printer service
 https://github.com/RUB-NDS/PRET  
 https://www.nds.ruhr-uni-bochum.de/media/ei/arbeiten/2017/01/30/exploiting-printers.pdf  
+
+### Bypassing 403 Forbidden Errors (Resource: https://hackerone.com/reports/991717)
+```
+curl -H "Content-Length:0" -X POST https://<domain>/restricted_file
+```
