@@ -749,7 +749,7 @@ gci -r -fi NameOf*
 gci -r -fi *.exe
 ```
 
-### [Search for a string within files]
+### [Search for a string within files using powershell]
 ```
 findstr /s "keyword" .\*
 ```
