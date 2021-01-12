@@ -80,6 +80,7 @@ grep -rnw '/' -ie 'DB_USER' --color=always
 ### [tty shell]
 https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/  
 https://medium.com/bugbountywriteup/pimp-my-shell-5-ways-to-upgrade-a-netcat-shell-ecd551a180d2  
+https://medium.com/bug-bounty-hunting/beginner-tips-to-own-boxes-at-hackthebox-9ae3fec92a96  
 
 ```
 python -c 'import pty; pty.spawn("/bin/sh")'
