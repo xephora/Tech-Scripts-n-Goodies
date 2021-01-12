@@ -2,6 +2,8 @@
 ```
 ps aux
 ps aux | grep <processname>
+
+ps -eaf --forest 
 ```
 
 ### Process managing
@@ -37,6 +39,13 @@ cat /etc/crontab
 ### view active connections (associated processes)
 ```
 ss -anp 
+ss -ltp
+ss -ltpn
+ss -lpn
+ss -anp | grep <pid>
+ss -lpn | grep <pid> 
+ss -lpn | grep 443
+ss -lpn | grep 4444 | grep pid
 ```
 
 ### Kill a process
