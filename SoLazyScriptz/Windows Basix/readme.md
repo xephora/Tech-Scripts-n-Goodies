@@ -35,7 +35,7 @@ Register-ScheduledTask T1 -InputObject $D
 ### [Disable a scheduled task]
 ```
 Disable-ScheduledTask -TaskName "SystemScan"
-``
+```
 
 ### [Disable all scheduled tasks in a folder]
 ```
@@ -58,6 +58,7 @@ Get-SmbShareAccess -Name "C$"
 ### [Get Volumes]
 ```
 Get-Volume
+```
 
 ### [uninstall msi packages]
 ```
