@@ -7,7 +7,8 @@ https://pentester.land/cheatsheets/2018/11/14/subdomains-enumeration-cheatsheet.
 https://github.com/EdOverflow/can-i-take-over-xyz#all-entries  
 https://highon.coffee/blog/lfi-cheat-sheet/  
 https://saadahmedx.medium.com/weaponizing-xss-for-fun-profit-a1414f3fcee9  
-https://github.com/swisskyrepo/PayloadsAllTheThings  
+https://github.com/swisskyrepo/PayloadsAllTheThings 
+https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting/server-side-xss-dynamic-pdf  
 
 ### The Burp Methodology
 https://portswigger.net/support/the-burp-methodology  
