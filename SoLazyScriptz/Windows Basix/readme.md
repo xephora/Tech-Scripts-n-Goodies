@@ -79,3 +79,14 @@ Get-Package -Provider Programs -IncludeWindowsInstaller -Name "Keyword*"
 Uninstall Package:
 Get-Package -Provider Programs -IncludeWindowsInstaller -Name "Keyword" | Uninstall-Package -Force
 ```
+
+### [Exporting EventLogs and using DeepBlue (Recommended by Frostb1te]
+
+https://github.com/sans-blue-team/DeepBlueCLI/blob/master/DeepBlue.ps1
+
+```
+wevtutil epl System C:\TEMP\System_log.evtx
+
+.\DeepBlue.ps1 -log system
+.\DeepBlue.ps1 C:\TEMP\System_log.evtx
+```
