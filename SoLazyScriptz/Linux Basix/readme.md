@@ -69,6 +69,10 @@ crontab -e
 ### Creation Symbolic Links
 ```
 ln -s /path/to/original /path/to/link
+
+Example:
+cd /usr/bin
+ln -s python2.7 python
 ```
 https://www.howtogeek.com/287014/how-to-create-and-use-symbolic-links-aka-symlinks-on-linux/  
 https://www.youtube.com/watch?v=tkuYrwzQ7N4  
