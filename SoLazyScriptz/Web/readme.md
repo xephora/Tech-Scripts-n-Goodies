@@ -212,8 +212,9 @@ https://github.com/p0cl4bs/kadimus
 https://github.com/mzfr/liffy  
 
 ```
-file:///etc/passwd
+param=file:///etc/passwd
 param=php://filter/read=convert.base64-encode/resource=../../../../file/to/read
+param=php://filter/read=string.rot13/resource=../../../file/to/read
 ```
 
 ### sqli
