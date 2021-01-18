@@ -369,3 +369,6 @@ WantedBy=multi-user.target
 
 /bin/systemctl start root
 ```
+
+### [restricted shell bypassing]
+https://www.exploit-db.com/docs/english/44592-linux-restricted-shell-bypass-guide.pdf
