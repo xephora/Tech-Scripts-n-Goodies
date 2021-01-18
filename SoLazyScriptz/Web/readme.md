@@ -211,6 +211,11 @@ httpd.serve_forever()
 https://github.com/p0cl4bs/kadimus  
 https://github.com/mzfr/liffy  
 
+```
+file:///etc/passwd
+param=php://filter/read=convert.base64-encode/resource=../../../../file/to/read
+```
+
 ### sqli
 https://pentestlab.blog/2012/12/24/sql-injection-authentication-bypass-cheat-sheet/
 ```
