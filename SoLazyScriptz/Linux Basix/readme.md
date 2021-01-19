@@ -214,3 +214,8 @@ line4
 2. cd to '/usr/share/metasploit-frame'
 3. update your gems by running 'bundle install'
 ```
+
+### piping commands to an output of data (Thanks to @Dee-see for providing this!)
+```
+cat file.txt | awk '{print $3}' | while read i; do <command> $i; done
+```
