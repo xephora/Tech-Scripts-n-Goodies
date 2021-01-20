@@ -90,3 +90,31 @@ wevtutil epl System C:\TEMP\System_log.evtx
 .\DeepBlue.ps1 -log system
 .\DeepBlue.ps1 C:\TEMP\System_log.evtx
 ```
+
+### [Get / Stop / Disable Service using powershell]
+
+Get Services:
+```
+Get-Service | select -property name,starttype
+
+Get a particular service name:
+
+Get-Service | select -property name,starttype | findstr "ServiceName"
+```
+
+Stop a service:
+
+```
+Get-Service -DisplayName "ServiceName" | Stop-Service
+```
+Stop a service with dependencies:
+
+```
+Stop-Service -Name "ServiceName" -Force
+```
+
+Disable service:
+
+```
+Set-Service -Name "ServiceName" -Status stopped -StartupType disabled
+```
