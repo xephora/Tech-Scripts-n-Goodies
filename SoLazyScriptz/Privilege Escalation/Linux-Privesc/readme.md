@@ -339,6 +339,21 @@ vim file
 :wq!
 ```
 
+### [escape vim]
+```
+vim
+:!/bin/bash
+:!/bin/sh
+
+vim
+:set shell=/bin/bash
+shell
+
+vim
+:set shell=/bin/sh
+shell
+```
+
 ### [escaping restricted shell (Thanks to Legacyy and bugbyt3)]
 When you are in a restricted shell, try the following..  
 press `CTL+V` then press `CTL+J`  
@@ -372,3 +387,4 @@ WantedBy=multi-user.target
 
 ### [restricted shell bypassing]
 https://www.exploit-db.com/docs/english/44592-linux-restricted-shell-bypass-guide.pdf
+
