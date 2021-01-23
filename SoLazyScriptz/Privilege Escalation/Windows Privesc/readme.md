@@ -753,3 +753,15 @@ gci -r -fi *.exe
 ```
 findstr /s "keyword" .\*
 ```
+
+### [Mimikatz]
+
+https://github.com/gentilkiwi/mimikatz  
+
+Binary Releases  
+
+https://github.com/gentilkiwi/mimikatz/releases  
+
+Cheat sheet:
+
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Mimikatz.md  
