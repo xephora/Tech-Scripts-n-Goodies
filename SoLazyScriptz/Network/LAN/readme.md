@@ -21,3 +21,18 @@ This command will only display alive hosts and supress errors
 
 fping -q -a -g -r 1 <IP>/24
 ```
+
+### [Checking if port is communicates in powershell]
+
+https://docs.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=win10-ps
+
+```
+Test-NetConnection -ComputerName <IPAddress -Port <PORT>
+```
+
+### [manual ping sweep loop]
+
+```
+FOR /L %i IN (1,1,254) DO ping -n 1 192.168.1.%i | FIND /i "Reply">>c:\path\to\ipaddresses.txt
+```
+
