@@ -777,7 +777,7 @@ Run Powershell as administrator to get a shell as NT AUTHORITY/system
 sekurlsa::logonPasswords full
 ```
 
-Generating a golden ticket on kerberos:
+Generating a golden ticket on kerberos:  
 https://stealthbits.com/blog/complete-domain-compromise-with-golden-tickets/
 
 ```
