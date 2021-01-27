@@ -10,6 +10,11 @@ https://www.varonis.com/blog/pen-testing-active-directory-environments-part-intr
 
 https://book.hacktricks.xyz/windows/basic-powershell-for-pentesters/powerview
 
+```
+get-aduser <username>
+Get-NetDomain
+```
+
 ### [Dumping credentials from the domain controller with DCSync]
 
 https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/dump-password-hashes-from-domain-controller-with-dcsync
