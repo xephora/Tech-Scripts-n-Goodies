@@ -121,6 +121,8 @@ Invoke-AllChecks
 ```
 
 ### [PowerView.ps1 Usage for Active Directory Objects]
+https://book.hacktricks.xyz/windows/basic-powershell-for-pentesters/powerview
+
 ```
 powershell -nop -exec bypass
 Import-Module .\PowerView.ps1
