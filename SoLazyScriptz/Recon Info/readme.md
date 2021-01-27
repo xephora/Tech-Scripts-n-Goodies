@@ -123,6 +123,8 @@ https://www.youtube.com/watch?v=ctLVMi1_zBc&feature=emb_title
 ```
 GetNPUsers.py WORKSTATION/ -dc-ip IP -usersfile /path/to/userslist
 GetNPUsers.py NAME.LOCAL/ -dc-ip IP -usersfile /path/to/userslist
+
+python3 GetNPUsers.py <DOMAIN/ -usersfile /path/to/users.txt -dc-ip <DCIP>
 ```
 
 ### [kerbrute]
