@@ -796,7 +796,7 @@ mimikatz# kerberos::golden /admin:<USERNAME> /domain:<DOMAIN> /id:<FAKE_RID> /si
 NTLM Password Generator if you do not have a NTLM hash  
 https://www.browserling.com/tools/ntlm-hash  
 
-Binary Replacement
+### [Binary Replacement]
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Persistence.md#binary-replacement
 
 ```
