@@ -795,3 +795,29 @@ mimikatz# kerberos::golden /admin:<USERNAME> /domain:<DOMAIN> /id:<FAKE_RID> /si
 
 NTLM Password Generator if you do not have a NTLM hash  
 https://www.browserling.com/tools/ntlm-hash  
+
+Binary Replacement
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Persistence.md#binary-replacement
+
+```
+Sticky Keys	
+C:\Windows\System32\sethc.exe
+
+Accessibility Menu	
+C:\Windows\System32\utilman.exe
+
+On-Screen Keyboard	
+C:\Windows\System32\osk.exe
+
+Magnifier	
+C:\Windows\System32\Magnify.exe
+
+Narrator	
+C:\Windows\System32\Narrator.exe
+
+Display Switcher	
+C:\Windows\System32\DisplaySwitch.exe
+
+App Switcher	
+C:\Windows\System32\AtBroker.exe
+```
