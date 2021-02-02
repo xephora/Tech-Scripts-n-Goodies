@@ -131,6 +131,9 @@ Get-AdObject
 If you receive any errors it's possible AMSI is preventing execution. Look into AMSIbypass. EvilwinRM i use Bypass 4MSI
 ```
 
+### [amsi bypass @Thanks to bugbyt3 for the recommendation]
+https://amsi.fail/
+
 ### [Active Directory Enumeration]
 BloodHound Ingestors
 
