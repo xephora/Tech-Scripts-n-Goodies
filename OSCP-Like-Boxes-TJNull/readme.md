@@ -10,5 +10,5 @@
 
 ![OSCP-Like Template](OSCP-like.png)
 
-# Useful Resources (Thanks @Wdee-see for recommending this)
+# Useful Resources (Thanks @dee-see for recommending this)
 https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/
