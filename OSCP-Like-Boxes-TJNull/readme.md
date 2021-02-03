@@ -9,3 +9,6 @@
 [Download My XMind Project here](https://github.com/xephora/Tech-Scripts-n-Goodies/raw/master/OSCP-Like-Boxes-TJNull/TJNulls%20list%20of%20OSCP%20Like%20HacktheBoxes%20-%20Template.xmind)
 
 ![OSCP-Like Template](OSCP-like.png)
+
+# Useful Resources
+https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/
