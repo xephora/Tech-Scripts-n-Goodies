@@ -60,7 +60,7 @@ socks5 127.0.0.1 1080
 ### Using powershell to SOCKS Proxy (Thanks to @sinfulz for recommending this)
 ```
 From Kali: Edit /etc/proxychains.conf, add "socks5 9080" at the bottom.
-From Victim Box: Import-Module .\Invoke-SocksProxy.psm1
+From Victim Box: Import-Module .\Invoke-SocksProxy.ps1
 From Victim Box: Invoke-SocksProxy -bindPort 9080
 From Kali: proxychains nmap -sT <target_IP> -Pn
 ```
