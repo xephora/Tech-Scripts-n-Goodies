@@ -41,7 +41,7 @@ proxychains nmap -sT <TargetIP> -p445 -Pn
 proxychains evil-winrm.rb -i <IP> -u user -p pass
 ```
 
-Standard Proxychains:  
+### Standard Proxychains:  
 
 https://medium.com/@vegardw/reverse-socks-proxy-using-chisel-the-easy-way-48a78df92f29  
 
@@ -55,4 +55,12 @@ Edit Proxychains config file:
 
 Add the following:
 socks5 127.0.0.1 1080
+```
+
+### Using powershell to SOCKS Proxy (Thanks to @sinfulz for recommending this)
+```
+From Kali: Edit /etc/proxychains.conf, add "socks5 9080" at the bottom.
+From Victim Box: Import-Module .\Invoke-SocksProxy.psm1
+From Victim Box: Invoke-SocksProxy -bindPort 9080
+From Kali: proxychains nmap -sT <target_IP> -Pn
 ```
