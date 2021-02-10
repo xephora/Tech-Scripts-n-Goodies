@@ -118,3 +118,10 @@ Disable service:
 ```
 Set-Service -Name "ServiceName" -Status stopped -StartupType disabled
 ```
+
+Count files in directory
+https://superuser.com/questions/959036/what-is-the-windows-equivalent-of-wc-l
+
+```
+(ls | Measure-Object -line).Lines
+```
