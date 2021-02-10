@@ -823,3 +823,25 @@ C:\Windows\System32\DisplaySwitch.exe
 App Switcher	
 C:\Windows\System32\AtBroker.exe
 ```
+
+### Windows Exploit Suggester - Requirements: (install python-xlrd, $ pip install xlrd --upgrade)
+
+https://github.com/AonCyberLabs/Windows-Exploit-Suggester
+
+Generate your exploit database
+
+```
+python windows-exploit-suggester.py --update
+```
+
+Exploit suggester using systeminfo output
+
+```
+./windows-exploit-suggester.py --database exploit_database.xlsx --systeminfo sysinfo.txt
+```
+
+Exploit suggester using particular OS without suggested hotfixes
+
+```
+./windows-exploit-suggester.py --database exploit_database.xlsx --ostext 'windows server 2008 r2' 
+```
