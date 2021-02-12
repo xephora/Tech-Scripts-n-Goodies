@@ -69,15 +69,17 @@ top
 https://raw.githubusercontent.com/carlospolop/linux-privilege-escalation-awsome-script/master/linpeas.sh
 https://github.com/1N3/PrivEsc/tree/master/linux/scripts
 
-Enumeration of plaintext password
-grep -rnw '/' -ie 'pass' --color=always
-grep -rnw '/' -ie 'DB_PASS' --color=always
-grep -rnw '/' -ie 'DB_PASSWORD' --color=always
-grep -rnw '/' -ie 'DB_USER' --color=always
+```
+Enumeration of plaintext password  
+grep -rnw '/' -ie 'pass' --color=always  
+grep -rnw '/' -ie 'DB_PASS' --color=always  
+grep -rnw '/' -ie 'DB_PASSWORD' --color=always  
+grep -rnw '/' -ie 'DB_USER' --color=always  
 
 Enumerating basics
 grep -ra "password\|secret\|PRIVATE KEY" .
 find . | grep "database*\|config*\|password*\|users*\|secret*\|db\|\.config"
+```
 
 ### [Generating Public Keys and Xfering to your target]
 ```
