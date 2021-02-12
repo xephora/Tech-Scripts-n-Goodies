@@ -75,6 +75,10 @@ grep -rnw '/' -ie 'DB_PASS' --color=always
 grep -rnw '/' -ie 'DB_PASSWORD' --color=always
 grep -rnw '/' -ie 'DB_USER' --color=always
 
+Enumerating basics
+grep -ra "password\|secret\|PRIVATE KEY" .
+find . | grep "database*\|config*\|password*\|users*\|secret*\|db\|\.config"
+
 ### [Generating Public Keys and Xfering to your target]
 ```
 1. ssh-keygen to create your paired keys (private + public)
