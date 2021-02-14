@@ -290,3 +290,6 @@ https://blog.wpscan.com/wpscan/cheatsheet/poster/2019/11/05/wpscan-cli-cheat-she
 
 ### [Pentesting amqp]
 https://book.hacktricks.xyz/pentesting/5671-5672-pentesting-amqp
+
+### [Solaris finger enum]
+http://pentestmonkey.net/tools/user-enumeration/finger-user-enum
