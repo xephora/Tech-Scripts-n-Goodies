@@ -19,7 +19,9 @@ fg %<JOB#> returns a job
 ### get ports
 ```
 lsof
-lsof | grep <port>
+lsof -i :<PORT>
+
+netstat -Aan
 ```
 
 ### get services
