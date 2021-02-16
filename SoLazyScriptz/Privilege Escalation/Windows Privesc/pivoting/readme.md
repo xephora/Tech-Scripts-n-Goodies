@@ -64,3 +64,9 @@ From Victim Box: Import-Module .\Invoke-SocksProxy.ps1
 From Victim Box: Invoke-SocksProxy -bindPort 9080
 From Kali: proxychains nmap -sT <target_IP> -Pn
 ```
+
+### Port Forwarding using SSH
+```
+ssh -L <PORT>:127.0.0.1:<PORT> <USERNAME>@<REMOTE_ADDR>
+ssh -L <PORT>:127.0.0.1:<PORT> <USERNAME>@<REMOTE_ADDR> -p 22
+```
