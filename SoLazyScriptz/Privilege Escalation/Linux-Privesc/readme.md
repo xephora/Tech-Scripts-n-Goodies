@@ -60,14 +60,36 @@ find / -user <user> -ls 2>/dev/null
 find / -user <user> -ls 2>/dev/null | grep -v 'proc\|run\|sys'
 ```
 
-Check apache logs
+### groups access
+https://book.hacktricks.xyz/linux-unix/privilege-escalation/interesting-groups-linux-pe
+
+```
+Group adm is used for system monitoring tasks. Members of this group can read many log files in /var/log, and can use xconsole. Historically, /var/log was /usr/adm (and later /var/adm), thus the name of the group.
+
+Group lxd should be considered harmful in the same way the docker group is. Under no circumstances should a user in a local container be given access to the lxd group. This is because it’s entirely trivial to exploit.
+```
+https://reboare.github.io/lxd/lxd-escape.html
+
+```
+Users from the group shadow can read the /etc/shadow file
+
+Group Disk privilege is almost equivalent to root access as you can access all the data inside of the machine.
+
+Group Video, Using the command w you can find who is logged on the system.
+
+Group Docker you can mount the root filesystem of the host machine to an instance’s volume, so when the instance starts it immediately loads a chroot into that volume. This effectively gives you root on the machine.
+```
+
+### Checking apache logs
 `/var/log/apache2/*.log`  
 
-Processes:
+### Processes:
+ps aux
 top  
 
-https://raw.githubusercontent.com/carlospolop/linux-privilege-escalation-awsome-script/master/linpeas.sh
-https://github.com/1N3/PrivEsc/tree/master/linux/scripts
+### Enumeration Scripts
+https://raw.githubusercontent.com/carlospolop/linux-privilege-escalation-awsome-script/master/linpeas.sh  
+https://github.com/1N3/PrivEsc/tree/master/linux/scripts  
 
 ```
 Enumeration of plaintext password  
