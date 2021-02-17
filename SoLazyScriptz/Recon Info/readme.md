@@ -293,3 +293,16 @@ https://book.hacktricks.xyz/pentesting/5671-5672-pentesting-amqp
 
 ### [Solaris finger enum]
 http://pentestmonkey.net/tools/user-enumeration/finger-user-enum
+
+### [Docker Enumeration]
+```
+curl http://<IP>/version | jq
+
+docker -H <IP>:<HOST> info
+
+docker -H <IP>:<HOST> ps
+
+docker -H <IP>:<HOST> ps -a
+
+docker -H <IP>:<HOST> images
+```
