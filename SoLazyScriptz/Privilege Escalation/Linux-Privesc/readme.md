@@ -431,3 +431,5 @@ things to look for in sudo -l
 sudo -u#-1 /bin/bash
 ```
 
+### [Escaping Docker Container]
+https://medium.com/better-programming/escaping-docker-privileged-containers-a7ae7d17f5a1
