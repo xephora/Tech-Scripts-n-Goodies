@@ -33,3 +33,6 @@ https://resources.infosecinstitute.com/topic/commandline-malware-and-forensics/
 
 ### Resources
 https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download
+
+### sqlite browser
+https://sqlitebrowser.org/dl/#windows
