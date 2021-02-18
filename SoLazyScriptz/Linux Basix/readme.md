@@ -175,17 +175,20 @@ unzip file.rar
 ```
 
 ### Creating a new salted password hash using openssl
+
 ```
 openssl passwd -1 -salt [salt] [password]
 ```
 
 ### sort and remove duplicates
+
 ```
 sort -u
 ```
 
 ### permissions
 https://kb.iu.edu/d/abdb#:~:text=To%20change%20file%20and%20directory,%2C%20write%2C%20and%20execute%20permissions.
+
 ```
 adding read and write for all users
 chmod a+w+x filename
@@ -196,11 +199,13 @@ chmod a-w+x filename
 
 ### cli copy paste
 https://ostechnix.com/how-to-use-pbcopy-and-pbpaste-commands-on-linux/
+
 ```
 cat file.txt | pbcopy
 ```
 
 ### echo multiple lines to a file
+
 ```
 echo """
 line1
@@ -211,6 +216,7 @@ line4
 ```
 
 ### Updating MSFConsole on kali
+
 ```
 1. Update metasploit framework by typing 'apt update; apt install metasploit-framework'
 2. cd to '/usr/share/metasploit-frame'
@@ -218,6 +224,19 @@ line4
 ```
 
 ### piping commands to an output of data (Thanks to @Dee-see for providing this!)
+
 ```
 cat file.txt | awk '{print $3}' | while read i; do <command> $i; done
+```
+
+### Get disks
+
+```
+fdisk -l
+```
+
+### Get Mountpoints
+
+```
+cat /proc/mounts
 ```
