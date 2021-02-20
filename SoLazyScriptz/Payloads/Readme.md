@@ -5,6 +5,7 @@ https://github.com/nccgroup/Winpayloads
 https://github.com/swisskyrepo/PayloadsAllTheThings  
 https://github.com/rapid7/metasploit-framework/wiki/How-to-use-msfvenom  
 https://www.offensive-security.com/metasploit-unleashed/fun-incognito/  
+https://www.offensive-security.com/metasploit-unleashed/msfvenom/  
 
 # [Generating Payloads on Windows using Metasploit]
 
