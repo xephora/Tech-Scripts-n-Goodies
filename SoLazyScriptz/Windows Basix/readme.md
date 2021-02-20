@@ -125,3 +125,23 @@ https://superuser.com/questions/959036/what-is-the-windows-equivalent-of-wc-l
 ```
 (ls | Measure-Object -line).Lines
 ```
+
+### Get Info, Mounting and Dismounting Disk Images
+
+```
+Identifying Virtual Disk Images
+
+gwmi -class Win32_LogicalDisk | Format-Table
+
+Get DiskImage Information
+
+Get-DiskImage -DevicePath \\.\CDROM1
+
+Dismount DiskImage
+
+Dismount-DiskImage -DevicePath \\.\CDROM1
+
+Mounting a DiskImage
+
+Mount-DiskImage -ImagePath "C:\path\to\image.iso"
+```
