@@ -51,6 +51,15 @@ get-acl HKLM:\System\CurrentControlSet\services\* | Format-List *| findstr /i "<
 Get-Service <servicename> | fl *
 ```
 
+### [Check file permissions and grand full access to a specified user]
+```
+dir /q /a:
+cmd /c "dir /q /a:"
+icacls <filename>
+icacls <filename> /grant <username>:(F)
+cmd /c "icacls <filename> /grant <username>:(F)"
+```
+
 ### [Get Service Name and Path (May Require Escalated Privileges)]
 ```
 Get-Service
