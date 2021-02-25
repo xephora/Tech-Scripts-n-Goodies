@@ -233,6 +233,7 @@ mysql -u username -p -h <IP>
 mysql -h ip -u root
 mysql -h ip -u root -p
 mysql -h ip -u root -p database_name
+mysql -u <USERNAME> -p<PASSWORD> -e "use <database>;select * from <tablename>;"
 ```
 ### [Resources]
 https://www.youtube.com/watch?v=p4JgIu1mceI  
