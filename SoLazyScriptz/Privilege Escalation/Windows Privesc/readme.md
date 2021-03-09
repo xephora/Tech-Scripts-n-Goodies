@@ -89,6 +89,11 @@ DRIVERQUERY
 accesschk.exe -ucqv Spooler
 ```
 
+### [Add user to 'Remote Management Users' group]
+```
+net localgroup "Remote Management Users" user /add
+```
+
 ### [Process Dumping Procdump.exe]
 https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
 
