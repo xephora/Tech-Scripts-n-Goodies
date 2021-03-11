@@ -892,3 +892,7 @@ sc qc upnphost
 sc config upnphost depend= ""
 net start upnphost
 ```
+
+### Windows XP exploiting spooler service
+
+https://www.hacking-tutorial.com/hacking-tutorial/hacking-windows-via-ms10-061-print-spooler-service-impersonation-using-metasploit-backtrack-5/#sthash.cK5WdkJP.dpbs
