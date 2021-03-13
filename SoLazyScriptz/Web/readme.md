@@ -56,6 +56,8 @@ xhttp.send();
 
 Thanks to @Legacyy for assisting me with the javascript breakdown
 
+https://kapeli.com/cheat_sheets/Axios.docset/Contents/Resources/Documents/index
+
 ### XSS
 Resources:
 
