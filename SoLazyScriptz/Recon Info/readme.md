@@ -58,6 +58,8 @@ smbclient -L <IP>
 smbclient -L <IP> -U ''
 smbclient -L <IP> -U '' -P 'abc'
 smbclient -N //IP/Sub
+smbclient -L <IP> -U anonymous
+smbmap -r -u anonymous -H <IP>
 ```
 SMBv2 Mode
 ```
@@ -356,3 +358,8 @@ nmap --script-updatedb
 
 ### [java RMI enumeration]
 https://book.hacktricks.xyz/pentesting/1099-pentesting-java-rmi
+
+### [snmp enumeration]
+```
+snmp-check <IP>
+```
