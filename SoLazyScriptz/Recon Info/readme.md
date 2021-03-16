@@ -120,6 +120,7 @@ use <share name>
 ### [SMB VULN Check]
 ```
 nmap -p445 --script smb-vuln-ms17-010 <IP>
+nmap -v -p 139,445 --script=smb-vuln-ms08-067 --script-args=unsafe=1 <IP>
 ```
 
 ### [SMB Relay attack]
