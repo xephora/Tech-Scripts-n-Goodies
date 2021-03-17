@@ -392,6 +392,11 @@ When you are in a restricted shell, try the following..
 press `CTL+V` then press `CTL+J`  
 type `bash` and then press enter.  
 
+### [Escaping rbash]
+Firstly type `BASH_CMDS[a]=/bin/sh;a`  
+You can then type the following two exports  
+`export PATH=$PATH:/bin/` and `export PATH=$PATH:/usr/bin`
+
 ### [privesc /bin/systemctl] (To learn more about this privesc you can try the lab in tryhackme https://tryhackme.com/room/vulnversity, this was a great experience)
 ```
 1. Create a service unit file within a directory such as /dev/shm
