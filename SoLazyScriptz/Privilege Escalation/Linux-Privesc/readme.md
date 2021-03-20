@@ -52,6 +52,9 @@ cat /etc/shells
 Check crons
 cat /etc/crontab
 
+Checking logs for cron
+grep "CRON" /var/log/cron.log
+
 ./shell -p
 
 sudo strings /dev/sdb
@@ -60,6 +63,12 @@ ippsec has previously used the following commands:
 find / -user <user> -readable 2>/dev/null
 find / -user <user> -ls 2>/dev/null
 find / -user <user> -ls 2>/dev/null | grep -v 'proc\|run\|sys'
+
+Misc:
+
+dpkg -l
+lsmod
+modinfo
 ```
 
 ### Searching for kernel exploits using searchsploit
