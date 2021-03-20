@@ -62,6 +62,11 @@ find / -user <user> -ls 2>/dev/null
 find / -user <user> -ls 2>/dev/null | grep -v 'proc\|run\|sys'
 ```
 
+### Searching for kernel exploits using searchsploit
+```
+searchsploit linux kernel <os_name> <version>
+```
+
 ### groups access
 https://book.hacktricks.xyz/linux-unix/privilege-escalation/interesting-groups-linux-pe
 
