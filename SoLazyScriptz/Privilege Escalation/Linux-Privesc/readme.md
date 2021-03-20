@@ -9,6 +9,8 @@ https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
 
 https://guide.offsecnewbie.com/privilege-escalation/linux-pe  
 
+https://github.com/dirtycow/dirtycow.github.io/wiki/PoCs  
+
 ### [Running your scripts]
 ```
 chmod +x linpeas.sh
