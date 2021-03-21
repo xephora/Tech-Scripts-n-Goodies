@@ -400,3 +400,23 @@ https://book.hacktricks.xyz/pentesting/1099-pentesting-java-rmi
 ```
 snmp-check <IP>
 ```
+
+### [pentesting rtsp]
+https://book.hacktricks.xyz/pentesting/554-8554-pentesting-rtsp
+
+### [pentesting mssql]
+https://book.hacktricks.xyz/pentesting/pentesting-mssql-microsoft-sql-server
+
+```
+nmap -sV -Pn -vv -script=mysql-audit,mysql-databases,mysql-dump-hashes,mysql-empty-password,mysql-enum,mysql-info,mysql-query,mysql-users,mysql-variables,mysql-vuln-cve2012-2122 -p <port> <ip>
+```
+
+### [RDP]
+
+```
+nmap -sV --script=rdp-vuln-ms12-020 -p 3389 <ip>
+```
+
+```
+nmap --script "rdp-enum-encryption or rdp-vuln-ms12-020 or rdp-ntlm-info" -p 3389 -T4 <ip>
+```
