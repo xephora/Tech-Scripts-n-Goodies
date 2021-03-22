@@ -39,6 +39,12 @@ https://bitvijays.github.io/LFF-IPS-P3-Exploitation.html
 
 ### [SMB Enumeration p445]
 
+### [SMB to Shell]
+
+```
+winexe -U root //<ip> "cmd.exe" --system
+```
+
 ### [Enumerating basic information from SMB using MSF]
 ```
 use scanner/smb/smb_version
@@ -278,11 +284,15 @@ smtp-user-enum -M VRFY -U users.txt -t <ipaddr>
 ldapsearch -x -h <IP> -s base namingcontexts
 ldapsearch -x -b "dc=domain,dc=com" -H ldap://ipaddr
 ldapsearch -x -b "dc=domain,dc=com" -H <ipaddr>
+ldapsearch -h <ip> -p 389 -x -b "dc=mywebsite,dc=com"
+ldapsearch -x -h <ip> -D 'DOMAIN\user' -w 'hash-password'
 
 ldapsearch -h <IP> -x -b "DC=<DC>,DC=local"
 ldapsearch -h <IP> -x -b "DC=<DC>,DC=local" '(objectClass=Person)'
 ldapsearch -h <IP> -x -b "DC=<DC>,DC=local" '(objectClass=Person)' sAMAccountName
 ldapsearch -h <IP> -x -b "DC=<DC>,DC=local" '(objectClass=Person)' sAMAccountName | grep sAMAccountName
+
+ldapdomaindump <ip> -u 'DOMAIN\user' -p 'hash-password'
 ```
 https://devconnected.com/how-to-search-ldap-using-ldapsearch-examples/
 
@@ -399,6 +409,7 @@ https://book.hacktricks.xyz/pentesting/1099-pentesting-java-rmi
 ### [snmp enumeration]
 ```
 snmp-check <IP>
+snmp-check <ip> -c public|private|community
 ```
 
 ### [pentesting rtsp]
@@ -409,6 +420,10 @@ https://book.hacktricks.xyz/pentesting/pentesting-mssql-microsoft-sql-server
 
 ```
 nmap -sV -Pn -vv -script=mysql-audit,mysql-databases,mysql-dump-hashes,mysql-empty-password,mysql-enum,mysql-info,mysql-query,mysql-users,mysql-variables,mysql-vuln-cve2012-2122 -p <port> <ip>
+
+nmap -p 1433 -sU --script=ms-sql-info.nse <ip>
+
+sqsh -S <ip> -U sa
 ```
 
 ### [RDP]
@@ -420,3 +435,10 @@ nmap -sV --script=rdp-vuln-ms12-020 -p 3389 <ip>
 ```
 nmap --script "rdp-enum-encryption or rdp-vuln-ms12-020 or rdp-ntlm-info" -p 3389 -T4 <ip>
 ```
+
+### [rlogin]
+
+```
+rlogin -l <username> <ip>
+```
+
