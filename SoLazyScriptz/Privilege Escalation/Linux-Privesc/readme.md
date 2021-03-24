@@ -133,18 +133,18 @@ https://medium.com/bug-bounty-hunting/beginner-tips-to-own-boxes-at-hackthebox-9
 Example of a basic tty taken from https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/
 
 ### In reverse shell
-`python -c 'import pty; pty.spawn("/bin/bash")'`
-`Ctrl-Z`
+`python -c 'import pty; pty.spawn("/bin/bash")'`  
+`Ctrl-Z`  
 
 ### In Kali
-`stty raw -echo`
-`fg`
+`stty raw -echo`  
+`fg`  
 
 ### In reverse shell
-`reset`
-`export SHELL=bash`
-`export TERM=xterm-256color`
-`stty rows <num> columns <cols>`
+`reset`  
+`export SHELL=bash`  
+`export TERM=xterm-256color`  
+`stty rows <num> columns <cols>`  
 
 ```
 python -c 'import pty; pty.spawn("/bin/sh")'
