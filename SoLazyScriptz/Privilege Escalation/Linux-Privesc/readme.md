@@ -126,10 +126,25 @@ find . | grep "database*\|config*\|password*\|users*\|secret*\|db\|\.config"
 3. ssh into the box using your private key ssh -i privatekey username@IP
 ```
 
-### [tty shell]
-https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/  
+## [tty shell]
 https://medium.com/bugbountywriteup/pimp-my-shell-5-ways-to-upgrade-a-netcat-shell-ecd551a180d2  
 https://medium.com/bug-bounty-hunting/beginner-tips-to-own-boxes-at-hackthebox-9ae3fec92a96  
+
+Example of a basic tty taken from https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/
+
+### In reverse shell
+`python -c 'import pty; pty.spawn("/bin/bash")'`
+`Ctrl-Z`
+
+### In Kali
+`stty raw -echo`
+`fg`
+
+### In reverse shell
+`reset`
+`export SHELL=bash`
+`export TERM=xterm-256color`
+`stty rows <num> columns <cols>`
 
 ```
 python -c 'import pty; pty.spawn("/bin/sh")'
