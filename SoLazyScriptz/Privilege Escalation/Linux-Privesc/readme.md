@@ -252,6 +252,9 @@ mysqldump -h IP -P PORT -u mysql_username -ppassword Database_Name
 mysqldump -h IP -P PORT -u mysql_username -ppassword Database_Name Table_Name
 ```
 
+### [read and write files using mysql]
+https://sqlwiki.netspi.com/attackQueries/readingAndWritingFiles/#mysql
+
 ### [Abusing PATH]
 ```
 Abusing PATH allows you to trick a program into executing your payload instead of the intended program.
