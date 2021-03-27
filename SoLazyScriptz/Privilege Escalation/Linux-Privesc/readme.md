@@ -538,7 +538,7 @@ snap.snap must then be base64 decoded
 
 upload the decoded_snap.snap onto the remote target
 
-privilege escalate by using `sudo snap install snap.snap --devmode`
+privilege escalate by using `sudo snap install decoded_snap.snap --devmode`
 
 
 
