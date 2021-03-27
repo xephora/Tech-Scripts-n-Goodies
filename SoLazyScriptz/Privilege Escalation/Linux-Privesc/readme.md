@@ -503,7 +503,7 @@ sudo chmod +s /tmp/suid
 
 https://github.com/nongiach/sudo_inject
 
-### [Uploading an SSH key using snap]
+### [Uploading an SSH key using snap @Thanks to @iiLegacyii]
 
 This code was taken from https://www.exploit-db.com/exploits/46362
 
