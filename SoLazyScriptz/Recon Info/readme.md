@@ -17,6 +17,11 @@ zone_xfer
 Usage: ./zone_xfer example.com 
 ```
 
+### [ftp vsftpd-backdoor]
+```
+nmap --script ftp-vsftpd-backdoor -p 21 <IP>
+```
+
 ### Sub Domain Takover
 https://www.hackerone.com/blog/Guide-Subdomain-Takeovers
 
