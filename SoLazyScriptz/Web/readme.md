@@ -364,6 +364,10 @@ pickle.loads("(dp0\nS'test'\np1\nS'Test2'\np2\nsS'Test3'\np3\nS'Test4'\np4\ns.")
 https://portswigger.net/web-security/deserialization
 
 ### XXE
+
+Resources:  
+https://www.youtube.com/watch?v=aQFG-97f900
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
