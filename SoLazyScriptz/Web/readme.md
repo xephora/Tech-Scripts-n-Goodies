@@ -210,6 +210,7 @@ httpd.serve_forever()
 ```
 
 ### lfi
+https://github.com/payloadbox/rfi-lfi-payload-list  
 https://github.com/p0cl4bs/kadimus  
 https://github.com/mzfr/liffy  
 
