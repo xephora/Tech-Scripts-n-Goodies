@@ -540,5 +540,6 @@ upload the decoded_snap.snap onto the remote target
 
 privilege escalate by using `sudo snap install decoded_snap.snap --devmode`
 
-
+### sudo 1.8.0 < 1.8.3p1 privesc  
+https://www.exploit-db.com/exploits/25134
 
