@@ -447,3 +447,7 @@ nmap --script "rdp-enum-encryption or rdp-vuln-ms12-020 or rdp-ntlm-info" -p 338
 rlogin -l <username> <ip>
 ```
 
+### [More Verbosity on version]
+```
+nmap -sSV --version-intensity 9 <IP>
+```
