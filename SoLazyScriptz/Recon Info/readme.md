@@ -298,6 +298,8 @@ ldapsearch -h <IP> -x -b "DC=<DC>,DC=local" '(objectClass=Person)' sAMAccountNam
 ldapsearch -h <IP> -x -b "DC=<DC>,DC=local" '(objectClass=Person)' sAMAccountName | grep sAMAccountName
 
 ldapdomaindump <ip> -u 'DOMAIN\user' -p 'hash-password'
+
+nmap -p 389 --script ldap-search <ip>
 ```
 https://devconnected.com/how-to-search-ldap-using-ldapsearch-examples/
 
