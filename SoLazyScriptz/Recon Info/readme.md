@@ -44,6 +44,11 @@ https://bitvijays.github.io/LFF-IPS-P3-Exploitation.html
 
 ### [SMB Enumeration p445]
 
+### [Enumerate SMB Users]
+```
+use scanner/smb/smb_enumusers
+```
+
 ### [SMB to Shell]
 
 ```
