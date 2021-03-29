@@ -293,7 +293,8 @@ hydra -l tomcat -P passfile.txt -t -s 443 -f <IP> http-get /manager/html -s 8080
 ### bypassing php functions (Thanks to @dee-see and @kargha for recommending).
 
 Resources:  
-https://stackoverflow.com/questions/732832/php-exec-vs-system-vs-passthru  
+https://stackoverflow.com/questions/732832/php-exec-vs-system-vs-passthru 
+https://stackoverflow.com/questions/3115559/exploitable-php-functions  
 
 table taken from the above stackoverflow thread. This was extremely useful.
 
