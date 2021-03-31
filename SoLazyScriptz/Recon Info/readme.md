@@ -458,3 +458,10 @@ rlogin -l <username> <ip>
 ```
 nmap -sSV --version-intensity 9 <IP>
 ```
+
+### [ssh bruteforce]
+```
+use scanner/ssh/ssh_login
+
+You work off a list of usernames and passwords.
+```
