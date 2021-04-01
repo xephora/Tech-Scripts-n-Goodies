@@ -240,3 +240,11 @@ fdisk -l
 ```
 cat /proc/mounts
 ```
+
+### restart your logon session
+```
+switch tty using ctl+alt+F6 then login to your account (cli)
+
+w
+pkill -9 -t <TTY> (session associated with TTY7 normally)
+```
