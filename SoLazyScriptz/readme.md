@@ -35,7 +35,7 @@ https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/SoLazyScriptz/WebS
 ```
 Basic Linux Commands that helps me..
 ```
-https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/SoLazyScriptz/Privilege%20Escalation/Linux-Privesc
+https://github.com/xephora/Tech-Scripts-n-Goodies/tree/master/SoLazyScriptz/Linux%20Basix
 
 ## Windows Basix
 ```
