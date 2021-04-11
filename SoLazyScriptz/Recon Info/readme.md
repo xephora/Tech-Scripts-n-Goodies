@@ -39,6 +39,13 @@ queryusergroups <RID>
 ### [rpcinfo]
 `rpcinfo <IP>`
 
+### [rpcmap]
+```
+rpcmap.py 'ncacn_ip_tcp:<ip>'
+
+rpcmap.py 'ncacn_ip_tcp:<ip>' -brute-uuids -brute-opnums -auth-level 1 -opnum-max 5
+```
+
 ### [rpc enumeration]
 https://bitvijays.github.io/LFF-IPS-P3-Exploitation.html
 
