@@ -475,3 +475,8 @@ use scanner/ssh/ssh_login
 
 You work off a list of usernames and passwords.
 ```
+
+### [remote registries]
+```
+reg.py -hashes hash:hash domain.local/username@host query -keyName HKU\\
+```
