@@ -152,6 +152,9 @@ nmap -p445 --script smb-vuln-ms17-010 <IP>
 nmap -v -p 139,445 --script=smb-vuln-ms08-067 --script-args=unsafe=1 <IP>
 ```
 
+### [Checking Windows XP for SMB Exploit]
+https://github.com/andyacer/ms08_067
+
 ### [SMB Relay attack]
 https://www.youtube.com/watch?v=ctLVMi1_zBc&feature=emb_title
 
