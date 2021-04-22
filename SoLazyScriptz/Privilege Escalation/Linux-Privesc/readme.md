@@ -73,6 +73,9 @@ lsmod
 modinfo
 ```
 
+### Reusing sudo tokens
+https://book.hacktricks.xyz/linux-unix/privilege-escalation#reusing-sudo-tokens
+
 ### Searching for kernel exploits using searchsploit
 ```
 searchsploit linux kernel <os_name> <version>
