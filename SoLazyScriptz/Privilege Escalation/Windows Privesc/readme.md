@@ -903,3 +903,6 @@ https://www.hacking-tutorial.com/hacking-tutorial/hacking-windows-via-ms10-061-p
 ### [sharpcollection]
 
 https://github.com/Flangvik/SharpCollection
+
+### [PPL Dump - Credential Dumping]
+https://github.com/itm4n/PPLdump
