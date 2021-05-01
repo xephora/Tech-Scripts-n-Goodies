@@ -566,9 +566,9 @@ docker -H <IP>:<PORT> run -v /:/mnt --rm -it alpine:<version> chroot /mnt /bin/b
 ### Unicode Cheatsheet thanks to @dee-see for suggesting the link
 https://gosecure.github.io/unicode-pentester-cheatsheet/
 
-### LFI log poisoning (Recommended by 5h4d3)
+### LFI to RCE log poisoning (Recommended by 5h4d3)
 
-https://shahjerry33.medium.com/rce-via-lfi-log-poisoning-the-death-potion-c0831cebc16d
-https://outpost24.com/blog/from-local-file-inclusion-to-remote-code-execution-part-1
+https://shahjerry33.medium.com/rce-via-lfi-log-poisoning-the-death-potion-c0831cebc16d  
+https://outpost24.com/blog/from-local-file-inclusion-to-remote-code-execution-part-1  
 
 
