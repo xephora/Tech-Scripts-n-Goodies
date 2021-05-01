@@ -569,6 +569,6 @@ https://gosecure.github.io/unicode-pentester-cheatsheet/
 ### LFI log poisoning (Recommended by 5h4d3)
 
 https://shahjerry33.medium.com/rce-via-lfi-log-poisoning-the-death-potion-c0831cebc16d
-
-### LFI to RCE via Log Poisoning
 https://outpost24.com/blog/from-local-file-inclusion-to-remote-code-execution-part-1
+
+
