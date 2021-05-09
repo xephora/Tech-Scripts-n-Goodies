@@ -571,4 +571,9 @@ https://gosecure.github.io/unicode-pentester-cheatsheet/
 https://shahjerry33.medium.com/rce-via-lfi-log-poisoning-the-death-potion-c0831cebc16d  
 https://outpost24.com/blog/from-local-file-inclusion-to-remote-code-execution-part-1  
 
+### webasm based CTF
 
+1. Intercept the webasm page (easiest method is using your browser debugging tool).  
+2. Capture the webasm data using wget `wget "http://ctfchallenge/aD8SvhyVkb"`  
+3. I then extracted what appears to be a sequence of characters and numbers that looks different than the asm data. For example, in this picoctf I had found `+xakgK\Nsl<8?nmi:<i;0j9:;?nm8i=0??:=njn=9u`.  
+4. Using Cyberchef, you can use the magic feature to to retrieve the flag `XOR({'option':'Hex','string':'8'},'Standard',false)`.  
