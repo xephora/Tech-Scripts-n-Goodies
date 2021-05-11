@@ -652,7 +652,7 @@ if(isset($perm) && $perm->is_admin()){
 
 `TzoxMDoiYWNjZXNzX2xvZyI6MTp7czo4OiJsb2dfZmlsZSI7czo3OiIuLi9mbGFnIjt9`
 
-### NodeRed Exploit
+### NodeRed Exploit (Authenticated)
 https://csenox.github.io/hackthebox-linux/2020/10/07/HTB-Reddish/  
 https://quentinkaiser.be/pentesting/2018/09/07/node-red-rce/  
 
