@@ -45,4 +45,15 @@ https://github.com/grongor/knock
 ./knock <IP> <PORT1> <PORT2> <PORT3>
 ```
 
+###  reverse lookups
 
+```
+nmap --dns-servers <nsip> -R <rhost>
+
+nslookup
+server <nsip>
+set type=ptr
+<rhost>
+
+ping -a <rhost>
+```
