@@ -38,6 +38,14 @@ crontab -l
 cat /etc/crontab
 ```
 
+### Creating cron jobs (Each Astrick represents [Minutes, Hours, Weeks, Months, Years])
+```
+crontab -e
+
+This example executes script.sh every 30 minutes
+30 * * * * /root/script.sh
+```
+
 ### view active connections (associated processes)
 ```
 ss -anp 
