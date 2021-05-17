@@ -74,6 +74,19 @@ https://github.com/payloadbox/xss-payload-list
 
 https://github.com/pgaijin66/XSS-Payloads
 
+### bugbountyhunting
+https://www.bugbountyhunting.com/
+
+Great XSS example from bugbountyhunting  
+```
+x = %09, %20, %0d
+
+xjavascript:alert(1) 
+javaScriptx:alert(1) 
+xjavascriptx:alert(1) 
+javaxscript:alert(1) 
+```
+
 ### DOM Based XSS
 
 The following few examples below was taken from the links below. These were great examples that helped me better understand the nature of DOM based XSS.
