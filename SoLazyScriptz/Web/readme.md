@@ -699,3 +699,43 @@ r
 b *main
 call system("<command exec>")
 ```
+
+### common open-redirect param names
+https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Understanding%20and%20Discovering%20Open%20Redirect%20Vulnerabilities%20-%20Trustwave.pdf
+
+```
+RelayState 
+ReturnUrl 
+RedirectUri
+Return
+Return_url
+Redirect
+Redirect_uri
+Redirect_url
+RedirectUrl
+Forward
+ForwardUrl
+Forward_URL
+SuccessUrl
+Redir
+Exit_url
+Destination
+Url
+relayState 
+returnUrl 
+redirectUri
+return
+return_url
+redirect
+redirect_uri
+redirect_url
+redirectUrl
+forward
+forwardUrl
+forward_URL
+successUrl
+redir
+exit_url
+destination
+url
+```
