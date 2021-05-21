@@ -10,6 +10,13 @@ https://saadahmedx.medium.com/weaponizing-xss-for-fun-profit-a1414f3fcee9
 https://github.com/swisskyrepo/PayloadsAllTheThings  
 https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting/server-side-xss-dynamic-pdf  
 
+### CTF resources
+https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Exploiting%20Improper%20Redirection%20in%20PHP%20Web%20Applications.pdf  
+https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20HTTP%20basic%20authentication%20and%20digest%20authentication.pdf  
+https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20OWASP%20testing%20guide%20v4.pdf  
+https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20HTTP%20request%20smuggling.pdf  
+https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Secure%20file%20upload%20in%20PHP%20web%20applications.pdf  
+
 ### The Burp Methodology
 https://portswigger.net/support/the-burp-methodology  
 
