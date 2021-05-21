@@ -673,3 +673,8 @@ fpm -n x -s dir -t freebsd -a all --before-install ./x.sh /tmp/temporary
 running your pkg:
 sudo pkg install -y --no-repo-update ./x-1.0.txz
 ```
+
+### Using git to view sensitive data in a localized git repo
+
+1. Use `git log` to view git log history to view the commit ids  
+2. Then you can utilize `git log -p -1` `git log -p -2`... etc to view the content within each commit.  
