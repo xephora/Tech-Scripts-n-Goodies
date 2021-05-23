@@ -1,6 +1,6 @@
 # Windows pivoting
 
-### Added nmap portable for linux systems
+### Added nmap portable for linux systems to port scan.
 
 ### Chisel for Windows
 https://github.com/jpillora/chisel/releases
