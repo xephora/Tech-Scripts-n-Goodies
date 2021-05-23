@@ -1,5 +1,7 @@
 # Windows pivoting
 
+### Added nmap portable for linux systems
+
 ### Chisel for Windows
 https://github.com/jpillora/chisel/releases
 
