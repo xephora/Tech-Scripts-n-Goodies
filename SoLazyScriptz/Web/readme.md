@@ -740,7 +740,7 @@ destination
 url
 ```
 
-## WAF bypass techniques (Great examples taken from the following link: https://github.com/0xInfection/Awesome-WAF#how-wafs-work).
+## WAF bypass techniques (Great examples taken from the following link: https://github.com/0xInfection/Awesome-WAF#how-wafs-work).  Awsome breakdown provided in the Awesome-WAF repository.
 
 `%09`  
 `%0d`  
