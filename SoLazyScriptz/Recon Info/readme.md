@@ -498,3 +498,6 @@ You work off a list of usernames and passwords.
 ```
 reg.py -hashes hash:hash domain.local/username@host query -keyName HKU\\
 ```
+
+### [heart bleed check]
+https://github.com/sensepost/heartbleed-poc
