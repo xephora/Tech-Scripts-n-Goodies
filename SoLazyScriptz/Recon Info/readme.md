@@ -223,6 +223,10 @@ Display NFS
 ```
 showmount -e IP
 ```
+
+NMAP command to enumerate NFS  
+`nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount <ip>`
+
 mount NFS
 ```
 mkdir /tmp/yoursubdirectory
