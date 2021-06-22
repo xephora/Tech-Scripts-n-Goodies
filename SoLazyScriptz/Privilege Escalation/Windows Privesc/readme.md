@@ -131,6 +131,8 @@ reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlo
 ```
 
 ### [Powerup.ps1 Usage]
+https://github.com/PowerShellMafia/PowerSploit/blob/master/Privesc/PowerUp.ps1
+
 ```
 Manual Powershell Priv esc powerup.ps1
 powershell -nop -exec bypass
