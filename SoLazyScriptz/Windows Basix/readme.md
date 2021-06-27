@@ -1,6 +1,10 @@
 ### Resources:
 https://docs.microsoft.com/en-us/powershell/module/smbshare/get-smbshareaccess?view=win10-ps  
 
+### [Get Process Paths]
+```
+Get-Process | Select-Object ProcessName, Id, Path | fl
+```
 
 ### [search for string within files using powershell]
 ```
