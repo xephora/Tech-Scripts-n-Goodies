@@ -654,8 +654,8 @@ cp --parents .ssh/authorized_keys /root
 ```
 
 ### Using fpm to generate a package (pkg exploit)
-https://github.com/jordansissel/fpm
-https://gtfobins.github.io/gtfobins/yum/#sudo
+https://github.com/jordansissel/fpm  
+https://gtfobins.github.io/gtfobins/yum/#sudo  
 
 ```
 targets:
