@@ -823,7 +823,7 @@ time curl -s -d 'scep-profile-name=%99999999c' https://localhost/sslmgr >/dev/nu
 time curl -s -d 'scep-profile-name=%999999999c' https://localhost/sslmgr >/dev/null
 ```
 
-### YAML Deserialization Attack
+### YAML Deserialization Attack (Thanks to @felamos)
 
 Testing a poc
 ```
@@ -834,7 +834,7 @@ Testing a poc
 ]
 ```
 
-Generating a payload (Thanks to @felamos)
+Generating a payload
 
 payload.jar
 
