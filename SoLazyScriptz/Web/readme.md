@@ -834,7 +834,7 @@ Testing a poc
 ]
 ```
 
-Generating a payload
+Generating a payload (Thanks to @felamos)
 
 payload.jar
 
@@ -853,9 +853,13 @@ payload.jar
  }
  ```
  
- Compiling your payload using java
+ Compiling your payload using java  
+ https://github.com/artsploit/yaml-payload
  
-`jar -cvf payload.jar -C src/ .`
+```
+javac src/artsploit/AwesomeScriptEngineFactory.java
+jar -cvf payload.jar -C src/ .
+```
 
 Executing your yaml payload
 
