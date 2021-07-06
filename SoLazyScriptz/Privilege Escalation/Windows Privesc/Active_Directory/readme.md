@@ -9,10 +9,17 @@ https://www.varonis.com/blog/pen-testing-active-directory-environments-part-intr
 ### [PowerView.ps1]
 
 https://book.hacktricks.xyz/windows/basic-powershell-for-pentesters/powerview
-
+https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993
 ```
 get-aduser <username>
 Get-NetDomain
+```
+
+### [Sharphound to extract active directory objects]
+https://github.com/BloodHoundAD/SharpHound
+
+```
+Invoke-Bloodhound -CollectionMethod All -Domain domain.local -ZipFileName file.zip
 ```
 
 ### [Dumping credentials from the domain controller with DCSync]
