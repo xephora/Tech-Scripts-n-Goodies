@@ -6,6 +6,11 @@ https://docs.microsoft.com/en-us/powershell/module/smbshare/get-smbshareaccess?v
 Get-Process | Select-Object ProcessName, Id, Path | fl
 ```
 
+### [Get SIDs]
+```
+Get-WmiObject -Class Win32_UserAccount
+```
+
 ### [search for string within files using powershell]
 ```
 findstr /s "keyword" .\*
