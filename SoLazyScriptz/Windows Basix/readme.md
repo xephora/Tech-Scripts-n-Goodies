@@ -17,6 +17,7 @@ cat filename | findstr "keyword"
 gci -r -fi NameOfFile.exe
 gci -r -fi NameOf*
 gci -r -fi *.exe
+gci .\* -Recurse | Select-String -Pattern password
 ```
 
 ### [Create network share using powershell]
