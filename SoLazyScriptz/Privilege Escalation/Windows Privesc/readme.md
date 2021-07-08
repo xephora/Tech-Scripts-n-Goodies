@@ -218,6 +218,10 @@ ruby evil-winrm.rb -i IP -u <username> -p '<password>' -s '/path/to/scripts'
 ruby evil-winrm.rb -i IP -u <username> -H '<hash>' -s '/path/to/scripts'
 ```
 
+### [new windows php-reverse-shell]
+https://raw.githubusercontent.com/ivan-sincek/php-reverse-shell/master/src/php_reverse_shell.php
+
+
 ### [Download file]
 
 [Cert Util]
