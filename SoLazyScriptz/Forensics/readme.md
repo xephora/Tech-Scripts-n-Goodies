@@ -45,11 +45,16 @@ volatility -f MEMORY_FILE.raw --profile=PROFILE pslist
 volatility -f MEMORY_FILE.raw --profile=PROFILE netscan
 volatility -f MEMORY_FILE.raw --profile=PROFILE psxview -> look for False's
 volatility -f MEMORY_FILE.raw --profile=PROFILE dlllist
-olatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>
+volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>
 volatility -f MEMORY_FILE.raw --profile=PROFILE ldrmodules -> look for False's
 volatility -f MEMORY_FILE.raw --profile=PROFILE apihooks -> look for patched system files, look for <unknown>
 volatility -f MEMORY_FILE.raw --profile=PROFILE malfind -D /tmp
 volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>
 volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID hivelist
 volatility -f MEMORY_FILE.raw --profile=PROFILE printkey -K 'Software\Microsoft\Windows\CurrentVersion\Run'
+volatility -f MEMORY_FILE.raw --profile=PROFILE procdump -p PID --dump-dir /tmp  -> generates exe
+volatility -f MEMORY_FILE.raw --profile=PROFILE memdump -p PID --dump-dir /tmp  -> dumps mem dump for process
+volatility -f MEMORY_FILE.raw --profile=PROFILE cmdline  -> cmd history
+volatility -f MEMORY_FILE.raw --profile=PROFILE sockets
+volatility -f MEMORY_FILE.raw --profile=PROFILE connscan
 ```
