@@ -36,3 +36,20 @@ https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/do
 
 ### sqlite browser
 https://sqlitebrowser.org/dl/#windows
+
+### Volatility
+
+```
+volatility -f MEMORY_FILE.raw imageinfo
+volatility -f MEMORY_FILE.raw --profile=PROFILE pslist
+volatility -f MEMORY_FILE.raw --profile=PROFILE netscan
+volatility -f MEMORY_FILE.raw --profile=PROFILE psxview -> look for False's
+volatility -f MEMORY_FILE.raw --profile=PROFILE dlllist
+olatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>
+volatility -f MEMORY_FILE.raw --profile=PROFILE ldrmodules -> look for False's
+volatility -f MEMORY_FILE.raw --profile=PROFILE apihooks -> look for patched system files, look for <unknown>
+volatility -f MEMORY_FILE.raw --profile=PROFILE malfind -D /tmp
+volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>
+volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID hivelist
+volatility -f MEMORY_FILE.raw --profile=PROFILE printkey -K 'Software\Microsoft\Windows\CurrentVersion\Run'
+```
