@@ -262,3 +262,9 @@ pkill -9 -t <TTY> (session associated with TTY7 normally)
 ```
 wget -m http://server/path/to/directory/
 ```
+
+### Remove user from sudo group
+
+```
+sudo gpasswd -d <username> sudo
+```
