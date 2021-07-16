@@ -268,3 +268,10 @@ https://askubuntu.com/questions/335987/remove-sudo-privileges-from-a-user-withou
 ```
 sudo gpasswd -d <username> sudo
 ```
+
+### configuring ssh
+https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-20-04/  
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/v2v_guide/preparation_before_the_p2v_migration-enable_root_login_over_ssh  
+
+### Setting up apache
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04-quickstart
