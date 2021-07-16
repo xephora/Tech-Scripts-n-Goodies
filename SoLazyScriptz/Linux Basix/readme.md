@@ -264,7 +264,7 @@ wget -m http://server/path/to/directory/
 ```
 
 ### Remove user from sudo group
-
+https://askubuntu.com/questions/335987/remove-sudo-privileges-from-a-user-without-deleting-the-user
 ```
 sudo gpasswd -d <username> sudo
 ```
