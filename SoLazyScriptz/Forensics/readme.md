@@ -57,4 +57,40 @@ volatility -f MEMORY_FILE.raw --profile=PROFILE memdump -p PID --dump-dir /tmp  
 volatility -f MEMORY_FILE.raw --profile=PROFILE cmdline  -> cmd history
 volatility -f MEMORY_FILE.raw --profile=PROFILE sockets
 volatility -f MEMORY_FILE.raw --profile=PROFILE connscan
+vol.py -f memimage.raw --profile=<profile> dumpfiles --dump-dir memdump -n
+vol.py -f memimage.raw --profile=<profile> dumpfiles -Q <offset_assoc_with_file>
+vol.py -f memimage.raw --profile=<profile> dumpfiles -r file.txt --dump-dir memdump
+vol.py -f memimage.raw --profile=<profile> dumpfiles -r txt$ --dump-dir memdump -n
+vol.py -f memimage.raw --profile=<profile> filescan | Select-String "keyword"
+vol.py -f memimage.raw --profile=<profile> cmdscan
+vol.py -f memimage.raw --profile=<profile> shellbags
 ```
+
+### Using pypykatz
+https://github.com/skelsec/pypykatz
+
+Installation
+```
+installing pypykatz
+pip3 install pypykatz
+```
+
+Local Dump of lsass
+```
+python3 -m pypykatz lsa minidump lsassdump.dmp
+```
+
+Resources  
+https://www.stevencampbell.info/Parsing-Creds-From-Lsass.exe-Dumps-Using-Pypykatz/  
+
+
+### Extracting data from SAM hive
+https://hatsoffsecurity.com/2014/05/21/using-the-sam-hive-to-profile-user-accounts/  
+https://github.com/keydet89/RegRipper3.0  
+
+> hexeditor may also assist with retrieving information you need from the hive files.
+
+### Parsing BMC
+https://github.com/ANSSI-FR/bmc-tools
+
+
