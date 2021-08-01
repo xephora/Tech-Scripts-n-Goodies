@@ -39,6 +39,9 @@ https://sqlitebrowser.org/dl/#windows
 
 ### Volatility
 
+Resources (Thanks for @Firehawk for providing this link)
+https://www.andreafortuna.org/2017/11/15/how-to-retrieve-users-passwords-from-a-windows-memory-dump-using-volatility/ 
+
 ```
 volatility -f MEMORY_FILE.raw imageinfo
 volatility -f MEMORY_FILE.raw --profile=PROFILE pslist
