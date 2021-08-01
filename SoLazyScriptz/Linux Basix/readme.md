@@ -275,3 +275,11 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/v2
 
 ### Setting up apache
 https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04-quickstart
+
+### Creating aliases
+https://www.tecmint.com/create-alias-in-linux/
+
+```
+nano ~/.bashrc
+alias powershell='pwsh'
+```
