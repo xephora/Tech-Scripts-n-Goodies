@@ -93,4 +93,18 @@ https://github.com/keydet89/RegRipper3.0
 ### Parsing BMC
 https://github.com/ANSSI-FR/bmc-tools
 
+### Using exiftool
+https://github.com/exiftool/exiftool
 
+```
+exiftool source.png
+```
+
+### binwalk
+```
+binwalk file
+
+extracting data from an image
+
+binwalk -e file
+```
