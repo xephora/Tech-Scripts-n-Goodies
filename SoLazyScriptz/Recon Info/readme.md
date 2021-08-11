@@ -34,6 +34,43 @@ rpcclient -U "" <IP>
 enumdomusers
 
 queryusergroups <RID>
+
+
+Basic RPC calls:
+
+enumalsgroups
+enumdomains
+enumdrivers
+enumkey
+enumprivs
+enumdata
+enumdomgroups
+enumforms
+enumports
+enumtrust
+enumdataex
+enumdomusers
+enumjobs
+enumprinter
+enumalsgroups domain
+lookupnames administrators
+srvinfo
+lsaenumprivsaccount
+dfsadd
+dfsremove
+dfsgetinfo
+getdriverdir
+
+spools:
+
+adddriver
+addprinter
+deldriver
+deldriverex
+getprinter
+openprinter
+setprintername
+debuglevel
 ```
 
 ### [rpcinfo]
