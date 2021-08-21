@@ -895,3 +895,7 @@ Executing your yaml payload
   ]]
 ]
 ```
+
+### graphql
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/GraphQL%20Injection  
+https://jsonformatter.org/json-pretty-print  
