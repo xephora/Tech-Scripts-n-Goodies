@@ -899,3 +899,6 @@ Executing your yaml payload
 ### graphql
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/GraphQL%20Injection  
 https://jsonformatter.org/json-pretty-print  
+
+### S3 Bucket creation documentation for bucket takeovers
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html
