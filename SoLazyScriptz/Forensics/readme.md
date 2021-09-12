@@ -111,3 +111,14 @@ extracting data from an image
 
 binwalk -e file
 ```
+
+### pdftool remnux
+
+retrieve object numbers
+pdftool.py iu pdf_file.pdf
+
+select object numbers
+pdftool.py iu -s objectnumber pdf_file.pdf
+
+dump object
+pdftool.py iu -s objectnumber -d pdf_file.pdf
