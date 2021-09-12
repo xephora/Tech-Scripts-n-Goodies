@@ -113,7 +113,7 @@ binwalk -e file
 ```
 
 ### pdftool remnux
-
+```
 retrieve object numbers
 pdftool.py iu pdf_file.pdf
 
@@ -122,3 +122,4 @@ pdftool.py iu -s objectnumber pdf_file.pdf
 
 dump object
 pdftool.py iu -s objectnumber -d pdf_file.pdf
+```
