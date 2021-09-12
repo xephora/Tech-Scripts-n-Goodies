@@ -57,3 +57,8 @@ set type=ptr
 
 ping -a <rhost>
 ```
+
+### Decrypting https traffic using a master key log file for wireshark
+
+https://www.youtube.com/watch?v=5qecyZHL-GU  
+https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format  
