@@ -902,3 +902,13 @@ https://jsonformatter.org/json-pretty-print
 
 ### S3 Bucket creation documentation for bucket takeovers
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html
+
+### Server Sided Request Forgery
+https://cheatsheetseries.owasp.org/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Bible.pdf
+
+- internal networks or internal ports
+```
+https://127.0.0.1:5555
+https://169.254.169.254
+file://127.0.0.1
+```
