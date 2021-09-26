@@ -1,43 +1,38 @@
 # Forensic Tools
 
-### Usage for unpack_7z
-```
-./unpack_7z <filename>.7z
-```
+## Resources:
 
-### Usage for xtract_chromedata
-```
-./xtract_chromedata
+Useful Forensic Tools:  
+https://ericzimmerman.github.io/#!index.md
 
-Enter <filename>.doc
-```
-### Alternative Datastreams
+Alternative Datastreams  
 https://blog.malwarebytes.com/101/2015/07/introduction-to-alternate-data-streams/
 
-### Browser history
+View Browsing history:  
 https://www.nirsoft.net/utils/browsing_history_view.html
 
-### Extracting data out of thumbcache
+Extracting data out of thumbcache:  
 https://thumbsviewer.github.io/
 
-### USB History
+USB History:  
 https://www.cybrary.it/blog/0p3n/usb-forensics-find-the-history-of-every-connected-usb-device-on-your-computer/
 
-### Retrieve SIDs or current user
+https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download
+
+Retrieve SIDs or current user:  
 ```
 whoami /all
 reg query HKU
 ```
-### wmic
+
+wmic:  
 https://resources.infosecinstitute.com/topic/commandline-malware-and-forensics/
 
-### Resources
-https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download
-
-### sqlite browser
+sqlite browser:  
 https://sqlitebrowser.org/dl/#windows
 
-### Volatility
+
+## Volatility
 
 Resources (Thanks for @Firehawk for providing this link)
 https://www.andreafortuna.org/2017/11/15/how-to-retrieve-users-passwords-from-a-windows-memory-dump-using-volatility/ 
@@ -69,7 +64,7 @@ vol.py -f memimage.raw --profile=<profile> cmdscan
 vol.py -f memimage.raw --profile=<profile> shellbags
 ```
 
-### Using pypykatz
+## Using pypykatz
 https://github.com/skelsec/pypykatz
 
 Installation
@@ -83,9 +78,8 @@ Local Dump of lsass
 python3 -m pypykatz lsa minidump lsassdump.dmp
 ```
 
-Resources  
+### Resources on pypykatz
 https://www.stevencampbell.info/Parsing-Creds-From-Lsass.exe-Dumps-Using-Pypykatz/  
-
 
 ### Extracting data from SAM hive
 https://hatsoffsecurity.com/2014/05/21/using-the-sam-hive-to-profile-user-accounts/  
