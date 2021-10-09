@@ -294,7 +294,7 @@ $cred = New-Object System.Management.Automation.PSCredential -ArgumentList $user
 New-PSSession -Credential $cred | Enter-PSSession
 ```
 
-### [BinPath and ImagePath]
+### [Service BinPath and ImagePath]
 https://pentestlab.blog/tag/imagepath/
 ```
 powershell binpath
