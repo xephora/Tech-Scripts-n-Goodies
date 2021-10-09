@@ -527,6 +527,12 @@ snmp-check <IP>
 snmp-check <ip> -c public|private|community
 ```
 
+### [snmp walk enumeration]
+
+```
+snmpwalk -v 2c -c public <ip> .1.3.6.1.4.1.11.2.3.9.1.1.13.0
+```
+
 ### [pentesting rtsp]
 https://book.hacktricks.xyz/pentesting/554-8554-pentesting-rtsp
 
