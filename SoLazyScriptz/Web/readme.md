@@ -923,7 +923,7 @@ https://www.veracode.com/blog/secure-development/data-extraction-command-executi
 ='file://etc/passwd'#$passwd.A1
 ```
 
-### Upper / Lowercase to Unicode
+### Upper and Lower case
 https://eng.getwisdom.io/hacking-github-with-unicode-dotless-i/
 
 ```
