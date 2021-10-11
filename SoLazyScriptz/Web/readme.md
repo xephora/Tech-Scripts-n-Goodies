@@ -943,3 +943,10 @@ Lowercase
 Char	Code Point	Output Char
 K	0x212A	k
 ```
+
+### Using git dumper to enumerate git content
+https://github.com/arthaud/git-dumper
+
+```
+git-dumper {url}/.git
+```
