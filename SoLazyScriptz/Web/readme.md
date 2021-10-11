@@ -960,5 +960,5 @@ Char	Code Point	Output Char
 https://github.com/arthaud/git-dumper
 
 ```
-git-dumper {url}/.git
+git-dumper {url}/.git outdir/
 ```
