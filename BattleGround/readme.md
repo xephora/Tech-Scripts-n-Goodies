@@ -1,4 +1,4 @@
-# Allthings HTB BattleGround
+# HTB BattleGround tips
 
 ### Defending
 
