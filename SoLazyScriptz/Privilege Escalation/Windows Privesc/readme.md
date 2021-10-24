@@ -18,6 +18,7 @@ https://www.hackingarticles.in/impacket-guide-smb-msrpc/
 https://www.secureauth.com/labs/open-source-tools/impacket  
 https://book.hacktricks.xyz/shells/shells/windows  
 https://github.com/alphaSeclab/windows-security/blob/master/Readme_en.md#686597a4cff20c60a8e86116cde645fb  
+https://github.com/cube0x0/SharpSystemTriggers  
   
 ### [Check user]
 ```
