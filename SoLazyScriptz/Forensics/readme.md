@@ -62,6 +62,27 @@ vol.py -f memimage.raw --profile=<profile> dumpfiles -r txt$ --dump-dir memdump 
 vol.py -f memimage.raw --profile=<profile> filescan | Select-String "keyword"
 vol.py -f memimage.raw --profile=<profile> cmdscan
 vol.py -f memimage.raw --profile=<profile> shellbags
+
+vol3 -f memdump.raw windows.envars
+vol3 -f memdump.raw windows.pslist
+vol3 -f memdump.raw windows.dumpfiles --pid <pid>
+vol3 -f memdump.raw windows.pstree
+vol3 -f memdump.raw windows.hashdump
+
+Example Hash Dump:
+
+vol3 -f memdump.raw windows.hashdump
+
+Volatility 3 Framework 2.0.0
+Progress:  100.00		PDB scanning finished                        
+User	rid	lmhash	nthash
+
+Administrator	500	aad3b435b51404eeaad3b435b51404ee	31d6cfe0d16ae931b73c59d7e0c089c0
+Guest	501	aad3b435b51404eeaad3b435b51404ee	31d6cfe0d16ae931b73c59d7e0c089c0
+DefaultAccount	503	aad3b435b51404eeaad3b435b51404ee	31d6cfe0d16ae931b73c59d7e0c089c0
+WDAGUtilityAccount	504	aad3b435b51404eeaad3b435b51404ee	0b51f04cf2a0d8f6f4469cd628a78776
+Jimmie	1001	aad3b435b51404eeaad3b435b51404ee	0d757ad173d2fc249ce19364fd64c8ec
+Admin	1003	aad3b435b51404eeaad3b435b51404ee	29b0d58e146d70278c29dc70f74f1e5d
 ```
 
 ## Using pypykatz
