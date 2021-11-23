@@ -155,3 +155,7 @@ Mounting a DiskImage
 
 Mount-DiskImage -ImagePath "C:\path\to\image.iso"
 ```
+
+### Unregister Scheduled Task
+
+`Unregister-ScheduledTask -TaskName "BadScheduledTaskName" -Confirm:$false`
