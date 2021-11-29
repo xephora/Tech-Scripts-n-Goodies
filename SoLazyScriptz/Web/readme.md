@@ -100,6 +100,13 @@ https://github.com/pgaijin66/XSS-Payloads
 ### bugbountyhunting
 https://www.bugbountyhunting.com/
 
+### DOM xss in angularJS (Example from portswigger)
+
+```
+angular_1-7-7.js
+{{$on.constructor('alert(document.domain)')()}}
+```
+
 Great XSS example from bugbountyhunting  
 ```
 x = %09, %20, %0d
