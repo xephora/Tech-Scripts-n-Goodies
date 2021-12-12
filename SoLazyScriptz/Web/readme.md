@@ -578,6 +578,9 @@ Changing to different table names using OFFSET instead of WHERE. Thanks to @iiLe
 SELECT CONCAT(TABLE_NAME) FROM information_schema.tables LIMIT 1 OFFSET 1
 ```
 
+### sqli on sqlite
+https://www.exploit-db.com/docs/english/41397-injecting-sqlite-database-based-applications.pdf
+
 ### Testing sql injection using sqlfiddle
 http://sqlfiddle.com/
 
