@@ -56,6 +56,7 @@ ss -anp | grep <pid>
 ss -lpn | grep <pid> 
 ss -lpn | grep 443
 ss -lpn | grep 4444 | grep pid
+ss -ant
 ```
 
 ### Kill a process
