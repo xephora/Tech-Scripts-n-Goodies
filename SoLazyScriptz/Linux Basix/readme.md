@@ -284,3 +284,10 @@ https://www.tecmint.com/create-alias-in-linux/
 nano ~/.bashrc
 alias powershell='pwsh'
 ```
+
+### Creating an HTTP/FTP Server python
+
+```
+python3 -m http.server 80
+python -m pyftpdlib -p 21
+```
