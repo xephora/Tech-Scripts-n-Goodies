@@ -289,5 +289,5 @@ alias powershell='pwsh'
 
 ```
 python3 -m http.server 80
-python -m pyftpdlib -p 21
+python3 -m pyftpdlib -p 21
 ```
