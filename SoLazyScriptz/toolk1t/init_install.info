@@ -19,6 +19,9 @@ dpkg-reconfigure openssh-server
 md5sum ssh_host_*
 md5sum default_kali_keys/*
 
+# configure resolve
+/etc/resolv.conf => nameserver 8.8.8.8
+
 #installing all updates
 sudo apt update && sudo apt -y full-upgrade
 
