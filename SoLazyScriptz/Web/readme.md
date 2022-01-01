@@ -473,7 +473,8 @@ https://portswigger.net/web-security/deserialization
 ### XXE
 
 Resources:  
-https://www.youtube.com/watch?v=aQFG-97f900
+https://medium.com/@onehackman/exploiting-xml-external-entity-xxe-injections-b0e3eac388f9  
+https://www.youtube.com/watch?v=aQFG-97f900  
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
