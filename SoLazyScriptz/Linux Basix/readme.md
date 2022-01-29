@@ -291,3 +291,12 @@ alias powershell='pwsh'
 python3 -m http.server 80
 python3 -m pyftpdlib -p 21
 ```
+
+### Locate and kill pts/tty by pid
+
+```
+w
+ps -ft pts/#
+kill -9 <PID>
+w
+```
