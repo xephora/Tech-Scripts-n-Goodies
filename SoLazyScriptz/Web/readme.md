@@ -1057,3 +1057,7 @@ https://github.com/arthaud/git-dumper
 ```
 git-dumper {url}/.git outdir/
 ```
+
+### Flask cookies
+https://book.hacktricks.xyz/pentesting/pentesting-web/flask#flask-unsign
+
