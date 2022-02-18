@@ -305,4 +305,5 @@ w
 
 ```
 sed '/test/d' ./fileToRemoveStrings.txt
+sed -i '/test/d' ./fileToRemoveStrings.txt
 ```
