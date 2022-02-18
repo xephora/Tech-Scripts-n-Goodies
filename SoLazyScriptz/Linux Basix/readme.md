@@ -301,7 +301,7 @@ kill -9 <PID>
 w
 ```
 
-### Removing lines from a file based on a keyword
+### Removing lines from a file based on a keyword (thanks to @frostb1te for recommending this)
 
 ```
 sed '/test/d' ./fileToRemoveStrings.txt
