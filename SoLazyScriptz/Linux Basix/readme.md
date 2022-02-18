@@ -300,3 +300,9 @@ ps -ft pts/#
 kill -9 <PID>
 w
 ```
+
+### Removing lines from a file based on a keyword
+
+```
+sed '/test/d' ./fileToRemoveStrings.txt
+```
