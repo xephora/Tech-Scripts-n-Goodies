@@ -1,4 +1,0 @@
-Use sqlmap to scan for sql vulnerabilities
-https://github.com/sqlmapproject/sqlmap
-
-sqlmap -u http://url/query?key=id --dump
