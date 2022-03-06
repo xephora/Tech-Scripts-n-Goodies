@@ -1,3 +1,6 @@
+### Resource
+https://linuxhandbook.com/linux-directory-structure/
+
 ### get processes
 ```
 ps aux
