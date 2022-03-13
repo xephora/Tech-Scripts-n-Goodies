@@ -1082,3 +1082,5 @@ git-dumper {url}/.git outdir/
 ### Flask cookies
 https://book.hacktricks.xyz/pentesting/pentesting-web/flask#flask-unsign
 
+### Request Smuggling (A great writeup)
+https://infosecwriteups.com/exploiting-http-request-smuggling-te-cl-xss-to-website-takeover-c0fc634a661b
