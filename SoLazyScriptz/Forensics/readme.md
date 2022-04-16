@@ -138,3 +138,13 @@ pdftool.py iu -s objectnumber pdf_file.pdf
 dump object
 pdftool.py iu -s objectnumber -d pdf_file.pdf
 ```
+
+### Linux memory forensics
+
+A great video explaination provided by ippsec  
+https://www.youtube.com/watch?v=uYWTfWV3dQI  
+
+```
+dd if=mem bs=1 skip=$((0xXXXXX)) count=$((0x1000)) of=/tmp/output
+dd if=mem bs=1 skip=$((0xXXXXX)) count=$((0xXXXXX-0xXXXXX)) of=/tmp/output
+```
