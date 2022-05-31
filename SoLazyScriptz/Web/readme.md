@@ -13,6 +13,7 @@ https://github.com/Ignitetechnologies/Web-Application-Cheatsheet
 https://0x00sec.org/t/execute-system-commands-in-python-reference/7870  
 https://github.com/almandin/fuxploider  
 https://book.hacktricks.xyz/pentesting-web/unicode-normalization-vulnerability  
+https://bishopfox.com/blog/ruby-vulnerabilities-exploits  
 
 ### CTF resources
 https://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Exploiting%20Improper%20Redirection%20in%20PHP%20Web%20Applications.pdf  
