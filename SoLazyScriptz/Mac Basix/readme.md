@@ -33,4 +33,4 @@ https://support.apple.com/en-gb/guide/terminal/apdc6c1077b-5d5d-4d35-9c19-60f239
 
 ### crontabs
 
-`/var/at/tabs
+`/var/at/tabs`
