@@ -125,6 +125,7 @@ binwalk file
 extracting data from an image
 
 binwalk -e file
+binwalk --dd='.*'
 ```
 
 ### pdftool remnux
