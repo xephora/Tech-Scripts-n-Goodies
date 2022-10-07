@@ -1,5 +1,0 @@
-#installation
-#git clone https://github.com/s0md3v/Bolt
-
-read -p 'Enter URL: ' url
-python3 /root/Bolt/bolt.py -u $url -l 2
