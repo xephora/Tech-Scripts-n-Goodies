@@ -1,5 +1,0 @@
-1. Run install_docker-powershell
-2. To start powershell run start_docker-powershell
-
-If it doesn't install you may need to start docker service
-run start_docker-service
