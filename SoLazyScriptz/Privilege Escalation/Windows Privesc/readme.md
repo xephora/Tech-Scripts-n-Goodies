@@ -20,6 +20,7 @@ https://book.hacktricks.xyz/shells/shells/windows
 https://github.com/alphaSeclab/windows-security/blob/master/Readme_en.md#686597a4cff20c60a8e86116cde645fb  
 https://github.com/cube0x0/SharpSystemTriggers  
 https://github.com/S3cur3Th1sSh1t/Creds/tree/master/PowershellScripts  
+https://cube0x0.github.io/Pocing-Beyond-DA/  
   
 ### [Check user]
 ```
