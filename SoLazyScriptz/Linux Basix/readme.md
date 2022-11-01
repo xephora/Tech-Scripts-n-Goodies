@@ -310,3 +310,9 @@ w
 sed '/test/d' ./fileToRemoveStrings.txt
 sed -i '/test/d' ./fileToRemoveStrings.txt
 ```
+
+### using cut to splitting on a delimiter
+
+```
+cut -f 2 -d ","
+```
