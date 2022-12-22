@@ -1,8 +1,0 @@
-#Installation
-#npm -g install js-beautify
-#Usage
-#js-beautify file.js
-
-read -p 'Enter JS Filename: ' jsfile
-
-js-beautify $jsfile > formatted_$jsfile

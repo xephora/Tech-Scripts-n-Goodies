@@ -1,6 +1,0 @@
-#installation
-#go get github.com/tomnomnom/waybackurls
-
-read -p 'Enter URL: ' url
-
-echo $url | ~/go/bin/waybackurls > way_loot
