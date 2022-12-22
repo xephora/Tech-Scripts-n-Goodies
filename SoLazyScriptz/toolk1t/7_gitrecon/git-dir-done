@@ -1,5 +1,0 @@
-read -p 'Enter Git Report: ' gitrepo
-read -p 'Enter Session Name: ' sess
-
-echo "Could Take a very long time.. Try waiting 30seconds-1minute before killing program CTL+C or CTL+Z"
-trufflehog $gitrepo > dumplog_$sess.log
