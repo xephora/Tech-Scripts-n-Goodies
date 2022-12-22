@@ -1,3 +1,0 @@
-sudo gem update --system
-sudo gem install bundler
-cd /usr/share/metasploit-framework && sudo bundle install

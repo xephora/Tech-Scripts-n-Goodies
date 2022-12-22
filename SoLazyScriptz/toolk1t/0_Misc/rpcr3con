@@ -1,8 +1,0 @@
-echo "Usage: ./rpcr3con domain or ./rpcr3con ip
-nmap -sSUC -p111 $1
-rpcinfo -p $1
-rusers -l $1
-ypcat -d domain -h $1
-showmount -e $1
-
-#You need ypcat and rusers 'apt-get install rusers' and 'apt-get install nis'

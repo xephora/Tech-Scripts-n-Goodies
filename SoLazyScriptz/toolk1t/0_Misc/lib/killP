@@ -1,2 +1,0 @@
-read -p 'Enter Port: ' port
-kill 'lsof -t -i:'$port

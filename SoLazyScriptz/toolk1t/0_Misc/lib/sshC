@@ -1,3 +1,0 @@
-read -p 'Do you want to.. start | stop | restart | status your ssh server?: ' action
-
-sudo /etc/init.d/ssh $action

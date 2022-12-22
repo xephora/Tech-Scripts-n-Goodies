@@ -1,2 +1,0 @@
-read -p 'Enter Port: ' port
-lsof -t -i:$port
