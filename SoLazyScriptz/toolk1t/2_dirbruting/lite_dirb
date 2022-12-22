@@ -1,2 +1,0 @@
-read -p 'Enter URL without trailing slash: ' url
-dirb $url -fw
