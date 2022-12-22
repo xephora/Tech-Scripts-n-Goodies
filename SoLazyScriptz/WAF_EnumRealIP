@@ -1,8 +1,0 @@
-#This script will try different techniques to Bypass WAF
-#More information about Cloudflair: https://github.com/christophetd/CloudFlair
-
-read -p 'Enter Domain. Example: domain.com: ' domain
-
-python3 /root/cloudflair/cloudflair.py $domain
-
-curl -# -d cfS=$domain  www.crimeflare.org:82/cgi-bin/cfsearch.cgi |grep -C 4 "Previous" |tr -d '<>,'
