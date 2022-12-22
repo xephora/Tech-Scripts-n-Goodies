@@ -1,5 +1,0 @@
-x=$(cat * | grep -rhoP '(https\:\/\/+[a-zA-Z0-9.\/-]+.js)?' | uniq);for i in $x; do "./scan_jsjson $i";done
-x=$(cat * | grep -rhoP '(https\:\/\/+[a-zA-Z0-9.\/-]+.json)?' | uniq);for i in $x; do "./scan_jsjson $i";done
-x=$(cat * | grep -rhoP '(https\:\/\/+[a-zA-Z0-9.\/-]+.xml)?' | uniq);for i in $x; do "./scan_jsjson $i";done
-x=$(cat * | grep -rhoP '(https\:\/\/+[a-zA-Z0-9.\/-]+.php)?' | uniq);for i in $x; do "./scan_jsjson $i";done
-x=$(cat * | grep -rhoP '(https\:\/\/+[a-zA-Z0-9.\/-]+.html)?' | uniq);for i in $x; do "./scan_jsjson $i";done

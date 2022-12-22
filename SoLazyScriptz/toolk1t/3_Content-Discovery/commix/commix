@@ -1,2 +1,0 @@
-read -p 'Enter URL: ' url
-commix -u $url --random-agent --tamper="backslashes,base64encode,multiplespaces"

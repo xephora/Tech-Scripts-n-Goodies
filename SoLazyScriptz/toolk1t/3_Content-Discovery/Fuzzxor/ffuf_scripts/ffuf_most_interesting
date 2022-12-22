@@ -1,2 +1,0 @@
-read -p 'Enter URL: ' url
-ffuf -c -w /root/wordlist/Fuzzing/curated.txt -u $url/FUZZ -fc 403,404,302

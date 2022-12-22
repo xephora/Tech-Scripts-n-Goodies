@@ -1,3 +1,0 @@
-md5sum gospiderlist.txt
-echo "" > gospiderlist.txt
-md5sum gospiderlist.txt

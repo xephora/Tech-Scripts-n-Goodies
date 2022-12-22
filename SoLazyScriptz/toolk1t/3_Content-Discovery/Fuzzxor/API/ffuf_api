@@ -1,2 +1,0 @@
-read -p 'Enter URL: ' url
-ffuf -c -w api_common_paths.txt -u $url/FUZZ

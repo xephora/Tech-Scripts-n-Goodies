@@ -1,1 +1,0 @@
-gospider -S gospiderlist.txt --depth 2 --no-redirect -t 50 -c 3 -o gospiderdump

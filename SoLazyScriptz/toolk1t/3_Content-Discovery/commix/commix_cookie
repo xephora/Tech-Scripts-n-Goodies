@@ -1,3 +1,0 @@
-read -p 'Enter URL: ' url
-read -p 'Enter Cookie: ' cookie
-commix -u $url --shellshock --crawl=2 -v 1 --cookie=$cookie --base64

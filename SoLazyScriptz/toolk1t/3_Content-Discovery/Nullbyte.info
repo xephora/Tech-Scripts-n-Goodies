@@ -1,5 +1,0 @@
-An old technique to trick a server to download the file from the server as a pdf document.
-
-1. Intercept the request
-2. Change the extension of the file by adding a nullbyte and include the fake extension.
-secretfile.db to secretfile%00.pdf or secretfile%2500 

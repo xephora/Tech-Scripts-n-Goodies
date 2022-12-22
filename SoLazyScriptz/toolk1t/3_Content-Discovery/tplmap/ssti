@@ -1,3 +1,0 @@
-read -p 'Enter URL/with/data=x: ' url
-
-python tplmap.py -u $url

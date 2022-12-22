@@ -1,3 +1,0 @@
-md5sum fuzzables.txt
-echo "" > fuzzables.txt
-md5sum fuzzables.txt

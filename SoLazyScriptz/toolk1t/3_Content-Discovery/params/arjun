@@ -1,7 +1,0 @@
-#arjun is a param scanner to bruteforce possible params
-#installation of arjun
-#git clone https://github.com/s0md3v/Arjun
-
-read -p 'Insert URL.com/with?a=param: ' url
-
-/root/Arjun/arjun.py -u $url -t 10 --get --post

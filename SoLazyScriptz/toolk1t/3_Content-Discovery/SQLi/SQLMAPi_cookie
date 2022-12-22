@@ -1,4 +1,0 @@
-read -p 'Enter URL: ' url
-read -p 'Enter Cookie Data: ' cookie
-
-sqlmap -u $url --forms --batch --crawl=10 --cookie=$cookie --level=5 --risk=3 --tamper=apostrophemask,apostrophenullencode

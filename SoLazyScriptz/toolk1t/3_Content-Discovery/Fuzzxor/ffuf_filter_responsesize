@@ -1,5 +1,0 @@
-read -p 'Enter URL: ' url
-read -p 'Filter From Size: ' size1
-read -p 'Filter To Size 2: ' size2
-
-ffuf -c -w /root/SecLists/Discovery/Web-Content/SVNDigger/all.txt -u $url/FUZZ -fc 403,404,302 -fs $size1-$size2

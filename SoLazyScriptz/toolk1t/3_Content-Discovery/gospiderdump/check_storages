@@ -1,6 +1,0 @@
-grep s3.amazonaws * >> storage/loot
-grep s3-region * >> storage/loot
-grep googleapis * >> storage/loot
-grep googleusercontent * >> storage/loot
-grep appspot.com * >> storage/loot
-grep .com/*.js * > storage/js/loot

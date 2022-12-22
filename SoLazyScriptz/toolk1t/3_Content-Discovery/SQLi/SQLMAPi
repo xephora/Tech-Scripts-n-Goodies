@@ -1,5 +1,0 @@
-read -p 'Enter URL, Example http://url.com: ' url
-#read -p 'Insert Cookie Data=Value: ' cookie 
-
-sqlmap -u $url --forms --batch --crawl=10 --level=5 --risk=3 --tamper=apostrophemask,apostrophenullencode
-#python sqlmap.py -u http://example.com --forms --batch --crawl=10 --cookie=$cookie --level=5 --risk=3 --tamper=apostrophemask,apostrophenullencode

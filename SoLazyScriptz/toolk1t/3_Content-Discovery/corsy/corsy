@@ -1,4 +1,0 @@
-#Installation
-#https://github.com/s0md3v/Corsy
-read -p 'Enter URL: ' url
-python3 corsy.py -u $url

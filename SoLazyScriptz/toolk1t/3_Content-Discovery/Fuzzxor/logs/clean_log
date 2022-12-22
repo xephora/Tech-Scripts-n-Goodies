@@ -1,4 +1,0 @@
-md5sum fuzzlog.txt
-echo "" > fuzzlog.txt
-echo Cleaning Log..
-md5sum fuzzlog.txt

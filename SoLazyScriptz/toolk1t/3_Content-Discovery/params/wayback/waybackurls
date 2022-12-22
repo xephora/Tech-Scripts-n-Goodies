@@ -1,3 +1,0 @@
-read -p 'Enter URL: ' url
-
-python3 wbscripts/waybackurls.py $url

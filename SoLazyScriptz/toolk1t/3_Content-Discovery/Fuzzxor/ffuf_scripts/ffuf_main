@@ -1,2 +1,0 @@
-read -p 'Enter URL: ' url
-ffuf -c -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u $url/FUZZ -fc 403,404,302

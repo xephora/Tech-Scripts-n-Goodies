@@ -1,7 +1,0 @@
-Treat each endpoint both in url, body and cookie as possible vulnerable injections.
-
-1. xss hunter payloads are for blind injections.
-2. Reflections test best performed with ">uniq identifier or '">uniq identifier you may also use XSStriker to test reflections. 
-(Reflections are attacks that allow code to appear in source of the target webpage. When you do have a successful reflection you can proceed with injections.
-3. Encoding your payloads are the only way to bypass filters. URL, Double URL, Decimal obfuscation, hex.
-4. IP Encoding is the another way to bypass filters.
