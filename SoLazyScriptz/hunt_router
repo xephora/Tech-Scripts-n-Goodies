@@ -1,4 +1,0 @@
-#Requires Seclists
-#https://github.com/danielmiessler/SecLists
-
-wfuzz -w /root/SecLists/Discovery/Infrastructure/common-router-ips.txt -u FUZZ
