@@ -1,3 +1,0 @@
-read -p 'Enter Domain: ' dom
-
-amass intel -whois -d $dom

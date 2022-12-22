@@ -1,3 +1,0 @@
-read -p 'Enter Domain name: ' dom
-
-amass enum -v -src -ip -brute -min-for-recursive 2 -o domains.txt -d $dom > http_$dom

@@ -1,1 +1,0 @@
-masscan -iL domain_ips.txt -p0-65535 -oX logs/output_masscan.txt
