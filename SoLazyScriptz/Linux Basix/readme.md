@@ -178,6 +178,7 @@ tar -xvf file.tar
 
 ```
 unzip file.zip
+zip -P password -r archive.zip foldername
 ```
 
 ### rar
