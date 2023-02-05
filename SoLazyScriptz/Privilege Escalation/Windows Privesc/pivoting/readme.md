@@ -75,3 +75,18 @@ From Kali: proxychains nmap -sT <target_IP> -Pn
 ssh -L <PORT>:127.0.0.1:<PORT> <USERNAME>@<REMOTE_ADDR>
 ssh -L <PORT>:127.0.0.1:<PORT> <USERNAME>@<REMOTE_ADDR> -p 22
 ```
+
+### routing through msf
+```
+run autoroute –s IP/24
+use post/multi/manage/autoroute
+
+socks proxy
+use auxiliary/server/socks_proxy
+```
+
+### port forward through msf
+```
+Portfwd add -L 127.0.0.1 -l 445 -p 445 -r targetIP
+portfwd add -L 127.0.0.1 -l 139 -p 139 -r targetIP
+```
