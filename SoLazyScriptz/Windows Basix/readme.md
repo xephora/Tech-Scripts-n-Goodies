@@ -159,3 +159,7 @@ Mount-DiskImage -ImagePath "C:\path\to\image.iso"
 ### Unregister Scheduled Task
 
 `Unregister-ScheduledTask -TaskName "BadScheduledTaskName" -Confirm:$false`
+
+### Get absolute profile path based on username
+
+`(Get-WmiObject -Class Win32_UserProfile | Where-Object { $_.LocalPath.split('\')[-1] -eq '<username>' }).LocalPath`
