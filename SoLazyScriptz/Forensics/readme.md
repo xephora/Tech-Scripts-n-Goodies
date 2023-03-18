@@ -62,6 +62,9 @@ vol.py -f memimage.raw --profile=<profile> dumpfiles -r txt$ --dump-dir memdump 
 vol.py -f memimage.raw --profile=<profile> filescan | Select-String "keyword"
 vol.py -f memimage.raw --profile=<profile> cmdscan
 vol.py -f memimage.raw --profile=<profile> shellbags
+volatility -f <path_to_memory_dump> --profile=<profile> hivelist
+volatility -f <path_to_memory_dump> --profile=<profile> dumpregistry -o <hive_virtual_address> -D <output_directory>
+
 
 vol3 -f memdump.raw windows.envars
 vol3 -f memdump.raw windows.pslist
