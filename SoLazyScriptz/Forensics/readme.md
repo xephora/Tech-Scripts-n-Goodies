@@ -38,23 +38,24 @@ Resources (Thanks for @Firehawk for providing this link)
 https://www.andreafortuna.org/2017/11/15/how-to-retrieve-users-passwords-from-a-windows-memory-dump-using-volatility/ 
 
 ```
-volatility -f MEMORY_FILE.raw imageinfo
-volatility -f MEMORY_FILE.raw --profile=PROFILE pslist
-volatility -f MEMORY_FILE.raw --profile=PROFILE netscan
-volatility -f MEMORY_FILE.raw --profile=PROFILE psxview -> look for False's
-volatility -f MEMORY_FILE.raw --profile=PROFILE dlllist
-volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>
-volatility -f MEMORY_FILE.raw --profile=PROFILE ldrmodules -> look for False's
-volatility -f MEMORY_FILE.raw --profile=PROFILE apihooks -> look for patched system files, look for <unknown>
-volatility -f MEMORY_FILE.raw --profile=PROFILE malfind -D /tmp
-volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>
-volatility -f MEMORY_FILE.raw --profile=PROFILE --pid=PID hivelist
-volatility -f MEMORY_FILE.raw --profile=PROFILE printkey -K 'Software\Microsoft\Windows\CurrentVersion\Run'
-volatility -f MEMORY_FILE.raw --profile=PROFILE procdump -p PID --dump-dir /tmp  -> generates exe
-volatility -f MEMORY_FILE.raw --profile=PROFILE memdump -p PID --dump-dir /tmp  -> dumps mem dump for process
-volatility -f MEMORY_FILE.raw --profile=PROFILE cmdline  -> cmd history
-volatility -f MEMORY_FILE.raw --profile=PROFILE sockets
-volatility -f MEMORY_FILE.raw --profile=PROFILE connscan
+vol.py -f MEMORY_FILE.raw imageinfo
+vol.py -f MEMORY_FILE.raw linuxgetprofile
+vol.py -f MEMORY_FILE.raw --profile=PROFILE pslist
+vol.py -f MEMORY_FILE.raw --profile=PROFILE netscan
+vol.py -f MEMORY_FILE.raw --profile=PROFILE psxview -> look for False's
+vol.py -f MEMORY_FILE.raw --profile=PROFILE dlllist
+vol.py -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>
+vol.py -f MEMORY_FILE.raw --profile=PROFILE ldrmodules -> look for False's
+vol.py -f MEMORY_FILE.raw --profile=PROFILE apihooks -> look for patched system files, look for <unknown>
+vol.py -f MEMORY_FILE.raw --profile=PROFILE malfind -D /tmp
+vol.py -f MEMORY_FILE.raw --profile=PROFILE --pid=PID dlldump -D <Destination Directory>
+vol.py -f MEMORY_FILE.raw --profile=PROFILE --pid=PID hivelist
+vol.py -f MEMORY_FILE.raw --profile=PROFILE printkey -K 'Software\Microsoft\Windows\CurrentVersion\Run'
+vol.py -f MEMORY_FILE.raw --profile=PROFILE procdump -p PID --dump-dir /tmp  -> generates exe
+vol.py -f MEMORY_FILE.raw --profile=PROFILE memdump -p PID --dump-dir /tmp  -> dumps mem dump for process
+vol.py -f MEMORY_FILE.raw --profile=PROFILE cmdline  -> cmd history
+vol.py -f MEMORY_FILE.raw --profile=PROFILE sockets
+vol.py -f MEMORY_FILE.raw --profile=PROFILE connscan
 vol.py -f memimage.raw --profile=<profile> dumpfiles --dump-dir memdump -n
 vol.py -f memimage.raw --profile=<profile> dumpfiles -Q <offset_assoc_with_file>
 vol.py -f memimage.raw --profile=<profile> dumpfiles -r file.txt --dump-dir memdump
@@ -62,8 +63,8 @@ vol.py -f memimage.raw --profile=<profile> dumpfiles -r txt$ --dump-dir memdump 
 vol.py -f memimage.raw --profile=<profile> filescan | Select-String "keyword"
 vol.py -f memimage.raw --profile=<profile> cmdscan
 vol.py -f memimage.raw --profile=<profile> shellbags
-volatility -f <path_to_memory_dump> --profile=<profile> hivelist
-volatility -f <path_to_memory_dump> --profile=<profile> dumpregistry -o <hive_virtual_address> -D <output_directory>
+vol.py -f <path_to_memory_dump> --profile=<profile> hivelist
+vol.py -f <path_to_memory_dump> --profile=<profile> dumpregistry -o <hive_virtual_address> -D <output_directory>
 
 
 vol3 -f mem.raw -p Win10x64_19041 plugins
