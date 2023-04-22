@@ -56,28 +56,28 @@ vol.py -f MEMORY_FILE.raw --profile=PROFILE memdump -p PID --dump-dir /tmp  -> d
 vol.py -f MEMORY_FILE.raw --profile=PROFILE cmdline  -> cmd history
 vol.py -f MEMORY_FILE.raw --profile=PROFILE sockets
 vol.py -f MEMORY_FILE.raw --profile=PROFILE connscan
-vol.py -f memimage.raw --profile=<profile> dumpfiles --dump-dir memdump -n
-vol.py -f memimage.raw --profile=<profile> dumpfiles -Q <offset_assoc_with_file>
-vol.py -f memimage.raw --profile=<profile> dumpfiles -r file.txt --dump-dir memdump
-vol.py -f memimage.raw --profile=<profile> dumpfiles -r txt$ --dump-dir memdump -n
-vol.py -f memimage.raw --profile=<profile> filescan | Select-String "keyword"
-vol.py -f memimage.raw --profile=<profile> cmdscan
-vol.py -f memimage.raw --profile=<profile> shellbags
-vol.py -f <path_to_memory_dump> --profile=<profile> hivelist
-vol.py -f <path_to_memory_dump> --profile=<profile> dumpregistry -o <hive_virtual_address> -D <output_directory>
+vol.py -f MEMORY_FILE.raw --profile=PROFILE dumpfiles --dump-dir memdump -n
+vol.py -f MEMORY_FILE.raw --profile=PROFILE dumpfiles -Q <offset_assoc_with_file>
+vol.py -f MEMORY_FILE.raw --profile=PROFILE dumpfiles -r file.txt --dump-dir memdump
+vol.py -f MEMORY_FILE.raw --profile=PROFILE dumpfiles -r txt$ --dump-dir memdump -n
+vol.py -f MEMORY_FILE.raw --profile=PROFILE filescan | Select-String "keyword"
+vol.py -f MEMORY_FILE.raw --profile=PROFILE cmdscan
+vol.py -f MEMORY_FILE.raw --profile=PROFILE shellbags
+vol.py -f MEMORY_FILE.raw --profile=PROFILE hivelist
+vol.py -f MEMORY_FILE.raw --profile=PROFILE dumpregistry -o <hive_virtual_address> -D <output_directory>
 
 
-vol3 -f mem.raw -p Win10x64_19041 plugins
-vol3 -f memdump.raw windows.envars
-vol3 -f mem.raw -p Win10x64_19041 windows.pslist
-vol3 -f memdump.raw windows.dumpfiles --pid <pid>
-vol3 -f mem.raw -p Win10x64_19041 windows.pstree
-vol3 -f mem.raw -p Win10x64_19041 windows.netscan
-vol3 -f memdump.raw windows.hashdump
-vol3 -f mem.raw -p Win10x64_19041 windows.filescan > output.txt
-vol3 -f mem.raw -p Win10x64_19041 windows.dumpfiles
-vol3 -f mem.raw -p Win10x64_19041 windows.dumpfiles --virtaddr 0x0000db8d38d58ed0
-vol3 -f mem.raw -p Win10x64_19041 windows.dumpfiles -r "16f2f0042ddbe0e8.customDestinations-ms" --dump-dir dump/
+vol3 -f MEMORY_FILE.raw -p Win10x64_19041 plugins
+vol3 -f MEMORY_FILE.raw windows.envars
+vol3 -f MEMORY_FILE.raw -p Win10x64_19041 windows.pslist
+vol3 -f MEMORY_FILE.raw windows.dumpfiles --pid <pid>
+vol3 -f MEMORY_FILE.raw -p Win10x64_19041 windows.pstree
+vol3 -f MEMORY_FILE.raw -p Win10x64_19041 windows.netscan
+vol3 -f MEMORY_FILE.raw windows.hashdump
+vol3 -f MEMORY_FILE.raw -p Win10x64_19041 windows.filescan > output.txt
+vol3 -f MEMORY_FILE.raw -p Win10x64_19041 windows.dumpfiles
+vol3 -f MEMORY_FILE.raw -p Win10x64_19041 windows.dumpfiles --virtaddr 0x0000db8d38d58ed0
+vol3 -f MEMORY_FILE.raw -p Win10x64_19041 windows.dumpfiles -r "16f2f0042ddbe0e8.customDestinations-ms" --dump-dir dump/
 
 Example Hash Dump:
 
