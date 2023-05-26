@@ -163,3 +163,12 @@ Mount-DiskImage -ImagePath "C:\path\to\image.iso"
 ### Get absolute profile path based on username
 
 `(Get-WmiObject -Class Win32_UserProfile | Where-Object { $_.LocalPath.split('\')[-1] -eq '<username>' }).LocalPath`
+
+### Removing A service
+
+```
+$service = Get-WmiObject -Class Win32_Service -Filter "Name='servicename'"
+if ($service) {
+	$service.delete()
+}
+```
