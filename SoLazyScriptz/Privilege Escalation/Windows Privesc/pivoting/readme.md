@@ -100,8 +100,10 @@ route add 192.168.1.0 255.255.255.0 1
 ### reverse proxy using msf and pivoting using psexec
 
 ```
-server/socks5
+server/socks5 => run
+
+windows/smb/psexec
+set params
 set proxies socks5://127.0.0.1:1080
 set ReverseAllowProxy true
-windows/smb/psexec
 ```
