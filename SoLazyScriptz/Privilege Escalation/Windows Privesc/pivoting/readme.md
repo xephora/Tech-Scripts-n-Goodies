@@ -91,7 +91,7 @@ Portfwd add -L 127.0.0.1 -l 445 -p 445 -r targetIP
 portfwd add -L 127.0.0.1 -l 139 -p 139 -r targetIP
 ```
 
-### route in metasploit
+### route in msf
 
 ```
 route add 192.168.1.0 255.255.255.0 1
