@@ -207,6 +207,9 @@ After inserting your shellcode payload then you can execute your script. You may
 python ms08_067_2018.py <rhost> 1 445
 ```
 
+### more smb exploits
+https://github.com/worawit/MS17-010/tree/master
+
 ### [SMB Relay attack]
 https://www.youtube.com/watch?v=ctLVMi1_zBc&feature=emb_title
 
