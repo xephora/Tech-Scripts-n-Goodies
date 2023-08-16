@@ -525,6 +525,8 @@ nmap --script-updatedb
 https://book.hacktricks.xyz/pentesting/1099-pentesting-java-rmi
 
 ### [snmp enumeration]
+https://checkmk.com/blog/how-configure-snmp-linux  
+https://github.com/mxrch/snmp-shell  
 ```
 snmp-check <IP>
 snmp-check <ip> -c public|private|community
