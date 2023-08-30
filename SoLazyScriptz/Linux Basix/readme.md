@@ -319,3 +319,9 @@ sed -i '/test/d' ./fileToRemoveStrings.txt
 ```
 cut -f 2 -d ","
 ```
+
+### Count duplicates and sort by highest count of duplicates
+
+```
+cat file.txt  | awk '{print $4}' | sort | uniq -c | sort -rn
+```
