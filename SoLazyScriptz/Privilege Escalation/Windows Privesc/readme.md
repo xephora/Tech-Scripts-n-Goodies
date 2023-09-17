@@ -21,6 +21,7 @@ https://github.com/alphaSeclab/windows-security/blob/master/Readme_en.md#686597a
 https://github.com/cube0x0/SharpSystemTriggers  
 https://github.com/S3cur3Th1sSh1t/Creds/tree/master/PowershellScripts  
 https://cube0x0.github.io/Pocing-Beyond-DA/  
+https://github.com/andrew-d/static-binaries  
   
 ### [Check user]
 ```
