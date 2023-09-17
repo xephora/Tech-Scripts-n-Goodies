@@ -14,6 +14,14 @@ https://fping.org/dist/
 fping -q -a -g -r 1 <IP>/24
 ```
 
+### ping sweep (example provided by John Hammond)
+
+https://youtu.be/pbR_BNSOaMk
+
+```
+for i in $(seq 254); do ping 10.1.2.$i -c1 -cW1 & done | grep from
+```
+
 ### [Portable NMAP Scanner]
 
 You can scan and enumerate ports on a list of ports.
