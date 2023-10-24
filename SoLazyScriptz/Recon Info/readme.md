@@ -86,6 +86,9 @@ rpcmap.py 'ncacn_ip_tcp:<ip>' -brute-uuids -brute-opnums -auth-level 1 -opnum-ma
 ### [rpc enumeration]
 https://bitvijays.github.io/LFF-IPS-P3-Exploitation.html
 
+### [PrintNightmare through MS-RPRN and MS-PAR]
+https://redfoxsec.com/blog/printnightmare-the-vulnerability-that-shook-windows-systems/
+
 ### [SMB Enumeration p445]
 
 ### [Enumerate SMB Users]
