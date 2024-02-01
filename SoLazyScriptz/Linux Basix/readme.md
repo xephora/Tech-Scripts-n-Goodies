@@ -325,3 +325,9 @@ cut -f 2 -d ","
 ```
 cat file.txt | sort | uniq -c | sort -rn
 ```
+
+### Cross-reference keywords
+
+```
+grep -Fwf file1.txt file2.txt
+```
