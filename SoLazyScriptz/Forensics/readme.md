@@ -95,6 +95,14 @@ Jimmie	1001	aad3b435b51404eeaad3b435b51404ee	0d757ad173d2fc249ce19364fd64c8ec
 Admin	1003	aad3b435b51404eeaad3b435b51404ee	29b0d58e146d70278c29dc70f74f1e5d
 ```
 
+### Volatility profiles
+https://github.com/volatilityfoundation/volatility/wiki/2.6-Win-Profiles
+
+### Analzing hibernation files
+https://www.forensicxlab.com/posts/hibernation/  
+https://www.blackhat.com/presentations/bh-usa-08/Suiche/BH_US_08_Suiche_Windows_hibernation.pdf  
+https://andreafortuna.org/2019/05/15/how-to-read-windows-hibernation-file-hiberfil-sys-to-extract-forensic-data/  
+
 ## Using pypykatz
 https://github.com/skelsec/pypykatz
 
