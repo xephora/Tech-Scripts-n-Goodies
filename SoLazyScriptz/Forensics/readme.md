@@ -106,8 +106,11 @@ Jimmie	1001	aad3b435b51404eeaad3b435b51404ee	0d757ad173d2fc249ce19364fd64c8ec
 Admin	1003	aad3b435b51404eeaad3b435b51404ee	29b0d58e146d70278c29dc70f74f1e5d
 ```
 
+### Volatility resource
+https://blog.onfvp.com/post/volatility-cheatsheet/  
+
 ### Volatility profiles
-https://github.com/volatilityfoundation/volatility/wiki/2.6-Win-Profiles
+https://github.com/volatilityfoundation/volatility/wiki/2.6-Win-Profiles  
 
 ### Analzing hibernation files
 https://www.forensicxlab.com/posts/hibernation/  
