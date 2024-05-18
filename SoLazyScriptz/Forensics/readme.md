@@ -80,6 +80,7 @@ vol3 -f MEMORY_FILE.raw -p Win10x64_19041 windows.dumpfiles --virtaddr 0x0000db8
 vol3 -f MEMORY_FILE.raw -p Win10x64_19041 windows.dumpfiles -r "16f2f0042ddbe0e8.customDestinations-ms" --dump-dir dump/
 vol3 -f MEMORY_FILE.raw windows.dumpfiles ‑‑pid <PID>
 vol3 -f MEMORY_FILE.raw windows.memdump -p <PID> ‑‑dump-dir=“/path/to/dir”
+vol3 -f MEMORY_FILE.raw windows.memmap.Memmap --pid <PID> --dump
 vol3 -f MEMORY_FILE.raw windows.handles -p <PID>
 vol3 -f MEMORY_FILE.raw windows.dlllist -p <PID>
 vol3 -f MEMORY_FILE.raw windows.cmdline
