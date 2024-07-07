@@ -41,6 +41,7 @@ https://www.andreafortuna.org/2017/11/15/how-to-retrieve-users-passwords-from-a-
 vol.py -f MEMORY_FILE.raw imageinfo
 vol.py -f MEMORY_FILE.raw linuxgetprofile
 vol.py -f MEMORY_FILE.raw --profile=PROFILE pslist
+vol.py -f MEMORY_FILE.raw --profile=PROFILE pstree
 vol.py -f MEMORY_FILE.raw --profile=PROFILE netscan
 vol.py -f MEMORY_FILE.raw --profile=PROFILE psxview -> look for False's
 vol.py -f MEMORY_FILE.raw --profile=PROFILE dlllist
