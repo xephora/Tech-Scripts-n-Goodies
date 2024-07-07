@@ -65,7 +65,7 @@ vol.py -f MEMORY_FILE.raw --profile=PROFILE cmdscan
 vol.py -f MEMORY_FILE.raw --profile=PROFILE shellbags
 vol.py -f MEMORY_FILE.raw --profile=PROFILE hivelist
 vol.py -f MEMORY_FILE.raw --profile=PROFILE dumpregistry -o <hive_virtual_address> -D <output_directory>
-vol.py -f MEMORY_FILE.raw --profile=PROFILE consoles
+vol.py -f MEMORY_FILE.raw --profile=PROFILE consoles (Command history)
 
 
 vol3 -f MEMORY_FILE.raw -p Win10x64_19041 plugins
