@@ -331,3 +331,9 @@ cat file.txt | sort | uniq -c | sort -rn
 ```
 grep -Fwf file1.txt file2.txt
 ```
+
+### Removing lines based on length of characters
+
+```
+cat file.txt | grep -Pv "^.{0,5}$"
+```
