@@ -332,6 +332,11 @@ cat file.txt | sort | uniq -c | sort -rn
 grep -Fwf file1.txt file2.txt
 ```
 
+### Only show uniques
+```
+grep -Fxv -f file1.txt file2.txt > unique.txt
+```
+
 ### Removing lines based on length of characters
 
 ```
